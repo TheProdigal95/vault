@@ -1,0 +1,40 @@
+{
+  "total_reviews": 8,
+  "frequency_table": [
+    {
+      "persona": "The Long-Shift Standing Worker",
+      "reviews_matched": 5,
+      "percent_of_reviews": 62.5,
+      "avg_rating": 1.2
+    },
+    {
+      "persona": "The Plantar Fasciitis & Heel Pain Sufferer",
+      "reviews_matched": 2,
+      "percent_of_reviews": 25,
+      "avg_rating": 1.5
+    }
+  ],
+  "multi_persona_overlap_top20": [
+    {
+      "combo": "The Long-Shift Standing Worker + The Plantar Fasciitis & Heel Pain Sufferer",
+      "count": 2,
+      "percent_of_reviews": 25
+    }
+  ],
+  "untagged": {
+    "count": 3,
+    "percent_of_reviews": 37.5
+  },
+  "borderlines": {
+    "The Long-Shift Standing Worker": [
+      "snibbs-001",
+      "snibbs-005",
+      "snibbs-006",
+      "snibbs-007"
+    ],
+    "The Plantar Fasciitis & Heel Pain Sufferer": [
+      "snibbs-004",
+      "snibbs-006"
+    ]
+  }
+}

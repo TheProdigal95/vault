@@ -1,0 +1,21 @@
+Create a 9:16 vertical direct-response ad for nurse footwear. Typographic-dominant layout.
+
+BACKGROUND: Clean white (#FFFFFF). At the very top edge: a bold red (#B22234) horizontal stripe bar, 40px tall, full width. At the very bottom edge: a deep navy (#1B2A4A) horizontal stripe bar, 40px tall. Small white 5-pointed stars on a navy field visible in the top-left corner of the red stripe (like the flag canton). These two stripe bars frame the composition and give strong patriotic energy without covering content.
+
+SALE LABEL: Small circular badge or pill — dark navy background, white text: "MEMORIAL DAY" — positioned just below the red stripe at top-center.
+
+HEADLINE: The dominant visual element. Bold condensed sans-serif, all-caps, dark navy (#1B2A4A). MASSIVE — takes up the entire top 40% of the card in 3 stacked lines. Text exactly:
+Line 1: "SHIFT"
+Line 2: "AFTER"
+Line 3: "SHIFT."
+Each word on its own line. Maximum possible size. The typography IS the design.
+
+SUBHEADLINE: Below headline, smaller, medium grey (#666666), all-caps, lighter weight. Text: "PAIN-FREE. 20% OFF THIS MEMORIAL DAY."
+
+PRODUCT: Ortho Stretch Cushion shoe in NAVY BLUE colorway. Navy blue mesh upper with cyan/sky blue perforated square dot panels on side midfoot, cyan collar at ankle, bungee cord laces, chunky white EVA sole, black rubber outsole, pull tab at heel, no logos. Position: 3/4 front-left view, floating centered in lower half of the card, slightly smaller than the typography section. Soft drop shadow.
+
+BENEFIT LINES: Six short benefit lines on the RIGHT side of the card (vertically stacked), each preceded by a small red "+" marker icon. Lines: "+ Heel-Hugging Fit" "+ Wide Toe Box" "+ Slip-Resistant" "+ Orthopedic Support" "+ Lightweight" "+ 45-Day Guarantee"
+
+CTA BUTTON: Dark navy (#1B2A4A) rounded rectangle, white bold text: "SHOP NOW 20% OFF", centered at bottom.
+
+DESIGN: Bold typographic energy. No logo. All text perfectly legible.

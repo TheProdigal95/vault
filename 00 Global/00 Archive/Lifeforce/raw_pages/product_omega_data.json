@@ -1,0 +1,48 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Omega",
+  "url": "/omega/",
+  "image": [
+    "https://lf-oms-public.s3.us-west-2.amazonaws.com/fb5gr1dii15h1zgm4vwjt94m7cu4",
+    "https://cdn11.bigcommerce.com/s-byr25matix/images/stencil/original/products/143/407/LF_Omega_3__51221.1686865199.jpg",
+    "https://cdn11.bigcommerce.com/s-byr25matix/images/stencil/original/products/143/406/LF_Omega_2__77597.1686865199.jpg"
+  ],
+  "description": "Core Omega is a rapid uptake, high purity, broad spectrum Omega blend that supports cardiovascular health, mood regulation, immune function,blood sugar control, blood lipid levels optimization of HDL, LDL and triglycerides, healthy inflammation response and mitochondrial health. Featuring Omega enhancing MaxSimil&reg;, SmartPrime-OmTM, Provinal&reg;, Ahiflower and Borage Oil. Core Omega goes beyond other Omega products providing greater absorption rates that promote optimal levels of Omega-3 and phospholipid packaging within cells.&nbsp; ",
+  "productID": "143",
+  "category": "Health & Beauty > Health Care > Fitness & Nutrition > Vitamins & Supplements",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lifeforce"
+  },
+  "sku": "OMEGA-00029",
+  "offers": {
+    "@type": "Offer",
+    "url": "/omega/",
+    "price": 59.5,
+    "priceCurrency": "USD",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "InStock",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 1,
+          "unitCode": "DAY"
+        }
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "US"
+      },
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "USD"
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "cluster_id": "plantar_fasciitis_heel_pain_sufferer.stabbing_heel_pain",
+    "persona": "The Plantar Fasciitis & Heel Pain Sufferer",
+    "pain_label": "Stabbing heel pain that stops them mid-activity",
+    "trigger": "Pain reaching a breaking point — daily activity (walking, working, travel) becomes impossible without intervention",
+    "desire": "Walk and stand for hours without heel or arch pain returning",
+    "frequency_reviews": 103,
+    "representative_quote": "I've had plantar fasciitis for over a year, I'm a high school teacher, and my knees hurt with arthritis. We planned a trip go visit our daughter in Bolivia over the holidays and I knew that I'd be walking a LOT. I've worn Sketchers for years but I find that my heel hurts after walking more than 2 hours.",
+    "representative_review_id": "loox-5XDmZ4axR",
+    "distinct_from_existing": "Stabbing/acute morning pain distinct from general foot fatigue — this group is medically aware of the condition name and has tried multiple failed solutions before"
+  },
+  {
+    "cluster_id": "plantar_fasciitis_heel_pain_sufferer.morning_first_step_agony",
+    "persona": "The Plantar Fasciitis & Heel Pain Sufferer",
+    "pain_label": "Morning first-step agony — worst when getting out of bed",
+    "trigger": "Waking up and dreading putting feet on the floor; condition escalating despite medication/physio",
+    "desire": "Get through the day without popping anti-inflammatories or limping",
+    "frequency_reviews": 47,
+    "representative_quote": "I purchased these shoes because I have plantar fasciitis and every strep was agony, I was doing physio every day and up to 100miligrams of anti-inflammatory medication. It wasn't helping, I was walking like a little old lady at the end of every day.",
+    "representative_review_id": "loox-uOKxSZa9X",
+    "distinct_from_existing": "Active treatment failure — this sub-group is already doing physio/medication; other shoes and orthotics have already been tried and failed"
+  },
+  {
+    "cluster_id": "long_shift_standing_worker.foot_fatigue_end_of_shift",
+    "persona": "The Long-Shift Standing Worker",
+    "pain_label": "Feet dying by hour 6 — unable to finish shift without pain",
+    "trigger": "End-of-shift foot pain becoming unmanageable; dreading going to work because of shoe pain",
+    "desire": "Get through a full 12-hour shift without foot pain or needing to sit down",
+    "frequency_reviews": 128,
+    "representative_quote": "I work at a nursing home as a dietary aide, so I am on my feet all day. I needed a good pair of orthopedic shoes at a good price. These shoes are stylish but more affordable than other orthopedic shoes.",
+    "representative_review_id": "loox-gjzAjKrxz",
+    "distinct_from_existing": "Price-sensitive professional — this group explicitly compares cost against Dansko/OrthoFeet/Clogs; they want clinical-grade support but can't justify $200+ shoes"
+  },
+  {
+    "cluster_id": "long_shift_standing_worker.nurse_healthcare_12hr",
+    "persona": "The Long-Shift Standing Worker",
+    "pain_label": "12-hour nursing/healthcare shifts destroying feet",
+    "trigger": "Recommending by a colleague or seeing an ad targeting nurses; prior shoes failing mid-shift",
+    "desire": "Survive back-to-back 12-hour shifts without heel, arch, or knee pain",
+    "frequency_reviews": 65,
+    "representative_quote": "I'm glad I followed my gut and ordered these shoes, It's well worth the money! I have plantar fasciitis and working 12 hour shifts the pain was unbearable. Since I started wearing these, my 12 hour shifts are a breeze to get through now that I'm pain free. I strongly recommend healthcare workers to order these shoes.",
+    "representative_review_id": "loox-xzxDq_qMd",
+    "distinct_from_existing": "Healthcare identity — nurses/aides feel these were 'made for them'; non-slip sole is a safety requirement, not a preference"
+  },
+  {
+    "cluster_id": "bunion_structural_foot_problem_buyer.bunion_pressure_squeeze",
+    "persona": "The Bunion & Structural Foot Problem Buyer",
+    "pain_label": "Shoes squeezing bunions and causing constant rubbing/pressure",
+    "trigger": "Finding a shoe with a wide toe box that doesn't look medical/ugly",
+    "desire": "Wear normal-looking shoes all day without bunion rubbing or pressure points",
+    "frequency_reviews": 34,
+    "representative_quote": "My bunions always made shoes painful, but not with these. The knit upper stretches exactly where I need it to. No more pressure points and no more limping by the end of the day.",
+    "representative_review_id": "loox-qMOP1lf8Q",
+    "distinct_from_existing": "Structural-condition buyer who has given up on fashion shoes and is primarily seeking relief from fit-related pain — the stretch-knit upper is the key differentiator they cite"
+  },
+  {
+    "cluster_id": "chronic_joint_swelling_condition_buyer.arthritis_joint_pain",
+    "persona": "The Chronic Joint & Swelling Condition Buyer",
+    "pain_label": "Arthritis/joint pain making every step hurt; limited mobility",
+    "trigger": "Doctor recommending special footwear or being prescribed orthotics they can't afford; existing expensive shoes failing",
+    "desire": "Walk without joint pain; maintain mobility and independence",
+    "frequency_reviews": 63,
+    "representative_quote": "My specialist said I must wear a name brand that cost me almost $175 a pair and my feet killed me after a day of grocery shopping or a trip to doctors two hours away. I tried these and it's amazing the difference between wearing my new Comfort Wear shoes as the arthritis is still there but mostly I have a much less pain than before.",
+    "representative_review_id": "loox--7bkEGEVE",
+    "distinct_from_existing": "Price anchor vs specialist-prescribed brands — this group is directly replacing $150-200 specialist shoes; strong value positioning opportunity"
+  },
+  {
+    "cluster_id": "chronic_joint_swelling_condition_buyer.diabetic_swollen_feet",
+    "persona": "The Chronic Joint & Swelling Condition Buyer",
+    "pain_label": "Diabetic feet / swelling requiring stretch-upper shoes",
+    "trigger": "Swelling making regular shoes impossible to wear; HSA/FSA eligibility noticed",
+    "desire": "Shoes that accommodate daily swelling without pressure or discomfort",
+    "frequency_reviews": 18,
+    "representative_quote": "My mom has diabetes and swelling. AND I'M SO VERY HAPPY THAT I ORDERED THIS FOR HER!!!! She loves these shoes. The stretchable upper gently adapts to her foot shape, and the enhanced blood circulation from the cushioned insole keeps her feet from feeling tight or irritated.",
+    "representative_review_id": "loox-eQBPubnD9",
+    "distinct_from_existing": "Often bought as a gift for a family member — diabetic foot care is frequently a caregiver purchase, not a self-purchase; HSA/FSA is a key purchase driver"
+  }
+]

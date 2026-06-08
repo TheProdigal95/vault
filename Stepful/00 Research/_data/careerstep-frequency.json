@@ -1,0 +1,59 @@
+{
+  "total_reviews": 15,
+  "frequency_table": [
+    {
+      "persona": "The Externship & Job-Placement Deceived",
+      "reviews_matched": 7,
+      "percent_of_reviews": 46.7,
+      "avg_rating": 1.14
+    },
+    {
+      "persona": "The Dead-End Job Escaper",
+      "reviews_matched": 6,
+      "percent_of_reviews": 40,
+      "avg_rating": 1
+    },
+    {
+      "persona": "The Healthcare Credential Upgrader",
+      "reviews_matched": 2,
+      "percent_of_reviews": 13.3,
+      "avg_rating": 1
+    }
+  ],
+  "multi_persona_overlap_top20": [
+    {
+      "combo": "The Dead-End Job Escaper + The Externship & Job-Placement Deceived + The Healthcare Credential Upgrader",
+      "count": 2,
+      "percent_of_reviews": 13.3
+    },
+    {
+      "combo": "The Dead-End Job Escaper + The Externship & Job-Placement Deceived",
+      "count": 1,
+      "percent_of_reviews": 6.7
+    }
+  ],
+  "untagged": {
+    "count": 5,
+    "percent_of_reviews": 33.3
+  },
+  "borderlines": {
+    "The Dead-End Job Escaper": [
+      "cs-ws-002",
+      "cs-ws-003",
+      "cs-ws-005",
+      "cs-ws-009",
+      "cs-ws-014"
+    ],
+    "The Externship & Job-Placement Deceived": [
+      "cs-ws-002",
+      "cs-ws-006",
+      "cs-ws-007",
+      "cs-ws-009",
+      "cs-ws-015"
+    ],
+    "The Healthcare Credential Upgrader": [
+      "cs-ws-002",
+      "cs-ws-005"
+    ]
+  }
+}

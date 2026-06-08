@@ -1,0 +1,46 @@
+{
+  "jsonld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Elevate Health and Wellness",
+      "logo": "https://start.joinelevate.com/cdn/shop/files/glp-logo-white.png?v=1727683120&width=500",
+      "sameAs": [
+        "",
+        "http://facebook.com",
+        "",
+        "http://instagram.com",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "url": "https://start.joinelevate.com"
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "Elevate Health and Wellness",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://start.joinelevate.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "url": "https://start.joinelevate.com"
+    }
+  ],
+  "meta": {
+    "viewport": "width=device-width,initial-scale=1",
+    "og:site_name": "Elevate Health and Wellness",
+    "og:url": "https://start.joinelevate.com/",
+    "og:title": "Elevate Health and Wellness",
+    "og:type": "website",
+    "og:description": "Elevate Health and Wellness",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Elevate Health and Wellness",
+    "twitter:description": "Elevate Health and Wellness",
+    "shopify-digital-wallet": "/80147677467/digital_wallets/dialog",
+    "shopify-checkout-api-token": "f3f9f8a25e38abc7b0b0f133c9179661"
+  }
+}

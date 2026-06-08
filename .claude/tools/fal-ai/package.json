@@ -1,0 +1,15 @@
+{
+  "name": "fal-ai-tools",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "fal.ai API wrappers for NanoBanana 2 image generation and Veo 3.1 video animation",
+  "scripts": {
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "@fal-ai/client": "^1.2.0",
+    "dotenv": "^16.4.7",
+    "puppeteer": "^24.43.0",
+    "sharp": "^0.34.5"
+  }
+}

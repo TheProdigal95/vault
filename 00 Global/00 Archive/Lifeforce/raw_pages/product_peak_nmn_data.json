@@ -1,0 +1,48 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Peak NMN",
+  "url": "/peak-nmn/",
+  "image": [
+    "https://lf-oms-public.s3.us-west-2.amazonaws.com/0qmvvchtk7gxoogl4o50a6o8se4c",
+    "https://cdn11.bigcommerce.com/s-byr25matix/images/stencil/original/products/141/404/LF_Peak_NMN_3__29943.1684790131.jpg",
+    "https://cdn11.bigcommerce.com/s-byr25matix/images/stencil/original/products/141/405/LF_Peak_NMN_2__46077.1644288044.jpg"
+  ],
+  "description": "Peak NMN promotes NAD+ production to combat ageing and maintain healthy DNA. NAD+ is vital to the function of cells and a critical element in the develop of energy in the body. A differentiated NAD+ product that not only provides pure, stable NMN+ but also Berberine, Lithium orotate, and Spermidine to support the body&rsquo;s ability to convert NMN to NAD+. ",
+  "productID": "141",
+  "category": "Health & Beauty > Health Care > Fitness & Nutrition > Vitamins & Supplements",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lifeforce"
+  },
+  "sku": "PEAK-NMN-00027",
+  "offers": {
+    "@type": "Offer",
+    "url": "/peak-nmn/",
+    "price": 85,
+    "priceCurrency": "USD",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "InStock",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 1,
+          "unitCode": "DAY"
+        }
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "US"
+      },
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "USD"
+      }
+    }
+  }
+}

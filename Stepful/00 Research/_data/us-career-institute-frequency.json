@@ -1,0 +1,59 @@
+{
+  "total_reviews": 10,
+  "frequency_table": [
+    {
+      "persona": "The Externship & Job-Placement Deceived",
+      "reviews_matched": 5,
+      "percent_of_reviews": 50,
+      "avg_rating": 1.8
+    },
+    {
+      "persona": "The Healthcare Credential Upgrader",
+      "reviews_matched": 4,
+      "percent_of_reviews": 40,
+      "avg_rating": 1.25
+    },
+    {
+      "persona": "The Affordable Fast-Track Seeker",
+      "reviews_matched": 3,
+      "percent_of_reviews": 30,
+      "avg_rating": 1.67
+    }
+  ],
+  "multi_persona_overlap_top20": [
+    {
+      "combo": "The Affordable Fast-Track Seeker + The Healthcare Credential Upgrader",
+      "count": 1,
+      "percent_of_reviews": 10
+    },
+    {
+      "combo": "The Externship & Job-Placement Deceived + The Healthcare Credential Upgrader",
+      "count": 1,
+      "percent_of_reviews": 10
+    },
+    {
+      "combo": "The Affordable Fast-Track Seeker + The Externship & Job-Placement Deceived",
+      "count": 1,
+      "percent_of_reviews": 10
+    }
+  ],
+  "untagged": {
+    "count": 1,
+    "percent_of_reviews": 10
+  },
+  "borderlines": {
+    "The Affordable Fast-Track Seeker": [
+      "usci-ws-001",
+      "usci-ws-003",
+      "usci-ws-010"
+    ],
+    "The Healthcare Credential Upgrader": [
+      "usci-ws-001",
+      "usci-ws-006"
+    ],
+    "The Externship & Job-Placement Deceived": [
+      "usci-ws-007",
+      "usci-ws-010"
+    ]
+  }
+}

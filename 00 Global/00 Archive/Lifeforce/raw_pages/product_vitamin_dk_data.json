@@ -1,0 +1,48 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "D/K",
+  "url": "/vitamin-d-k/",
+  "image": [
+    "https://lf-oms-public.s3.us-west-2.amazonaws.com/62whzyr3cdmzd3wdogl9pnzzkzf2",
+    "https://cdn11.bigcommerce.com/s-byr25matix/images/stencil/original/products/154/479/LF_VTDK_B_BG__77501.1710179573.jpg",
+    "https://cdn11.bigcommerce.com/s-byr25matix/images/stencil/original/products/154/480/LF_VTDK_A_BG__97216.1710179573.jpg"
+  ],
+  "description": "Core D/K combats one of the most common vitamin deficiencies in US adults, Vitamin D. Vitamin D is essential for everyday health as it controls the expression of 2,000+ genes, with receptors on nearly every cell in the body. Core D/K features the most bioavailable and bioactive form of supplemental vitamin K2 and vitamin D on the market to support bone health, neurological function, and immune response. Vitamin D/K is the only direct Vitamin D supplement containing Ampli-D, a 3x faster and more effective form of vitamin D.1 Although most widely recognized for its role in bone and muscle health, a growing bank of scientific evidence shows that vitamin D has important benefits for immunity too; helping to support the immune response and reducing the risk of acute respiratory infections. Clinically proven to raise vitamin D levels three times faster and more effectively1,3, it unlocks the benefits of &lsquo;the sunshine vitamin&rsquo; more rapidly. Vitamin D is accompanied by it&rsquo;s biochemical partner, Vitamin K2, to balance out the increased calcium absorption and make sure it gets deposited in the bone vs. ",
+  "productID": "154",
+  "category": "Health & Beauty > Health Care > Fitness & Nutrition > Vitamins & Supplements",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lifeforce"
+  },
+  "sku": "VIT-K-00050",
+  "offers": {
+    "@type": "Offer",
+    "url": "/vitamin-d-k/",
+    "price": 42.5,
+    "priceCurrency": "USD",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "InStock",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 1,
+          "unitCode": "DAY"
+        }
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "US"
+      },
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "USD"
+      }
+    }
+  }
+}

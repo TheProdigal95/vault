@@ -1,0 +1,39 @@
+INSTAGRAM SAFE ZONE — HARD CONSTRAINTS:
+
+THE TOP 400 PIXELS MUST CONTAIN NO TEXT. Background only.
+THE BOTTOM 400 PIXELS MUST CONTAIN NO TEXT. Background only.
+THE LEFT AND RIGHT 150 PIXELS MUST CONTAIN NO TEXT.
+Text only lives in the center area from y=400 to y=1520, x=150 to x=930.
+
+BACKGROUND CONTINUITY:
+The background surface is ONE CONTINUOUS PHOTOGRAPHIC PLANE extending to ALL FOUR EDGES of the 1080×1920 frame. The empty top/bottom zones are the SAME surface as the center, just without text.
+
+DO NOT RENDER:
+- A paper card, poster, or printed rectangle inset into the frame
+- A visible border, frame, or edge between the center content and the top/bottom
+- A shadow line suggesting the ad is an object on another surface
+- A background-within-a-background
+
+DO:
+- Shoot as a single overhead photograph on ONE continuous surface.
+- Text floats directly on the photographed surface.
+- If content is sparse, let empty top/bottom be empty surface — do not invent a frame.
+
+RENDER AT 1080×1920 (9:16 vertical).
+
+SCENE: An ultra-premium, dark, moody editorial photograph of an IM8 sachet resting on a bed of fresh mixed berries (raspberries, blueberries, blackberries). Dramatic, high-end studio lighting highlighting the texture of the berries. Shot on 100mm macro f/2.8.
+TYPOGRAPHY: Massive, typography-dominant layout using Arizona Flare. A bright yellow circular badge.
+COPY TO RENDER:
+"ONE DRINK."
+"90 INGREDIENTS."
+
+Inside a yellow circular badge:
+"JUST"
+"$2.61"
+"A DAY"
+
+"TRY IM8 TODAY"
+
+PRODUCT FIDELITY: Match the uploaded product reference exactly. Do not restyle. Do not swap proportions.
+NO ANTI-AI SLIPS: film grain visible, no hyper-smooth surfaces.
+NO DASHES OR HYPHENS in rendered copy. Periods only.

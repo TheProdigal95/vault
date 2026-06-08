@@ -1,0 +1,101 @@
+[
+  {
+    "cluster_id": "chronic_everything_failer.years_of_exhausting_every_option",
+    "persona": "The Chronic Everything-Failer",
+    "pain_label": "Years of trying everything — nothing sticks",
+    "trigger": "Reaching a breaking point after years of bad sleep with no lasting solution from any remedy",
+    "desire": "Something that actually works permanently, not another temporary fix",
+    "frequency_reviews": 22,
+    "representative_quote": "The program in this app ended a decade long stretch of insomnia. Before finding this I tried everything from supplements (magnesium, melatonin) to prescription medication to lifestyle changes (no caffeine, exercise more, etc) and nothing really worked.",
+    "representative_review_id": "appstore-us-most-10567740942",
+    "distinct_from_existing": "Distinct from Pill Escape Seeker in that the primary frustration is the futility of trial-and-error, not medication dependence. Tried melatonin AND meditation AND lifestyle changes AND pills — exhausted all paths."
+  },
+  {
+    "cluster_id": "chronic_everything_failer.literally_not_sleeping_weeks",
+    "persona": "The Chronic Everything-Failer",
+    "pain_label": "Literal weeks or months of zero sleep",
+    "trigger": "Sleep tracking device confirming 0 hours slept for days/weeks — the physical collapse of not sleeping",
+    "desire": "Any sleep at all — willing to try anything after hitting physical breaking point",
+    "frequency_reviews": 8,
+    "representative_quote": "I found Slumber One at a point in my life where I hadn't slept for weeks. I mean that literally. I track my sleep and I had gone for at least 3 weeks where Fitbit told me I literally had slept 0 minutes and 0 hours.",
+    "representative_review_id": "appstore-us-most-8550819579",
+    "distinct_from_existing": "More acute/crisis version of the Everything-Failer. The trigger is a physical limit being reached — not just years of bad sleep but recent total sleep loss. Often involves sleep-tracking data as evidence."
+  },
+  {
+    "cluster_id": "sleep_anxiety_spiraler.fear_of_bedtime",
+    "persona": "The Sleep Anxiety Spiraler",
+    "pain_label": "Dreading bedtime — the fear cycle makes it worse",
+    "trigger": "Realizing the anxiety about not sleeping is itself the main cause of not sleeping",
+    "desire": "To not dread bedtime anymore — to feel neutral or comfortable about going to bed",
+    "frequency_reviews": 12,
+    "representative_quote": "I suffered from insomnia both when my son was born and again in perimenopause. It became so bad I would panic at bedtime, knowing I wouldn't get adequate rest. I knew it had become mental at this point as well and I needed help.",
+    "representative_review_id": "appstore-us-most-12224394054",
+    "distinct_from_existing": "Pure sleep-anxiety presentation — the insomnia is 100% the anxiety, not a physical or lifestyle issue. Key signal is 'panic at bedtime' language. Sleeping pills never worked because the issue is psychological."
+  },
+  {
+    "cluster_id": "sleep_anxiety_spiraler.racing_mind_at_night",
+    "persona": "The Sleep Anxiety Spiraler",
+    "pain_label": "Mind won't turn off — thoughts keep coming",
+    "trigger": "Night after night of lying awake with racing thoughts, even when exhausted",
+    "desire": "Mental quiet at night — a brain that cooperates when the body wants to sleep",
+    "frequency_reviews": 9,
+    "representative_quote": "I like the emphasis on building skills that I can use to tackle my specific sleep issues vs other apps I've tried which try to just calm you down with generic seeming meditation. I've found that a lot of my sleep problems are made worse by my anxiety, and Stellar sleep has helped me recognize that and handle it in a way where it no longer affects my sleep.",
+    "representative_review_id": "appstore-us-most-9687450171",
+    "distinct_from_existing": "These users know meditation doesn't work for them — their anxiety is too active for passive relaxation. They need cognitive tools, not soundscapes. Key frustration with competitors: generic meditation apps don't address the cognitive component."
+  },
+  {
+    "cluster_id": "pill_escape_seeker.want_off_meds_before_addicted",
+    "persona": "The Pill Escape Seeker",
+    "pain_label": "Fear of dependency — need sleep without pills",
+    "trigger": "Doctor prescribing sleep medication or noticing tolerance building — realizing they don't want to become dependent",
+    "desire": "Sleep independence — to not need any external substance to sleep",
+    "frequency_reviews": 8,
+    "representative_quote": "I finally went to my new doctor, I had switched doctors because the last one really didn't address why I couldn't sleep and prescribed meds that didn't work, the new dr diagnosed me with anxiety due to being a caregiver for my husband fighting stage 4 cancer and was prescribed medication for anxiety and Temazepam for sleep, which usually worked, but I didn't want to get addicted.",
+    "representative_review_id": "appstore-us-most-11316861661",
+    "distinct_from_existing": "Often co-presents with The Chronic Everything-Failer (pills were one of the things they tried). Distinct trigger: fear of addiction/dependency, not just pill efficacy failure. Healthcare context is common — doctor referral or prescription is the entry point."
+  },
+  {
+    "cluster_id": "skeptical_psychology_convert.didnt_think_psychology_could_fix_sleep",
+    "persona": "The Skeptical Psychology Convert",
+    "pain_label": "Convinced sleep is a physical problem — skeptical that 'talking about it' helps",
+    "trigger": "Having tried all physical solutions (melatonin, sleep hygiene, sleep trackers) with no success, finally trying psychology out of desperation",
+    "desire": "To be proven wrong — to find out why they can't sleep when the 'obvious' solutions don't work",
+    "frequency_reviews": 18,
+    "representative_quote": "Initially, I approached Stellar Sleep with a healthy dose of skepticism. However, the scientifically supported methods the app employed to tackle sleep issues were compelling. The program felt different; it was more akin to a personal sleep coach, educating me on psych techniques to help me discover the deep-seated reasons for my sleep issues.",
+    "representative_review_id": "appstore-us-most-10193721293",
+    "distinct_from_existing": "This persona is often an overlap with Chronic Everything-Failer — the 'skeptic' is usually someone who tried everything physical and is now begrudgingly trying the psychological. The distinct sub-pain is the cultural resistance to 'therapy' framing for a sleep problem."
+  },
+  {
+    "cluster_id": "skeptical_psychology_convert.other_apps_failed_generic_meditation",
+    "persona": "The Skeptical Psychology Convert",
+    "pain_label": "Other sleep apps just played sounds — not addressing the real problem",
+    "trigger": "Failure of Calm, Headspace, white noise, sleep stories — and the realization that relaxation ≠ fixing insomnia",
+    "desire": "An app that actually teaches skills, not just 'calms down' the user",
+    "frequency_reviews": 14,
+    "representative_quote": "I like the emphasis on building skills that I can use to tackle my specific sleep issues vs other apps I've tried which try to just calm you down with generic seeming meditation.",
+    "representative_review_id": "appstore-us-most-9687450171",
+    "distinct_from_existing": "Competitor-switching signal: these users explicitly name other apps that failed (Calm, Headspace, generic meditation). The wedge vs. competitor apps is that Stellar Sleep teaches, not just soothes."
+  },
+  {
+    "cluster_id": "billing_burned_customer.unexpected_charge_after_trial",
+    "persona": "The Billing-Burned Customer",
+    "pain_label": "Charged without warning after trial ends",
+    "trigger": "Seeing a $130-$188 charge on credit card after believing they had cancelled or that the trial would not auto-renew",
+    "desire": "Refund and a transparent, easy-to-cancel subscription model",
+    "frequency_reviews": 28,
+    "representative_quote": "This app would be great BUT READ THE REVIEWS about fraudulent billing. I did the 7-day free trial. Cancelled on day 7. Come to find out that 3 months later, my account was *somehow* still active when my credit card was charged $188.",
+    "representative_review_id": "appstore-us-most-12409714849",
+    "distinct_from_existing": "Not a buying persona — a churn/refund signal. But important: many of these users acknowledge the app content is good. The billing failure is what drives the 1★. Key insight: if billing friction were resolved, many of these would be 4-5★ reviews."
+  },
+  {
+    "cluster_id": "billing_burned_customer.price_opaque_until_after_quiz",
+    "persona": "The Billing-Burned Customer",
+    "pain_label": "Price hidden behind onboarding — sticker shock after investment",
+    "trigger": "Completing the sleep quiz and onboarding flow before discovering the $188 price point",
+    "desire": "Transparent pricing upfront so they can decide before investing time and personal data",
+    "frequency_reviews": 10,
+    "representative_quote": "They don't tell you before you download that the trial is as low as $0.99 but then it's $188 for 3 months. I desperately need help sleeping but I can't afford that.",
+    "representative_review_id": "appstore-us-most-12489686866",
+    "distinct_from_existing": "The funnel design forces emotional investment (quiz, vulnerability about sleep problems) before revealing the price. The betrayal feeling is amplified by the investment already made."
+  }
+]

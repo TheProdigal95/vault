@@ -1,0 +1,42 @@
+{
+  "action": "post",
+  "data": {
+    "data": {
+      "CreativeHighlights": {
+        "__typename": "CreativeHighlightsResult",
+        "endDate": 1779335999999,
+        "leaderBoard": {
+          "__typename": "CreativeHighlightsLeaderBoard",
+          "creatives": [],
+          "lastCachedTime": null,
+          "reportPercentCompletion": 0,
+          "totalCount": null
+        },
+        "opportunities": {
+          "__typename": "CreativeHighlightsOpportunity",
+          "opportunities": [],
+          "totalCount": 0
+        },
+        "overview": {
+          "__typename": "CreativeHighlightsOverview",
+          "creativesLaunched": null,
+          "lastCachedTime": null,
+          "metrics": [],
+          "reportPercentCompletion": 0
+        },
+        "startDate": 1778731200000,
+        "trends": {
+          "__typename": "CreativeHighlightsTrend",
+          "creatives": [],
+          "lastCachedTime": null,
+          "reportPercentCompletion": 0,
+          "totalCounts": null
+        }
+      }
+    }
+  },
+  "path": "/graphql",
+  "resource": "creatives",
+  "status": 200,
+  "success": true
+}

@@ -1,0 +1,224 @@
+{
+  "total_reviews": 123,
+  "frequency_table": [
+    {
+      "persona": "The Skeptical Psychology Convert",
+      "reviews_matched": 50,
+      "percent_of_reviews": 40.7,
+      "avg_rating": 3.82
+    },
+    {
+      "persona": "The Billing-Burned Customer",
+      "reviews_matched": 43,
+      "percent_of_reviews": 35,
+      "avg_rating": 1.51
+    },
+    {
+      "persona": "The Chronic Everything-Failer",
+      "reviews_matched": 30,
+      "percent_of_reviews": 24.4,
+      "avg_rating": 4.47
+    },
+    {
+      "persona": "The Sleep Anxiety Spiraler",
+      "reviews_matched": 20,
+      "percent_of_reviews": 16.3,
+      "avg_rating": 4.8
+    },
+    {
+      "persona": "The Pill Escape Seeker",
+      "reviews_matched": 11,
+      "percent_of_reviews": 8.9,
+      "avg_rating": 4.45
+    }
+  ],
+  "multi_persona_overlap_top20": [
+    {
+      "combo": "The Chronic Everything-Failer + The Skeptical Psychology Convert",
+      "count": 10,
+      "percent_of_reviews": 8.1
+    },
+    {
+      "combo": "The Billing-Burned Customer + The Skeptical Psychology Convert",
+      "count": 8,
+      "percent_of_reviews": 6.5
+    },
+    {
+      "combo": "The Skeptical Psychology Convert + The Sleep Anxiety Spiraler",
+      "count": 5,
+      "percent_of_reviews": 4.1
+    },
+    {
+      "combo": "The Chronic Everything-Failer + The Skeptical Psychology Convert + The Sleep Anxiety Spiraler",
+      "count": 4,
+      "percent_of_reviews": 3.3
+    },
+    {
+      "combo": "The Chronic Everything-Failer + The Pill Escape Seeker + The Skeptical Psychology Convert",
+      "count": 3,
+      "percent_of_reviews": 2.4
+    },
+    {
+      "combo": "The Chronic Everything-Failer + The Pill Escape Seeker + The Skeptical Psychology Convert + The Sleep Anxiety Spiraler",
+      "count": 3,
+      "percent_of_reviews": 2.4
+    },
+    {
+      "combo": "The Pill Escape Seeker + The Skeptical Psychology Convert",
+      "count": 3,
+      "percent_of_reviews": 2.4
+    },
+    {
+      "combo": "The Chronic Everything-Failer + The Sleep Anxiety Spiraler",
+      "count": 2,
+      "percent_of_reviews": 1.6
+    },
+    {
+      "combo": "The Chronic Everything-Failer + The Pill Escape Seeker",
+      "count": 1,
+      "percent_of_reviews": 0.8
+    },
+    {
+      "combo": "The Billing-Burned Customer + The Chronic Everything-Failer",
+      "count": 1,
+      "percent_of_reviews": 0.8
+    },
+    {
+      "combo": "The Billing-Burned Customer + The Chronic Everything-Failer + The Skeptical Psychology Convert + The Sleep Anxiety Spiraler",
+      "count": 1,
+      "percent_of_reviews": 0.8
+    },
+    {
+      "combo": "The Billing-Burned Customer + The Chronic Everything-Failer + The Skeptical Psychology Convert",
+      "count": 1,
+      "percent_of_reviews": 0.8
+    },
+    {
+      "combo": "The Pill Escape Seeker + The Skeptical Psychology Convert + The Sleep Anxiety Spiraler",
+      "count": 1,
+      "percent_of_reviews": 0.8
+    }
+  ],
+  "untagged": {
+    "count": 29,
+    "percent_of_reviews": 23.6
+  },
+  "borderlines": {
+    "The Chronic Everything-Failer": [
+      "appstore-us-most-13478145246",
+      "appstore-us-most-12934935175",
+      "appstore-us-most-12702076720",
+      "appstore-us-most-12662727925",
+      "appstore-us-most-12489686866",
+      "appstore-us-most-12385694405",
+      "appstore-us-most-12224394054",
+      "appstore-us-most-12139481450",
+      "appstore-us-most-11707260506",
+      "appstore-us-most-11277848613",
+      "appstore-us-most-11123687667",
+      "appstore-us-most-11061664330",
+      "appstore-us-most-10691642979",
+      "appstore-us-most-10492752574",
+      "appstore-us-most-10460900572",
+      "appstore-us-most-10280940824",
+      "appstore-us-most-10209334086",
+      "appstore-us-most-9846809702",
+      "appstore-gb-most-13338564096",
+      "appstore-gb-most-12675962674",
+      "appstore-ca-most-12179629719",
+      "appstore-ca-most-11609113463",
+      "appstore-ca-most-9762878828"
+    ],
+    "The Billing-Burned Customer": [
+      "appstore-us-most-13128708372",
+      "appstore-us-most-12818413680",
+      "appstore-us-most-12470403146",
+      "appstore-us-most-12012414427",
+      "appstore-us-most-11553200970",
+      "appstore-us-most-11281554472",
+      "appstore-us-most-11091435572",
+      "appstore-us-most-10960585092",
+      "appstore-us-most-10943491214",
+      "appstore-us-most-10492752574",
+      "appstore-us-most-10399934420",
+      "appstore-us-most-10149122073",
+      "appstore-us-most-10129453768",
+      "appstore-us-most-10099481703",
+      "appstore-us-most-9435399419",
+      "appstore-us-most-9179926694",
+      "appstore-us-most-9082096023",
+      "appstore-gb-most-13436604238",
+      "appstore-gb-most-12035544689",
+      "appstore-gb-most-11145286265",
+      "appstore-gb-most-10609164050",
+      "appstore-gb-most-10606122180",
+      "appstore-au-most-13296305662"
+    ],
+    "The Sleep Anxiety Spiraler": [
+      "appstore-us-most-12934935175",
+      "appstore-us-most-12768390487",
+      "appstore-us-most-12702076720",
+      "appstore-us-most-12238336266",
+      "appstore-us-most-11316861661",
+      "appstore-us-most-11277848613",
+      "appstore-us-most-11123687667",
+      "appstore-us-most-10847354022",
+      "appstore-us-most-10460900572",
+      "appstore-us-most-10280940824",
+      "appstore-us-most-9687450171",
+      "appstore-gb-most-12675962674",
+      "appstore-ca-most-13882718619",
+      "appstore-ca-most-10860221393",
+      "appstore-nz-most-11472026575",
+      "appstore-nz-most-8581548236"
+    ],
+    "The Skeptical Psychology Convert": [
+      "appstore-us-most-12802874672",
+      "appstore-us-most-12702076720",
+      "appstore-us-most-12584411826",
+      "appstore-us-most-12556145990",
+      "appstore-us-most-12534159134",
+      "appstore-us-most-12409714849",
+      "appstore-us-most-12379713651",
+      "appstore-us-most-12224394054",
+      "appstore-us-most-12139481450",
+      "appstore-us-most-11862383824",
+      "appstore-us-most-11779377646",
+      "appstore-us-most-11744739781",
+      "appstore-us-most-11553200970",
+      "appstore-us-most-11316861661",
+      "appstore-us-most-11260868632",
+      "appstore-us-most-11061664330",
+      "appstore-us-most-10847354022",
+      "appstore-us-most-10801590039",
+      "appstore-us-most-10751291412",
+      "appstore-us-most-10567740942",
+      "appstore-us-most-10460900572",
+      "appstore-us-most-10426506847",
+      "appstore-us-most-10308470591",
+      "appstore-us-most-10280940824",
+      "appstore-us-most-10189076784",
+      "appstore-us-most-10149122073",
+      "appstore-us-most-9687450171",
+      "appstore-us-most-8930105734",
+      "appstore-gb-most-13338564096",
+      "appstore-gb-most-11525160365",
+      "appstore-gb-most-10606122180",
+      "appstore-gb-most-9938895105",
+      "appstore-ca-most-11609113463",
+      "appstore-ca-most-9762878828",
+      "appstore-au-most-10133299933"
+    ],
+    "The Pill Escape Seeker": [
+      "appstore-us-most-12662727925",
+      "appstore-us-most-12556145990",
+      "appstore-us-most-11260868632",
+      "appstore-us-most-10801590039",
+      "appstore-us-most-10460900572",
+      "appstore-us-most-10241843854",
+      "appstore-us-most-10209334086",
+      "appstore-ca-most-11609113463",
+      "appstore-nz-most-11472026575"
+    ]
+  }
+}

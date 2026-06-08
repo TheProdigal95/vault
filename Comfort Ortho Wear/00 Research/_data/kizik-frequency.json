@@ -1,0 +1,21 @@
+{
+  "total_reviews": 8,
+  "frequency_table": [
+    {
+      "persona": "The Plantar Fasciitis & Heel Pain Sufferer",
+      "reviews_matched": 1,
+      "percent_of_reviews": 12.5,
+      "avg_rating": 2
+    }
+  ],
+  "multi_persona_overlap_top20": [],
+  "untagged": {
+    "count": 7,
+    "percent_of_reviews": 87.5
+  },
+  "borderlines": {
+    "The Plantar Fasciitis & Heel Pain Sufferer": [
+      "kizik-007"
+    ]
+  }
+}

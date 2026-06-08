@@ -1,0 +1,33 @@
+{
+  "total_reviews": 8,
+  "frequency_table": [
+    {
+      "persona": "The Long-Shift Standing Worker",
+      "reviews_matched": 4,
+      "percent_of_reviews": 50,
+      "avg_rating": 1
+    },
+    {
+      "persona": "The Plantar Fasciitis & Heel Pain Sufferer",
+      "reviews_matched": 2,
+      "percent_of_reviews": 25,
+      "avg_rating": 2
+    }
+  ],
+  "multi_persona_overlap_top20": [],
+  "untagged": {
+    "count": 2,
+    "percent_of_reviews": 25
+  },
+  "borderlines": {
+    "The Long-Shift Standing Worker": [
+      "hike-001",
+      "hike-003",
+      "hike-004"
+    ],
+    "The Plantar Fasciitis & Heel Pain Sufferer": [
+      "hike-005",
+      "hike-008"
+    ]
+  }
+}

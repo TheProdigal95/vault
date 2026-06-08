@@ -1,0 +1,39 @@
+{
+  "total_reviews": 8,
+  "frequency_table": [
+    {
+      "persona": "The Bunion & Structural Foot Problem Buyer",
+      "reviews_matched": 1,
+      "percent_of_reviews": 12.5,
+      "avg_rating": 2
+    },
+    {
+      "persona": "The Long-Shift Standing Worker",
+      "reviews_matched": 1,
+      "percent_of_reviews": 12.5,
+      "avg_rating": 2
+    },
+    {
+      "persona": "The Chronic Joint & Swelling Condition Buyer",
+      "reviews_matched": 1,
+      "percent_of_reviews": 12.5,
+      "avg_rating": 1
+    }
+  ],
+  "multi_persona_overlap_top20": [],
+  "untagged": {
+    "count": 5,
+    "percent_of_reviews": 62.5
+  },
+  "borderlines": {
+    "The Bunion & Structural Foot Problem Buyer": [
+      "vessi-003"
+    ],
+    "The Long-Shift Standing Worker": [
+      "vessi-007"
+    ],
+    "The Chronic Joint & Swelling Condition Buyer": [
+      "vessi-008"
+    ]
+  }
+}

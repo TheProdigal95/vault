@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Cardiovascular Panel",
+  "url": "/cardiovascular-panel/",
+  "image": [
+    "https://lf-oms-public.s3.us-west-2.amazonaws.com/oy7trbmzzyhg9n1inpf65gl12vrk"
+  ],
+  "description": "",
+  "productID": "189",
+  "category": "Health & Beauty > Health Care > Fitness & Nutrition > Vitamins & Supplements",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lifeforce"
+  },
+  "sku": "CARDPNL",
+  "offers": {
+    "@type": "Offer",
+    "url": "/cardiovascular-panel/",
+    "price": 200,
+    "priceCurrency": "USD",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "InStock",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 1,
+          "unitCode": "DAY"
+        }
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "US"
+      },
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "USD"
+      }
+    }
+  }
+}

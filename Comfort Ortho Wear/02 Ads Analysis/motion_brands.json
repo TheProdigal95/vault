@@ -1,0 +1,628 @@
+{
+  "meta": {
+    "source": "live"
+  },
+  "results": {
+    "data": {
+      "workspace": {
+        "id": "697a256b66437695f674687d",
+        "brand": {
+          "id": "66eb0b8eaa0d5e9098be80c5",
+          "name": "Lifeforce",
+          "logo": "https://motionswipefile.blob.core.windows.net/swipe-file-brand-assets-cached-links/brand-page-assets/meta/100523979073267/1778170857484.jpg",
+          "brandCategory": null,
+          "initialAnalyzeDate": 1728054109573,
+          "inspoBoardItems": {
+            "edges": [
+              {
+                "node": {
+                  "id": "6a05780b08c1a6eaf92dedbb",
+                  "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1709408366720319/6a05780b08c1a6eaf92dedbb/74053a5e-0436-4e70-a3c4-5b47425d9698.jpg",
+                  "duplicationId": "69e8309bde7be9540f10373c",
+                  "__typename": "InspoBoardCreative"
+                },
+                "__typename": "InspoBoardItemEdges"
+              },
+              {
+                "node": {
+                  "id": "6a0364f508c1a6eaf921f11e",
+                  "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/4346871198920169/6a0364f508c1a6eaf921f11e/bfabe5d5-daec-4b18-9bb3-875164fdfb53.jpg",
+                  "duplicationId": "6a039ec8b8578ef44aaa8e58",
+                  "__typename": "InspoBoardCreative"
+                },
+                "__typename": "InspoBoardItemEdges"
+              },
+              {
+                "node": {
+                  "id": "6a0364f508c1a6eaf921f11f",
+                  "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/2045573696171553/6a0364f508c1a6eaf921f11f/d82dc28d-9074-4b8e-82b4-bbf349d6944e.jpg",
+                  "duplicationId": "6a039ec84bab23a01121fa88",
+                  "__typename": "InspoBoardCreative"
+                },
+                "__typename": "InspoBoardItemEdges"
+              },
+              {
+                "node": {
+                  "id": "6a0364f508c1a6eaf921f11d",
+                  "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1675068200479699/6a0364f508c1a6eaf921f11d/1af52387-9419-4719-8076-289b8af31a0d.jpg",
+                  "duplicationId": "69fd4c8e1d4d84ffc4529329",
+                  "__typename": "InspoBoardCreative"
+                },
+                "__typename": "InspoBoardItemEdges"
+              },
+              {
+                "node": {
+                  "id": "6a015ace08c1a6eaf91939a3",
+                  "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/973494008940680/6a015ace08c1a6eaf91939a3/82d26b37-3e8f-4a93-b308-d89d1e90ed9c.jpg",
+                  "duplicationId": "69fd4c8c1d4d84ffc4529306",
+                  "__typename": "InspoBoardCreative"
+                },
+                "__typename": "InspoBoardItemEdges"
+              },
+              {
+                "node": {
+                  "id": "6a0364f508c1a6eaf921f120",
+                  "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1254495803336914/6a0364f508c1a6eaf921f120/4e14d7cd-ae74-4af8-a4c7-2a6068e0b750.jpg",
+                  "duplicationId": "69fd4c8bf80cbea0112b7a19",
+                  "__typename": "InspoBoardCreative"
+                },
+                "__typename": "InspoBoardItemEdges"
+              },
+              {
+                "node": {
+                  "id": "69fd214c9f9320f2b1a544d4",
+                  "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/2086482388750470/69fd214c9f9320f2b1a544d4/566d7953-ed20-415e-8a18-b4775e4af3af.jpg",
+                  "duplicationId": "69fd4c9472d43f926f0ba1c0",
+                  "__typename": "InspoBoardCreative"
+                },
+                "__typename": "InspoBoardItemEdges"
+              },
+              {
+                "node": {
+                  "id": "69fd214c9f9320f2b1a544d7",
+                  "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/994514123160486/69fd214c9f9320f2b1a544d7/eb68864c-9822-4b57-960f-ea9ac3e48fdc.jpg",
+                  "duplicationId": "69fd4c8c6edac2b4a1a647e2",
+                  "__typename": "InspoBoardCreative"
+                },
+                "__typename": "InspoBoardItemEdges"
+              },
+              {
+                "node": {
+                  "id": "69fd214c9f9320f2b1a544d3",
+                  "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1492707659072437/69fd214c9f9320f2b1a544d3/874b2e52-6dce-48e6-b3c5-4c3f65deead2.jpg",
+                  "duplicationId": "69f5ce7735c1f7199a51e916",
+                  "__typename": "InspoBoardCreative"
+                },
+                "__typename": "InspoBoardItemEdges"
+              },
+              {
+                "node": {
+                  "id": "69f5ce72280f6afea1744496",
+                  "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/4512490569074305/69f5ce72280f6afea1744496/98b9d796-594d-4e19-8015-ae52b066a2b6.jpg",
+                  "duplicationId": "69f5ce7a4d677c758ea8b9c6",
+                  "__typename": "InspoBoardCreative"
+                },
+                "__typename": "InspoBoardItemEdges"
+              }
+            ],
+            "__typename": "PagingInspoBoardItems"
+          },
+          "__typename": "Brand"
+        },
+        "brandCompetitors": [
+          {
+            "id": "68238160bd670b5c32c6ce8d",
+            "name": "InsideTracker",
+            "logo": "https://motionswipefile.blob.core.windows.net/swipe-file-brand-assets-cached-links/brand-page-assets/meta/271094716266705/1778290592519.jpg",
+            "initialAnalyzeDate": 1747157375059,
+            "inspoBoardItems": {
+              "edges": [
+                {
+                  "node": {
+                    "id": "69a2e06a627a9fffb7d4f3a6",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/926750549901648/69a2e06a627a9fffb7d4f3a6/2dea4f51-2520-4a47-a127-4698c7016bfd.jpg",
+                    "duplicationId": "69a2e08c56409953d7c8ab63",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "69a2e06a627a9fffb7d4f3a3",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1454417189597475/69a2e06a627a9fffb7d4f3a3/175eb1da-ad2f-4c22-871b-f4621ae02c9e.jpg",
+                    "duplicationId": "696cec0f379970bc41dab1fe",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "69a2e06a627a9fffb7d4f399",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1219778876799793/69a2e06a627a9fffb7d4f399/ec61385e-9f5f-40de-a1c5-9d23bb0fd967.jpg",
+                    "duplicationId": "696cec11ed5cecfdcd8e42bc",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "69a2e06a627a9fffb7d4f3a1",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/877950565062370/69a2e06a627a9fffb7d4f3a1/ff54e57a-684e-4d25-b511-5f97e2c63cc5.jpg",
+                    "duplicationId": "696cec13ad2a7b79b54c9a1a",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "69a2e06a627a9fffb7d4f398",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/928243973012806/69a2e06a627a9fffb7d4f398/7034444f-8428-4ce6-9d72-1efe817ffd6c.jpg",
+                    "duplicationId": "69a2e089d41f20b00bc08f3b",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "69a2e06a627a9fffb7d4f3ab",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/949458800845414/69a2e06a627a9fffb7d4f3ab/e8e6db7a-bd7e-4ee8-8088-d5171a77bc3b.jpg",
+                    "duplicationId": "6956d72369295239452ffb0d",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "69a2e06a627a9fffb7d4f3aa",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/781211838362290/69a2e06a627a9fffb7d4f3aa/0587b740-b548-4bdf-9996-95cedd286a9c.jpg",
+                    "duplicationId": "69a2e085d41f20b00bc08f22",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "69a2e06a627a9fffb7d4f3a9",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/887830727429827/69a2e06a627a9fffb7d4f3a9/e5f29a27-de0b-4f3c-8e59-f849e29fabc7.jpg",
+                    "duplicationId": "696cebdcf0dc4dc3fbb0a44c",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "69a2e06a627a9fffb7d4f3a2",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/824602083989313/69a2e06a627a9fffb7d4f3a2/8e3264da-8bfe-402d-90a0-d6feaca2dae9.jpg",
+                    "duplicationId": "69a2e083990112234786cc57",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "69a2e06a627a9fffb7d4f39d",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/2791436627862302/69a2e06a627a9fffb7d4f39d/63058b5b-9dd9-4faf-8541-69cd09be4fd3.jpg",
+                    "duplicationId": "6954c9eb50948cc7dbfe71b6",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                }
+              ],
+              "__typename": "PagingInspoBoardItems"
+            },
+            "__typename": "Brand"
+          },
+          {
+            "id": "66e9d97daa0d5e9098e51f64",
+            "name": "Function Health",
+            "logo": "https://motionswipefile.blob.core.windows.net/swipe-file-brand-assets-cached-links/brand-page-assets/meta/101579225334663/1778170458911.jpg",
+            "initialAnalyzeDate": 1726601670988,
+            "inspoBoardItems": {
+              "edges": [
+                {
+                  "node": {
+                    "id": "6a0c5c9d24084c7acef86fab",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1505677484238732/6a0c5c9d24084c7acef86fab/1c10d54d-49f3-41e2-b743-c2c083a09b55.jpg",
+                    "duplicationId": "6a089a0ffa87ef0c3883ac4f",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a0c5c9d24084c7acef86faa",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/4179108029068070/6a0c5c9d24084c7acef86faa/13000abe-cb12-41a9-8ae3-bb7602d42dea.jpg",
+                    "duplicationId": "69f5bb8288c97e6a3697874f",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a0c5c9d24084c7acef86fae",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/911646815241684/6a0c5c9d24084c7acef86fae/8d580220-8d7b-4a84-95c5-3a2c4699da16.jpg",
+                    "duplicationId": "69f5bb1d5211585ec9960be8",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a0c5c9d24084c7acef86fa7",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1724803478669634/6a0c5c9d24084c7acef86fa7/15cc748f-a426-46c5-8433-49df7a951abe.jpg",
+                    "duplicationId": "69e816da0812cdaba946d91c",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a0c5c9d24084c7acef86fa8",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1963356944344887/6a0c5c9d24084c7acef86fa8/561b3082-1066-433b-b1b7-5ddf38aede0c.jpg",
+                    "duplicationId": "69d1a8c875484edf8358c0ac",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a0c5c9d24084c7acef86faf",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/995148169625402/6a0c5c9d24084c7acef86faf/30b4812d-3105-4673-ab5c-9c9720a3dedb.jpg",
+                    "duplicationId": "6958360d5b796ad6cb2891b2",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a0c5c9d24084c7acef86fa9",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1645503759999374/6a0c5c9d24084c7acef86fa9/0601b409-b144-4f00-9da4-8eea307ae456.jpg",
+                    "duplicationId": "69323626b987b6fcb6d0cd6f",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a0a534d08c1a6eaf9468402",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/966786972906547/6a0a534d08c1a6eaf9468402/1100c473-58a5-425b-974a-a97ea5313bc2.jpg",
+                    "duplicationId": "6a0899fb67b2f11fcade440a",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a0a534d08c1a6eaf9468403",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1800547310920348/6a0a534d08c1a6eaf9468403/d220e315-6650-48f1-b8a0-c23135cc4537.jpg",
+                    "duplicationId": "6a063f615bd1ee3b527c22fb",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a0845e708c1a6eaf93e18d5",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/990528910095615/6a0845e708c1a6eaf93e18d5/60692a86-c5f9-4c5d-9420-ce0c10c935e8.jpg",
+                    "duplicationId": "6a089a1ada533fe02059252d",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                }
+              ],
+              "__typename": "PagingInspoBoardItems"
+            },
+            "__typename": "Brand"
+          },
+          {
+            "id": "6737e6a57850d1eb293ebe9b",
+            "name": "Fountain Life",
+            "logo": "https://motionswipefile.blob.core.windows.net/swipe-file-brand-assets-cached-links/brand-page-assets/meta/102771444642713/1778188877094.jpg",
+            "initialAnalyzeDate": 1731716793324,
+            "inspoBoardItems": {
+              "edges": [
+                {
+                  "node": {
+                    "id": "6a0ab34f08c1a6eaf94799a0",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1298055332436394/6a0ab34f08c1a6eaf94799a0/092beb90-8d46-46e1-9238-bdc0f099995c.jpg",
+                    "duplicationId": "69351bc2d959451604db6f29",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a07e94908c1a6eaf93c1366",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/962435626403131/6a07e94908c1a6eaf93c1366/ef549b4c-9093-4aea-880e-dee715e1fba3.jpg",
+                    "duplicationId": "6a084c81f830cf19ae5e204b",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a07e94908c1a6eaf93c137a",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/776009455480144/6a07e94908c1a6eaf93c137a/d6aa1612-91e7-4c82-9be0-e20d3d26b461.jpg",
+                    "duplicationId": "6a084c82d3baf8fa2d23d184",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a07e94908c1a6eaf93c137c",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1243399524295762/6a07e94908c1a6eaf93c137c/1dc5df68-4517-4178-a8fb-5b15e54810c5.jpg",
+                    "duplicationId": "69d83b3b7f1d4b90e6c1b837",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a07e94908c1a6eaf93c137d",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1694976758348332/6a07e94908c1a6eaf93c137d/acea70ef-e91d-4f5a-bee5-79132f15c8ed.jpg",
+                    "duplicationId": "69638d05e2813cc196f912e3",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a07e94908c1a6eaf93c1370",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/903877835990773/6a07e94908c1a6eaf93c1370/f94b1f1c-170f-4c16-94bd-0503c1e37df8.jpg",
+                    "duplicationId": "695039e34f7faacd427c2396",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a07e94908c1a6eaf93c1373",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1322804903097747/6a07e94908c1a6eaf93c1373/606caa7f-a7e1-4044-a99e-f7684284c4ff.jpg",
+                    "duplicationId": "695039e54f7faacd427c23a7",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a07e94908c1a6eaf93c137e",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/2475985719497549/6a07e94908c1a6eaf93c137e/8515337a-8a1d-48ce-ad0c-a890be3dfa78.jpg",
+                    "duplicationId": "694c5d715d9c213a57f82cfb",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a07e94908c1a6eaf93c1368",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1970015697214722/6a07e94908c1a6eaf93c1368/d8094bb1-f00f-4166-a62e-f9f9278732f9.jpg",
+                    "duplicationId": "6a084c8be4f2a7fc1548e58f",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a05d99108c1a6eaf93023be",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1661272994920669/6a05d99108c1a6eaf93023be/ed16e4be-abbb-4eba-b444-1a46ff902727.jpg",
+                    "duplicationId": "6a05d9f9fdc348965d222d09",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                }
+              ],
+              "__typename": "PagingInspoBoardItems"
+            },
+            "__typename": "Brand"
+          },
+          {
+            "id": "671113eba236088e6da874d2",
+            "name": "Parsley Health",
+            "logo": "https://motionswipefile.blob.core.windows.net/swipe-file-brand-assets-cached-links/brand-page-assets/meta/1478481439084196/1778184426931.jpg",
+            "initialAnalyzeDate": 1729172481640,
+            "inspoBoardItems": {
+              "edges": [
+                {
+                  "node": {
+                    "id": "6919748fe4c6e2f6bcb7d31a",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/861852299600588/6919748fe4c6e2f6bcb7d31a/6f568566-c80b-4894-98b8-e87982a67dee.jpeg",
+                    "duplicationId": "693c0e192a72f0c006ae3750",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "691359cb2d77ca559d10824d",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/4365923136975926/691359cb2d77ca559d10824d/9ef3f07c-1a9e-435e-b5ad-c30b6088c3cd.jpeg",
+                    "duplicationId": "693c0e3766910e4ff19729fc",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "691164952d77ca559d4bd95a",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/855236410519999/691164952d77ca559d4bd95a/c360e9ff-6205-4ee7-b73a-bd2da5cc3d84.jpeg",
+                    "duplicationId": "693c0e39b8a5acb1c16e494d",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "691164952d77ca559d4bd959",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/4314958278740955/691164952d77ca559d4bd959/9b3f3886-048b-430e-818f-7a966e174a6a.jpeg",
+                    "duplicationId": "693c0e374d1412339b539a68",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "691164952d77ca559d4bd95b",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/700227199337979/691164952d77ca559d4bd95b/9d84ddce-1cc6-49cf-9617-551fc1eeb12d.jpeg",
+                    "duplicationId": "693c0e1cd4de45812eb8ba04",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "690f778c2d77ca559d18dedf",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1473512280394781/690f778c2d77ca559d18dedf/6c225f6a-0d95-4a95-8f45-84c10cfc0810.jpeg",
+                    "duplicationId": "693c0e198395e5e6ee0e9f6b",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "691164952d77ca559d4bd95c",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/821270424201393/691164952d77ca559d4bd95c/a4d40d74-fbbe-4132-9ec9-e0e7dbba0bfd.jpeg",
+                    "duplicationId": "693c0e1a07c5ad4080bc1eb4",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "690f778c2d77ca559d18deda",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/2575231772834038/690f778c2d77ca559d18deda/3f3b225b-394c-4808-afe9-31074678c572.jpeg",
+                    "duplicationId": "693c0e36018a3e80801149c3",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6914fba3e4c6e2f6bc8433a5",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1103334644988680/6914fba3e4c6e2f6bc8433a5/82e9e237-7b17-4ca9-b446-87fa5c0955a4.jpeg",
+                    "duplicationId": "693c0e3608f491a507d481a7",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "690f778c2d77ca559d18dee1",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/806240962023279/690f778c2d77ca559d18dee1/89116566-5245-4784-8705-fe61d2ac3a1b.jpeg",
+                    "duplicationId": "693c0e36d9ab206015ac18df",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                }
+              ],
+              "__typename": "PagingInspoBoardItems"
+            },
+            "__typename": "Brand"
+          },
+          {
+            "id": "66cf7978da161d103f983ca4",
+            "name": "Thorne",
+            "logo": "https://motionswipefile.blob.core.windows.net/swipe-file-brand-assets-cached-links/brand-page-assets/meta/111910155537674/1778168143956.jpg",
+            "initialAnalyzeDate": 1725657824167,
+            "inspoBoardItems": {
+              "edges": [
+                {
+                  "node": {
+                    "id": "6a0dabeb24084c7aceff49f6",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/2313621799164001/6a0dabeb24084c7aceff49f6/0ecfbfb1-5301-4434-9587-ee8a5a254d9e.jpg",
+                    "duplicationId": "6a097b17d3f056624186900c",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a0b8a2e24084c7acef4ed8d",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1547576413409153/6a0b8a2e24084c7acef4ed8d/8c90a7a5-7f5d-4752-a590-84721ddfba8e.jpg",
+                    "duplicationId": "6931d05eaaa7c93f0d625633",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a0b8a2e24084c7acef4ed8e",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1362775265907788/6a0b8a2e24084c7acef4ed8e/e430356a-486c-4d5d-875e-113ed06ecf94.jpg",
+                    "duplicationId": "6931d05cf816a66bdc05a94b",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a097afc08c1a6eaf943d193",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1558882349081941/6a097afc08c1a6eaf943d193/f6601684-4b3a-458f-bebc-7011c52cc0f3.jpg",
+                    "duplicationId": "6a097b16cd02dada878232cd",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a0b8a2e24084c7acef4ed8f",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1467355487968070/6a0b8a2e24084c7acef4ed8f/cc13cacd-1e41-4b3f-8e0a-6828967cd6ac.jpg",
+                    "duplicationId": "6a097b14c0f2c2cafef8016d",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a0b8a2e24084c7acef4ed91",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/2043946913186426/6a0b8a2e24084c7acef4ed91/fe9cc2be-2248-4ea4-99c7-0db9f36f4a95.jpg",
+                    "duplicationId": "69db825d4ee3164e0b252f97",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a097afc08c1a6eaf943d17f",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/736775536148456/6a097afc08c1a6eaf943d17f/70701020-4093-44fb-8059-792ba8c316ff.jpg",
+                    "duplicationId": "6a097b254f9249317f1050a0",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a097afc08c1a6eaf943d1a3",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/830398896805455/6a097afc08c1a6eaf943d1a3/1e5b80f8-be2a-44f8-b1f5-0989812b5d4c.jpg",
+                    "duplicationId": "6a097b27d3f0566241869030",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a097afc08c1a6eaf943d181",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/2038167523440665/6a097afc08c1a6eaf943d181/81eacd98-924b-4d40-a077-ccedcc514c63.jpg",
+                    "duplicationId": "6a097b1fc0f2c2cafef80188",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                },
+                {
+                  "node": {
+                    "id": "6a097afc08c1a6eaf943d1a0",
+                    "firstAvailableThumbnailUrl": "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1633200254608841/6a097afc08c1a6eaf943d1a0/526a7796-2175-4997-867f-ba82ebb00b8a.jpg",
+                    "duplicationId": "6a097b1a312be1be4935bcbe",
+                    "__typename": "InspoBoardCreative"
+                  },
+                  "__typename": "InspoBoardItemEdges"
+                }
+              ],
+              "__typename": "PagingInspoBoardItems"
+            },
+            "__typename": "Brand"
+          }
+        ],
+        "__typename": "WorkspaceV2"
+      }
+    }
+  }
+}

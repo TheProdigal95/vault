@@ -1,0 +1,48 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "CoQ10",
+  "url": "/coq10/",
+  "image": [
+    "https://lf-oms-public.s3.us-west-2.amazonaws.com/abdhkeyhk2507kyzagawfad63ifz",
+    "https://cdn11.bigcommerce.com/s-byr25matix/images/stencil/original/products/180/473/LF_CoQ10_B_BG__24047.1700612069.jpg",
+    "https://cdn11.bigcommerce.com/s-byr25matix/images/stencil/original/products/180/471/LF_CoQ10_C_BG__49143.1700612069.jpg"
+  ],
+  "description": "CoQ10 supplementation has been shown in some studies to reduce the risk of muscle aches associated with statin use, improve physical performance and may help reduce blood pressure and risk of migraines.",
+  "productID": "180",
+  "category": "Health & Beauty > Health Care > Fitness & Nutrition > Vitamins & Supplements",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lifeforce"
+  },
+  "sku": "coq-00023",
+  "offers": {
+    "@type": "Offer",
+    "url": "/coq10/",
+    "price": 34,
+    "priceCurrency": "USD",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "InStock",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 1,
+          "unitCode": "DAY"
+        }
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "US"
+      },
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "USD"
+      }
+    }
+  }
+}

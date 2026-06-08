@@ -1,0 +1,23 @@
+{
+  "total_reviews": 8,
+  "frequency_table": [
+    {
+      "persona": "The Long-Shift Standing Worker",
+      "reviews_matched": 4,
+      "percent_of_reviews": 50,
+      "avg_rating": 1.25
+    }
+  ],
+  "multi_persona_overlap_top20": [],
+  "untagged": {
+    "count": 4,
+    "percent_of_reviews": 50
+  },
+  "borderlines": {
+    "The Long-Shift Standing Worker": [
+      "goclove-001",
+      "goclove-006",
+      "goclove-008"
+    ]
+  }
+}

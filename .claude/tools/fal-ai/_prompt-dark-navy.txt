@@ -1,0 +1,19 @@
+Create a 9:16 vertical direct-response ad for nurse footwear. Dark patriotic theme.
+
+BACKGROUND: Deep navy (#0D1F3C) full bleed. American flag texture rendered subtly into the dark background — lighter navy stripes faintly visible, small white star field in upper-left corner at low opacity. Dark, bold, patriotic mood.
+
+TOP ELEMENT: Bold red (#B22234) horizontal ribbon/banner stretched across the full width near the top. White bold text centered in it: "MEMORIAL DAY SALE — 20% OFF". Stars or star icons flanking the text on each side.
+
+HEADLINE: Bold condensed sans-serif, all-caps, WHITE (#FFFFFF), massive — fills ~75% of card width, 2 lines stacked. Text exactly: "SORE FEET ARE OPTIONAL. NURSE SHIFTS AREN'T."
+
+SUBHEADLINE: Lighter weight, all-caps, light grey (#CCCCCC), smaller. Text: "USE CODE MEMORIAL20 · ENDS 5/27"
+
+PRODUCT: Ortho Stretch Cushion shoe in NAVY BLUE colorway. Navy blue mesh upper with cyan/sky blue perforated square dot panels on side midfoot, cyan collar at ankle, bungee cord laces, chunky white EVA sole, black rubber outsole, pull tab at heel, no logos. Position: 3/4 front-left view, floating center of card, soft white glow drop shadow behind it. Generous space around shoe.
+
+FEATURE PILLS: Three horizontal rounded pill badges below shoe. Semi-transparent dark navy fill with white border, WHITE text. Pills: "Heel-Hugging Tech." · "Wide Toe Box." · "Slip-Resistant."
+
+CTA BUTTON: Bold red (#B22234) rounded rectangle, white bold text: "SHOP NOW — 20% OFF", centered.
+
+GUARANTEE: Small light grey text below CTA: "45-Day Money-Back Guarantee."
+
+DESIGN: Everything on dark navy. Inverted palette from typical. High contrast. No logo. Ad-quality text rendering.

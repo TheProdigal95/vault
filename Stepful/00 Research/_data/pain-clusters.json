@@ -1,0 +1,123 @@
+[
+  {
+    "cluster_id": "affordable_fast_track_seeker.cost_barrier_to_entry",
+    "persona": "The Affordable Fast-Track Seeker",
+    "pain_label": "Traditional programs cost too much and take too long",
+    "trigger": "Researching healthcare programs and realizing community college costs $10k-30k+ and takes 2 years",
+    "desire": "Get the same NHA/PTCB credential in 4-5 months without going broke",
+    "frequency_reviews": 34,
+    "representative_quote": "I was scared as shit before starting the program I kept contemplating bc I didn't want to get scammed out of 1100. I did reviews for month and kept coming back to the website just checking periodically.",
+    "representative_review_id": "67d1c475c9bdbd9ffe4bc087",
+    "distinct_from_existing": "Fear of being scammed (skepticism about legitimacy) is as strong as price concern — the $1,100 feels like a lot for an online program to this group"
+  },
+  {
+    "cluster_id": "affordable_fast_track_seeker.cant_stop_working_to_study",
+    "persona": "The Affordable Fast-Track Seeker",
+    "pain_label": "Can't attend in-person school while holding down a job",
+    "trigger": "Looking for healthcare certifications that work around a full-time job",
+    "desire": "Get certified without quitting current job or changing current schedule",
+    "frequency_reviews": 28,
+    "representative_quote": "The classes require work and devoted time but it still allows me to work my full time job and take care of my family.",
+    "representative_review_id": "69b955f6709cc2bf10190da5",
+    "distinct_from_existing": "This is as much about physical logistics (geography, no car) as cost — in-person is not an option, not just an undesirable option"
+  },
+  {
+    "cluster_id": "affordable_fast_track_seeker.surprise_exam_fee",
+    "persona": "The Affordable Fast-Track Seeker",
+    "pain_label": "Exam fee not included in tuition — unexpected extra cost",
+    "trigger": "Reaching the end of the program and discovering the NHA exam ($129-$270) is not covered",
+    "desire": "Know all costs upfront before enrolling",
+    "frequency_reviews": 8,
+    "representative_quote": "why am I paying all this tuition and the NHA exam fee isn't included?? This was unknown to many students until far too late.",
+    "representative_review_id": "69b97c1ea1bd6a6c4a480ebd",
+    "distinct_from_existing": "This is a trust/transparency gap specifically — students feel misled, not just surprised by cost"
+  },
+  {
+    "cluster_id": "externship_job_placement_deceived.placement_delay",
+    "persona": "The Externship & Job-Placement Deceived",
+    "pain_label": "Externship placement takes months after graduation",
+    "trigger": "Finishing coursework and passing the NHA exam, then waiting 2-6 months for clinical hours",
+    "desire": "Get placed in a clinical site within weeks of passing the exam, as implied by marketing",
+    "frequency_reviews": 47,
+    "representative_quote": "I've been done with my test for a couple months now and my career counselor barely responds and I have zero externship. That's a requirement for Stepful. It's like they gave up.",
+    "representative_review_id": "679e429edb0f3b7f751994f7",
+    "distinct_from_existing": "Students feel abandoned at the exact moment they most need support — the transition from learning to working"
+  },
+  {
+    "cluster_id": "externship_job_placement_deceived.coordinator_turnover",
+    "persona": "The Externship & Job-Placement Deceived",
+    "pain_label": "Externship coordinator keeps changing — nobody knows your history",
+    "trigger": "Being assigned to a third or fourth coordinator who has no context on your situation",
+    "desire": "One consistent person who knows your case and follows through",
+    "frequency_reviews": 22,
+    "representative_quote": "I kept getting reassigned to an externship coordinator as they would go back and forth with who was doing the communicating, instead of being able to stick to just one person.",
+    "representative_review_id": "685ac2f1eb64bf00245bc87b",
+    "distinct_from_existing": "This is about accountability and ownership — students don't just want responsiveness, they want someone who owns their outcome"
+  },
+  {
+    "cluster_id": "externship_job_placement_deceived.certificate_release_blocked",
+    "persona": "The Externship & Job-Placement Deceived",
+    "pain_label": "NHA certificate withheld even after passing the exam",
+    "trigger": "Passing the NHA exam and needing to show the credential for a job interview",
+    "desire": "Get the certificate released immediately upon passing so they can start working",
+    "frequency_reviews": 9,
+    "representative_quote": "Post graduation, it was nearly impossible to get any response from Stepful. I tried multiple emails, chatted in using their chat box, and even called. It took about a week after I passed my NHA to get in contact with someone to release my certification.",
+    "representative_review_id": "677da76811ce16543f8fba53",
+    "distinct_from_existing": "The certification release block is uniquely damaging — students have employers waiting while Stepful is unresponsive"
+  },
+  {
+    "cluster_id": "dead_end_job_escaper.career_stagnation",
+    "persona": "The Dead-End Job Escaper",
+    "pain_label": "Trapped in a non-healthcare job with no upward path",
+    "trigger": "Hitting an income ceiling or realizing their current job will never give them stability or meaning",
+    "desire": "A new career that offers stability, growth, and meaningful work",
+    "frequency_reviews": 19,
+    "representative_quote": "I am able to get out of fast food and branch into the medical industry forefront.",
+    "representative_review_id": "69817fd0b2ae6ce237878a9d",
+    "distinct_from_existing": "The 'fast food to medical field' story is very specific and very TikTok-native — it has extreme relatability to a large working-poor population that Stepful is apparently already reaching"
+  },
+  {
+    "cluster_id": "dead_end_job_escaper.fear_of_wasting_more_time",
+    "persona": "The Dead-End Job Escaper",
+    "pain_label": "Don't want to spend years getting a credential that doesn't work out",
+    "trigger": "Having already spent years in the wrong career and not wanting to risk another 2-year program",
+    "desire": "A short, proven path where the finish line is visible",
+    "frequency_reviews": 14,
+    "representative_quote": "I was thinking it's impossible to take this course online with Stepful. I'm like it's not real until I try and now I'm ready for a new career.",
+    "representative_review_id": "69d7a70422b6cffbb4f856ef",
+    "distinct_from_existing": "Skepticism about online programs is a key barrier — 'is this even real?' — separate from price skepticism"
+  },
+  {
+    "cluster_id": "healthcare_credential_upgrader.experience_without_credential",
+    "persona": "The Healthcare Credential Upgrader",
+    "pain_label": "Doing the job without the paper that proves it",
+    "trigger": "Being passed over for a role, raise, or promotion because of a missing certification",
+    "desire": "Get the formal credential to match existing experience without wasting time on basics",
+    "frequency_reviews": 16,
+    "representative_quote": "I have been in the medical field as a Certified Nursing Assistant for 20 plus years. Most of this is a review for me, but some of it is new.",
+    "representative_review_id": "69881357203e8c2e1f62e9be",
+    "distinct_from_existing": "For upgraders, the program is too long (covering basics they know), but they accept it because there's no shorter path to the same credential"
+  },
+  {
+    "cluster_id": "life_circumstances_career_launcher.family_and_financial_hardship",
+    "persona": "The Life-Circumstances Career Launcher",
+    "pain_label": "Life circumstances make traditional school impossible",
+    "trigger": "Single parent, housing instability, illness, or financial crisis that forecloses traditional education paths",
+    "desire": "A program that works with them when life intervenes, not against them",
+    "frequency_reviews": 21,
+    "representative_quote": "Even when I had no place to live, Stepful patiently worked with me, swiftly responded to calls and emails, provided thorough instructions for online classroom success.",
+    "representative_review_id": "6a023baf2e4ec0e0fc0cf074",
+    "distinct_from_existing": "The emotional weight here is about being seen and not abandoned — 'they didn't give up on me when I couldn't pay' is a more powerful hook than any feature"
+  },
+  {
+    "cluster_id": "life_circumstances_career_launcher.instructor_as_anchor",
+    "persona": "The Life-Circumstances Career Launcher",
+    "pain_label": "Needed more than instruction — needed someone who showed up for them",
+    "trigger": "Facing a life crisis mid-program and needing human support to continue",
+    "desire": "A program where the instructor or coach treats them as a person, not just an enrollment",
+    "frequency_reviews": 15,
+    "representative_quote": "The instructors stayed in calls for one on one support while I was in my hospital bed until almost midnight to make sure I didn't just pass and meet a quota but graduate with a 92 and become certified with a 91 on the NHA exam.",
+    "representative_review_id": "6966c2821add018a9f484fc0",
+    "distinct_from_existing": "The instructor-as-anchor story (staying on call till midnight at hospital bed) is extreme social proof that no competitor can match without actual infrastructure"
+  }
+]

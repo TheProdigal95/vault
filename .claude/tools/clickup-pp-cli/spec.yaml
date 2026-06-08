@@ -1,0 +1,463 @@
+openapi: "3.0.3"
+info:
+  title: ClickUp API
+  version: "2.0"
+  description: ClickUp project management REST API v2
+servers:
+  - url: https://api.clickup.com/api/v2
+    description: ClickUp API v2
+
+security:
+  - BearerAuth: []
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      description: Personal API token. Set CLICKUP_API_TOKEN env var.
+
+  schemas:
+    Team:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        color: { type: string }
+        members:
+          type: array
+          items:
+            $ref: '#/components/schemas/Member'
+
+    Member:
+      type: object
+      properties:
+        user:
+          type: object
+          properties:
+            id: { type: integer }
+            username: { type: string }
+            email: { type: string }
+            color: { type: string }
+            profilePicture: { type: string }
+            role: { type: integer }
+            initials: { type: string }
+
+    Space:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        archived: { type: boolean }
+
+    Folder:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        hidden: { type: boolean }
+        archived: { type: boolean }
+
+    List:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        task_count: { type: integer }
+        archived: { type: boolean }
+        space:
+          type: object
+          properties:
+            id: { type: string }
+            name: { type: string }
+
+    Task:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        description: { type: string }
+        status:
+          type: object
+          properties:
+            status: { type: string }
+            color: { type: string }
+        assignees:
+          type: array
+          items:
+            $ref: '#/components/schemas/Member/properties/user'
+        custom_fields:
+          type: array
+          items:
+            type: object
+            properties:
+              id: { type: string }
+              name: { type: string }
+              value: {}
+        url: { type: string }
+        date_created: { type: string }
+
+    CustomField:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        type: { type: string }
+        type_config:
+          type: object
+          properties:
+            options:
+              type: array
+              items:
+                type: object
+                properties:
+                  id: { type: string }
+                  name: { type: string }
+                  color: { type: string }
+
+    CreateTaskRequest:
+      type: object
+      required: [name]
+      properties:
+        name: { type: string }
+        description: { type: string }
+        markdown_description: { type: string }
+        status: { type: string }
+        priority: { type: integer }
+        assignees:
+          type: array
+          items: { type: integer }
+        tags:
+          type: array
+          items: { type: string }
+        custom_fields:
+          type: array
+          items:
+            type: object
+            properties:
+              id: { type: string }
+              value: {}
+
+paths:
+  /team:
+    get:
+      operationId: getTeams
+      summary: Get authorized teams (workspaces)
+      tags: [teams]
+      responses:
+        "200":
+          description: List of teams
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  teams:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Team'
+
+  /team/{team_id}/space:
+    get:
+      operationId: getSpaces
+      summary: Get spaces in a team
+      tags: [spaces]
+      parameters:
+        - name: team_id
+          in: path
+          required: true
+          schema: { type: string }
+        - name: archived
+          in: query
+          schema: { type: boolean }
+          description: Include archived spaces
+      responses:
+        "200":
+          description: List of spaces
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  spaces:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Space'
+
+  /space/{space_id}/folder:
+    get:
+      operationId: getFolders
+      summary: Get folders in a space
+      tags: [folders]
+      parameters:
+        - name: space_id
+          in: path
+          required: true
+          schema: { type: string }
+        - name: archived
+          in: query
+          schema: { type: boolean }
+      responses:
+        "200":
+          description: List of folders
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  folders:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Folder'
+
+  /folder/{folder_id}/list:
+    get:
+      operationId: getFolderLists
+      summary: Get lists in a folder
+      tags: [lists]
+      parameters:
+        - name: folder_id
+          in: path
+          required: true
+          schema: { type: string }
+        - name: archived
+          in: query
+          schema: { type: boolean }
+      responses:
+        "200":
+          description: List of lists
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  lists:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/List'
+
+  /space/{space_id}/list:
+    get:
+      operationId: getSpaceLists
+      summary: Get folderless lists in a space
+      tags: [lists]
+      parameters:
+        - name: space_id
+          in: path
+          required: true
+          schema: { type: string }
+        - name: archived
+          in: query
+          schema: { type: boolean }
+      responses:
+        "200":
+          description: List of lists
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  lists:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/List'
+
+  /list/{list_id}:
+    get:
+      operationId: getList
+      summary: Get a list by ID
+      tags: [lists]
+      parameters:
+        - name: list_id
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200":
+          description: List details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/List'
+
+  /list/{list_id}/task:
+    get:
+      operationId: getTasks
+      summary: Get tasks in a list
+      tags: [tasks]
+      parameters:
+        - name: list_id
+          in: path
+          required: true
+          schema: { type: string }
+        - name: archived
+          in: query
+          schema: { type: boolean }
+        - name: page
+          in: query
+          schema: { type: integer }
+        - name: include_closed
+          in: query
+          schema: { type: boolean }
+      responses:
+        "200":
+          description: Task list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tasks:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Task'
+
+    post:
+      operationId: createTask
+      summary: Create a task in a list
+      tags: [tasks]
+      parameters:
+        - name: list_id
+          in: path
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateTaskRequest'
+      responses:
+        "200":
+          description: Created task
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+
+  /task/{task_id}:
+    get:
+      operationId: getTask
+      summary: Get a task by ID
+      tags: [tasks]
+      parameters:
+        - name: task_id
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200":
+          description: Task details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+
+    put:
+      operationId: updateTask
+      summary: Update a task
+      tags: [tasks]
+      parameters:
+        - name: task_id
+          in: path
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name: { type: string }
+                description: { type: string }
+                markdown_description: { type: string }
+                status: { type: string }
+                assignees:
+                  type: object
+                  properties:
+                    add:
+                      type: array
+                      items: { type: integer }
+                    rem:
+                      type: array
+                      items: { type: integer }
+      responses:
+        "200":
+          description: Updated task
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+
+  /list/{list_id}/field:
+    get:
+      operationId: getListCustomFields
+      summary: Get custom fields for a list
+      tags: [custom_fields]
+      parameters:
+        - name: list_id
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200":
+          description: Custom fields
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  fields:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/CustomField'
+
+  /task/{task_id}/field/{field_id}:
+    post:
+      operationId: setTaskCustomField
+      summary: Set a custom field value on a task
+      tags: [custom_fields]
+      parameters:
+        - name: task_id
+          in: path
+          required: true
+          schema: { type: string }
+        - name: field_id
+          in: path
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                value: {}
+      responses:
+        "200":
+          description: Success
+
+  /team/{team_id}/member:
+    get:
+      operationId: getTeamMembers
+      summary: Get members of a team
+      tags: [teams]
+      parameters:
+        - name: team_id
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200":
+          description: Team members
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  members:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Member'

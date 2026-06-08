@@ -1,0 +1,22 @@
+{
+  "total_reviews": 9,
+  "frequency_table": [
+    {
+      "persona": "The Long-Shift Standing Worker",
+      "reviews_matched": 2,
+      "percent_of_reviews": 22.2,
+      "avg_rating": 1
+    }
+  ],
+  "multi_persona_overlap_top20": [],
+  "untagged": {
+    "count": 7,
+    "percent_of_reviews": 77.8
+  },
+  "borderlines": {
+    "The Long-Shift Standing Worker": [
+      "xstance-001",
+      "xstance-007"
+    ]
+  }
+}

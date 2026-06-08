@@ -1,0 +1,64 @@
+{
+  "jsonld": [
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Elevate Health and Wellness",
+      "logo": "https://start.joinelevate.com/cdn/shop/files/glp-logo-white.png?v=1727683120&width=500",
+      "sameAs": [
+        "",
+        "http://facebook.com",
+        "",
+        "http://instagram.com",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "url": "https://start.joinelevate.com"
+    },
+    {
+      "@context": "http://schema.org/",
+      "@id": "/products/monthly-compounded-tirzepatide-program#product",
+      "@type": "Product",
+      "brand": {
+        "@type": "Brand",
+        "name": "Elevate Health and Wellness"
+      },
+      "category": "Medicine & Drugs",
+      "description": "The program includes: \n\nInitial Assessment with Physician\nMedication for 4 weeks (if Prescribed by Physician)\nOngoing Support and Follow Ups\n\n**NO MONTHLY MEMBERSHIP FEE**",
+      "image": "https://start.joinelevate.com/cdn/shop/files/ProductContainer_1_ff019027-1954-43ad-82d1-6af5ecf2522f.png?v=1748529846&width=1920",
+      "name": "Monthly Compounded Tirzepatide Program",
+      "offers": {
+        "@id": "/products/monthly-compounded-tirzepatide-program?variant=50327975297307#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "449.00",
+        "priceCurrency": "USD",
+        "url": "https://start.joinelevate.com/products/monthly-compounded-tirzepatide-program?variant=50327975297307"
+      },
+      "url": "https://start.joinelevate.com/products/monthly-compounded-tirzepatide-program"
+    }
+  ],
+  "meta": {
+    "viewport": "width=device-width,initial-scale=1",
+    "description": "The program includes:  Initial Assessment with Physician Medication for 4 weeks (if Prescribed by Physician) Ongoing Support and Follow Ups **NO MONTHLY MEMBERSHIP FEE**",
+    "og:site_name": "Elevate Health and Wellness",
+    "og:url": "https://start.joinelevate.com/products/monthly-compounded-tirzepatide-program",
+    "og:title": "Monthly Compounded Tirzepatide Program",
+    "og:type": "product",
+    "og:description": "The program includes:  Initial Assessment with Physician Medication for 4 weeks (if Prescribed by Physician) Ongoing Support and Follow Ups **NO MONTHLY MEMBERSHIP FEE**",
+    "og:image": "http://start.joinelevate.com/cdn/shop/files/ProductContainer_1_ff019027-1954-43ad-82d1-6af5ecf2522f.png?v=1748529846",
+    "og:image:secure_url": "https://start.joinelevate.com/cdn/shop/files/ProductContainer_1_ff019027-1954-43ad-82d1-6af5ecf2522f.png?v=1748529846",
+    "og:image:width": "241",
+    "og:image:height": "240",
+    "og:price:amount": "449.00",
+    "og:price:currency": "USD",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Monthly Compounded Tirzepatide Program",
+    "twitter:description": "The program includes:  Initial Assessment with Physician Medication for 4 weeks (if Prescribed by Physician) Ongoing Support and Follow Ups **NO MONTHLY MEMBERSHIP FEE**",
+    "shopify-digital-wallet": "/80147677467/digital_wallets/dialog",
+    "shopify-checkout-api-token": "f3f9f8a25e38abc7b0b0f133c9179661"
+  }
+}

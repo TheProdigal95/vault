@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"1ffdbdde6beca7cd","type":"file","file":"Elevate/00 Assets/REFs/creative-2.jpeg","x":28,"y":-156,"width":400,"height":400},
+		{"id":"34d52aa63290fa64","type":"file","file":"Elevate/00 Assets/REFs/creative.jpeg","x":473,"y":-156,"width":400,"height":400},
+		{"id":"a6e5aaa50f247a13","type":"file","file":"Elevate/00 Assets/REFs/creative-17.jpeg","x":28,"y":300,"width":225,"height":399},
+		{"id":"4973322c7073b0fc","type":"file","file":"Elevate/00 Assets/REFs/creative-2 1.jpeg","x":316,"y":300,"width":225,"height":399},
+		{"id":"48ebd98b262be807","type":"file","file":"Elevate/00 Assets/REFs/Pasted image 20260427155842.png","x":600,"y":300,"width":225,"height":399},
+		{"id":"cea15525d4c6daac","type":"file","file":"Elevate/00 Assets/REFs/Pasted image 20260427155854.png","x":28,"y":760,"width":225,"height":399},
+		{"id":"adf6158c322ada73","type":"file","file":"Elevate/00 Assets/REFs/Pasted image 20260427155911.png","x":316,"y":760,"width":225,"height":399},
+		{"id":"1d48655e5fc1a6b8","type":"file","file":"Elevate/00 Assets/REFs/Pasted image 20260427155940.png","x":600,"y":760,"width":225,"height":399}
+	],
+	"edges":[]
+}

@@ -1,0 +1,48 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Peak Healthspan",
+  "url": "/peak-healthspan/",
+  "image": [
+    "https://lf-oms-public.s3.us-west-2.amazonaws.com/63gna0ywe9f5xpq8mnplfq8f77wt",
+    "https://cdn11.bigcommerce.com/s-byr25matix/images/stencil/original/products/159/416/LF_Peak_Healthspan_3__94912.1686865154.jpg",
+    "https://cdn11.bigcommerce.com/s-byr25matix/images/stencil/original/products/159/417/LF_Peak_Healthspan_2__34119.1686865154.jpg"
+  ],
+  "description": "Peak Healthspan is a leading edge anti-aging compound that combats all nine hallmarks of aging to support cellular resilience, cognitive health, and multi-organ function, increase expression of longevity genes, improve mitochondrial health, reduce unhealthy cholesterol &amp; triglycerides, and help the body better utilize Omega-3s. Featuring NAD3 which is clinically shown to enhance the body&rsquo;s ability to produce more NAD+ from vitamin B3. ",
+  "productID": "159",
+  "category": "Health & Beauty > Health Care > Fitness & Nutrition > Vitamins & Supplements",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lifeforce"
+  },
+  "sku": "PEAK-HEALTH-00035",
+  "offers": {
+    "@type": "Offer",
+    "url": "/peak-healthspan/",
+    "price": 102,
+    "priceCurrency": "USD",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "InStock",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 1,
+          "unitCode": "DAY"
+        }
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "US"
+      },
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "USD"
+      }
+    }
+  }
+}

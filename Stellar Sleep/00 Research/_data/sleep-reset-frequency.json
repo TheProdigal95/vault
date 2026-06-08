@@ -1,0 +1,64 @@
+{
+  "total_reviews": 6,
+  "frequency_table": [
+    {
+      "persona": "The Skeptical Psychology Convert",
+      "reviews_matched": 4,
+      "percent_of_reviews": 66.7,
+      "avg_rating": 3
+    },
+    {
+      "persona": "The Chronic Everything-Failer",
+      "reviews_matched": 3,
+      "percent_of_reviews": 50,
+      "avg_rating": 2.67
+    },
+    {
+      "persona": "The Billing-Burned Customer",
+      "reviews_matched": 1,
+      "percent_of_reviews": 16.7,
+      "avg_rating": 1
+    },
+    {
+      "persona": "The Pill Escape Seeker",
+      "reviews_matched": 1,
+      "percent_of_reviews": 16.7,
+      "avg_rating": 4
+    }
+  ],
+  "multi_persona_overlap_top20": [
+    {
+      "combo": "The Billing-Burned Customer + The Chronic Everything-Failer + The Skeptical Psychology Convert",
+      "count": 1,
+      "percent_of_reviews": 16.7
+    },
+    {
+      "combo": "The Chronic Everything-Failer + The Pill Escape Seeker + The Skeptical Psychology Convert",
+      "count": 1,
+      "percent_of_reviews": 16.7
+    },
+    {
+      "combo": "The Chronic Everything-Failer + The Skeptical Psychology Convert",
+      "count": 1,
+      "percent_of_reviews": 16.7
+    }
+  ],
+  "untagged": {
+    "count": 2,
+    "percent_of_reviews": 33.3
+  },
+  "borderlines": {
+    "The Chronic Everything-Failer": [
+      "sleep-reset-tp-001",
+      "sleep-reset-vwm-001"
+    ],
+    "The Skeptical Psychology Convert": [
+      "sleep-reset-tp-001",
+      "sleep-reset-appstore-001",
+      "sleep-reset-wall-001"
+    ],
+    "The Pill Escape Seeker": [
+      "sleep-reset-appstore-001"
+    ]
+  }
+}

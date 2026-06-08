@@ -1,0 +1,354 @@
+{
+  "total_reviews": 420,
+  "frequency_table": [
+    {
+      "persona": "The Affordable Fast-Track Seeker",
+      "reviews_matched": 93,
+      "percent_of_reviews": 22.1,
+      "avg_rating": 3.59
+    },
+    {
+      "persona": "The Externship & Job-Placement Deceived",
+      "reviews_matched": 83,
+      "percent_of_reviews": 19.8,
+      "avg_rating": 2.58
+    },
+    {
+      "persona": "The Dead-End Job Escaper",
+      "reviews_matched": 46,
+      "percent_of_reviews": 11,
+      "avg_rating": 3.76
+    },
+    {
+      "persona": "The Healthcare Credential Upgrader",
+      "reviews_matched": 38,
+      "percent_of_reviews": 9,
+      "avg_rating": 3.34
+    },
+    {
+      "persona": "The Life-Circumstances Career Launcher",
+      "reviews_matched": 33,
+      "percent_of_reviews": 7.9,
+      "avg_rating": 3.7
+    }
+  ],
+  "multi_persona_overlap_top20": [
+    {
+      "combo": "The Affordable Fast-Track Seeker + The Externship & Job-Placement Deceived",
+      "count": 13,
+      "percent_of_reviews": 3.1
+    },
+    {
+      "combo": "The Dead-End Job Escaper + The Externship & Job-Placement Deceived",
+      "count": 10,
+      "percent_of_reviews": 2.4
+    },
+    {
+      "combo": "The Affordable Fast-Track Seeker + The Externship & Job-Placement Deceived + The Healthcare Credential Upgrader",
+      "count": 8,
+      "percent_of_reviews": 1.9
+    },
+    {
+      "combo": "The Affordable Fast-Track Seeker + The Dead-End Job Escaper",
+      "count": 6,
+      "percent_of_reviews": 1.4
+    },
+    {
+      "combo": "The Externship & Job-Placement Deceived + The Life-Circumstances Career Launcher",
+      "count": 4,
+      "percent_of_reviews": 1
+    },
+    {
+      "combo": "The Affordable Fast-Track Seeker + The Healthcare Credential Upgrader",
+      "count": 4,
+      "percent_of_reviews": 1
+    },
+    {
+      "combo": "The Externship & Job-Placement Deceived + The Healthcare Credential Upgrader",
+      "count": 4,
+      "percent_of_reviews": 1
+    },
+    {
+      "combo": "The Affordable Fast-Track Seeker + The Dead-End Job Escaper + The Healthcare Credential Upgrader + The Life-Circumstances Career Launcher",
+      "count": 3,
+      "percent_of_reviews": 0.7
+    },
+    {
+      "combo": "The Affordable Fast-Track Seeker + The Dead-End Job Escaper + The Externship & Job-Placement Deceived",
+      "count": 3,
+      "percent_of_reviews": 0.7
+    },
+    {
+      "combo": "The Dead-End Job Escaper + The Healthcare Credential Upgrader",
+      "count": 2,
+      "percent_of_reviews": 0.5
+    },
+    {
+      "combo": "The Healthcare Credential Upgrader + The Life-Circumstances Career Launcher",
+      "count": 2,
+      "percent_of_reviews": 0.5
+    },
+    {
+      "combo": "The Affordable Fast-Track Seeker + The Healthcare Credential Upgrader + The Life-Circumstances Career Launcher",
+      "count": 2,
+      "percent_of_reviews": 0.5
+    },
+    {
+      "combo": "The Affordable Fast-Track Seeker + The Dead-End Job Escaper + The Externship & Job-Placement Deceived + The Healthcare Credential Upgrader",
+      "count": 2,
+      "percent_of_reviews": 0.5
+    },
+    {
+      "combo": "The Affordable Fast-Track Seeker + The Externship & Job-Placement Deceived + The Healthcare Credential Upgrader + The Life-Circumstances Career Launcher",
+      "count": 2,
+      "percent_of_reviews": 0.5
+    },
+    {
+      "combo": "The Affordable Fast-Track Seeker + The Dead-End Job Escaper + The Externship & Job-Placement Deceived + The Healthcare Credential Upgrader + The Life-Circumstances Career Launcher",
+      "count": 2,
+      "percent_of_reviews": 0.5
+    },
+    {
+      "combo": "The Dead-End Job Escaper + The Life-Circumstances Career Launcher",
+      "count": 1,
+      "percent_of_reviews": 0.2
+    },
+    {
+      "combo": "The Affordable Fast-Track Seeker + The Dead-End Job Escaper + The Life-Circumstances Career Launcher",
+      "count": 1,
+      "percent_of_reviews": 0.2
+    },
+    {
+      "combo": "The Affordable Fast-Track Seeker + The Dead-End Job Escaper + The Healthcare Credential Upgrader",
+      "count": 1,
+      "percent_of_reviews": 0.2
+    },
+    {
+      "combo": "The Dead-End Job Escaper + The Externship & Job-Placement Deceived + The Life-Circumstances Career Launcher",
+      "count": 1,
+      "percent_of_reviews": 0.2
+    },
+    {
+      "combo": "The Affordable Fast-Track Seeker + The Externship & Job-Placement Deceived + The Life-Circumstances Career Launcher",
+      "count": 1,
+      "percent_of_reviews": 0.2
+    }
+  ],
+  "untagged": {
+    "count": 236,
+    "percent_of_reviews": 56.2
+  },
+  "borderlines": {
+    "The Affordable Fast-Track Seeker": [
+      "6a1cbbf3cb56a9449b5fb8de",
+      "6a1140a2012b1bce8f28b33c",
+      "6a10fa8c76020c2ba27ff3d4",
+      "69fe316a87b239b8691f4ea0",
+      "69fcd7988079bdf981d8100c",
+      "69fbe1627ecbe83da08096bf",
+      "69f6486ba9807d7a359ba688",
+      "69f5403511322a6500dba5e0",
+      "69dc7b173e21cee2166a46be",
+      "69d1df3faa46634d31521e7a",
+      "69c6717d8f6ffa05db808b34",
+      "69b4edf1765bbd55f3e1f4ae",
+      "69b2463764feb67cfee7b480",
+      "69aa3319ee8ec1cf0d44a600",
+      "69a6188d52eb455940c486d6",
+      "69a0b2991e58cfd260736826",
+      "698e8bfe5ddc2fa53209204d",
+      "6989485a9196ae8ae3d0ef2f",
+      "698818be0b7607f75d4b6e7b",
+      "69881357203e8c2e1f62e9be",
+      "698398d159b8f8cc46cd6506",
+      "69817fd0b2ae6ce237878a9d",
+      "697cdd99a42f381bdac08366",
+      "697690a70e68a99396f079e9",
+      "68d146bb8815c5f0e7af815c",
+      "68af7d02a10f1de6d6e5e205",
+      "6894b9c48be9d2fccd6a184b",
+      "6842498caf02c2eb230f8f78",
+      "66b3de2d8e92ecba5512277f",
+      "6667bf6105e20237ab4dce94",
+      "690650abc95980f715cda42e",
+      "67926117eeee0fb9fdac2a40",
+      "674795d3c1f9fc50d62d4a8e",
+      "68c4994c04ad3e27b630cbc4",
+      "68bd8075149415681f7f238c",
+      "67bf41add897da1c72187041",
+      "62c84a18e77911f2449e5322",
+      "69399b07c4e052c48f169682",
+      "6923903667ee123ae9d7dae0",
+      "690d33939397d29f00b56ef0",
+      "6894fa6c86c9d3350c3d64e8",
+      "687e59f662cabfda33a0afa7",
+      "68462e770384b56aefeaf526",
+      "67fd9c3fde6bc79d67c3be4b",
+      "678eb81ca53ecd3d4119bcee",
+      "6768e5b42974c7ebd70798b6",
+      "674fa74e69cde28e263fb6be",
+      "673de46392e0b2c385df3ead",
+      "673d1722006182dd5cb950bb",
+      "65f5cb691785208674adfa4b",
+      "65eb7d3184191c3c0b6584d9",
+      "658585ba6e54d665c333e5ce",
+      "6537df31137815f5ce7214f2",
+      "6972813708f0d8df1bc887b3",
+      "696707a408b269e16c7fb464"
+    ],
+    "The Dead-End Job Escaper": [
+      "6a1b1fc402baad9893838c63",
+      "6a10c85284b2ab04b78677ed",
+      "6a024bcdf487aadd94484fe5",
+      "69efc28c4e0dff3095ffd67c",
+      "69dffbbb4c733280eb510b1e",
+      "69d933d60359022ce5265af5",
+      "69d7a70422b6cffbb4f856ef",
+      "69c0c937b20220ce9e88e21e",
+      "69c06627e4ba97eb1d62706e",
+      "69b6583e8c694ee82171829e",
+      "69af65b2d0640efe101800b5",
+      "69aa3319ee8ec1cf0d44a600",
+      "69a60bf270d64d52d83b2412",
+      "69a212140fb423403279d9f9",
+      "698d058379ed709d07e04e80",
+      "698cdab899eb324fbdd120ea",
+      "69777d2dcc051e5451636744",
+      "697690a70e68a99396f079e9",
+      "69af05b557cdfa93055996d6",
+      "68dd5d767589116d0c0441be",
+      "68af7d02a10f1de6d6e5e205",
+      "684989b642bcaf1a626bc7f7",
+      "6823ae259345c4051d2f3d35",
+      "66c20db7247ab172290bbbc0",
+      "663fb7b7172efe8dbf811f7e",
+      "685ac2f1eb64bf00245bc87b",
+      "682de75ef21006e2f803a122",
+      "68256722a194d9cfffca837e",
+      "677da76811ce16543f8fba53",
+      "690669cb7cbc416e10ab3bf6",
+      "684b4ed1aa0725426de69406",
+      "65594b31f8c5fd3f11564acb",
+      "646f5dbec42344628669d4c2",
+      "68af280ee948e6bf18f19f54",
+      "67d1c475c9bdbd9ffe4bc087",
+      "678eb81ca53ecd3d4119bcee",
+      "673d1722006182dd5cb950bb",
+      "66475a94bb16ab09c9b9d136",
+      "6644c3342386da6af906f0de",
+      "6966c2821add018a9f484fc0",
+      "69644cdf2e5970a369282538",
+      "6958a045c6cb6ffd5ff9717b"
+    ],
+    "The Healthcare Credential Upgrader": [
+      "6a1b1fc402baad9893838c63",
+      "6a13097472e45e207f3c969b",
+      "6a034ef9e71e0d42ea9e7c01",
+      "6a023baf2e4ec0e0fc0cf074",
+      "69dffbbb4c733280eb510b1e",
+      "69d933d60359022ce5265af5",
+      "69b955f6709cc2bf10190da5",
+      "69a4dcca50a601070aa23033",
+      "6998b56f1c82d3eb24d2f441",
+      "698c089589f4883edeb00be2",
+      "697cdd99a42f381bdac08366",
+      "697690a70e68a99396f079e9",
+      "68dd5d767589116d0c0441be",
+      "6894b9c48be9d2fccd6a184b",
+      "6853898b7f8dd61db3c2e6a4",
+      "66f97e32e902262635c79454",
+      "6667bf6105e20237ab4dce94",
+      "687e83a928bf4701e1f005fb",
+      "682de75ef21006e2f803a122",
+      "682b4af186549cdeb02b8cda",
+      "679e429edb0f3b7f751994f7",
+      "67926117eeee0fb9fdac2a40",
+      "677da76811ce16543f8fba53",
+      "674795d3c1f9fc50d62d4a8e",
+      "63095c096a3e1ed2c3c1e7c9",
+      "6866614adb4edfd869e3ecb7",
+      "68ec0c24a5be43bf3316bc77",
+      "68b208acb9b227d9069d3e61",
+      "68a8cbcee35583f077ec21d1",
+      "6851b44262d71e9b24c2bf9e",
+      "673d1722006182dd5cb950bb",
+      "66649ccce4ffa2d1d04092ce",
+      "6966c2821add018a9f484fc0"
+    ],
+    "The Life-Circumstances Career Launcher": [
+      "6a17e08453839180da7fbfe5",
+      "6a12550d8e0fed11ab1e7fdd",
+      "69f679c5889d88558722c686",
+      "69e53b7e160354375d0e2fcc",
+      "69dffbbb4c733280eb510b1e",
+      "69dea02cbd1fb283496f8253",
+      "69c06627e4ba97eb1d62706e",
+      "69bc64dbc52e81a06837695a",
+      "69ba192025ef6e9c9e10117c",
+      "69aa3319ee8ec1cf0d44a600",
+      "698c089589f4883edeb00be2",
+      "69775e07647604f8918155e1",
+      "68915ab487592bf5259339fb",
+      "6853898b7f8dd61db3c2e6a4",
+      "67e34a31af016029b953f51b",
+      "68e940147371d0a54b27161e",
+      "685ac2f1eb64bf00245bc87b",
+      "682de75ef21006e2f803a122",
+      "679e429edb0f3b7f751994f7",
+      "67926117eeee0fb9fdac2a40",
+      "677da76811ce16543f8fba53",
+      "67bf41add897da1c72187041",
+      "68efcff7e58efd4174394881",
+      "68df19a259647147f0e45b2a",
+      "6851b44262d71e9b24c2bf9e",
+      "6655f4780570e39355cff61e"
+    ],
+    "The Externship & Job-Placement Deceived": [
+      "6a14ea74c732d1abd341de20",
+      "6a12550d8e0fed11ab1e7fdd",
+      "69f5403511322a6500dba5e0",
+      "69d889047aeec948a6e62c50",
+      "69d2f130055b48464e41ce1b",
+      "69bb24627a3c3045d8c42064",
+      "69b9ede607f8dba063b941a8",
+      "69b97c1ea1bd6a6c4a480ebd",
+      "69b19acda635cb51e7438878",
+      "698e8bfe5ddc2fa53209204d",
+      "6983dd075e3be7f4953c5bb3",
+      "69817fd0b2ae6ce237878a9d",
+      "693f5b981409d22ffa403be5",
+      "68d037dc2a461b8093a0040d",
+      "684de9aeb04a7a5376e52a6d",
+      "6842498caf02c2eb230f8f78",
+      "67e34a31af016029b953f51b",
+      "6752151239cdddc5b6b7aa7d",
+      "66f97e32e902262635c79454",
+      "6667bf6105e20237ab4dce94",
+      "68a627cc0425a0b59f4189cd",
+      "6888436f772b4032336c2961",
+      "682de75ef21006e2f803a122",
+      "674795d3c1f9fc50d62d4a8e",
+      "66507295db565e26125e23a5",
+      "6957e85dee7e587bb256c410",
+      "690669cb7cbc416e10ab3bf6",
+      "6866614adb4edfd869e3ecb7",
+      "6743d1f25eea14f99eeb181d",
+      "65594b31f8c5fd3f11564acb",
+      "6496ecbfc4234462867d954a",
+      "695344e9f3c24c52b21a2726",
+      "6938d583f03072731eec1e22",
+      "6900e3719b2f3bf0cad4831a",
+      "68b208acb9b227d9069d3e61",
+      "68380543df3c391ede230092",
+      "680a44a73ebcb521d073959c",
+      "67c737756fe68820a6a82fd1",
+      "67bf33ec162d460b31c98359",
+      "673de46392e0b2c385df3ead",
+      "673d1722006182dd5cb950bb",
+      "659db6693543949795927a81",
+      "6537df31137815f5ce7214f2",
+      "696d9ce114d8156ebc2583be",
+      "696707a408b269e16c7fb464"
+    ]
+  }
+}

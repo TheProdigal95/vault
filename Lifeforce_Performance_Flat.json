@@ -1,0 +1,8 @@
+flatten-apify
+
+Usage:
+  node flatten-apify.js --input ads-raw.json --output ad-library-raw.json
+
+Reads Apify Meta Ad Library JSON and emits the flat schema expected by
+ad-classifier/classify.js. See header for field mapping.
+

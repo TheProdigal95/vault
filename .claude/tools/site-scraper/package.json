@@ -1,0 +1,14 @@
+{
+  "name": "site-scraper",
+  "version": "1.0.0",
+  "description": "Recursive same-origin whole-site crawler for first-party brand research (Phase 1b of Brand Research pipeline).",
+  "main": "scrape-site.js",
+  "type": "module",
+  "scripts": {
+    "test": "node scrape-site.test.js"
+  },
+  "dependencies": {
+    "playwright": "^1.47.0",
+    "fs-extra": "^11.3.4"
+  }
+}

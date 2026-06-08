@@ -1,0 +1,65 @@
+{
+  "total_reviews": 15,
+  "frequency_table": [
+    {
+      "persona": "The Externship & Job-Placement Deceived",
+      "reviews_matched": 4,
+      "percent_of_reviews": 26.7,
+      "avg_rating": 1.25
+    },
+    {
+      "persona": "The Healthcare Credential Upgrader",
+      "reviews_matched": 4,
+      "percent_of_reviews": 26.7,
+      "avg_rating": 1
+    },
+    {
+      "persona": "The Affordable Fast-Track Seeker",
+      "reviews_matched": 3,
+      "percent_of_reviews": 20,
+      "avg_rating": 1
+    },
+    {
+      "persona": "The Life-Circumstances Career Launcher",
+      "reviews_matched": 1,
+      "percent_of_reviews": 6.7,
+      "avg_rating": 1
+    }
+  ],
+  "multi_persona_overlap_top20": [
+    {
+      "combo": "The Affordable Fast-Track Seeker + The Healthcare Credential Upgrader",
+      "count": 3,
+      "percent_of_reviews": 20
+    },
+    {
+      "combo": "The Externship & Job-Placement Deceived + The Life-Circumstances Career Launcher",
+      "count": 1,
+      "percent_of_reviews": 6.7
+    }
+  ],
+  "untagged": {
+    "count": 7,
+    "percent_of_reviews": 46.7
+  },
+  "borderlines": {
+    "The Externship & Job-Placement Deceived": [
+      "mdc-ws-001",
+      "mdc-ws-003",
+      "mdc-ws-006",
+      "mdc-ws-013"
+    ],
+    "The Affordable Fast-Track Seeker": [
+      "mdc-ws-002",
+      "mdc-ws-015"
+    ],
+    "The Healthcare Credential Upgrader": [
+      "mdc-ws-002",
+      "mdc-ws-012",
+      "mdc-ws-015"
+    ],
+    "The Life-Circumstances Career Launcher": [
+      "mdc-ws-013"
+    ]
+  }
+}

@@ -1,0 +1,2962 @@
+[
+  {
+    "review_id": "6a1cbbf3cb56a9449b5fb8de",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a1b1fc402baad9893838c63",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a18b56d1380f4d1489f75a4",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a1879771e0ce249e5d62ee2",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a186e11a9c54089463440bd",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a1850071208dfd72e773d42",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a17e08453839180da7fbfe5",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a157f1e7b218c2272126f06",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a14ea74c732d1abd341de20",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a1335002a28247c91058702",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a13097472e45e207f3c969b",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a126ff4f6e693f9913ed0ae",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a12550d8e0fed11ab1e7fdd",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a1140a2012b1bce8f28b33c",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a10fa8c76020c2ba27ff3d4",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a10c85284b2ab04b78677ed",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a0cdcbc454480ac91cf7e2e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a0ac9020e5739bead37605f",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a0a4aa89d5ead31707dfd2e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a0a365ebbd613d568e9f279",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a079a7a87d7d26e18dd32bf",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a0362cb4bab6d045c21cda1",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a034ef9e71e0d42ea9e7c01",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a030ece07cad3822d9f2f6c",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a028334bbe44355e52dddc7",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a024d2d4f3d04b6927dff8a",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a024bcdf487aadd94484fe5",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6a023baf2e4ec0e0fc0cf074",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69fe316a87b239b8691f4ea0",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69fcd7988079bdf981d8100c",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69fbe1627ecbe83da08096bf",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69faa3cb796f82fe83414ec3",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69fa5c5625b178de051a667f",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69f91fea0c74e4fe4b5c0b78",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69f679c5889d88558722c686",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69f6486ba9807d7a359ba688",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69f5413163616577a402b8cd",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69f5403511322a6500dba5e0",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69f216938761bc46cc64c627",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69f12b80037ff28c0df07cb1",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69f0c520051805599224f5cb",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69efc28c4e0dff3095ffd67c",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69efa56c0607a961644edc01",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69eea385c5c55217e884523f",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69ee8a20c0746223bf624c9c",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69edea1d184f57b937d7ff5c",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69e90ae307e37c1aff8a5b00",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69e8f1f5373daf62f0210d38",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69e820036fd08e8cde23e184",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69e53b7e160354375d0e2fcc",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69e26e5a1f8816dbd33a3608",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69e109058a79df01f759eb90",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69dffbbb4c733280eb510b1e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69dff7a70f92de7e5a8182a4",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69dea02cbd1fb283496f8253",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69dceac95e22e562aeb17bd8",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69dc7b173e21cee2166a46be",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69dc5b156546ccf028ff661f",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69dbdb880fe0b443a9cb5f15",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69d933d60359022ce5265af5",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69d889047aeec948a6e62c50",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69d7bd14b875b3a7a86ff700",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69d7a70422b6cffbb4f856ef",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69d78a01c1677a6b319e5ba8",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69d66dc19b7ea01205e16f24",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69d5eb419a636cf1570fd2b6",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69d57713d08fc0ec97345fc5",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69d2f130055b48464e41ce1b",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69d1e8f6447d383839e82397",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69d1df3faa46634d31521e7a",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69cfbb0a4f2cb2fe16213b38",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69ce21afc96364cd1cdfedc6",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69c95f833ab9549086d5f56b",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69c6717d8f6ffa05db808b34",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69c5e8d5e7e2608f38a5b216",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69c565895c1cccf67ec8ac6a",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69c41d5ae98fbfd5e773274e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69c2002cad2f253003b72bed",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69c1fcfa10925ea302215c43",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69c1899aafc1465dd0df7fb5",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69c0c937b20220ce9e88e21e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69c06627e4ba97eb1d62706e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69c03ab58ba7ded89494676f",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69bc64dbc52e81a06837695a",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69bc62ecedf6f5daf3c8a269",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69bb8de67ec942d493289eb6",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69bb5c73bd0d05ed3039a4ff",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69bb2c7dbdcb73d268216e54",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69bb24eeafab74cc79c7fb3e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69bb24627a3c3045d8c42064",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69bad9ec782ba378929784e1",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69baae8a350dc858481bc427",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69baa519c6c811b4cea5146d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69ba192025ef6e9c9e10117c",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69b9ede607f8dba063b941a8",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69b9ed648404f0d259e8459a",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69b9c97b4900dd132612605b",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69b9b4b33bf21b45b1248b95",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69b9a6c805d6ad3aa2b7c304",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69b98d8168ee6eaf507571cb",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69b97c1ea1bd6a6c4a480ebd",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69b96ccedcbd3d97623666a2",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69b955f6709cc2bf10190da5",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69b8353736d3a1dca2ee68d7",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69b77b22967a735aa85c2a27",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69b75a3f96aea25a155d10ee",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69b6d60f7116bf93c4e968ba",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69b6583e8c694ee82171829e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69b50b3febe57ff006f46f74",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69b4edf1765bbd55f3e1f4ae",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69b19acda635cb51e7438878",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69af65b2d0640efe101800b5",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69af539e079a3dc1336459cb",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69ad9ca178e43e7fb32174fe",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69ab8b4d767712183de60206",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69ab56a7868c6e053da88ae4",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69aa3319ee8ec1cf0d44a600",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69a62b77ffa20c8b1b91b094",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69a6188d52eb455940c486d6",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69a60bf270d64d52d83b2412",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69a4eca6be2db3f838127904",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69a4dcca50a601070aa23033",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69a4ac1abb7797a242bdc162",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69a29192af11a2910954581e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69a212140fb423403279d9f9",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69a0bf801979d3f11733ec62",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69a04aa0fba62b45c0827c77",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "699d6f23915efdbd431d9fab",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "699bb72f7462b4c46fed5d80",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "699b08cfb7f8219e54c1224e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "699a40d8dcc17242cee2665a",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6998b56f1c82d3eb24d2f441",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6997e451c0d3672314b11e64",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69974d1fdc27e928ac125747",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69964598a2e492252f6da7be",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6995ff4982c2395cffd466f4",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69952c45f7b6713faca7d123",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6994d5bf74f97a56bc2ac943",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6994943b6d4dcb7bcef7d31c",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6993fa24523252e2725b5c6c",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6990764de5afe153bbca871d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "698e8bfe5ddc2fa53209204d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "698d1a08d2bd3a8f2677433d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "698d058379ed709d07e04e80",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "698cdab899eb324fbdd120ea",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "698c089589f4883edeb00be2",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "698b5393ddc57ec09745788e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6989485a9196ae8ae3d0ef2f",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6988d3536162fca2fdaa3262",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6988c4df847838a7d6bfa80d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "698818be0b7607f75d4b6e7b",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69881357203e8c2e1f62e9be",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6987ed053df78ff086fe8695",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69861b27d179f16109defdce",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6984efe8fda9217e0417106f",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6984e9a110f34e49126b878b",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6983dd075e3be7f4953c5bb3",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6983da467273cc5bf09b84d4",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "698398d159b8f8cc46cd6506",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6982ba8fa251efd241c9d60a",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69817fd0b2ae6ce237878a9d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "697fe2523afa5294d63bb81e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "697f569f7e5027954cc51fc9",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "697cdd99a42f381bdac08366",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "697c4ce7164cd38252a8e676",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "697accbf385b7b23c3262a98",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "697aaaa06d3ad082a9379aa9",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "697a194a9bd0c2d4bcda2bab",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "697a137ef6ab5653a2ee2fd6",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6978805513c52e8a4cc7f06d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69777d2dcc051e5451636744",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69775e07647604f8918155e1",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "697690a70e68a99396f079e9",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69af05b557cdfa93055996d6",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "693f5b981409d22ffa403be5",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "690695f0fbe65b1161ef2f52",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "690660733e5fdd167cff44da",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68dd5d767589116d0c0441be",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68d146bb8815c5f0e7af815c",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68d037dc2a461b8093a0040d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68cc16f55627ed58088178c6",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68af7d02a10f1de6d6e5e205",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68915ab487592bf5259339fb",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "685eb19232b3d3025d4ca8f4",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6859dcac5ee09281b58ea9fc",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6853898b7f8dd61db3c2e6a4",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "684de9aeb04a7a5376e52a6d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "684989b642bcaf1a626bc7f7",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6842498caf02c2eb230f8f78",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6823ae259345c4051d2f3d35",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67e34a31af016029b953f51b",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "678cc44973bea17ec2079b94",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6768414a383410b1511cf466",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6752151239cdddc5b6b7aa7d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6725085f0de15ccaeab375ba",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "671b13e5b2d39c46e82b026e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "66f97e32e902262635c79454",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "66e20a1bd356daa62faeacc8",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "66d0696d0b75f29244e78848",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "66c20db7247ab172290bbbc0",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "66b3de2d8e92ecba5512277f",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6667bf6105e20237ab4dce94",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "663fb7b7172efe8dbf811f7e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "65149a1219992523b1106f71",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6507b134a736714df80061c6",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "64d85b142b8968249511c212",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69616898477cc89585e41374",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "690650abc95980f715cda42e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68effea72b597ee6ef28c729",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68e940147371d0a54b27161e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68a627cc0425a0b59f4189cd",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6888436f772b4032336c2961",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "687e83a928bf4701e1f005fb",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "685ac2f1eb64bf00245bc87b",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "685a9d0f01d49df49288e27a",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "682de75ef21006e2f803a122",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "682b4af186549cdeb02b8cda",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68256722a194d9cfffca837e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "681185a8f311924e35d1741d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67e5c4de9d987727627f54ea",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67c0d048edb697c020d14ead",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "679e429edb0f3b7f751994f7",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67926117eeee0fb9fdac2a40",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "677da76811ce16543f8fba53",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "674795d3c1f9fc50d62d4a8e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "66507295db565e26125e23a5",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "661c729e1319b1d6f20a0c46",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6619bc570bec100459944386",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "63b9a9982338b6d417b2dff2",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "63095c096a3e1ed2c3c1e7c9",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6957e85dee7e587bb256c410",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "691f378f60d61eae7d07cf4e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "690669cb7cbc416e10ab3bf6",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68c4994c04ad3e27b630cbc4",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68bd8075149415681f7f238c",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68b8b98baa3e83e5d11be6d1",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6866614adb4edfd869e3ecb7",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "684b4ed1aa0725426de69406",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "684790ff14d8a5e44679ac8c",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "682a9691e1c21156f332c00c",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "680fdaddaa4c42b9f80e8490",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67c33d1129b0479b24dda7aa",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67bf41add897da1c72187041",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6743d1f25eea14f99eeb181d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "664e1692e1ded10f6c280270",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "66311a3ea12ecddc26e86415",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "659882bfcea4ae0b41a87f7d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "65594b31f8c5fd3f11564acb",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "64bc4de2c4234462868c8622",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6496ecbfc4234462867d954a",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "646f5dbec42344628669d4c2",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "62c84a18e77911f2449e5322",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6964041175dab4891ba7e552",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "695344e9f3c24c52b21a2726",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69399b07c4e052c48f169682",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6938d583f03072731eec1e22",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6923903667ee123ae9d7dae0",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6923350a07e9f7b9b92c1781",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "690d33939397d29f00b56ef0",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6908e50a1251f50766fbca12",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6900e3719b2f3bf0cad4831a",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68efcff7e58efd4174394881",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68ec0c24a5be43bf3316bc77",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68ebd6e21d18983daac8c5ed",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68e385af61541b9e738691d0",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68df19a259647147f0e45b2a",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68bb8653b0352d7610b411de",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68b6896c7938f60444efd440",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68b208acb9b227d9069d3e61",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68af280ee948e6bf18f19f54",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68a8cbcee35583f077ec21d1",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68a69b004de7e984b5a01742",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "689d783f0f14be4cd2aa062c",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "689cb5ea9e38a9d9b4dfd4b4",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6894fa6c86c9d3350c3d64e8",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68862ba14c1fbdef24174a42",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "687e59f662cabfda33a0afa7",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6875bd436f7b068597c2c390",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6869578ef64a7244a20da6ac",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6860326114102d1a8d14617b",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6851b44262d71e9b24c2bf9e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "684a25bbdc9af2bb5869d42d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68462e770384b56aefeaf526",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "684419f6915d9f27a6b4ecea",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "68380543df3c391ede230092",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "682cea90e733e808c553afc7",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6821d2cc9c7ae4543cc0ed79",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "680f929314a6b9706bd146fe",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "680a44a73ebcb521d073959c",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67fd9c3fde6bc79d67c3be4b",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67d8cee4d62a610fc78fc725",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67d82496348a797a97aef847",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67d1c475c9bdbd9ffe4bc087",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67c737756fe68820a6a82fd1",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67c1cad0ee728e641e91866a",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67bf33ec162d460b31c98359",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67bc9ccd2dac355af8f8261f",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67b52543924490a21f4fb1e6",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67abed02dea077e3d4745b87",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67a946f3aca51816f65d2a1d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "67955276a5ed745807cea6c1",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "678eb81ca53ecd3d4119bcee",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "677071bf22ce062436839737",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "676ca5faa8e20b7495fd241b",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6768e5b42974c7ebd70798b6",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "674fa74e69cde28e263fb6be",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "674698c4dcb50764d6b67091",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "673e72761a3af5eb73bed2cd",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "673de46392e0b2c385df3ead",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "673d1722006182dd5cb950bb",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6715715ad08a1b9c4ff6b03b",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "671156e726f968ce677413d9",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "66dbbb07863933ba2d23d24e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "66d60fb834da25b0d4bdb855",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "66d4d6fc09aa865958b7b474",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "66a96d56d4c9034df867ec7f",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "66a945e681eb170e01647e53",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "66a083db58f62e983ef18950",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "669d8bc9a7110affdd36c25b",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "669d33f985c8f5fa01621469",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "667b6a88687162fdc33e6db6",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "66714228fca0a199e1bfcb42",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "66649ccce4ffa2d1d04092ce",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6655f4780570e39355cff61e",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "664a340dd549024e56e3adc6",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "66475a94bb16ab09c9b9d136",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6644c3342386da6af906f0de",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "664378b867250fd0ed218feb",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "663d3118423c9841fdcf825c",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "661312fc6326e3e7536a4713",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "65f7af4f2895a147fbfd396d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "65f5cb691785208674adfa4b",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "65eb7d3184191c3c0b6584d9",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "65c3a54e0ac5f7a9852bc16f",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "659db6693543949795927a81",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "658585ba6e54d665c333e5ce",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6537df31137815f5ce7214f2",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6537139c070ca875a3d48884",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "64f128d9b370ab29ab6d06f1",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "64697ecc734f97e68fb5d440",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "64694d6e734f97e68fb5cdd1",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6467d3b4734f97e68fb539e4",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "64678cfd734f97e68fb5063b",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "64678550746ca7dfea205cf4",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6329c3737f7a8621ee608388",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6300283a142fce1f45ff4d5f",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "61799b51234f1b1fe566a0d8",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "699731fdcc8dba6708d927cc",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6973b36c9046eddddf1b93ee",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6972813708f0d8df1bc887b3",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6970d340c4fd2f2bf9f90627",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "696f9cff0ef532e876848278",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "696ede830e5efb4a0405b996",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "696d9ce114d8156ebc2583be",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "696ca00c7eae717b5846d8af",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "696c7b895d5bde28553e2ed6",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69680dc7cd0c196c90c8a96d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "696707a408b269e16c7fb464",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6966c2821add018a9f484fc0",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6965242e15eebdfd972243c9",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69648529595eba68627ed9e3",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69644cdf2e5970a369282538",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "696426313df6b77325519f03",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "696401518faf17c8ed0360a6",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "696306c78744775fe75cf360",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69619ac2e77adf8a1bff1f7d",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "69617bb89245481490ddbafa",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "696157081d76af3a0619d4b6",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "695b454fff669a053aa16e7b",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  },
+  {
+    "review_id": "6958a045c6cb6ffd5ff9717b",
+    "pain_points": [],
+    "trigger": null,
+    "desire": null,
+    "existing_persona_match": null,
+    "distinct_from_existing": null
+  }
+]

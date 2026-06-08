@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"8e542400982f2633","type":"group","x":-600,"y":-1920,"width":1080,"height":1360,"label":"Check Logo"},
+		{"id":"648be3905f6f924a","type":"file","file":"Lifeforce/generated/format-features-4-retry-2/variant-1.png","x":-566,"y":-1440,"width":223,"height":399},
+		{"id":"c27254f35ff5e3a3","type":"file","file":"Lifeforce/generated/hero-v4-4-retry-2/variant-1.png","x":-303,"y":-1880,"width":223,"height":399},
+		{"id":"6843bebbff866f56","type":"file","file":"Lifeforce/generated/hero-v3-4-retry-2/variant-1.png","x":-566,"y":-1880,"width":223,"height":399},
+		{"id":"255507667ccafcab","type":"file","file":"Lifeforce/generated/hero-v5-4-retry-2/variant-1.png","x":-40,"y":-1880,"width":223,"height":399},
+		{"id":"1cb5e1ee880465f3","type":"file","file":"Lifeforce/generated/format-typography-2-retry-2/variant-1.png","x":-303,"y":-1440,"width":223,"height":399},
+		{"id":"3be3083c40f52e73","type":"file","file":"Lifeforce/00 Assets/Animations/cellular-drift.mp4","x":-40,"y":-1440,"width":223,"height":396,"color":"5"},
+		{"id":"805297349ed3f581","type":"file","file":"Lifeforce/generated/lifestyle-3-retry-2/variant-1.png","x":227,"y":-1435,"width":223,"height":399},
+		{"id":"fbcb430eb4cc210a","type":"file","file":"Lifeforce/generated/ref-03-dismissed-v3-retry-2/variant-1.png","x":-566,"y":-1000,"width":223,"height":399},
+		{"id":"3dd98f588832c7e6","type":"file","file":"Lifeforce/generated/testimonial-4-retry-2/variant-1.png","x":-294,"y":-996,"width":223,"height":399},
+		{"id":"44b79c5474e0642c","type":"file","file":"Lifeforce/generated/ref-08-stress-v1-retry-2/variant-1.png","x":-40,"y":-996,"width":223,"height":399},
+		{"id":"18ee705b50e46265","type":"file","file":"Lifeforce/generated/lifestyle-1-retry-2/variant-1.png","x":-566,"y":-440,"width":223,"height":399},
+		{"id":"57bcecf94a25bced","type":"file","file":"Lifeforce/generated/lifestyle-2-retry-2/variant-1.png","x":-303,"y":-440,"width":223,"height":399},
+		{"id":"e62b2d69bbb6a061","type":"file","file":"Lifeforce/generated/lifestyle-4-retry-2/variant-1.png","x":223,"y":-440,"width":223,"height":399},
+		{"id":"label-1779124605998","type":"text","text":"# Corrected Editorial Portrait + Logo Overlay","x":0,"y":100,"width":600,"height":50,"color":"2"},
+		{"id":"file-1779124605998-0","type":"file","file":"Lifeforce/00 Assets/Statics/T003-test-editorial-portrait/variant-1.png","x":0,"y":160,"width":397,"height":711},
+		{"id":"file-1779124605998-1","type":"file","file":"Lifeforce/00 Assets/Statics/T003-test-editorial-portrait/variant-1-logo.png","x":450,"y":160,"width":397,"height":711}
+	],
+	"edges":[]
+}

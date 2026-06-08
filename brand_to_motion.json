@@ -1,0 +1,23 @@
+{
+  "_comment": "Brand \u2192 Motion workspace/report ID mapping for motion-pp-cli. Built 2026-06-07 from existing Top Spenders Analysis files. Update by either (a) re-running motion-pp-cli brands + looking up the report-id in Motion's UI, or (b) parsing a new Top Spenders Analysis markdown file for the report URL. After updating, run motion-top-spenders skill \u2014 no restart needed.",
+  "workspace_ids": {
+    "Comfort Ortho Wear": "69dea4af85c6f97aa2c156ba",
+    "Elevate": "68c44c43d4196b03cb80d1b0",
+    "IM8": "69c47a6384753eef7353f954",
+    "Lifeforce": "697a256b66437695f674687d",
+    "Stellar Sleep": "69e0f4680ae4b7dd5d546536",
+    "Stepful": "69f4afe9485f29f125fb02ae"
+  },
+  "report_ids": {
+    "Comfort Ortho Wear": "69dea4b2921d9e2714149601",
+    "Elevate": "68c44c45bfc760f386bd43b0",
+    "IM8": "69c47a65ccdeb421c09a15d0",
+    "Lifeforce": "697a256f5582f2ae4ee9dd41",
+    "Stellar Sleep": "69e0f46ac5808a9fa158454d",
+    "Stepful": "69f4afecbf780f05ee16a046"
+  },
+  "missing_report_ids": {
+    "FitSleeps": "INACTIVE. No current Motion report. Skip unless reactivated."
+  },
+  "how_to_find_a_new_report_id": "Open Motion, navigate to the brand's TopAdsReport. Copy the URL \u2014 it ends in /top/<REPORT_ID>. The workspace_id is in the URL too: /organization/<org>/<workspace>/top/<report>."
+}

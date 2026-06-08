@@ -1,0 +1,42 @@
+INSTAGRAM SAFE ZONE — HARD CONSTRAINTS:
+
+THE TOP 400 PIXELS MUST CONTAIN NO TEXT. Background only.
+THE BOTTOM 400 PIXELS MUST CONTAIN NO TEXT. Background only.
+THE LEFT AND RIGHT 150 PIXELS MUST CONTAIN NO TEXT.
+Text only lives in the center area from y=400 to y=1520, x=150 to x=930.
+
+BACKGROUND CONTINUITY:
+The background surface is ONE CONTINUOUS PHOTOGRAPHIC PLANE extending to ALL FOUR EDGES of the 1080×1920 frame. The empty top/bottom zones are the SAME surface as the center, just without text.
+
+DO NOT RENDER:
+- A paper card, poster, or printed rectangle inset into the frame
+- A visible border, frame, or edge between the center content and the top/bottom
+- A shadow line suggesting the ad is an object on another surface
+- A background-within-a-background
+
+DO:
+- Shoot as a single overhead photograph on ONE continuous surface.
+- Text floats directly on the photographed surface.
+- If content is sparse, let empty top/bottom be empty surface — do not invent a frame.
+
+RENDER AT 1080×1920 (9:16 vertical).
+
+SCENE: A premium, flat lay editorial photograph of wellness products on a warm terracotta surface. The scene features the IM8 Box, a Storage Box, a Water Bottle, 5 Sachets, and a Red Cup. Shot on 85mm f/1.8 with soft, high-end studio lighting.
+TYPOGRAPHY: Bold, elegant Arizona Flare serif for headlines, matching the uploaded Brand Spec Card exactly. Crisp Manrope sans-serif for labels.
+COPY TO RENDER:
+Stacked at the top:
+"YOUR FIRST ORDER INCLUDES"
+"$72 IN WELCOME GIFTS. ON US."
+
+Next to products:
+"STORAGE BOX" "$8 FREE"
+"WATER BOTTLE" "$18 FREE"
+"5 SACHETS" "$18 FREE"
+"RED CUP" "$28 FREE"
+
+At the bottom:
+"CLAIM YOUR GIFTS"
+
+PRODUCT FIDELITY: Match the uploaded product reference exactly. Do not restyle. Do not swap proportions.
+NO ANTI-AI SLIPS: film grain visible, no hyper-smooth surfaces.
+NO DASHES OR HYPHENS in rendered copy. Periods only.

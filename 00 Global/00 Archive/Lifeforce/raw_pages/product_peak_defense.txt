@@ -1,0 +1,7 @@
+URL: https://www.mylifeforce.com/product/peak-defense
+Title: 
+HTML Length: 284204
+Scraped: 2026-04-07T14:29:04.264066+00:00
+============================================================
+
+Application error: a client-side exception has occurred (see the browser console for more information).

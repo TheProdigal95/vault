@@ -1,0 +1,94 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+LSOverride
+Icon?
+ehthumbs.db
+Thumbs.db
+.TemporaryItems
+
+# Obsidian
+.trash/
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/cache
+.obsidian/themes
+
+# Node / JS deps
+node_modules/
+.npm/
+.yarn/
+.pnpm-store/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Secrets / env
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets/
+.credentials/
+
+# Large media assets (kept on iCloud / external, not in git)
+**/00 Assets/
+**/Screenshots/
+**/Videos/
+**/Audio/
+**/Raw/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.flac
+*.psd
+*.ai
+*.sketch
+*.fig
+*.indd
+*.raw
+*.cr2
+*.nef
+*.arw
+
+# Build / temp
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+.cache/
+dist/
+build/
+out/
+coverage/
+
+# Generated endcard renders (base64-embedded fonts, large)
+.claude/tools/fal-ai/endcard-renderer/ec-*.html
+.claude/tools/endcard-generator/renders/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+
+# Local config overrides
+.claude/settings.local.json
+.claude/.DS_Store
+
+# OS metadata
+._*
+.fseventsd
+.DocumentRevisions-V100
+.com.apple.timemachine.donotpresent

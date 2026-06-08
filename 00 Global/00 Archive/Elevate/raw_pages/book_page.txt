@@ -1,0 +1,9 @@
+URL: https://book.joinelevate.com/
+Title: None
+HTML Length: 0
+Scraped: 2026-04-07T20:55:36.348320+00:00
+============================================================
+
+ERROR: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://book.joinelevate.com/
+Call log:
+  - navigating to "https://book.joinelevate.com/", waiting until "domcontentloaded"

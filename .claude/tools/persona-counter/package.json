@@ -1,0 +1,13 @@
+{
+  "name": "persona-counter",
+  "version": "1.0.0",
+  "description": "Dictionary-driven persona classification of reviews.jsonl (proposal v5.2, §7.2 Step 4).",
+  "main": "count.js",
+  "type": "module",
+  "scripts": {
+    "test": "node count.test.js"
+  },
+  "dependencies": {
+    "fs-extra": "^11.3.4"
+  }
+}

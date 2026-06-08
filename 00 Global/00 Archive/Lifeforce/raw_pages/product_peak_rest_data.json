@@ -1,0 +1,48 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Peak Rest",
+  "url": "/peak-rest/",
+  "image": [
+    "https://lf-oms-public.s3.us-west-2.amazonaws.com/s78yuuh8p9qp44y0hafkw18x3hll",
+    "https://cdn11.bigcommerce.com/s-byr25matix/images/stencil/original/products/138/438/LF_25oz_PeakRest_angle3_REVA_pf__21669.1686865206.png",
+    "https://cdn11.bigcommerce.com/s-byr25matix/images/stencil/original/products/138/439/LF_25oz_PeakRest_angle2_REVA_pf__09337.1660245288.png"
+  ],
+  "description": "Peak Rest anchors the evening by supporting stress relief, brain recovery, and healthy circadian rhythm for deep, uninterrupted sleep. Peak Rest goes beyond stimulating the onset of sleep to work at the deeper levels of brain recovery and muscle relaxation leading to improved next day energy, mental clarity, and performance. Featuring a unique blend of high-potency patented ingredients including CLOCK, Venetron, Zylaria, and Lavender extract to help optimize recovery, so you wake up feeling refreshed and ready to perform at a peak level. ",
+  "productID": "138",
+  "category": "Health & Beauty > Health Care > Fitness & Nutrition > Vitamins & Supplements",
+  "brand": {
+    "@type": "Brand",
+    "name": "Lifeforce"
+  },
+  "sku": "PEAK-REST-00024",
+  "offers": {
+    "@type": "Offer",
+    "url": "/peak-rest/",
+    "price": 93.5,
+    "priceCurrency": "USD",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "InStock",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 1,
+          "unitCode": "DAY"
+        }
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "US"
+      },
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "USD"
+      }
+    }
+  }
+}

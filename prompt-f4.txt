@@ -1,0 +1,45 @@
+INSTAGRAM SAFE ZONE — HARD CONSTRAINTS:
+
+THE TOP 400 PIXELS MUST CONTAIN NO TEXT. Background only.
+THE BOTTOM 400 PIXELS MUST CONTAIN NO TEXT. Background only.
+THE LEFT AND RIGHT 150 PIXELS MUST CONTAIN NO TEXT.
+Text only lives in the center area from y=400 to y=1520, x=150 to x=930.
+
+BACKGROUND CONTINUITY:
+The background surface is ONE CONTINUOUS PHOTOGRAPHIC PLANE extending to ALL FOUR EDGES of the 1080×1920 frame. The empty top/bottom zones are the SAME surface as the center, just without text.
+
+DO NOT RENDER:
+- A paper card, poster, or printed rectangle inset into the frame
+- A visible border, frame, or edge between the center content and the top/bottom
+- A shadow line suggesting the ad is an object on another surface
+- A background-within-a-background
+
+DO:
+- Shoot as a single overhead photograph on ONE continuous surface.
+- Text floats directly on the photographed surface.
+- If content is sparse, let empty top/bottom be empty surface — do not invent a frame.
+
+RENDER AT 1080×1920 (9:16 vertical).
+
+SCENE: A clean, side-by-side comparison on a warm cream surface. One side represents IM8 (premium, red accents), the other side represents Other Brands (muted, grey).
+TYPOGRAPHY: Arizona Flare for the main headline. Manrope for the comparison rows.
+COPY TO RENDER:
+"WHY IM8 WINS."
+"INGREDIENT BY INGREDIENT."
+
+"IM8"
+"OTHER BRANDS"
+
+"50MCG VITAMIN D3" vs "NO VITAMIN D3"
+"100MCG K2VITAL" vs "90MCG VITAMIN K"
+"100MG CLINICAL COQ10" vs "NO COQ10"
+"1500MG CLINICAL MSM" vs "NO MSM"
+"3G PREBIOTIC FIBER" vs "2G PREBIOTIC FIBER"
+"900MG VITAMIN C" vs "420MG VITAMIN C"
+"100MG MAGNESIUM" vs "26MG MAGNESIUM"
+
+"SWITCH TO IM8. $2.61 A DAY."
+
+PRODUCT FIDELITY: Match the uploaded product reference exactly. Do not restyle. Do not swap proportions.
+NO ANTI-AI SLIPS: film grain visible, no hyper-smooth surfaces.
+NO DASHES OR HYPHENS in rendered copy. Periods only.

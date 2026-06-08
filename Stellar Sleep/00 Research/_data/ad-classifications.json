@@ -1,0 +1,234 @@
+{
+  "ads": [
+    {
+      "ad_id": "2674078739617628",
+      "persona": "The Skeptical Psychology Convert",
+      "angle": "Harvard-backed psychology for better sleep",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "2062645057888583",
+      "persona": "The Skeptical Psychology Convert",
+      "angle": "Harvard-backed psychology for better sleep",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "3668904229907724",
+      "persona": "The Skeptical Psychology Convert",
+      "angle": "Harvard-backed psychology for better sleep",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "759845283844258",
+      "persona": "The Skeptical Psychology Convert",
+      "angle": "Harvard-backed psychology for better sleep",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "1206041501608153",
+      "persona": "The Chronic Everything-Failer",
+      "angle": "Tried everything? This 10-min daily method works.",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "966622655940524",
+      "persona": "The Chronic Everything-Failer",
+      "angle": "Tried everything? This 10-min daily method works.",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "2417356385419622",
+      "persona": "The Skeptical Psychology Convert",
+      "angle": "Harvard-backed psychology for better sleep",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "1948741912422824",
+      "persona": "The Chronic Everything-Failer",
+      "angle": "Tried everything? This 10-min daily method works.",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "1463149305271609",
+      "persona": "The Skeptical Psychology Convert",
+      "angle": "Harvard-backed psychology for better sleep",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "964063809477870",
+      "persona": "The Skeptical Psychology Convert",
+      "angle": "Harvard-backed psychology for better sleep",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "1285260876868430",
+      "persona": "The Skeptical Psychology Convert",
+      "angle": "Harvard-backed psychology for better sleep",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "963592709651847",
+      "persona": "The Chronic Everything-Failer",
+      "angle": "Tried everything? This 10-min daily method works.",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "919508317514249",
+      "persona": "The Skeptical Psychology Convert",
+      "angle": "Harvard-backed psychology for better sleep",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "829105086879788",
+      "persona": "The Chronic Everything-Failer",
+      "angle": "Tried everything? This 10-min daily method works.",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "1441718840726324",
+      "persona": "The Chronic Everything-Failer",
+      "angle": "Tried everything? This 10-min daily method works.",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "1630176828103411",
+      "persona": "The Chronic Everything-Failer",
+      "angle": "Tried everything? This 10-min daily method works.",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "1724458285206827",
+      "persona": "The Skeptical Psychology Convert",
+      "angle": "Harvard-backed psychology for better sleep",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "1731882388186895",
+      "persona": "The Skeptical Psychology Convert",
+      "angle": "Harvard-backed psychology for better sleep",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "789295077237240",
+      "persona": "The Skeptical Psychology Convert",
+      "angle": "Harvard-backed psychology for better sleep",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "1483623070081882",
+      "persona": "The Skeptical Psychology Convert",
+      "angle": "Harvard-backed psychology for better sleep",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "3322081284646659",
+      "persona": "The Skeptical Psychology Convert",
+      "angle": "Harvard-backed psychology for better sleep",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "4384984691752647",
+      "persona": "The Chronic Everything-Failer",
+      "angle": "Tried everything? This 10-min daily method works.",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "795848086518371",
+      "persona": "The Chronic Everything-Failer",
+      "angle": "Tried everything? This 10-min daily method works.",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "953944957243313",
+      "persona": "The Skeptical Psychology Convert",
+      "angle": "Harvard-backed psychology for better sleep",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "1859705698002430",
+      "persona": "The Skeptical Psychology Convert",
+      "angle": "Harvard-backed psychology for better sleep",
+      "format": "carousel"
+    },
+    {
+      "ad_id": "1966765570618942",
+      "persona": "The Skeptical Psychology Convert",
+      "angle": "Harvard-backed psychology for better sleep",
+      "format": "carousel"
+    }
+  ],
+  "angle_clusters": {
+    "Harvard-backed psychology for better sleep": "Harvard-backed psychology for better sleep",
+    "Harvard-developed, proven psychology for better sleep": "Harvard-backed psychology for better sleep",
+    "Harvard-backed psychology for customized sleep": "Harvard-backed psychology for better sleep",
+    "Overcame every failed sleep hack in weeks with 10 minutes a day": "Tried everything? This 10-min daily method works.",
+    "Tried everything? This 10-min daily method works.": "Tried everything? This 10-min daily method works.",
+    "Tried everything, 10 minutes daily reset my nights": "Tried everything? This 10-min daily method works."
+  },
+  "validation": {
+    "per_persona": [
+      {
+        "persona": "The Skeptical Psychology Convert",
+        "n_tagged": 17,
+        "n_rescored": 17,
+        "agreements": 0,
+        "precision": 0,
+        "status": "fail",
+        "banner": "ad classification precision below 70% on \"The Skeptical Psychology Convert\" after retry (0%). Pillars for this persona are directional only."
+      },
+      {
+        "persona": "The Chronic Everything-Failer",
+        "n_tagged": 9,
+        "n_rescored": 9,
+        "agreements": 9,
+        "precision": 1,
+        "status": "pass",
+        "banner": "precision measured on small-N sample (n=9) for persona \"The Chronic Everything-Failer\" — noise-flagged."
+      },
+      {
+        "persona": "The Sleep Anxiety Spiraler",
+        "n_tagged": 0,
+        "n_rescored": 0,
+        "agreements": null,
+        "precision": null,
+        "status": "skipped-insufficient-volume",
+        "banner": "precision not measured — insufficient ad volume (<5 ads) for persona \"The Sleep Anxiety Spiraler\""
+      },
+      {
+        "persona": "The Pill Escape Seeker",
+        "n_tagged": 0,
+        "n_rescored": 0,
+        "agreements": null,
+        "precision": null,
+        "status": "skipped-insufficient-volume",
+        "banner": "precision not measured — insufficient ad volume (<5 ads) for persona \"The Pill Escape Seeker\""
+      },
+      {
+        "persona": "The Billing-Burned Customer",
+        "n_tagged": 0,
+        "n_rescored": 0,
+        "agreements": null,
+        "precision": null,
+        "status": "skipped-insufficient-volume",
+        "banner": "precision not measured — insufficient ad volume (<5 ads) for persona \"The Billing-Burned Customer\""
+      }
+    ],
+    "banner_flags": [
+      "ad classification precision below 70% on \"The Skeptical Psychology Convert\" after retry (0%). Pillars for this persona are directional only.",
+      "precision measured on small-N sample (n=9) for persona \"The Chronic Everything-Failer\" — noise-flagged.",
+      "precision not measured — insufficient ad volume (<5 ads) for persona \"The Sleep Anxiety Spiraler\"",
+      "precision not measured — insufficient ad volume (<5 ads) for persona \"The Pill Escape Seeker\"",
+      "precision not measured — insufficient ad volume (<5 ads) for persona \"The Billing-Burned Customer\""
+    ]
+  },
+  "meta": {
+    "started_at": "2026-04-20T19:18:13.284Z",
+    "stages_run": [
+      "classify",
+      "dedup",
+      "validate"
+    ],
+    "mock": false,
+    "model": "gemini-2.5-flash"
+  }
+}

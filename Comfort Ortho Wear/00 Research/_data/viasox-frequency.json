@@ -1,0 +1,38 @@
+{
+  "total_reviews": 7,
+  "frequency_table": [
+    {
+      "persona": "The Long-Shift Standing Worker",
+      "reviews_matched": 2,
+      "percent_of_reviews": 28.6,
+      "avg_rating": 1
+    },
+    {
+      "persona": "The Chronic Joint & Swelling Condition Buyer",
+      "reviews_matched": 2,
+      "percent_of_reviews": 28.6,
+      "avg_rating": 1
+    }
+  ],
+  "multi_persona_overlap_top20": [
+    {
+      "combo": "The Chronic Joint & Swelling Condition Buyer + The Long-Shift Standing Worker",
+      "count": 1,
+      "percent_of_reviews": 14.3
+    }
+  ],
+  "untagged": {
+    "count": 4,
+    "percent_of_reviews": 57.1
+  },
+  "borderlines": {
+    "The Long-Shift Standing Worker": [
+      "viasox-003",
+      "viasox-004"
+    ],
+    "The Chronic Joint & Swelling Condition Buyer": [
+      "viasox-004",
+      "viasox-005"
+    ]
+  }
+}
