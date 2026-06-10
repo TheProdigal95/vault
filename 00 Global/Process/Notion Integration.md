@@ -79,7 +79,7 @@ Every section below is optional. Only include the ones that carry real signal fo
 **Adding a Creative Reference entry:** Use `mcp__notion__notion-create-pages` with parent `{ type: "data_source_id", data_source_id: "16359a9c-f1b1-42fb-bddb-1a6d678e3ae6" }`. Properties: Name, Type, Brand, Link, Source, Tags, Added by, date:Date added:start. Follow the role-based page content structure above.
 
 **Setting "Added by":** Always set this to the current strategist's Notion user ID — same detection pattern as ClickUp. Flow:
-1. Read `.claude/strategist.json` for the current strategist's `notion_id`.
+1. Read `00 Global/Hermes/strategist.json` for the current strategist's `notion_id`.
 2. If the file doesn't have a `notion_id` field, ask the strategist for their Notion user ID, append it, and continue.
 3. Every `notion-create-pages` call to the References Database must include `"Added by": "<notion_id>"`.
 

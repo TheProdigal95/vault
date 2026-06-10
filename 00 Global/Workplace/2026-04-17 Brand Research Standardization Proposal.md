@@ -266,7 +266,7 @@ Three scraping tracks run in parallel: brand reviews, first-party whole-site cra
 
 ### 5.4 First-party whole-site scraping — Playwright CLI (Node)
 
-Built at `.claude/tools/site-scraper/`, matching the existing `.claude/tools/grab/` and `.claude/tools/gemini-api/` convention. Node / Playwright library, invoked from Bash. **No Playwright MCP.**
+Built at `00 Global/Hermes/Tools/site-scraper/`, matching the existing `00 Global/Hermes/Tools/grab/` and `00 Global/Hermes/Tools/gemini-api/` convention. Node / Playwright library, invoked from Bash. **No Playwright MCP.**
 
 **Approach: recursive same-origin crawl. No page list, no strategist confirmation step.** The crawler starts at the homepage, follows every same-origin link it finds, and scrapes each page it discovers. This eliminates the failure mode of missing a PDP (or any other page) because no one listed it.
 
@@ -295,7 +295,7 @@ Built at `.claude/tools/site-scraper/`, matching the existing `.claude/tools/gra
 **Invocation pattern:**
 
 ```bash
-node .claude/tools/site-scraper/scrape-site.js \
+node 00 Global/Hermes/Tools/site-scraper/scrape-site.js \
   --url https://im8health.com \
   --output-dir "IM8/raw_pages_tmp"
 ```
@@ -325,7 +325,7 @@ The existing `/ad-library` tool against the Meta Ad Library URL, invoked with th
 
 **Text-only classification. No media downloads, no audio transcription, no Gemini vision.** The classifier reads primary text + headline + description + on-image text + caption. Saves API cost and runtime; accepts noise on video ads where VO adds signal not present in the caption.
 
-**`--no-media` flag status.** The existing `/ad-library` tool downloads media by default. Adding `--no-media` (skip media download, metadata-only output) is a small build item tracked in §16.3. Until the flag lands, the research pipeline uses `/ad-library` as-is and Phase 6 cleanup deletes the downloaded media directory (`.claude/tools/ad-library/downloads/session-*`) as a cleanup artifact.
+**`--no-media` flag status.** The existing `/ad-library` tool downloads media by default. Adding `--no-media` (skip media download, metadata-only output) is a small build item tracked in §16.3. Until the flag lands, the research pipeline uses `/ad-library` as-is and Phase 6 cleanup deletes the downloaded media directory (`00 Global/Hermes/Tools/ad-library/downloads/session-*`) as a cleanup artifact.
 
 Output: `00 Research/_data/ad-library-raw.json` — one object per live ad.
 
@@ -416,7 +416,7 @@ gut|digestion|bloat|bowel|IBS|IBD|colitis|probiotic|constipat|stomach|digest
 
 Reviews can match multiple personas. Overlap is meaningful (e.g. IM8's "Energy + Pill Fatigue" overlap = ideal-customer signal).
 
-**Step 4 — Classify the full corpus** via `.claude/tools/persona-counter/`
+**Step 4 — Classify the full corpus** via `00 Global/Hermes/Tools/persona-counter/`
 
 Apply the dictionary to every review in `reviews.jsonl`. Persist `personas: [...]` field on each review (consumed by Phase 3a). Outputs:
 - Full frequency table: `Persona | Reviews Matched | % of Reviews | Avg Rating`
@@ -964,15 +964,15 @@ No fixed calendar. Refresh is triggered by evidence, not by time.
 | Tool | Status | Location | Purpose |
 |---|---|---|---|
 | `/review-scraper` skill | ✅ Exists | `~/.claude/skills/review-scraper/` | Scrape reviews from 7 platforms + custom fallback |
-| `/ad-library` command | ✅ Exists (needs `--no-media` flag added — §16.3) | `.claude/commands/ad-library.md` | Meta ad library pull |
-| `/grab` command | ✅ Exists | `.claude/commands/grab.md` | Download ad media |
-| `.claude/tools/gemini-api/` | ✅ Exists | `.claude/tools/gemini-api/` | Text/image/video analysis |
-| First-party whole-site crawler | ❌ To build | `.claude/tools/site-scraper/` | §5.4 contract |
-| Persona-counter | ❌ To build | `.claude/tools/persona-counter/` | §16.3 |
-| Review sampler | ❌ To build | `.claude/tools/review-sampler/` | §16.3 |
-| Ad classifier | ❌ To build | `.claude/tools/ad-classifier/` | §16.3 |
+| `/ad-library` command | ✅ Exists (needs `--no-media` flag added — §16.3) | `00 Global/Hermes/Commands/ad-library.md` | Meta ad library pull |
+| `/grab` command | ✅ Exists | `00 Global/Hermes/Commands/grab.md` | Download ad media |
+| `00 Global/Hermes/Tools/gemini-api/` | ✅ Exists | `00 Global/Hermes/Tools/gemini-api/` | Text/image/video analysis |
+| First-party whole-site crawler | ❌ To build | `00 Global/Hermes/Tools/site-scraper/` | §5.4 contract |
+| Persona-counter | ❌ To build | `00 Global/Hermes/Tools/persona-counter/` | §16.3 |
+| Review sampler | ❌ To build | `00 Global/Hermes/Tools/review-sampler/` | §16.3 |
+| Ad classifier | ❌ To build | `00 Global/Hermes/Tools/ad-classifier/` | §16.3 |
 | `brand-researcher` sub-agent | ❌ To build | `.claude/agents/brand-researcher.md` | Orchestrates Phases 0–6 |
-| `/research-brand` slash command | ❌ To build | `.claude/commands/research-brand.md` | UX surface |
+| `/research-brand` slash command | ❌ To build | `00 Global/Hermes/Commands/research-brand.md` | UX surface |
 | Playwright runtime | ❌ Not installed | — | See §16.2 |
 
 Persona-precision is inlined as a prompt in the sub-agent — no separate tool. `/scrape-site` cut — invoke site-scraper from Bash directly.
@@ -984,8 +984,8 @@ Reddit sprints run via Research Engine MCP when the strategist initiates ad-hoc 
 Add to `00 Global/Process/Setup.md`:
 
 ```bash
-# First-party site scraper (Node — matches .claude/tools/* convention)
-cd .claude/tools/site-scraper && npm install && npx playwright install chromium && cd -
+# First-party site scraper (Node — matches 00 Global/Hermes/Tools/* convention)
+cd 00 Global/Hermes/Tools/site-scraper && npm install && npx playwright install chromium && cd -
 
 # Review-scraper skill (Python — reuses the chromium binary installed above)
 pip install httpx playwright
@@ -995,12 +995,12 @@ No Playwright MCP. Both paths invoke Playwright via local scripts from Bash.
 
 ### 16.3 Tools to build
 
-1. **`.claude/tools/site-scraper/scrape-site.js`** — §5.4 contract. Node/Playwright recursive whole-site crawler. Reads `/robots.txt` + `/sitemap.xml` on start to surface subdomains. ~3h.
-2. **`.claude/tools/review-sampler/`** — Node. Input: `reviews.jsonl` (pre-lock) or classified `reviews.jsonl` (post-lock). Outputs: stratified Markdown (Review Analysis Appendix A) and persona-segmented Markdown (Appendix B). Pre-lock mode applies the Step 2 context-handling truncation (§7.2 Step 2) when longest-stratum sample exceeds ~150k tokens. ~1h.
-3. **`.claude/tools/persona-counter/`** — Node. Input: `reviews.jsonl` + `persona-dictionary.json`. Outputs: full frequency table, Multi-Persona Overlap top 20, untagged residual %, per-review `personas: [...]` field written back to JSONL. ~1–2h.
-4. **`.claude/tools/ad-classifier/`** — Node. Input: `ad-library-raw.json` + locked persona taxonomy + angle library (starts empty, accumulates). Outputs: per-ad `{persona, angle, format}` JSON + top-level `angle_clusters` canonical map + aggregate `Persona | Angle | Ad Count` table. Gemini classification, batched 10/call with exponential backoff. Three sub-modes: (a) initial classification, (b) **angle deduplication pass** (§9 — consolidates near-duplicate angle strings to canonical form), (c) inline precision-validator (20-ad rescore per persona). ~2–3h (adds ~30–60 min for the dedup pass over the prior spec).
+1. **`00 Global/Hermes/Tools/site-scraper/scrape-site.js`** — §5.4 contract. Node/Playwright recursive whole-site crawler. Reads `/robots.txt` + `/sitemap.xml` on start to surface subdomains. ~3h.
+2. **`00 Global/Hermes/Tools/review-sampler/`** — Node. Input: `reviews.jsonl` (pre-lock) or classified `reviews.jsonl` (post-lock). Outputs: stratified Markdown (Review Analysis Appendix A) and persona-segmented Markdown (Appendix B). Pre-lock mode applies the Step 2 context-handling truncation (§7.2 Step 2) when longest-stratum sample exceeds ~150k tokens. ~1h.
+3. **`00 Global/Hermes/Tools/persona-counter/`** — Node. Input: `reviews.jsonl` + `persona-dictionary.json`. Outputs: full frequency table, Multi-Persona Overlap top 20, untagged residual %, per-review `personas: [...]` field written back to JSONL. ~1–2h.
+4. **`00 Global/Hermes/Tools/ad-classifier/`** — Node. Input: `ad-library-raw.json` + locked persona taxonomy + angle library (starts empty, accumulates). Outputs: per-ad `{persona, angle, format}` JSON + top-level `angle_clusters` canonical map + aggregate `Persona | Angle | Ad Count` table. Gemini classification, batched 10/call with exponential backoff. Three sub-modes: (a) initial classification, (b) **angle deduplication pass** (§9 — consolidates near-duplicate angle strings to canonical form), (c) inline precision-validator (20-ad rescore per persona). ~2–3h (adds ~30–60 min for the dedup pass over the prior spec).
 5. **`brand-researcher` sub-agent** at `.claude/agents/brand-researcher.md` — orchestrates phases, enforces auto-gates, dispatches parallel phase workers, inlines persona-precision prompt (Step 5) and pain-cluster prompt (Step 6). Tracks the shared 2-iteration budget across Step 4 halts and Auto-Gate B failures. ~3h.
-6. **`/research-brand` slash command** at `.claude/commands/research-brand.md` — intake UX wrapping the sub-agent; supports first-time-run and selective-refresh entry modes (§17.1). ~1h.
+6. **`/research-brand` slash command** at `00 Global/Hermes/Commands/research-brand.md` — intake UX wrapping the sub-agent; supports first-time-run and selective-refresh entry modes (§17.1). ~1h.
 7. **Add `--no-media` flag to `/ad-library`** — the existing tool downloads media by default; research pipeline doesn't need it (§5.5, §17.3). Flag skips media download and returns metadata-only output. ~30 min.
 
 **One-time install (not counted in build effort):** Playwright Chromium via `npx playwright install chromium` — ~15 min on first machine, downloads ~170 MB browser binary. Captured in `Setup.md` (§16.2).
@@ -1084,10 +1084,10 @@ Compliance/guardrails docs are supplied by the client and placed in `00 Context/
 
 1. **Strategist sign-off** on v5.2 as the canonical process.
 2. **Install Playwright** on the current machine (§16.2).
-3. **Build `site-scraper`** (whole-site recursive crawler) at `.claude/tools/site-scraper/` (§5.4, §16.3). ~3h.
-4. **Build `review-sampler`** at `.claude/tools/review-sampler/` (§7.2 Step 1, §10.5 Appendices). ~1h.
-5. **Build `persona-counter`** at `.claude/tools/persona-counter/` (§7.2 Step 4). ~1–2h.
-6. **Build `ad-classifier`** at `.claude/tools/ad-classifier/` (§9, §11). ~2h.
+3. **Build `site-scraper`** (whole-site recursive crawler) at `00 Global/Hermes/Tools/site-scraper/` (§5.4, §16.3). ~3h.
+4. **Build `review-sampler`** at `00 Global/Hermes/Tools/review-sampler/` (§7.2 Step 1, §10.5 Appendices). ~1h.
+5. **Build `persona-counter`** at `00 Global/Hermes/Tools/persona-counter/` (§7.2 Step 4). ~1–2h.
+6. **Build `ad-classifier`** at `00 Global/Hermes/Tools/ad-classifier/` (§9, §11). ~2h.
 7. **Build `brand-researcher` sub-agent** at `.claude/agents/brand-researcher.md` (§17). ~3h.
 8. **Build `/research-brand` slash command** (§17.1). ~1h.
 9. **Add `--no-media` flag to `/ad-library`** (§5.5, §16.3). ~30 min.

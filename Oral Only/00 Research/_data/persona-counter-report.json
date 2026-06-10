@@ -1,0 +1,86 @@
+{
+  "total_reviews": 16,
+  "frequency_table": [
+    {
+      "persona": "The Credibility-Conscious Critic",
+      "reviews_matched": 10,
+      "percent_of_reviews": 62.5,
+      "avg_rating": 0.5
+    },
+    {
+      "persona": "The Protocol-Fatigued Veteran",
+      "reviews_matched": 8,
+      "percent_of_reviews": 50,
+      "avg_rating": 0.63
+    },
+    {
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "reviews_matched": 7,
+      "percent_of_reviews": 43.8,
+      "avg_rating": 1.43
+    },
+    {
+      "persona": "The Hematocrit Skeptic",
+      "reviews_matched": 2,
+      "percent_of_reviews": 12.5,
+      "avg_rating": 0
+    }
+  ],
+  "multi_persona_overlap_top20": [
+    {
+      "combo": "The Protocol-Fatigued Veteran + The Symptom-Focused Solution-Seeker",
+      "count": 2,
+      "percent_of_reviews": 12.5
+    },
+    {
+      "combo": "The Credibility-Conscious Critic + The Protocol-Fatigued Veteran + The Symptom-Focused Solution-Seeker",
+      "count": 2,
+      "percent_of_reviews": 12.5
+    },
+    {
+      "combo": "The Credibility-Conscious Critic + The Protocol-Fatigued Veteran",
+      "count": 1,
+      "percent_of_reviews": 6.3
+    },
+    {
+      "combo": "The Credibility-Conscious Critic + The Hematocrit Skeptic + The Protocol-Fatigued Veteran",
+      "count": 1,
+      "percent_of_reviews": 6.3
+    },
+    {
+      "combo": "The Credibility-Conscious Critic + The Hematocrit Skeptic + The Protocol-Fatigued Veteran + The Symptom-Focused Solution-Seeker",
+      "count": 1,
+      "percent_of_reviews": 6.3
+    }
+  ],
+  "untagged": {
+    "count": 1,
+    "percent_of_reviews": 6.3
+  },
+  "borderlines": {
+    "The Protocol-Fatigued Veteran": [
+      "oo-home-marcus-t",
+      "excelmale-funkodyssey",
+      "excelmale-day-dreamer",
+      "excelmale-radman",
+      "reddit-vdux"
+    ],
+    "The Credibility-Conscious Critic": [
+      "oo-home-daniel-r",
+      "excelmale-radman",
+      "reddit-vorilla-og",
+      "reddit-vdux"
+    ],
+    "The Symptom-Focused Solution-Seeker": [
+      "oo-home-anthony-l",
+      "excelmale-day-dreamer",
+      "reddit-jayween",
+      "reddit-unique-yak-2449",
+      "reddit-vdux",
+      "reddit-bioguideoperator"
+    ],
+    "The Hematocrit Skeptic": [
+      "reddit-vdux"
+    ]
+  }
+}

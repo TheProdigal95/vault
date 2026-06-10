@@ -14,10 +14,10 @@
 
 - Node: v25.8.1 ✅
 - npm: 11.11.0 ✅
-- `.claude/tools/gemini-api/` present ✅
-- `.claude/tools/grab/` present (Node/Playwright convention reference) ✅
-- `.claude/commands/ad-library.md` present ✅
-- `.claude/tools/site-scraper/` does not exist — will create ✅
+- `00 Global/Hermes/Tools/gemini-api/` present ✅
+- `00 Global/Hermes/Tools/grab/` present (Node/Playwright convention reference) ✅
+- `00 Global/Hermes/Commands/ad-library.md` present ✅
+- `00 Global/Hermes/Tools/site-scraper/` does not exist — will create ✅
 - Playwright Chromium: not yet installed — install step below
 
 ---
@@ -43,7 +43,7 @@
 - ES modules (`"type": "module"`), `fs-extra`, `dotenv`, `.env` in tool dir, absolute paths in CLIs, `--flag value` style args. Pattern reused across all four new tools.
 
 ### 3. site-scraper — ✅ built
-- **Path:** `.claude/tools/site-scraper/`
+- **Path:** `00 Global/Hermes/Tools/site-scraper/`
 - **Spec:** proposal §5.4 (recursive same-origin crawler).
 - **Deps:** `playwright ^1.47.0`, `fs-extra ^11.3.4`.
 - **CLI:** `--url`, `--output-dir`, `--max-depth` (4), `--max-pages` (200), `--headless`, `--concurrency`.
@@ -51,7 +51,7 @@
 - **Tests:** 26/26 pass (`node scrape-site.test.js`). Cover URL normalization, same-origin matching, exclusion filters, non-HTML ext detection, slug derivation, sitemap URL extraction.
 
 ### 4. review-sampler — ✅ built
-- **Path:** `.claude/tools/review-sampler/`
+- **Path:** `00 Global/Hermes/Tools/review-sampler/`
 - **Spec:** §7.2 Step 1 + §10.5 (Appendix A stratified; Appendix B persona-segmented).
 - **Deps:** `fs-extra`.
 - **CLI:** `--input`, `--mode` (`stratified` \| `persona-segmented`), `--output`, `--seed`, `--sample-size`, `--per-persona`, `--truncate-threshold`, `--truncate-words`.
@@ -59,7 +59,7 @@
 - **Tests:** 19/19 pass.
 
 ### 5. persona-counter — ✅ built
-- **Path:** `.claude/tools/persona-counter/`
+- **Path:** `00 Global/Hermes/Tools/persona-counter/`
 - **Spec:** §7.2 Step 4 (dictionary-driven full-corpus classification).
 - **Deps:** `fs-extra`.
 - **CLI:** `--input`, `--dictionary`, `--output-jsonl`, `--output-report`, `--overwrite`, `--halt-threshold` (default 0.5).
@@ -67,7 +67,7 @@
 - **Tests:** 12/12 pass.
 
 ### 6. ad-classifier — ✅ built
-- **Path:** `.claude/tools/ad-classifier/`
+- **Path:** `00 Global/Hermes/Tools/ad-classifier/`
 - **Spec:** §9 (classify), §11 (angle dedup + precision validation).
 - **Deps:** `fs-extra`, `@google/generative-ai`, `dotenv`.
 - **Stages:** `classify` \| `dedup` \| `validate` \| `all`.
@@ -83,8 +83,8 @@
 - **Tests:** 20/20 pass.
 
 ### 7. `/ad-library --no-media` — ✅ added
-- **Path:** `~/.claude/tools/ad-library/batch.js` + `.claude/commands/ad-library.md`.
-- **Discovery:** the ad-library tool itself lives under the user-global `~/.claude/tools/ad-library/` (not project-local), but the slash-command doc is project-local at `.claude/commands/ad-library.md`. Both are canonical — kept as-is.
+- **Path:** `~/00 Global/Hermes/Tools/ad-library/batch.js` + `00 Global/Hermes/Commands/ad-library.md`.
+- **Discovery:** the ad-library tool itself lives under the user-global `~/00 Global/Hermes/Tools/ad-library/` (not project-local), but the slash-command doc is project-local at `00 Global/Hermes/Commands/ad-library.md`. Both are canonical — kept as-is.
 - **Change:** added `--no-media` as an alias to the pre-existing `--scrape-only` flag in `batch.js` (one-line parser change + usage string). Updated the slash-command doc to mention `--no-media` next to `--scrape-only` and reference proposal §5.5. `scrape.js` already outputs metadata-only (no media download), so no change needed there.
 - **No tests:** the ad-library tool has no test harness; change is a 2-char flag alias.
 
@@ -93,22 +93,22 @@
 ## Summary for the morning
 
 **Built and tested (77/77 unit tests pass):**
-- `.claude/tools/site-scraper/` — 26 tests
-- `.claude/tools/review-sampler/` — 19 tests
-- `.claude/tools/persona-counter/` — 12 tests
-- `.claude/tools/ad-classifier/` — 20 tests (mock mode; no real Gemini calls)
+- `00 Global/Hermes/Tools/site-scraper/` — 26 tests
+- `00 Global/Hermes/Tools/review-sampler/` — 19 tests
+- `00 Global/Hermes/Tools/persona-counter/` — 12 tests
+- `00 Global/Hermes/Tools/ad-classifier/` — 20 tests (mock mode; no real Gemini calls)
 
 **To verify in the morning:**
 ```bash
-cd ".claude/tools/site-scraper"    && npm install && node scrape-site.test.js
-cd ".claude/tools/review-sampler"  && npm install && node sample.test.js
-cd ".claude/tools/persona-counter" && npm install && node count.test.js
-cd ".claude/tools/ad-classifier"   && npm install && node classify.test.js
+cd "00 Global/Hermes/Tools/site-scraper"    && npm install && node scrape-site.test.js
+cd "00 Global/Hermes/Tools/review-sampler"  && npm install && node sample.test.js
+cd "00 Global/Hermes/Tools/persona-counter" && npm install && node count.test.js
+cd "00 Global/Hermes/Tools/ad-classifier"   && npm install && node classify.test.js
 ```
 (Each tool has its own `package.json`; `npm install` is per-tool. `node_modules` weren't committed.)
 
 **Also shipped:**
-- `--no-media` alias on `~/.claude/tools/ad-library/batch.js` + doc update in `.claude/commands/ad-library.md`.
+- `--no-media` alias on `~/00 Global/Hermes/Tools/ad-library/batch.js` + doc update in `00 Global/Hermes/Commands/ad-library.md`.
 
 **Explicitly deferred (per Option B scope):**
 - `brand-researcher` orchestrator sub-agent (§3, §16.3 item 5) — wants real tool output to design handoffs against.
@@ -124,7 +124,7 @@ cd ".claude/tools/ad-classifier"   && npm install && node classify.test.js
 - `node --check` passes on all 4 main files.
 - Re-ran all test suites: **77/77 pass** (site 26 / sampler 19 / counter 12 / classifier 20).
 - Smoke test: `persona-counter` run end-to-end on synthetic 4-review fixture → correct frequency table, overlap, untagged %, borderlines.
-- `--no-media` flag present in `~/.claude/tools/ad-library/batch.js` (line 35) and documented in `.claude/commands/ad-library.md`.
+- `--no-media` flag present in `~/00 Global/Hermes/Tools/ad-library/batch.js` (line 35) and documented in `00 Global/Hermes/Commands/ad-library.md`.
 
 **Bug found + fixed during audit:**
 - **CLI main-guard was silently broken on vault paths with spaces.** All 4 tools used `import.meta.url === \`file://${process.argv[1]}\`` to detect direct invocation. On macOS with spaces + tildes in the path (`Mobile Documents`, `iCloud~md~obsidian`), `import.meta.url` is URL-encoded (`%20`, `%7E`) while `file://${argv[1]}` is not — so the guard was always false. Tools exited 0 silently when invoked as a CLI; tests still passed because they import functions directly.
@@ -132,7 +132,7 @@ cd ".claude/tools/ad-classifier"   && npm install && node classify.test.js
 
 **Open items / TODOs (carried forward):**
 - **No integration tests yet.** All 77 tests are unit tests with synthetic fixtures. "Integration test" here means a real brand run end-to-end — not new test code. First real brand run is the smoke test; budget for one fix-up pass before scaling.
-- **Ad-library location discrepancy.** The tool lives at `~/.claude/tools/ad-library/` (user-global) while every other research tool is at `.claude/tools/` (project-local). Noted in `brand-researcher.md` — the orchestrator checks `.claude/commands/ad-library.md` for the canonical invocation. Reconciliation is a nice-to-have, not a blocker.
+- **Ad-library location discrepancy.** The tool lives at `~/00 Global/Hermes/Tools/ad-library/` (user-global) while every other research tool is at `00 Global/Hermes/Tools/` (project-local). Noted in `brand-researcher.md` — the orchestrator checks `00 Global/Hermes/Commands/ad-library.md` for the canonical invocation. Reconciliation is a nice-to-have, not a blocker.
 - **`persona-counter` halt loop — resolved at orchestrator level.** `count.js` exits code 2 when untagged > threshold. `brand-researcher.md` tracks the shared 2-iteration budget and handles both Step 4 halt and Auto-Gate B failure loops.
 - **`ad-classifier` real-API behavior unverified.** Classification is text-only (primary text + headline + description + on-image text + caption) — no media, no vision. The risk is the Gemini text classification/dedup prompts against live ad copy; mock mode covers shape but not LLM output quality. First real run: use a small brand (~20 ads) to sanity-check JSON parsing and retry logic before scaling.
 - **Output-directory convention — resolved at orchestrator level.** `brand-researcher.md` specifies every canonical output path per §2 and §4.3 of the proposal. Each tool invocation passes explicit `--output` / `--output-jsonl` / `--output-report` paths.
@@ -150,7 +150,7 @@ cd ".claude/tools/ad-classifier"   && npm install && node classify.test.js
 - **Exact CLI flags captured from source:** `persona-counter` uses `--output-jsonl` (writes to `.tagged.jsonl`, then `mv` to replace original — per tool's "do NOT overwrite input" warning); `ad-classifier` uses `--ads` + `--personas` (not `--input` / `--dictionary`); `review-sampler` writes markdown output directly.
 
 ### 9. `/research-brand` slash command — ✅ built
-- **Path:** `.claude/commands/research-brand.md`
+- **Path:** `00 Global/Hermes/Commands/research-brand.md`
 - **Spec:** §17.1 (UX entry modes).
 - **Covers:** First-time run syntax (brand + website + ad_library + competitors) | Refresh modes (`--refresh=ads|reviews|competitors|product|brand|full --confirm`) with `--from-step=2` for full re-cluster | Prerequisite setup (npm install + Playwright + `.env`) | What Claude does on invocation (parse → check prereqs → collect missing fields → dispatch brand-researcher) | Output structure (4 context docs + 3 research docs + `_data/` + raw review corpus).
 
@@ -167,5 +167,5 @@ cd ".claude/tools/ad-classifier"   && npm install && node classify.test.js
 
 **Remaining before first real run:**
 - One-time Playwright install on any new machine (see Prerequisites in `research-brand.md`)
-- Verify `.claude/tools/ad-classifier/.env` has `GEMINI_API_KEY` before first invocation
+- Verify `00 Global/Hermes/Tools/ad-classifier/.env` has `GEMINI_API_KEY` before first invocation
 - First real brand run = the integration test; budget for one fix-up pass

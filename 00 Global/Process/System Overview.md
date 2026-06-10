@@ -1,12 +1,12 @@
 # System Overview — Reach Digital Creative Strategy
 
-*Living document. Last updated: May 2026.*
+*Living document. Last updated: 2026-06-09 (Hermes-native port).*
 
 ---
 
 ## What This System Is
 
-An AI-assisted creative strategy system built on Claude Code + Obsidian. One strategist + Claude can research, analyze competitors, write scripts, produce briefs, and delegate to designers at the speed of a full creative team.
+An AI-assisted creative strategy system built on Hermes Agent + Obsidian. One strategist + Hermes can research, analyze competitors, write scripts, produce briefs, and delegate to designers at the speed of a full creative team. The 8 reach-digital skills (motion-top-spenders, brand-researcher, batch-planner, clickup-load, grab-media, transcribe, script-writer, reach-digital-ops) live under `~/.hermes/profiles/reach-digital/skills/reach-digital/<name>/` and are loaded automatically by the profile.
 
 Everything lives in markdown. The vault is the single source of truth.
 
@@ -18,15 +18,15 @@ Everything lives in markdown. The vault is the single source of truth.
 
 | Tool | What it does | Where it lives |
 |---|---|---|
-| **`/motion-pull`** | Pulls top-spender data from the Motion GraphQL API (metrics, CDN URLs, Motion share links). Subcommands: `pull` (top creatives + download), `angles` (angle spend breakdown), `formats` (format trends), `highlights` (AI signals), `delta` / `stale` / `history` (longitudinal tracking). Stores every pull in local SQLite. **Replaces the old CSV + `/grab` batch-download workflow for Motion.** | `.claude/commands/motion-pull.md` · Binary: `$HOME/go/bin/motion-pp-cli` |
-| **`/grab`** | Downloads ad media from YouTube, TikTok, and direct URLs. Extracts ad copy from metadata. Videos get 4-column Gemini analysis. **Use for non-Motion sources only** — Motion pulls go through `/motion-pull`. Never fabricates analysis for failed downloads. | `.claude/commands/grab.md` + `.claude/tools/grab/grab.js` |
-| **`/transcribe`** | Routes video/audio to MLX (local, free, speech-only) or Gemini (visual + audio breakdown with 4-column table). | `.claude/commands/transcribe.md` + `.claude/tools/mlx-transcribe.py` |
-| **`/ad-library`** | Batch scrapes Meta Ad Library via Apify. Downloads media, optional Gemini analysis. Supports 10-20 brands at once. | `.claude/commands/ad-library.md` + `.claude/tools/ad-library/` |
-| **Gemini API** | Video analysis (4-column tables + edit-style breakdown), image analysis, text generation, image generation. Essential for visual analysis of top spenders — edit pace, b-roll patterns, color treatment, caption style — which the CLI's metric pull doesn't cover. | `.claude/tools/gemini-api/gemini-api.js` |
+| **`/motion-pull`** | Pulls top-spender data from the Motion GraphQL API (metrics, CDN URLs, Motion share links). Subcommands: `pull` (top creatives + download), `angles` (angle spend breakdown), `formats` (format trends), `highlights` (AI signals), `delta` / `stale` / `history` (longitudinal tracking). Stores every pull in local SQLite. **Replaces the old CSV + `/grab` batch-download workflow for Motion.** | `00 Global/Hermes/Commands/motion-pull.md` · Binary: `$HOME/go/bin/motion-pp-cli` |
+| **`/grab`** | Downloads ad media from YouTube, TikTok, and direct URLs. Extracts ad copy from metadata. Videos get 4-column Gemini analysis. **Use for non-Motion sources only** — Motion pulls go through `/motion-pull`. Never fabricates analysis for failed downloads. | `00 Global/Hermes/Commands/grab.md` + `00 Global/Hermes/Tools/grab/grab.js` |
+| **`/transcribe`** | Routes video/audio to MLX (local, free, speech-only) or Gemini (visual + audio breakdown with 4-column table). | `00 Global/Hermes/Commands/transcribe.md` + `00 Global/Hermes/Tools/mlx-transcribe.py` |
+| **`/ad-library`** | Batch scrapes Meta Ad Library via Apify. Downloads media, optional Gemini analysis. Supports 10-20 brands at once. | `00 Global/Hermes/Commands/ad-library.md` + `00 Global/Hermes/Tools/ad-library/` |
+| **Gemini API** | Video analysis (4-column tables + edit-style breakdown), image analysis, text generation, image generation. Essential for visual analysis of top spenders — edit pace, b-roll patterns, color treatment, caption style — which the CLI's metric pull doesn't cover. | `00 Global/Hermes/Tools/gemini-api/gemini-api.js` |
 | **Research Engine** | Reddit research sprints — scrapes conversations, extracts evidence, discovers themes, mines language patterns. | MCP server (separate from vault) |
 | **Review Scraper** | Scrapes product reviews from any ecommerce site into standardized JSONL. | `/review-scraper` skill |
-| **`/generate-static`** | Converts approved briefs to model-specific prompts, generates images via fal.ai (NanoBanana 2 or GPT Image 2), and animates statics via Veo 3.1. Supports standalone generation, ad-swipe, format multiplication, and final composition around an approved creative hero. | `.claude/commands/generate-static.md` + `.claude/tools/fal-ai/` + `00 Global/Statics Generator/` |
-| **`/creative-image`** | Optional hero-first pre-pass for creative image static ads. Deepens the angle, proposes metaphorical or scenario-based concepts, generates text-free hero variants via the existing fal.ai wrapper, then hands an approved hero to `/generate-static` for final composition. | `.claude/commands/creative-image.md` + `00 Global/Statics Generator/Creative Hero Workflow.md` |
+| **`/generate-static`** | Converts approved briefs to model-specific prompts, generates images via fal.ai (NanoBanana 2 or GPT Image 2), and animates statics via Veo 3.1. Supports standalone generation, ad-swipe, format multiplication, and final composition around an approved creative hero. | `00 Global/Hermes/Commands/generate-static.md` + `00 Global/Hermes/Tools/fal-ai/` + `00 Global/Statics Generator/` |
+| **`/creative-image`** | Optional hero-first pre-pass for creative image static ads. Deepens the angle, proposes metaphorical or scenario-based concepts, generates text-free hero variants via the existing fal.ai wrapper, then hands an approved hero to `/generate-static` for final composition. | `00 Global/Hermes/Commands/creative-image.md` + `00 Global/Statics Generator/Creative Hero Workflow.md` |
 
 ### Creative Skills (slash commands)
 
@@ -42,8 +42,8 @@ Everything lives in markdown. The vault is the single source of truth.
 | Platform | What Claude does | How |
 |---|---|---|
 | **Motion** | Pulls top-spender metrics, downloads media via CDN, constructs Motion share links for references. Subcommands cover angle/format trends, AI highlights, delta tracking. | `motion-pp-cli` (Go CLI calling Motion GraphQL API directly) |
-| **Notion** | Manages Creative References Database — adds entries, searches, reads pages | Notion MCP plugin (OAuth) |
-| **ClickUp** | Loads briefs for designers, creates footage requests, comments on tasks | ClickUp MCP (OAuth) |
+| **Notion** | Manages Creative References Database — adds entries, searches, reads pages | Notion MCP (OAuth, configured in `~/.hermes/profiles/reach-digital/config.yaml` under `mcp_servers`) |
+| **ClickUp** | Loads briefs for designers, creates footage requests, comments on tasks | ClickUp Go CLI (`clickup-pp-cli`, personal API token) + ClickUp MCP (OAuth) |
 
 ### Criteria System
 
@@ -65,7 +65,7 @@ Brand-specific overrides (guardrails, claims, ingredients, pricing) live in each
 
 ### Creative References Database (Notion)
 
-A cross-brand library of winning creative elements. The strategist decides what gets added — Claude never auto-populates entries. Before adding, Claude checks for duplicates.
+A cross-brand library of winning creative elements. The strategist decides what gets added — Hermes never auto-populates entries. Before adding, Hermes checks for duplicates.
 
 **Types:** Hook (Video/Static), Script Structure, Copy (Headline/Body), Format, Proof Structure, Caption Style, Meme Template, Effect/Filter, Landing Page, Email, UGC Format
 
@@ -75,9 +75,9 @@ A cross-brand library of winning creative elements. The strategist decides what 
 
 ## How a Batch Gets Produced
 
-1. **Strategist says "start a new batch"** → Claude creates Working Document + Scripts + Batch Critique files
-2. **Claude runs the Motion data pull** — in parallel: `motion-pp-cli pull` (metrics + media download), `angles` (angle spend breakdown), `formats` (format trends). For non-Motion URLs (YouTube, TikTok, competitive refs), use `/grab`.
-3. **Claude runs Gemini analysis** on each downloaded video (4-column table + edit-style breakdown: edit pace, b-roll types, color treatment, caption style, transition types). **Only analyzes files actually downloaded — never fabricates analysis for failed downloads.**
+1. **Strategist says "start a new batch"** → Hermes creates Working Document + Scripts + Batch Critique files (via the `batch-planner` skill)
+2. **Hermes runs the Motion data pull** — in parallel: `motion-pp-cli pull` (metrics + media download), `angles` (angle spend breakdown), `formats` (format trends). For non-Motion URLs (YouTube, TikTok, competitive refs), use `grab-media`.
+3. **Hermes runs Gemini analysis** on each downloaded video (4-column table + edit-style breakdown: edit pace, b-roll types, color treatment, caption style, transition types). **Only analyzes files actually downloaded — never fabricates analysis for failed downloads.**
 4. **Top Spenders Analysis** gets completed in `02 Ads Analysis/` — three-lens analysis (what's getting spent, what's converting, what keeps viewers watching), per-ad visual breakdowns, pattern extraction.
 5. **Strategist drops batch strategy notes** in the Working Document
 6. **Batch Plan** is built using: top spenders patterns, angle spend data, format trend data, and strategy notes
@@ -125,7 +125,7 @@ Automatically scan all brands' ads analysis docs and surface:
 
 ### Google Sheets ad creative tracker
 
-Each brand has a Google Sheets tracker for ad creatives. Document the per-brand sheet structure so Claude can automatically connect and enter new creatives, performance data, and status updates in the correct format.
+Each brand has a Google Sheets tracker for ad creatives. **Batch loads follow a fixed standard: colored separator row per batch (e.g. "T001 Batch") with numbered rows below (01, 02, 03...) in creation order — independent of status.** Full structure, sheet IDs, columns, and status vocabulary in [[Sheets Integration]].
 
 ### Footage & asset library
 
@@ -186,4 +186,4 @@ Custom Python pipeline that scrapes Reddit, extracts evidence, discovers themes,
 
 ## Setup
 
-See `CLAUDE.md` → "First-Time Setup" for complete installation instructions. Covers all OS platforms (macOS, Windows, Linux).
+See `00 Global/Process/Setup.md` for complete installation instructions (replaces the legacy `CLAUDE.md → "First-Time Setup"` section that was deleted during the 2026-06-09 Hermes port). Covers all OS platforms (macOS, Windows, Linux).

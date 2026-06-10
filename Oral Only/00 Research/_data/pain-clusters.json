@@ -1,0 +1,109 @@
+{
+  "_meta": {
+    "brand": "OralOnly",
+    "derived_from": "Phase 2c Step 6 — pain-based refinement on the 16-review stratified corpus (3 on-site + 13 forum quotes) and 33 usable Meta ads.",
+    "small_N_flag": "Corpus is 16 reviews. Pain clusters are based on the 4 locked personas + ad-library cross-reference. Cluster frequencies are directional only.",
+    "schema_ref": "00 Global/Process/Brand Research.md §7.2 Step 6"
+  },
+  "clusters": [
+    {
+      "cluster_id": "symptom-focused-solution-seeker.low_energy_unrefreshing_sleep",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "pain_label": "Energy and sleep have collapsed in my 30s/40s",
+      "trigger": "Constant fatigue, unrefreshing sleep, brain fog, weight gain despite training",
+      "desire": "Feel like myself again — sharp, rested, motivated",
+      "frequency_reviews": 4,
+      "representative_quote": "I'm sleeping better, training harder, and my labs back this up. The oral protocol made it effortless.",
+      "representative_review_id": "oo-home-marcus-t",
+      "distinct_from_existing": "Symptom-only — not yet on TRT, not a vet. The entry-edge persona."
+    },
+    {
+      "cluster_id": "symptom-focused-solution-seeker.hopeful_first_weeks",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "pain_label": "Tired of being tired — finally trying something",
+      "trigger": "New prescription in hand, hoping it works, watching the clock for first signs of improvement",
+      "desire": "Validation that this is the right path; visible improvement in weeks 1-2",
+      "frequency_reviews": 2,
+      "representative_quote": "My energy levels have improved, for sure. I'm hopeful.",
+      "representative_review_id": "reddit-unique-yak-2449",
+      "distinct_from_existing": "Earlier-stage than the established user — measuring hope, not outcomes."
+    },
+    {
+      "cluster_id": "symptom-focused-solution-seeker.diagnostics_unlock",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "pain_label": "I don't know what's wrong yet — show me the labs",
+      "trigger": "Symptoms that won't resolve with lifestyle; standard primary care didn't help",
+      "desire": "Comprehensive lab work that explains the symptoms and points to a plan",
+      "frequency_reviews": 1,
+      "representative_quote": "The diagnostics panel showed me exactly what was off. Two months later, totally different person.",
+      "representative_review_id": "oo-home-anthony-l",
+      "distinct_from_existing": "Lab-first subset of Symptom — doesn't trust guesswork, wants data-driven entry."
+    },
+    {
+      "cluster_id": "protocol-fatigued-veteran.tired_of_pinning",
+      "persona": "The Protocol-Fatigued Veteran",
+      "pain_label": "Years of weekly needles, traveling with syringes, the spouse/kids noticing",
+      "trigger": "Plateaued results OR cumulative fatigue from the routine itself",
+      "desire": "Equivalent or better results from a daily oral — no needles, no clinic",
+      "frequency_reviews": 3,
+      "representative_quote": "Long term test user, about 20 years. Tired of pinning but doesn't want a whole new set of problems.",
+      "representative_review_id": "reddit-vdux",
+      "distinct_from_existing": "Convenience-driven exit, NOT safety-driven. The 'I'm bored of the routine' veteran."
+    },
+    {
+      "cluster_id": "protocol-fatigued-veteran.looking_for_diurnal_physiology",
+      "persona": "The Protocol-Fatigued Veteran",
+      "pain_label": "Injections feel un-physiologic — peaks and valleys, all-day supraphysiologic levels",
+      "trigger": "Learning about diurnal T rhythm and wanting a treatment that matches it",
+      "desire": "A protocol that respects natural circadian T pattern (high AM, low PM)",
+      "frequency_reviews": 1,
+      "representative_quote": "The product follows a natural diurnal pattern — high morning peak, very low by night — which reduces HPTA suppression and aromatization.",
+      "representative_review_id": "reddit-jayween",
+      "distinct_from_existing": "Physiology-driven exit, not convenience-driven. The 'injections are un-biological' vet."
+    },
+    {
+      "cluster_id": "hematocrit-skeptic.blood_thickening_fear",
+      "persona": "The Hematocrit Skeptic",
+      "pain_label": "Injections are pushing my hematocrit to dangerous levels",
+      "trigger": "Lab showing HCT 50+; phlebotomy prescription; fear of stroke/clot",
+      "desire": "A TRT that doesn't thicken blood — no phlebotomy, no extra lab worry",
+      "frequency_reviews": 2,
+      "representative_quote": "HCT rose from 48 to 56 in 2–4 months on a low dose. Looking for short-half-life options to minimize sides.",
+      "representative_review_id": "reddit-freedom40again",
+      "distinct_from_existing": "Medical-safety-driven exit, not convenience-driven. The 'blood-work-watching' vet."
+    },
+    {
+      "cluster_id": "credibility-conscious-critic.amateur_marketing_red_flags",
+      "persona": "The Credibility-Conscious Critic",
+      "pain_label": "The brand looks like a Temu for testosterone",
+      "trigger": "Mystery discount popups, AI-generated ads, 404s, half-finished site",
+      "desire": "A telehealth clinic that looks like a real medical practice, not a dropship",
+      "frequency_reviews": 5,
+      "representative_quote": "2 seconds on the page and I unlock a 'mystery discount'. What is this, Temu for roids?",
+      "representative_review_id": "reddit-vorilla-og",
+      "distinct_from_existing": "Surface-presentation guard, not science-presentation guard. The 'this looks shady' critic."
+    },
+    {
+      "cluster_id": "credibility-conscious-critic.founder_credential_skepticism",
+      "persona": "The Credibility-Conscious Critic",
+      "pain_label": "The founder's background doesn't inspire medical confidence",
+      "trigger": "Dr. Jaquish's online-degree background; his X3 Bar / weightlifting / 'cardio is useless' claims",
+      "desire": "A medical-grade brand, not a wellness-influencer-founded one",
+      "frequency_reviews": 2,
+      "representative_quote": "Dr. Jaquish – Degree from an online mill; claims cardio and weightlifting are 'useless', sells rubber bands instead.",
+      "representative_review_id": "reddit-vorilla-og",
+      "distinct_from_existing": "Founder-credibility guard. The 'who is behind this matters' critic."
+    },
+    {
+      "cluster_id": "credibility-conscious-critic.no_published_data",
+      "persona": "The Credibility-Conscious Critic",
+      "pain_label": "There are no published studies on this product",
+      "trigger": "Looking for PubMed/white papers, finding only marketing claims",
+      "desire": "Peer-reviewed or third-party data on Nandrogen's safety and pharmacokinetics",
+      "frequency_reviews": 4,
+      "representative_quote": "They claim DHT remains physiologic, which is laughable and impossible with a high dose of oral T. They also claim injections stop working after a couple months, as SHBG becomes elevated as 'a defense mechanism' – also completely false nonsense.",
+      "representative_review_id": "excelmale-funkodyssey",
+      "distinct_from_existing": "Evidence-base guard. The 'where's the peer-reviewed PK data' critic."
+    }
+  ]
+}

@@ -443,7 +443,7 @@ After all 2-3 briefs in the group complete steps 1-6:
 
 ### Phase 6: fal.ai Integration
 
-**Set up fal.ai API access in the vault tools.** We already have the API key. Build a wrapper (similar to `.claude/tools/gemini-api/`) covering both image generation and video animation.
+**Set up fal.ai API access in the vault tools.** We already have the API key. Build a wrapper (similar to `00 Global/Hermes/Tools/gemini-api/`) covering both image generation and video animation.
 
 **Image generation (NanoBanana 2):**
 1. Upload local reference images (spec card PNG, style card PNG, product photo) to fal.ai storage via `fal.storage.upload()` → get public URLs
@@ -458,11 +458,11 @@ After all 2-3 briefs in the group complete steps 1-6:
 **Auth:** `FAL_KEY` environment variable. SDK: `@fal-ai/client` npm package.
 
 **Deliverables:**
-- `.claude/tools/fal-ai/package.json` — with `@fal-ai/client` dependency
-- `.claude/tools/fal-ai/.env` — `FAL_KEY`
-- `.claude/tools/fal-ai/generate-image.js` — NB2 edit endpoint wrapper
-- `.claude/tools/fal-ai/generate-video.js` — Veo 3.1 first-last-frame wrapper
-- `.claude/tools/fal-ai/upload.js` — local file → fal.ai storage URL helper
+- `00 Global/Hermes/Tools/fal-ai/package.json` — with `@fal-ai/client` dependency
+- `00 Global/Hermes/Tools/fal-ai/.env` — `FAL_KEY`
+- `00 Global/Hermes/Tools/fal-ai/generate-image.js` — NB2 edit endpoint wrapper
+- `00 Global/Hermes/Tools/fal-ai/generate-video.js` — Veo 3.1 first-last-frame wrapper
+- `00 Global/Hermes/Tools/fal-ai/upload.js` — local file → fal.ai storage URL helper
 
 **Effort:** Medium. API integration is straightforward — the harder part is prompt tuning. Same Node.js pattern as the Gemini API wrapper.
 
@@ -1094,7 +1094,7 @@ Add to the Differentiation Rule section in [[Batch Template]]:
 
 Add to the "What's Built and Working" → "Tools" table in [[System Overview]]:
 
-> | **`/generate-static`** | Converts approved briefs to NB2 prompts, generates images via fal.ai (NanoBanana 2), animates statics via Veo 3.1. Supports standalone generation, ad-swipe, and format multiplication. | `.claude/commands/generate-static.md` + `.claude/tools/fal-ai/` + `00 Global/Statics Generator/` |
+> | **`/generate-static`** | Converts approved briefs to NB2 prompts, generates images via fal.ai (NanoBanana 2), animates statics via Veo 3.1. Supports standalone generation, ad-swipe, and format multiplication. | `00 Global/Hermes/Commands/generate-static.md` + `00 Global/Hermes/Tools/fal-ai/` + `00 Global/Statics Generator/` |
 
 Also move the "Auto-generation of static ad images via API" entry from "What's NOT Built Yet" to "What's Built and Working" once implementation is complete.
 
@@ -1150,12 +1150,12 @@ Everything above has been built. File-by-file record of what was created or modi
 
 **New files — Sub-agent + tools**
 - `.claude/agents/scoring/scoring-evaluator.md` — single sub-agent reads all 7 rubrics per invocation (75 calls/batch vs 525)
-- `.claude/tools/fal-ai/upload.js` — uploads local files to fal.ai storage, returns public URLs
-- `.claude/tools/fal-ai/generate-image.js` — NanoBanana 2 via `fal-ai/nano-banana-2/edit`, 4 variants default
-- `.claude/tools/fal-ai/generate-video.js` — Veo 3.1 image-to-video + first-last-frame-to-video
-- `.claude/tools/fal-ai/package.json` — ESM module, `@fal-ai/client` + `dotenv`
-- `.claude/tools/fal-ai/.env.example` — template for API key
-- `.claude/commands/generate-static.md` — `/generate-static` slash command (4 entry modes)
+- `00 Global/Hermes/Tools/fal-ai/upload.js` — uploads local files to fal.ai storage, returns public URLs
+- `00 Global/Hermes/Tools/fal-ai/generate-image.js` — NanoBanana 2 via `fal-ai/nano-banana-2/edit`, 4 variants default
+- `00 Global/Hermes/Tools/fal-ai/generate-video.js` — Veo 3.1 image-to-video + first-last-frame-to-video
+- `00 Global/Hermes/Tools/fal-ai/package.json` — ESM module, `@fal-ai/client` + `dotenv`
+- `00 Global/Hermes/Tools/fal-ai/.env.example` — template for API key
+- `00 Global/Hermes/Commands/generate-static.md` — `/generate-static` slash command (4 entry modes)
 
 **Modified files — System integration**
 - `CLAUDE.md` — added Statics Generator trigger section, updated vault structure tree, updated brief-writer routing + QA notes, updated Brand Research phase references (0–6 → 0–7)
@@ -1168,7 +1168,7 @@ Everything above has been built. File-by-file record of what was created or modi
 - `.claude/agents/brand-researcher.md` — description updated (Phases 0–7, spec card generation)
 
 **Not done**
-- `/statics-briefer` skill file — marked deprecated in System Overview but the file itself wasn't removed/modified (exists at global `~/.claude/commands/` level, outside this project)
+- `/statics-briefer` skill file — marked deprecated in System Overview but the file itself wasn't removed/modified (exists at global `~/00 Global/Hermes/Commands/` level, outside this project)
 
 ---
 
@@ -1186,8 +1186,8 @@ Full audit found 1 critical issue, 2 minor issues, and 1 missing env file. All f
 **Minor — `00 Global/Statics Generator/Templates/Headline.md` compliance section**
 - Added terminal `## Compliance` section matching the format used by all other 5 templates (compliance info was in the preamble but not at the scannable terminal position)
 
-**Minor — `.claude/tools/fal-ai/upload.js` dead import**
+**Minor — `00 Global/Hermes/Tools/fal-ai/upload.js` dead import**
 - Removed unused `fileURLToPath` import from `"url"`
 
-**Env — `.claude/tools/fal-ai/.env`**
+**Env — `00 Global/Hermes/Tools/fal-ai/.env`**
 - Created with `FAL_KEY` from strategist. Image and video generation now functional.

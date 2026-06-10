@@ -17,6 +17,8 @@ Thumbs.db
 .obsidian/workspace.json
 .obsidian/cache
 .obsidian/themes
+# Agent Client plugin session data (regenerated every time the plugin runs)
+.obsidian/plugins/agent-client/sessions/
 
 # Node / JS deps
 node_modules/
@@ -87,8 +89,20 @@ venv/
 .claude/settings.local.json
 .claude/.DS_Store
 
+# Claude Code plugin output (not part of the reach-digital workflow)
+Agent Client/
+
+# Stale duplicate of 00 Global/Hermes/Tools/ (lowercase, 1.3GB, pre-2026-06-09 port)
+# The canonical path is `Tools/` (capital T). Safe to delete: rm -rf "00 Global/Hermes/tools"
+00 Global/Hermes/tools/
+
 # OS metadata
 ._*
 .fseventsd
 .DocumentRevisions-V100
 .com.apple.timemachine.donotpresent
+
+# Deploy artifacts (the deploy/ scripts themselves ARE committed; this is for
+# any future generated deploy state like .terraform/, .kube/, etc.)
+deploy/.terraform/
+deploy/.kube/

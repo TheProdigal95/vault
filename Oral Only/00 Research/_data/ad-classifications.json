@@ -1,0 +1,590 @@
+{
+  "ads": [
+    {
+      "ad_id": "1508781190879101",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "997789683191689",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "2131371304072812",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "979196544959338",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Your subtle symptoms are low-T: doctor-backed liposomal solution.",
+      "format": "image"
+    },
+    {
+      "ad_id": "976276168321060",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1727095158294764",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Your subtle symptoms are low-T: doctor-backed liposomal solution.",
+      "format": "image"
+    },
+    {
+      "ad_id": "1510337197109684",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Your subtle symptoms are low-T: doctor-backed liposomal solution.",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "3268435093347653",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "4499103676990011",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1661877761786682",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1002954482304753",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "2032726310656240",
+      "persona": "The Protocol-Fatigued Veteran",
+      "angle": "Get stable testosterone levels without injections.",
+      "format": "image"
+    },
+    {
+      "ad_id": "4327559760906650",
+      "persona": "The Protocol-Fatigued Veteran",
+      "angle": "Get stable testosterone levels without injections.",
+      "format": "image"
+    },
+    {
+      "ad_id": "989991087302566",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "994595516388159",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Reverse age-related testosterone drop with a simple, effective, and monitored solution.",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1667822587825822",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1539188097834475",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "915456531502160",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1316903593745271",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1514852866744292",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Combat age-related exhaustion and mental fog with direct NAD+.",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1632557267803187",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Blaming age/stress for low energy/drive? It's biochemistry.",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "3604826249659865",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Blaming age/stress for low energy/drive? It's biochemistry.",
+      "format": "static"
+    },
+    {
+      "ad_id": "1028185359868772",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Blaming age/stress for low energy/drive? It's biochemistry.",
+      "format": "static"
+    },
+    {
+      "ad_id": "1366722675308169",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Post-35 fatigue, brain fog? It's NAD+ drop, restore cellular energy.",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "889639504153389",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1003398242220391",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Post-35 fatigue, brain fog? It's NAD+ drop, restore cellular energy.",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1181359420746429",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "2541689836253653",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Post-35 fatigue, brain fog? It's NAD+ drop, restore cellular energy.",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1444187187597515",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "4070594719906395",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1873103423385703",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Boost energy and focus with direct NAD+",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1657501118629915",
+      "persona": "The Credibility-Conscious Critic",
+      "angle": "Doctor-monitored, real results for low T",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "4228499157399249",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Boost energy and focus with direct NAD+",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1502141404699201",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1306716974223930",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Boost energy and focus with direct NAD+",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "2455332831599418",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "2211710262566490",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "4372986596285224",
+      "persona": "The Protocol-Fatigued Veteran",
+      "angle": "Oral T: no injections, stable levels",
+      "format": "video"
+    },
+    {
+      "ad_id": "1473990960620817",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Boost energy and focus with direct NAD+",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1335551065098339",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Boost energy and focus with direct NAD+",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1363873129129613",
+      "persona": "N/A",
+      "angle": "N/A",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "2434127743734791",
+      "persona": "N/A",
+      "angle": "N/A",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1733283454697775",
+      "persona": "N/A",
+      "angle": "N/A",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1323293583050485",
+      "persona": "N/A",
+      "angle": "N/A",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1697451584590970",
+      "persona": "N/A",
+      "angle": "N/A",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1904269783619379",
+      "persona": "N/A",
+      "angle": "N/A",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "2950396835165651",
+      "persona": "N/A",
+      "angle": "N/A",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "27509439128746045",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Reverse age-related energy drop with direct NAD+",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "2077160652840115",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Address low T symptoms with doctor-monitored liposomal delivery",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "2065381957412494",
+      "persona": "N/A",
+      "angle": "N/A",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1616082152830087",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1301096758218770",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1549566269846008",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "NAD+ decline after 35: Combat fatigue, mental fog, and slow recovery.",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1292213286451200",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "27189566054014995",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "NAD+ decline after 35: Combat fatigue, mental fog, and slow recovery.",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "949381841394422",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1350743463567588",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "2141428113078251",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1334240095328053",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1528985095397608",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "NAD+ decline after 35: Combat fatigue, mental fog, and slow recovery.",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "995932496507626",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1008091355235521",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1423545696483411",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1298372108563280",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "3906304829674111",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "NAD+ decline post-35: Combat fatigue and brain fog.",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "2138505280280621",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1875022509798986",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "NAD+ decline post-35: Combat fatigue and brain fog.",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "3090194797856271",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "931051646594528",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "NAD+ decline post-35: Combat fatigue and brain fog.",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "846160698053955",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "NAD+ decline post-35: Combat fatigue and brain fog.",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "2243865679483932",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "26645221898481930",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1515281826892948",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "991267696603226",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1311433153883598",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1359598736274330",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "2083448072235543",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "NAD+ decline after 35: The biological cause of your fatigue",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1289823226123320",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "NAD+ decline after 35: The biological cause of your fatigue",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "859828193804938",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "NAD+ decline after 35: The biological cause of your fatigue",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "2849503692080825",
+      "persona": "unknown",
+      "angle": "unknown",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "985331477528600",
+      "persona": "unknown",
+      "angle": "Brand awareness",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "27024542990510109",
+      "persona": "unknown",
+      "angle": "Brand awareness",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1349796923951060",
+      "persona": "unknown",
+      "angle": "Brand awareness",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "963122319803995",
+      "persona": "unknown",
+      "angle": "Brand awareness",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1464222831632141",
+      "persona": "unknown",
+      "angle": "Brand awareness",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "986425723882973",
+      "persona": "unknown",
+      "angle": "Brand awareness",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1027738806654924",
+      "persona": "unknown",
+      "angle": "Brand awareness",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "995462106191421",
+      "persona": "unknown",
+      "angle": "Brand awareness",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "2454649858367544",
+      "persona": "The Symptom-Focused Solution-Seeker",
+      "angle": "Combat age-related NAD+ drop to restore energy and mental clarity.",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "3675795475910863",
+      "persona": "unknown",
+      "angle": "Brand awareness",
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1471715590742014",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "968564539305282",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1726646275180101",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1342929757706022",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "819697610906531",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    },
+    {
+      "ad_id": "1770419863986200",
+      "persona": null,
+      "angle": null,
+      "format": "unknown"
+    }
+  ],
+  "angle_clusters": {},
+  "validation": null,
+  "meta": {
+    "started_at": "2026-06-10T02:31:39.395Z",
+    "stages_run": [
+      "classify"
+    ],
+    "mock": false,
+    "model": "gemini-2.5-flash"
+  }
+}

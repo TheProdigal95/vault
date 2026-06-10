@@ -34,18 +34,18 @@ Before any `script-writer` sub-agent runs, the main session critiques the Batch 
 
 ### Tier 1 — Writer Sub-Agent (`script-writer`, during draft)
 
-The `script-writer` sub-agent (defined at `.claude/agents/script-writer.md`) produces 3 scripts per invocation and self-audits each before returning. Two-step self-QA per script:
+The `script-writer` Hermes sub-agent (now orchestrated by the `script-writer` skill at `~/.hermes/profiles/reach-digital/skills/reach-digital/script-writer/SKILL.md` → `00 Global/Hermes/Commands/script-writer.md`; was previously at `.claude/agents/script-writer.md` before the 2026-06-09 Hermes port) produces 3 scripts per invocation and self-audits each before returning. Two-step self-QA per script:
 
 1. **19-point checklist** — concrete binary checks covering product naming, timeline logic, hook differentiation, caption-VO independence, pacing (spm), banned constructions, hook-body redundancy, visual direction quality, reference validity/relevance, bridge/CTA uniqueness, product spec accuracy, and per-structure/per-platform compliance. Each check requires evidence (quoted text, grep results, syllable counts).
 2. **Viewer read** — read the full script 3 times (once per hook variation through body and close) as a cold viewer. Answer: does every beat follow logically? Would I know what I'm buying? Any confusion points? Does the hook's promise get delivered?
 
 After all 3 scripts pass, a within-group cross-check (hook construction uniqueness, caption-VO diversity, product spec consistency, bridge/CTA diversity, failed alternative diversity).
 
-**Evidence-based return.** The writer does not return "✅ all passed." It returns a structured evidence report — one line per checklist item with concrete evidence, viewer read answers per hook variation, issues found and fixed, and within-group cross-check results. See `.claude/agents/script-writer.md` for the required format.
+**Evidence-based return.** The writer does not return "✅ all passed." It returns a structured evidence report — one line per checklist item with concrete evidence, viewer read answers per hook variation, issues found and fixed, and within-group cross-check results. See `00 Global/Statics Generator/Scoring Agents/` for the required format (and the canonical command at `00 Global/Hermes/Commands/script-writer.md` for the orchestration contract).
 
 ### Tier 2 — Orchestrator (`critique-orchestrator`, after all sub-agents return)
 
-The `critique-orchestrator` sub-agent (defined at `.claude/agents/critique-orchestrator.md`) runs a **category-sweep audit first, item-level re-verify second**. The category-sweep order mirrors what historically caught real failures (the IM8 T002 Round 3 caption audit is the canonical example — it caught 16/45 because it looked at one dimension across the whole batch, not script-by-script).
+The `critique-orchestrator` sub-agent (formerly at `.claude/agents/critique-orchestrator.md`; orchestration now handled by the `reach-digital-ops` skill + Hermes delegation when the post-writer sweep is needed) runs a **category-sweep audit first, item-level re-verify second**. The category-sweep order mirrors what historically caught real failures (the IM8 T002 Round 3 caption audit is the canonical example — it caught 16/45 because it looked at one dimension across the whole batch, not script-by-script).
 
 **Step A — Category sweeps across the batch** (run these as focused, single-dimension passes):
 - Four-Question Gate triage: re-run the 4 questions on each script. Any Q1 failure pulls the script for fix-pass before format-specific sweeps.

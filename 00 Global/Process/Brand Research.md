@@ -277,7 +277,7 @@ Three scraping tracks run in parallel: brand reviews, first-party whole-site cra
 
 ### 5.4 First-party whole-site scraping — Playwright CLI (Node)
 
-Built at `.claude/tools/site-scraper/`, matching the existing `.claude/tools/grab/` and `.claude/tools/gemini-api/` convention. Node / Playwright library, invoked from Bash. **No Playwright MCP.**
+Built at `00 Global/Hermes/Tools/site-scraper/`, matching the existing `00 Global/Hermes/Tools/grab/` and `00 Global/Hermes/Tools/gemini-api/` convention. Node / Playwright library, invoked from Bash. **No Playwright MCP.**
 
 **Approach: recursive same-origin crawl. No page list, no strategist confirmation step.** The crawler starts at the homepage, follows every same-origin link it finds, and scrapes each page it discovers. This eliminates the failure mode of missing a PDP (or any other page) because no one listed it.
 
@@ -306,7 +306,7 @@ Built at `.claude/tools/site-scraper/`, matching the existing `.claude/tools/gra
 **Invocation pattern:**
 
 ```bash
-node .claude/tools/site-scraper/scrape-site.js \
+node 00 Global/Hermes/Tools/site-scraper/scrape-site.js \
   --url https://im8health.com \
   --output-dir "IM8/raw_pages_tmp"
 ```
@@ -330,17 +330,17 @@ Auto-Gate A (§6) auto-accepts complete manifests and partial-with-coverage mani
 
 ### 5.5 Ad library read
 
-The pipeline invokes `~/.claude/tools/ad-library/scrape.js` directly (not via the `/ad-library` slash command), with `--output` pinned to `[Brand]/00 Research/_data/ad-library-scrape/`. `scrape.js` is metadata-only by default — no media download — which is what the research pipeline needs. (WebFetch is not used here — it misses the Ad Library's dynamic rendering and pagination.) Capture per ad: `ad_archive_id`, primary text, headline, description, on-image text (static ads), video caption text, ad format, `start_date_formatted`.
+The pipeline invokes `~/00 Global/Hermes/Tools/ad-library/scrape.js` directly (not via the `/ad-library` slash command), with `--output` pinned to `[Brand]/00 Research/_data/ad-library-scrape/`. `scrape.js` is metadata-only by default — no media download — which is what the research pipeline needs. (WebFetch is not used here — it misses the Ad Library's dynamic rendering and pagination.) Capture per ad: `ad_archive_id`, primary text, headline, description, on-image text (static ads), video caption text, ad format, `start_date_formatted`.
 
-**Schema bridge.** `scrape.js` (via the Apify `curious_coder~facebook-ads-library-scraper` actor) writes a nested `ads-raw.json` shape: `{ ad_archive_id, start_date_formatted, snapshot: { body:{text}, title, link_description, display_format, cards[], ... } }`. `ad-classifier/classify.js` expects a flat schema: `{ ad_id, primary_text, headline, description, on_image_text, caption, ad_format, first_seen }`. The `flatten-apify.js` utility (at `.claude/tools/ad-classifier/flatten-apify.js`) bridges the two. Canonical invocation:
+**Schema bridge.** `scrape.js` (via the Apify `curious_coder~facebook-ads-library-scraper` actor) writes a nested `ads-raw.json` shape: `{ ad_archive_id, start_date_formatted, snapshot: { body:{text}, title, link_description, display_format, cards[], ... } }`. `ad-classifier/classify.js` expects a flat schema: `{ ad_id, primary_text, headline, description, on_image_text, caption, ad_format, first_seen }`. The `flatten-apify.js` utility (at `00 Global/Hermes/Tools/ad-classifier/flatten-apify.js`) bridges the two. Canonical invocation:
 
 ```bash
-node ~/.claude/tools/ad-library/scrape.js \
+node ~/00 Global/Hermes/Tools/ad-library/scrape.js \
   --brand "[Brand]" \
   --url "[ad_library_url]" \
   --output "[Brand]/00 Research/_data/ad-library-scrape"
 
-node .claude/tools/ad-classifier/flatten-apify.js \
+node 00 Global/Hermes/Tools/ad-classifier/flatten-apify.js \
   --input  "[Brand]/00 Research/_data/ad-library-scrape/ads-raw.json" \
   --output "[Brand]/00 Research/_data/ad-library-raw.json"
 ```
@@ -423,9 +423,9 @@ Small corpora produce lower-confidence persona clustering. Any persona clustered
 
 LLM reads the ~500-review sample and proposes persona clusters without keyword priors. Prompt asks for: candidate persona name, description, distinguishing signals, example review IDs, first-pass size estimate. Output: typically 10–15 candidate clusters on first pass, consolidated to 5–8 after the Step 3 dictionary pass.
 
-**Model:** Claude (large context, strong clustering on narrative data).
+**Model:** Hermes main session (Nous Portal → `minimax/minimax-m3`; large context, strong clustering on narrative data).
 
-**Context handling.** 500 reviews at typical length fit within Claude's context comfortably. If the corpus has unusually long reviews (e.g. longest-review stratum averages >800 words) and the sample exceeds ~150k tokens, the sampler truncates per-review body to 600 words with a `[truncated]` tag before sending. Cluster output is unaffected — persona signals are carried in the first 200–400 words of almost every review. The stratified sample always runs on the 500-review Step 1 output; Step 2 does not accept a reduced sample just to fit context.
+**Context handling.** 500 reviews at typical length fit within the main-session model's context comfortably. If the corpus has unusually long reviews (e.g. longest-review stratum averages >800 words) and the sample exceeds ~150k tokens, the sampler truncates per-review body to 600 words with a `[truncated]` tag before sending. Cluster output is unaffected — persona signals are carried in the first 200–400 words of almost every review. The stratified sample always runs on the 500-review Step 1 output; Step 2 does not accept a reduced sample just to fit context.
 
 **Step 3 — Build keyword/phrase dictionary from discovered clusters** → `_data/persona-dictionary.json`
 
@@ -438,7 +438,7 @@ gut|digestion|bloat|bowel|IBS|IBD|colitis|probiotic|constipat|stomach|digest
 
 Reviews can match multiple personas. Overlap is meaningful (e.g. IM8's "Energy + Pill Fatigue" overlap = ideal-customer signal).
 
-**Step 4 — Classify the full corpus** via `.claude/tools/persona-counter/`
+**Step 4 — Classify the full corpus** via `00 Global/Hermes/Tools/persona-counter/`
 
 Apply the dictionary to every review in `reviews.jsonl`. Persist `personas: [...]` field on each review (consumed by Phase 3a). Outputs:
 - Full frequency table: `Persona | Reviews Matched | % of Reviews | Avg Rating`
@@ -924,19 +924,19 @@ New track 4h in Phase 4 deep synthesis. Produces a `## Market Sophistication Ass
 
 **Part 5 Ad Angles:** every angle includes `Market sophistication response: [Claim / Sharper claim / Mechanism / Elaborated mechanism + proof / Identity-story]`.
 
-### 10.9 Creative Consumption Profile — Codex-orchestrated manual pilot
+### 10.9 Creative Consumption Profile — Hermes-orchestrated manual pilot
 
-This is not a mandatory Phase 4 track yet. The pilot is **manual orchestration by Codex**, not manual work for the strategist. "Manual" means Codex runs the steps one by one using existing tools (browser feed review, `yt-dlp`, Gemini, and main-session synthesis) instead of invoking a packaged `/creative-consumption` command.
+This is not a mandatory Phase 4 track yet. The pilot is **manual orchestration by Hermes**, not manual work for the strategist. "Manual" means Hermes runs the steps one by one using existing tools (browser feed review, `yt-dlp`, Gemini, and main-session synthesis) instead of invoking a packaged `/creative-consumption` command.
 
 Pilot brand: Comfort Ortho Wear. Run one priority persona first. Only promote to a reusable `/creative-consumption` command after the pilot produces useful, non-obvious production guidance.
 
 **Trigger phrase:** "run the Creative Consumption pilot for Comfort Ortho Wear" or "run creative consumption for [persona]."
 
-**What Codex does in the pilot:** Codex executes the full flow below, saves the raw source log in the vault, and returns a skim-first Persona Feed Profile for strategist review. The strategist's job is to approve, reject, or annotate the output — not to do the searches manually.
+**What Hermes does in the pilot:** Hermes executes the full flow below, saves the raw source log in the vault, and returns a skim-first Persona Feed Profile for strategist review. The strategist's job is to approve, reject, or annotate the output — not to do the searches manually.
 
 **Purpose:** understand what organic content a persona already consumes around their pain, separate from paid ad performance. Top spenders show what converts in ad accounts; creative consumption shows the persona's organic visual grammar.
 
-**Pilot flow Codex runs:**
+**Pilot flow Hermes runs:**
 1. Load the persona and its entries in `_data/pain-clusters.json`.
 2. Generate search terms from problem language, not shopping language. Use pain labels, trigger moments, and simple VoC phrases.
 3. Search YouTube with `yt-dlp "ytsearch20:[term]" --flat-playlist --dump-json` per term.
@@ -1152,7 +1152,7 @@ Orchestrator-enforced checklist. Runs to pass. Fails escalate to Checkpoint 3 wi
 - [ ] Persona Context — each persona's Part 1 is 100–200 words; Part 2 has 8–12 direct review quotes with attribution (§10.1).
 - [ ] Auto-derived competitors (§4.2) are logged with switch-mention count + WebSearch evidence excerpt + same-pain/job score + price relationship. Intake-nominated competitors include switch-mention count in Positioning Ammo even if zero.
 - [ ] Persona Summary Ad Library Orientation — headline / primary-text patterns surface 3–5 each OR brand has no Meta page (§4.1 waiver).
-- [ ] No stray downloaded ad media under `~/.claude/tools/ad-library/downloads/session-*` for this brand (§5.5 uses `scrape.js` which is metadata-only, but Phase 7 cleans any leftover from prior `/ad-library` runs).
+- [ ] No stray downloaded ad media under `~/00 Global/Hermes/Tools/ad-library/downloads/session-*` for this brand (§5.5 uses `scrape.js` which is metadata-only, but Phase 7 cleans any leftover from prior `/ad-library` runs).
 
 ---
 
@@ -1184,7 +1184,7 @@ Approval releases the brand to batch production (T001 planning). Rejection route
 | `ad-classifications.json` | Keep in place | `_data/` (includes top-level `angle_clusters` canonical map) |
 | `pain-clusters.json` | Keep in place | `_data/` |
 | Per-brand one-off scrape scripts (e.g. `scripts/scrape_[brand].py`) | Delete | — (generalized site-scraper supersedes) |
-| `~/.claude/tools/ad-library/downloads/session-*` (leftovers from prior `/ad-library` media runs) | **Delete entirely** | — (research pipeline uses `scrape.js` metadata-only; any leftover media is from unrelated runs) |
+| `~/00 Global/Hermes/Tools/ad-library/downloads/session-*` (leftovers from prior `/ad-library` media runs) | **Delete entirely** | — (research pipeline uses `scrape.js` metadata-only; any leftover media is from unrelated runs) |
 
 **Rules:**
 - **Review data files are never deleted**, only relocated.
@@ -1214,18 +1214,18 @@ No fixed calendar. Refresh is triggered by evidence, not by time.
 
 | Tool | Location | Purpose |
 |---|---|---|
-| `/review-scraper` skill | `~/.claude/skills/review-scraper/` | Scrape reviews from 7 platforms + custom fallback |
-| `~/.claude/tools/ad-library/scrape.js` | `~/.claude/tools/ad-library/` | Single-brand Meta Ad Library pull (metadata-only by default) |
-| `~/.claude/tools/ad-library/batch.js` | `~/.claude/tools/ad-library/` | Batch Meta Ad Library pull; supports `--no-media` / `--scrape-only` |
-| `/grab` command | `.claude/commands/grab.md` | Download ad media (not used by research pipeline) |
-| `.claude/tools/gemini-api/` | `.claude/tools/gemini-api/` | Text/image/video analysis |
-| `.claude/tools/site-scraper/` | `.claude/tools/site-scraper/` | First-party whole-site Playwright crawler (§5.4) |
-| `.claude/tools/review-sampler/` | `.claude/tools/review-sampler/` | Stratified + persona-segmented review sampler |
-| `.claude/tools/persona-counter/` | `.claude/tools/persona-counter/` | Dictionary-regex full-corpus classifier |
-| `.claude/tools/ad-classifier/` | `.claude/tools/ad-classifier/` | Gemini ad classification + angle dedup + precision validator |
-| `.claude/tools/ad-classifier/flatten-apify.js` | `.claude/tools/ad-classifier/` | Apify `ads-raw.json` → flat classifier schema bridge (§5.5) |
-| `brand-researcher` sub-agent | `.claude/agents/brand-researcher.md` | Orchestrates Phases 0–7 |
-| `/research-brand` slash command | `.claude/commands/research-brand.md` | UX surface for first-time + refresh runs |
+| `00 Global/Hermes/Tools/review-sampler/` (Node) + `00 Global/Workplace/2026-04-17 Brand Research Standardization Proposal.md` for the legacy `/review-scraper` Python pipeline | `00 Global/Hermes/Tools/review-sampler/` | Scrape reviews from 7 platforms + custom fallback (Node-based; the Python `review-scraper` venv was retired during the 2026-06-09 Hermes port) |
+| `~/00 Global/Hermes/Tools/ad-library/scrape.js` | `~/00 Global/Hermes/Tools/ad-library/` | Single-brand Meta Ad Library pull (metadata-only by default) |
+| `~/00 Global/Hermes/Tools/ad-library/batch.js` | `~/00 Global/Hermes/Tools/ad-library/` | Batch Meta Ad Library pull; supports `--no-media` / `--scrape-only` |
+| `/grab` command | `00 Global/Hermes/Commands/grab.md` | Download ad media (not used by research pipeline) |
+| `00 Global/Hermes/Tools/gemini-api/` | `00 Global/Hermes/Tools/gemini-api/` | Text/image/video analysis |
+| `00 Global/Hermes/Tools/site-scraper/` | `00 Global/Hermes/Tools/site-scraper/` | First-party whole-site Playwright crawler (§5.4) |
+| `00 Global/Hermes/Tools/review-sampler/` | `00 Global/Hermes/Tools/review-sampler/` | Stratified + persona-segmented review sampler |
+| `00 Global/Hermes/Tools/persona-counter/` | `00 Global/Hermes/Tools/persona-counter/` | Dictionary-regex full-corpus classifier |
+| `00 Global/Hermes/Tools/ad-classifier/` | `00 Global/Hermes/Tools/ad-classifier/` | Gemini ad classification + angle dedup + precision validator |
+| `00 Global/Hermes/Tools/ad-classifier/flatten-apify.js` | `00 Global/Hermes/Tools/ad-classifier/` | Apify `ads-raw.json` → flat classifier schema bridge (§5.5) |
+| `brand-researcher` Hermes skill (the orchestrator) | `~/.hermes/profiles/reach-digital/skills/reach-digital/brand-researcher/SKILL.md` (thin pointer) → `00 Global/Hermes/Commands/research-brand.md` (canonical) | Orchestrates Phases 0–7 |
+| `/research-brand` slash command | `00 Global/Hermes/Commands/research-brand.md` | UX surface for first-time + refresh runs |
 | Playwright runtime | Installed by `site-scraper`'s `npm install` + `npx playwright install chromium` | See Setup.md Step 6 |
 
 Persona-precision is inlined as a sub-agent prompt (Step 5) — no separate tool. `/scrape-site` is not a standalone command — site-scraper is invoked from Bash directly.
@@ -1237,24 +1237,24 @@ Reddit sprints run via Research Engine MCP when the strategist initiates ad-hoc 
 Per-machine install is documented in `00 Global/Process/Setup.md` Step 6. Summary:
 
 ```bash
-cd .claude/tools/site-scraper   && npm install && npx playwright install chromium && cd ../../..
-cd .claude/tools/review-sampler  && npm install && cd ../../..
-cd .claude/tools/persona-counter && npm install && cd ../../..
-cd .claude/tools/ad-classifier   && npm install && cd ../../..
-cp .claude/tools/gemini-api/.env .claude/tools/ad-classifier/.env
+cd 00 Global/Hermes/Tools/site-scraper   && npm install && npx playwright install chromium && cd ../../..
+cd 00 Global/Hermes/Tools/review-sampler  && npm install && cd ../../..
+cd 00 Global/Hermes/Tools/persona-counter && npm install && cd ../../..
+cd 00 Global/Hermes/Tools/ad-classifier   && npm install && cd ../../..
+cp 00 Global/Hermes/Tools/gemini-api/.env 00 Global/Hermes/Tools/ad-classifier/.env
 ```
 
 No Playwright MCP. Both site-scraper and review-scraper invoke Playwright via local scripts from Bash.
 
 ### 16.3 Tool specs (for maintenance)
 
-1. **`.claude/tools/site-scraper/scrape-site.js`** — §5.4 contract. Node/Playwright recursive whole-site crawler. Reads `/robots.txt` + `/sitemap.xml` on start to surface subdomains.
-2. **`.claude/tools/review-sampler/`** — Node. Input: `reviews.jsonl` (pre-lock) or classified `reviews.jsonl` (post-lock). Outputs: stratified Markdown (Review Analysis Appendix A) and persona-segmented Markdown (Appendix B). Pre-lock mode applies the Step 2 context-handling truncation (§7.2 Step 2) when longest-stratum sample exceeds ~150k tokens.
-3. **`.claude/tools/persona-counter/`** — Node. Input: `reviews.jsonl` + `persona-dictionary.json`. Outputs: full frequency table, Multi-Persona Overlap top 20, untagged residual %, per-review `personas: [...]` field written back to JSONL. Optional `--since YYYY-MM-DD` adds a report-only recent-window frequency table (`% Last 6 Months`, recent N, trend) without writing a filtered JSONL or mutating the canonical corpus.
-4. **`.claude/tools/ad-classifier/`** — Node. Input: flat `ad-library-raw.json` (produced by `flatten-apify.js` from Apify's nested `ads-raw.json`) + locked persona taxonomy + angle library (starts empty, accumulates). Outputs: per-ad `{persona, angle, format}` JSON + top-level `angle_clusters` canonical map + aggregate `Persona | Angle | Ad Count` table. Gemini classification, batched 10/call with exponential backoff. Three sub-modes: (a) initial classification, (b) **angle deduplication pass** (§9), (c) inline precision-validator (20-ad rescore per persona).
-5. **`.claude/tools/ad-classifier/flatten-apify.js`** — Node. Bridges Apify nested schema to the flat schema classify.js expects. Field mapping: `ad_archive_id` → `ad_id`; `snapshot.body.text` (+ cards[].body joined with `\n\n---\n\n`) → `primary_text`; `snapshot.title` → `headline`; `snapshot.link_description` → `description`; `start_date_formatted[:10]` → `first_seen`; `snapshot.display_format` (lowercased; `DCO` with ≥2 cards → `carousel`) → `ad_format`. `on_image_text` and `caption` emit empty strings (Apify does not OCR images and does not expose video caption tracks separately).
-6. **`brand-researcher` sub-agent** at `.claude/agents/brand-researcher.md` — orchestrates phases (0–7), enforces auto-gates, dispatches parallel phase workers, inlines persona-precision prompt (Step 5) and pain-cluster prompt (Step 6). Generates spec cards at Phase 5. Tracks the shared 2-iteration budget across Step 4 halts and Auto-Gate B failures.
-7. **`/research-brand` slash command** at `.claude/commands/research-brand.md` — intake UX wrapping the sub-agent; supports first-time-run and selective-refresh entry modes (§17.1).
+1. **`00 Global/Hermes/Tools/site-scraper/scrape-site.js`** — §5.4 contract. Node/Playwright recursive whole-site crawler. Reads `/robots.txt` + `/sitemap.xml` on start to surface subdomains.
+2. **`00 Global/Hermes/Tools/review-sampler/`** — Node. Input: `reviews.jsonl` (pre-lock) or classified `reviews.jsonl` (post-lock). Outputs: stratified Markdown (Review Analysis Appendix A) and persona-segmented Markdown (Appendix B). Pre-lock mode applies the Step 2 context-handling truncation (§7.2 Step 2) when longest-stratum sample exceeds ~150k tokens.
+3. **`00 Global/Hermes/Tools/persona-counter/`** — Node. Input: `reviews.jsonl` + `persona-dictionary.json`. Outputs: full frequency table, Multi-Persona Overlap top 20, untagged residual %, per-review `personas: [...]` field written back to JSONL. Optional `--since YYYY-MM-DD` adds a report-only recent-window frequency table (`% Last 6 Months`, recent N, trend) without writing a filtered JSONL or mutating the canonical corpus.
+4. **`00 Global/Hermes/Tools/ad-classifier/`** — Node. Input: flat `ad-library-raw.json` (produced by `flatten-apify.js` from Apify's nested `ads-raw.json`) + locked persona taxonomy + angle library (starts empty, accumulates). Outputs: per-ad `{persona, angle, format}` JSON + top-level `angle_clusters` canonical map + aggregate `Persona | Angle | Ad Count` table. Gemini classification, batched 10/call with exponential backoff. Three sub-modes: (a) initial classification, (b) **angle deduplication pass** (§9), (c) inline precision-validator (20-ad rescore per persona).
+5. **`00 Global/Hermes/Tools/ad-classifier/flatten-apify.js`** — Node. Bridges Apify nested schema to the flat schema classify.js expects. Field mapping: `ad_archive_id` → `ad_id`; `snapshot.body.text` (+ cards[].body joined with `\n\n---\n\n`) → `primary_text`; `snapshot.title` → `headline`; `snapshot.link_description` → `description`; `start_date_formatted[:10]` → `first_seen`; `snapshot.display_format` (lowercased; `DCO` with ≥2 cards → `carousel`) → `ad_format`. `on_image_text` and `caption` emit empty strings (Apify does not OCR images and does not expose video caption tracks separately).
+6. **`brand-researcher` Hermes skill** (the orchestrator) at `~/.hermes/profiles/reach-digital/skills/reach-digital/brand-researcher/SKILL.md` → `00 Global/Hermes/Commands/research-brand.md` — orchestrates phases (0–7), enforces auto-gates, dispatches parallel phase workers, inlines persona-precision prompt (Step 5) and pain-cluster prompt (Step 6). Generates spec cards at Phase 5. Tracks the shared 2-iteration budget across Step 4 halts and Auto-Gate B failures. (Note: was previously a Claude Code sub-agent at `.claude/agents/brand-researcher.md` before the 2026-06-09 Hermes port; the .claude/agents/ dir was deleted during the port.)
+7. **`/research-brand` slash command** at `00 Global/Hermes/Commands/research-brand.md` — intake UX wrapping the sub-agent; supports first-time-run and selective-refresh entry modes (§17.1).
 
 All tools ship with their own `*.test.js` suite. Run `npm test` in each tool's directory to verify a machine is healthy.
 
@@ -1277,7 +1277,7 @@ Strategist: /research-brand IM8
     - Huel (same pain: replacing multiple supplements with one product; price: $70/mo)
 ```
 
-On first-time run, the orchestrator checks that `[Brand]/00 Context/` is empty (or contains only compliance/guardrails docs). Compliance docs are detected by filename regex `(?i)(compliance|guardrails|claims)` (case-insensitive), matching the convention in CLAUDE.md's "compliance docs are mandatory reading" rule. If Persona Context, Brand Context, Product Context, or Persona Summary are already present, the orchestrator refuses to proceed and asks the strategist to switch to `--refresh` instead — this prevents accidental full re-runs that overwrite curated state.
+On first-time run, the orchestrator checks that `[Brand]/00 Context/` is empty (or contains only compliance/guardrails docs). Compliance docs are detected by filename regex `(?i)(compliance|guardrails|claims)` (case-insensitive), matching the convention in `00 Global/Process/Setup.md`'s "Compliance docs, when present, are mandatory reading" rule. (This rule used to live in `CLAUDE.md`; that file was deleted during the 2026-06-09 Hermes port and the rule moved to Setup.md.) If Persona Context, Brand Context, Product Context, or Persona Summary are already present, the orchestrator refuses to proceed and asks the strategist to switch to `--refresh` instead — this prevents accidental full re-runs that overwrite curated state.
 
 **Refresh run** — re-runs a subset of phases per §15:
 
@@ -1328,7 +1328,7 @@ Compliance/guardrails docs are supplied by the client and placed in `00 Context/
 - Does not apply the Creative Strategy Matrix or Three Selves during research. Those are strategist tools applied at batch planning.
 - Does not write Ads Analysis docs (`02 Ads Analysis/`) — driven by ad-account performance data, separate from research.
 - Does not trigger ClickUp or Notion loading. Research output stays in the vault until the strategist promotes it.
-- **Does not use ad media for classification, run Gemini vision, or transcribe audio.** Ad classification is text-only (primary text + headline + description + on-image text + caption). The pipeline invokes `scrape.js` directly with `--output` pinned to the brand's `_data/ad-library-scrape/` folder; `scrape.js` is metadata-only by default so nothing is downloaded. Phase 7 cleanup deletes any leftover media under `~/.claude/tools/ad-library/downloads/session-*` that unrelated prior `/ad-library` runs may have left behind.
+- **Does not use ad media for classification, run Gemini vision, or transcribe audio.** Ad classification is text-only (primary text + headline + description + on-image text + caption). The pipeline invokes `scrape.js` directly with `--output` pinned to the brand's `_data/ad-library-scrape/` folder; `scrape.js` is metadata-only by default so nothing is downloaded. Phase 7 cleanup deletes any leftover media under `~/00 Global/Hermes/Tools/ad-library/downloads/session-*` that unrelated prior `/ad-library` runs may have left behind.
 
 ---
 
@@ -1337,6 +1337,6 @@ Compliance/guardrails docs are supplied by the client and placed in `00 Context/
 The pipeline is built. Entry point is `/research-brand` (first-time or `--refresh=…`). Maintenance concerns:
 
 - **Backfills.** Brands onboarded before this pipeline existed (IM8, Elevate, FitSleeps, Lifeforce) need a one-time refresh to regenerate Persona Summary + Persona Context under the v5.2 rules. Run `/research-brand [Brand] --refresh=reviews` followed by `/research-brand [Brand] --refresh=ads` per brand.
-- **Tool test suites.** Each `.claude/tools/*` ships a `*.test.js`. Run `npm test` in each directory after any edit to that tool. Setup.md Step 6 lists the canonical verification commands.
+- **Tool test suites.** Each `00 Global/Hermes/Tools/*` ships a `*.test.js`. Run `npm test` in each directory after any edit to that tool. Setup.md Step 6 lists the canonical verification commands.
 - **Proposal doc.** The historical proposal (`00 Global/Workplace/2026-04-17 Brand Research Standardization Proposal.md`) is kept for decision-log traceability. This process doc is canonical; the proposal is reference.
 - **Build log.** The implementation notes live at `00 Global/Workplace/2026-04-20 Research Pipeline Build Log.md` — useful when auditing what was actually built vs what was specified.

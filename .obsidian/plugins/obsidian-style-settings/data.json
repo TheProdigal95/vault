@@ -1,0 +1,8 @@
+{
+  "minimal-style@@maximize-tables-off": "maximize-tables-auto",
+  "minimal-style@@sidebar-tabs-style": "sidebar-tabs-wide",
+  "minimal-style@@pdf-invert-dark": false,
+  "minimal-style@@tabs-style": "tabs-default",
+  "minimal-style@@tab-stacked-spine-orientation": "tab-stack-top",
+  "minimal-style@@sidebar-tabs-names": "tab-names-off"
+}

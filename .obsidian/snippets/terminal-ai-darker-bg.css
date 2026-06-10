@@ -1,0 +1,26 @@
+/* Restore contrast in Claude Code agent panel.
+   Default theme: --background-primary is darker than --background-secondary,
+   so user messages and input box stand out. Minimal unifies them.
+   This makes --background-primary darker within the agent panel only. */
+
+.theme-dark .workspace-leaf-content[data-type="agent-client-chat-view"] {
+  --background-primary: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) - 2%)
+  );
+}
+
+/* Mute diff colors — less vivid green/red */
+.agent-client-diff-line-added {
+  background-color: rgba(46, 160, 67, 0.08) !important;
+}
+.agent-client-diff-line-removed {
+  background-color: rgba(248, 81, 73, 0.08) !important;
+}
+.agent-client-diff-word-added {
+  background-color: rgba(46, 160, 67, 0.25) !important;
+}
+.agent-client-diff-word-removed {
+  background-color: rgba(248, 81, 73, 0.25) !important;
+}

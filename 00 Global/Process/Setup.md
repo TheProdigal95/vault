@@ -1,185 +1,131 @@
 # First-Time Setup (New Strategist)
 
-**Easiest way:** Open Claude Code in the vault and say **"This is my first time. Set me up."** Claude runs the setup script, asks for your API keys conversationally, and walks you through browser logins.
+**Easiest way (Hermes-native):** Open Hermes Agent in the vault (`hermes` from the reach-digital profile) and say **"set me up"** or **"install dependencies"**. Hermes uses the `setup` skill to walk you through provisioning conversationally — handles missing brew/npm/go, prompts for API keys, runs OAuth, verifies with the smoke test.
 
-**Manual alternative:** Run `bash setup.sh` from the vault root. It prompts for API keys interactively. Pass env vars to skip prompts:
+**One-command provisioning** (run after cloning the vault, on a new machine, or after a wipe):
 ```bash
-GEMINI_API_KEY="xxx" FAL_KEY="yyy" STRAT_NAME="Your Name" STRAT_CLICKUP_ID="12345" bash setup.sh
+bash 00\ Global/Hermes/Scripts/setup.sh
 ```
 
-**Check your setup** without changing anything:
+The script is **idempotent** (safe to re-run), **cross-platform** (macOS via Homebrew, Linux via apt/dnf), and covers 8 phases: system deps, Node tool `npm install`s, Go CLI builds, API key validation, strategist identity, MCP server check, browser profile dirs, and the smoke test at the end.
+
+**Verify without changing anything:**
 ```bash
-bash setup.sh --check
+bash 00\ Global/Hermes/Scripts/setup.sh --check
 ```
 
-Safe to re-run anytime — every step is idempotent.
+**Help / all flags:**
+```bash
+bash 00\ Global/Hermes/Scripts/setup.sh --help
+```
+
+**On a fresh machine with nothing installed:** the script detects your OS + package manager. If Homebrew is missing on macOS, it prints the install command and stops cleanly so you can paste it in another terminal. If apt/dnf is missing on Linux, it tells you. The script never silently fails.
 
 ---
 
-## What Gets Installed
+## What's Already in the Hermes Profile
 
-The setup script handles all of the following automatically. This reference documents what each component does, for troubleshooting and manual setup.
+The reach-digital profile at `~/.hermes/profiles/reach-digital/` ships pre-configured with everything you need. This reference documents what each component is, for troubleshooting and manual override.
 
-### System dependencies (Phase 1)
+### Provider auth (Nous + Gemini)
 
-| Tool | Purpose | Install |
+| Provider | Auth | How it's used |
 |---|---|---|
-| Homebrew | Package manager (macOS) | Auto-detected |
-| yt-dlp | Download video from YouTube, TikTok, Twitter, etc. | `brew install yt-dlp` |
-| ffmpeg | Video processing, format conversion | `brew install ffmpeg` |
-| Node.js | Runtime for project tools and grab.js | `brew install node` |
-| Go | Build motion-pp-cli and clickup-pp-cli | `brew install go` |
-| Python 3 | Review scraper venv | `brew install python3` |
-| agent-browser | Browser automation for Motion login + review scraping | `npm install -g agent-browser` |
-| claude-agent-acp | ACP adapter for Obsidian Agent Client plugin | `npm install -g @agentclientprotocol/claude-agent-acp` |
+| **Nous Portal** (OAuth) | `auth.json` token, auto-refreshes (~15 min TTL) | Main session model, web extract, compression, title gen, classification, QA |
+| **Google AI Studio** (API key) | `GOOGLE_API_KEY` in `.env` | Vision, transcription (Gemini Flash) |
+| **FAL.ai** (API key) | `FAL_KEY` in `.env` | Image gen, video animation (under `00 Global/Hermes/Tools/fal-ai/`) |
+| **ClickUp** (personal API token) | `CLICKUP_API_TOKEN` in `~/.zshrc` | Go CLI for routine loading; MCP for ad-hoc reads |
+| **ClickUp MCP** (OAuth 2.1 PKCE) | `auth.json` token, set 2026-06-09 | 51 tools enabled, browser-OAuth on first use |
 
-### Project-local Node tools (Phase 2)
+### 8 reach-digital skills (auto-loaded)
 
-All live in `.claude/tools/` and need `npm install` in their directory:
+Pinned in `~/.hermes/profiles/reach-digital/skills/reach-digital/`: `batch-planner`, `brand-researcher`, `clickup-load`, `grab-media`, `motion-top-spenders`, `reach-digital-ops`, `script-writer`, `transcribe`. Each SKILL.md is a thin pointer to the canonical reference at `00 Global/Hermes/Commands/<name>.md`.
 
-| Tool | Purpose | Extra |
+### Tools (`00 Global/Hermes/Tools/`)
+
+| Tool | Purpose | Install state |
 |---|---|---|
-| gemini-api | Gemini API wrapper — video analysis, strategic breakdowns | Needs `GEMINI_API_KEY` in `.env` |
-| site-scraper | Whole-site crawl for Brand/Product Context | Needs Playwright Chromium (`npx playwright install chromium`) |
-| review-sampler | Stratified review sampling for persona discovery | — |
-| persona-counter | Persona-dictionary regex classification | — |
-| ad-classifier | Text-only Meta ad classification + angle dedup | Needs `GEMINI_API_KEY` in `.env` (copied from gemini-api) |
-| fal-ai | NanoBanana 2 image generation, Kling video animation | Needs `FAL_KEY` in `.env` |
-| endcard-generator | End card composition + visual comparison | Needs `GEMINI_API_KEY` in `.env` (copied from gemini-api) |
+| `motion-pp-cli` | Go CLI — pull top creatives, angles/formats/highlights | Pre-built; `$HOME/go/bin/motion-pp-cli` |
+| `clickup-pp-cli` | Go CLI — load briefs/scripts, footage requests | Pre-built; `$HOME/go/bin/clickup-pp-cli` |
+| `gemini-api` | Node — video analysis, strategic breakdowns | Pre-installed, needs `npm install` per dir + `.env` |
+| `site-scraper` | Node — whole-site crawl for Brand/Product Context | Pre-installed + Playwright Chromium |
+| `fal-ai` | Node — NanoBanana 2 image gen, Kling video animation | Pre-installed, needs `FAL_KEY` in `.env` |
+| `ad-classifier` | Node — text-only Meta ad classification + angle dedup | Pre-installed |
+| `endcard-generator` | Node — end card composition + visual comparison | Pre-installed |
+| `persona-counter` / `review-sampler` | Node — persona discovery | Pre-installed |
 
-### Python venv — review scraper (Phase 3)
+For each Node tool: `cd 00\ Global/Hermes/Tools/<name> && npm install`. For Go CLIs: source lives at `~/printing-press/library/<name>/`; rebuild with `make -C ~/printing-press/library/<name> install`.
 
-Dedicated venv at `~/.claude/skills/review-scraper/.venv/` with httpx, playwright, and Chromium. Avoids PEP-668 / Homebrew Python conflicts.
+### Strategist identity
 
-### Go CLIs (Phase 4)
+`00 Global/Hermes/strategist.json` stores your name and ClickUp user ID. Format: `{ "name": "Your Name", "clickup_id": "12345678" }`. Used by:
+- `clickup-pp-cli` for task assignment (CLI walks up looking for `00 Global/Hermes/`)
+- Hermes for session detection (the profile auto-detects the strategist)
 
-| CLI | Purpose | Source |
+### Obsidian (`.obsidian/` is gitignored, configured per-strategist)
+
+- **Theme:** Minimal
+- **Plugins (4):** obsidian-minimal-settings, obsidian-style-settings, obsidian42-brat, agent-client
+- **agent-client:** Hermes Agent chat UI inside Obsidian, uses `claude-agent-acp` as the ACP adapter
+- **CSS snippets (2):** `hide-terminal-ai-buttons`, `terminal-ai-darker-bg`
+- **Appearance:** Dark mode + Minimal theme + both snippets
+
+### MCP servers
+
+Configured in `~/.hermes/profiles/reach-digital/config.yaml` under `mcp_servers:`:
+
+| Server | URL | Status |
 |---|---|---|
-| motion-pp-cli | Motion API — pull top creatives, download media, angles/formats/highlights | `.claude/tools/motion-pp-cli/` |
-| clickup-pp-cli | ClickUp loading — push briefs/scripts, footage requests | `.claude/tools/clickup-pp-cli/` |
+| ClickUp | `https://mcp.clickup.com/mcp` | **Configured** (OAuth 2.1 PKCE, 51/51 tools enabled) |
+| Notion | `https://mcp.notion.com/mcp` | Add manually (see below) |
+| Google Drive | `npx @piotr-agier/google-drive-mcp` | Add manually (OAuth required) |
 
-Source code is included in the repo. The setup script builds both automatically with `go install` — binaries go to `$HOME/go/bin/`.
-
-### API keys (Phase 5)
-
-| Key | Where to get it | Stored at | Used by |
-|---|---|---|---|
-| `GEMINI_API_KEY` | [Google AI Studio](https://aistudio.google.com/apikey) (free) | `.claude/tools/gemini-api/.env` | gemini-api, ad-classifier, endcard-generator |
-| `FAL_KEY` | [fal.ai Dashboard](https://fal.ai/dashboard/keys) | `.claude/tools/fal-ai/.env` | fal-ai (image gen, video animation) |
-
-The Gemini key is automatically copied to ad-classifier and endcard-generator `.env` files.
-
-### Strategist identity (Phase 6)
-
-`.claude/strategist.json` stores your name and ClickUp user ID. Used by:
-- clickup-pp-cli for task assignment
-- Claude Code for session detection
-
-Format: `{ "name": "Your Name", "clickup_id": "12345678" }`
-
-### Obsidian configuration (Phase 7)
-
-Since `.obsidian/` is gitignored (each person configures their own), the setup script creates the full environment:
-
-**Theme:** [Minimal](https://github.com/kepano/obsidian-minimal) — downloaded from GitHub releases.
-
-**Plugins (4):**
-- **obsidian-minimal-settings** — Minimal theme controls (font, line width, etc.)
-- **obsidian-style-settings** — CSS variable overrides for Minimal
-- **obsidian42-brat** — Beta plugin manager (manages Agent Client updates)
-- **agent-client** — Claude Code chat UI inside Obsidian (uses claude-agent-acp)
-
-**CSS Snippets (2):**
-- `hide-terminal-ai-buttons` — hides default Obsidian AI buttons
-- `terminal-ai-darker-bg` — contrast fix for Agent Client panel in dark mode
-
-**Appearance:** Dark mode, Minimal theme, both snippets enabled.
-
-All plugin configs (`data.json`) are written with team-standard settings. Agent Client's config includes resolved paths for your machine's `node` and `claude-agent-acp` binaries.
-
-### Claude Code MCP servers (Phase 8)
-
-The setup script configures these automatically by writing to `~/.claude.json` and `~/.claude/settings.json`:
-
-| Server | Type | URL | Scope | Setup |
-|---|---|---|---|---|
-| ClickUp | HTTP (cloud) | `https://mcp.clickup.com/mcp` | Project | Automatic |
-| Notion | HTTP (cloud) | `https://mcp.notion.com/mcp` | Project | Automatic |
-| Notion plugin | Marketplace | `makenotion/claude-code-notion-plugin` | User | Automatic |
-| Motion Creative | Marketplace | `Motion-Creative/motion-creative-plugin` | User | Automatic |
-| Google Drive | Local (npx) | `npx @piotr-agier/google-drive-mcp` | User (global) | Manual |
-
-**ClickUp and Notion** are configured as project-level servers (stored in `~/.claude.json` under the vault's project entry). First use prompts for OAuth login.
-
-**Notion and Motion Creative marketplace plugins** are registered in `~/.claude/settings.json`. Claude Code downloads the plugins on first launch after setup.
-
-**Google Drive** requires manual OAuth credential setup:
-1. Create OAuth credentials at [Google Cloud Console](https://console.cloud.google.com/apis/credentials)
-2. Download the JSON and save to `~/.config/google-drive-mcp/gcp-oauth.keys.json`
-3. In a Claude Code session, ask Claude to add the Google Drive MCP, or run:
-   `claude mcp add google-drive -s user -- npx @piotr-agier/google-drive-mcp`
-
-All OAuth-based servers prompt for login on first use in Claude Code.
-
-### Interactive logins (Phase 9)
-
-One-time browser logins via agent-browser. Run when needed:
-
-**Motion** (required for `/motion-pull`):
-```bash
-agent-browser --session motion --profile ~/.claude/tools/grab/motion-profile --headed open https://projects.motionapp.com/login
-# Log in → see dashboard → then:
-agent-browser --session motion close
+**Notion** — add to `config.yaml`:
+```yaml
+mcp_servers:
+  notion:
+    url: "https://mcp.notion.com/mcp"
+    timeout: 180
+    connect_timeout: 60
 ```
+Then `hermes mcp test notion` to verify.
 
-**Trustpilot** (optional — unlocks unlimited review pagination):
-```bash
-agent-browser --session trustpilot --profile ~/.claude/skills/review-scraper/profiles/trustpilot --headed open https://www.trustpilot.com/users/login
-# Log in, then: agent-browser --session trustpilot close
-```
+**Google Drive** — create OAuth credentials at Google Cloud Console, save to `~/.config/google-drive-mcp/gcp-oauth.keys.json`, then add the `google_drive:` block to `config.yaml` (template in the config docs).
 
-**Amazon** (required for Amazon review scraping):
-```bash
-agent-browser --session amazon --profile ~/.claude/skills/review-scraper/profiles/amazon --headed open https://www.amazon.com/ap/signin
-# Log in, then: agent-browser --session amazon close
-```
+All OAuth-based servers prompt for browser login on first use in Hermes.
 
-Cookie profiles persist independently of your regular browser. If a session expires, the relevant tool returns an auth-required error — just rerun the login.
+### Interactive logins (one-time, via agent-browser)
 
-### Local transcription — Pinokio MLX (Phase 10, optional)
+| Service | Profile path | When needed |
+|---|---|---|
+| **Motion** | `00 Global/Hermes/Tools/grab/motion-profile` | Required for `/motion-pull` |
+| **Trustpilot** | `00 Global/Hermes/Tools/review-sampler/profiles/trustpilot` | Optional — unlimited review pagination |
+| **Amazon** | `00 Global/Hermes/Tools/review-sampler/profiles/amazon` | Required for Amazon review scraping |
 
-macOS only. Provides free, offline speech-to-text via MLX Whisper. Without it, `/transcribe` uses Gemini API (works fine, uses credits).
+Example: `agent-browser --session motion --profile 00\ Global/Hermes/Tools/grab/motion-profile --headed open https://projects.motionapp.com/login`. If a session expires, the relevant tool returns an auth-required error — just rerun the login.
 
-1. Download [Pinokio](https://pinokio.computer)
-2. In Pinokio, search "MLX Video Transcription" and install
-3. Done — `mlx-transcribe.py` auto-detects the Pinokio environment
+### Optional: Pinokio MLX (local transcription, macOS only)
+
+Free, offline speech-to-text via MLX Whisper. Without it, `/transcribe` uses the Gemini API (works fine, uses credits). Download Pinokio, search "MLX Video Transcription", install. Done.
 
 ---
 
 ## Troubleshooting
 
-**`command not found` for a tool:** Run `bash setup.sh --check` to see what's missing, then `bash setup.sh` to fix.
+**`command not found` for a tool:** Run the smoke test to see which CLI/binary is missing. Install via brew (most are on `/opt/homebrew/bin/`) or `go install` for Go CLIs.
 
-**Motion login expired:** Re-run the Motion login command above. Cookies refresh automatically.
+**Hermes can't find a CLI on PATH:** Check `~/.hermes/profiles/reach-digital/home/.bashrc` — `$HOME`-relative PATH entries expand wrong inside the profile-scoped shell. Hardcode the absolute path.
+
+**ClickUp tool IDs stale:** Update `team_to_clickup.json` at the vault root and rebuild `~/printing-press/library/clickup/`.
+
+**Smoke test reports failures:** Run `bash ~/.hermes/profiles/reach-digital/skills/reach-digital/reach-digital-ops/scripts/smoke-test.sh` and inspect which check failed.
+
+**Motion login expired:** Re-run the Motion login (see above). Cookies refresh automatically.
 
 **Plugin not showing in Obsidian:** Restart Obsidian (Cmd+Q → reopen). Check that `community-plugins.json` lists the plugin ID.
 
-**Agent Client shows "authentication required":** Run `claude login` in the terminal, then restart Obsidian.
+**Agent Client shows "authentication required":** Re-link via `hermes auth refresh` in the terminal, then restart Obsidian.
 
-**Go CLI missing and no printing-press directory:** Ask your team lead for the source directory or a pre-built binary. Copy the binary to `$HOME/go/bin/`.
+**Go CLI missing and no printing-press directory:** Ask your team lead for the source directory or a pre-built binary. Copy to `$HOME/go/bin/`.
 
-**Google Drive MCP OAuth fails:** Make sure `~/.config/google-drive-mcp/gcp-oauth.keys.json` exists and contains valid credentials. Run `npx @piotr-agier/google-drive-mcp auth` to re-authenticate.
-
----
-
-## Windows Setup
-
-The `setup.sh` script is macOS/Linux only. For Windows, follow the same phases manually using PowerShell equivalents:
-
-- Use `winget` instead of `brew` for system packages
-- Use `$env:USERPROFILE` instead of `$HOME`/`~`
-- Python venv uses `Scripts\` instead of `bin/`
-- Go CLIs: `go install` works the same, binaries go to `$env:GOPATH\bin\`
-- Obsidian plugin paths use backslashes
-
-See the phase-by-phase breakdown above for what each step does.
+**Google Drive MCP OAuth fails:** Make sure `~/.config/google-drive-mcp/gcp-oauth.keys.json` exists with valid credentials. Run `npx @piotr-agier/google-drive-mcp auth` to re-authenticate.

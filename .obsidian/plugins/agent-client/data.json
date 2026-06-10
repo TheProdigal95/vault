@@ -1,0 +1,485 @@
+{
+  "claude": {
+    "id": "claude-code-acp",
+    "displayName": "Claude Code",
+    "apiKeySecretId": "",
+    "command": "/opt/homebrew/bin/claude-agent-acp",
+    "args": [],
+    "env": []
+  },
+  "codex": {
+    "id": "codex-acp",
+    "displayName": "Codex",
+    "apiKeySecretId": "",
+    "command": "/opt/homebrew/bin/codex-acp",
+    "args": [],
+    "env": []
+  },
+  "gemini": {
+    "id": "gemini-cli",
+    "displayName": "Gemini CLI",
+    "apiKeySecretId": "",
+    "command": "/opt/homebrew/bin/gemini",
+    "args": [
+      "--experimental-acp"
+    ],
+    "env": []
+  },
+  "customAgents": [],
+  "defaultAgentId": "codex-acp",
+  "autoAllowPermissions": true,
+  "autoMentionActiveNote": true,
+  "enableSystemNotifications": true,
+  "promptInjection": {
+    "enabled": true,
+    "latex": true,
+    "wikiLinks": true,
+    "tables": true
+  },
+  "debugMode": false,
+  "nodePath": "/Users/marce/.local/bin/node",
+  "exportSettings": {
+    "defaultFolder": "Agent Client",
+    "filenameTemplate": "agent_client_{date}_{time}",
+    "autoExportOnNewChat": false,
+    "autoExportOnCloseChat": false,
+    "openFileAfterExport": true,
+    "includeImages": true,
+    "imageLocation": "obsidian",
+    "imageCustomFolder": "Agent Client",
+    "frontmatterTag": "agent-client"
+  },
+  "windowsWslMode": false,
+  "sendMessageShortcut": "enter",
+  "chatViewLocation": "right-tab",
+  "displaySettings": {
+    "autoCollapseDiffs": false,
+    "diffCollapseThreshold": 10,
+    "maxNoteLength": 10000,
+    "maxSelectionLength": 10000,
+    "showEmojis": true,
+    "fontSize": null
+  },
+  "savedSessions": [
+    {
+      "sessionId": "791c9029-966e-4afe-ad81-2124062d315e",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "hey I created this new vault: /Users/marce/Docu...",
+      "createdAt": "2026-06-10T14:36:21.128Z",
+      "updatedAt": "2026-06-10T14:36:21.130Z"
+    },
+    {
+      "sessionId": "491278cd-1f38-4689-b0b3-1c2349508939",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "this owrking bruh",
+      "createdAt": "2026-06-09T17:48:13.554Z",
+      "updatedAt": "2026-06-09T18:54:12.171Z"
+    },
+    {
+      "sessionId": "19e86369-263f-49b9-b923-f53bde0e2940",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "test",
+      "createdAt": "2026-06-08T13:34:53.705Z",
+      "updatedAt": "2026-06-08T13:34:53.705Z"
+    },
+    {
+      "sessionId": "3cc4e3ec-7c4a-47f3-a5b4-bb6d56007ca4",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "Hey, my designer is not able to access the referen...",
+      "createdAt": "2026-06-08T13:27:58.347Z",
+      "updatedAt": "2026-06-08T13:27:58.347Z"
+    },
+    {
+      "sessionId": "c7d5208d-da90-43af-97d6-eca6afbd07a5",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "do a linear read like a person would",
+      "createdAt": "2026-06-07T01:48:37.759Z",
+      "updatedAt": "2026-06-07T01:48:37.759Z"
+    },
+    {
+      "sessionId": "1d040cb5-3b25-4b35-a570-fc8f116b35dd",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "do a linear read like a person would",
+      "createdAt": "2026-06-07T00:02:31.127Z",
+      "updatedAt": "2026-06-07T00:02:31.127Z"
+    },
+    {
+      "sessionId": "0e78e5e9-5346-46db-a4ec-19745844fd94",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "I want you to run a full audit of this batch plan ...",
+      "createdAt": "2026-06-06T13:28:42.771Z",
+      "updatedAt": "2026-06-06T13:28:42.771Z"
+    },
+    {
+      "sessionId": "f26f2a43-38b3-4173-a950-cbf168fb9dcd",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "alright launch the script writer agents and make s...",
+      "createdAt": "2026-06-06T01:32:41.741Z",
+      "updatedAt": "2026-06-06T01:32:41.741Z"
+    },
+    {
+      "sessionId": "019e9a74-9526-7143-b551-14207db04790",
+      "agentId": "codex-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "let's build this",
+      "createdAt": "2026-06-06T01:15:33.069Z",
+      "updatedAt": "2026-06-06T01:15:33.069Z"
+    },
+    {
+      "sessionId": "019e9a62-435b-7e43-a74a-6f4a70a1cd3a",
+      "agentId": "codex-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "I want you to deeply review this plan and think th...",
+      "createdAt": "2026-06-06T00:44:40.987Z",
+      "updatedAt": "2026-06-06T00:44:40.987Z"
+    },
+    {
+      "sessionId": "1e3b56ff-7858-4845-a63b-ca395d0a5241",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "we already drafted this batch plan but I want to k...",
+      "createdAt": "2026-06-06T00:26:48.422Z",
+      "updatedAt": "2026-06-06T00:26:48.422Z"
+    },
+    {
+      "sessionId": "8188d352-cacc-4eef-a1b6-815ef2d53099",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "I want you to deeply analyze this plan and let's t...",
+      "createdAt": "2026-06-05T22:32:46.397Z",
+      "updatedAt": "2026-06-05T22:32:46.397Z"
+    },
+    {
+      "sessionId": "1004fbc4-4064-46d3-b8f5-6f0da3e32a7a",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "I want you to deeply review this plan and think th...",
+      "createdAt": "2026-06-05T22:24:06.159Z",
+      "updatedAt": "2026-06-05T22:24:06.159Z"
+    },
+    {
+      "sessionId": "019e99cb-c0d3-7223-b7f8-58f2773daef5",
+      "agentId": "codex-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "I want you to deeply analyze this plan and let's t...",
+      "createdAt": "2026-06-05T22:01:07.657Z",
+      "updatedAt": "2026-06-05T22:01:07.657Z"
+    },
+    {
+      "sessionId": "019e99ca-f494-7213-8a4f-439cc71ed858",
+      "agentId": "codex-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "I want you to deeply analyze this plan and let's t...",
+      "createdAt": "2026-06-05T21:58:43.324Z",
+      "updatedAt": "2026-06-05T21:58:43.324Z"
+    },
+    {
+      "sessionId": "019e99ad-6130-75e0-8a14-7f6a5ad6d790",
+      "agentId": "codex-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "I want you to deeply review this plan and think th...",
+      "createdAt": "2026-06-05T21:28:32.526Z",
+      "updatedAt": "2026-06-05T21:28:32.526Z"
+    },
+    {
+      "sessionId": "7bccd7bb-85d5-463f-bff2-db3b7321770f",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "check this transcript from a different agent out, ...",
+      "createdAt": "2026-06-05T20:24:54.042Z",
+      "updatedAt": "2026-06-05T20:24:54.042Z"
+    },
+    {
+      "sessionId": "42013938-2658-4383-ad37-c1e68b8854a1",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "what's your read on these statics ideas based on o...",
+      "createdAt": "2026-06-05T19:08:03.706Z",
+      "updatedAt": "2026-06-05T19:08:03.706Z"
+    },
+    {
+      "sessionId": "58805dc6-83f9-407a-9f13-03e8bcde20f9",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "I want to work on a new batch for Stellar Sleep. C...",
+      "createdAt": "2026-06-05T14:44:43.293Z",
+      "updatedAt": "2026-06-05T14:44:43.293Z"
+    },
+    {
+      "sessionId": "6315ca8d-dfe9-44d6-8b46-418961b03bec",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "I have a tricky task for you. Our workflow and wor...",
+      "createdAt": "2026-06-05T05:54:42.767Z",
+      "updatedAt": "2026-06-05T05:54:42.767Z"
+    },
+    {
+      "sessionId": "4a1492ac-bcce-4159-9be6-8825503fb5ce",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "Rahul, the lead on media buying, left some comment...",
+      "createdAt": "2026-06-05T05:24:23.639Z",
+      "updatedAt": "2026-06-05T05:24:23.639Z"
+    },
+    {
+      "sessionId": "cf1a756b-45b0-4919-aad8-bdbefaad13be",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "On my next message, I'll paste the transcript of a...",
+      "createdAt": "2026-06-05T01:50:15.777Z",
+      "updatedAt": "2026-06-05T01:50:15.778Z"
+    },
+    {
+      "sessionId": "210736c7-c5b8-49ec-b2a7-f9d1f9352561",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "I'm on call with the team at lifeforce help me che...",
+      "createdAt": "2026-06-04T16:36:00.803Z",
+      "updatedAt": "2026-06-04T16:36:00.803Z"
+    },
+    {
+      "sessionId": "4d957308-9f23-453b-ba1b-6c6a0d8d3353",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "client feedback, we need to update our source of t...",
+      "createdAt": "2026-06-04T13:50:06.264Z",
+      "updatedAt": "2026-06-04T13:50:06.264Z"
+    },
+    {
+      "sessionId": "3a4f1473-0a9b-4a06-ae96-bfc2f64b9da0",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "alright let's get back to the drawing board here a...",
+      "createdAt": "2026-06-03T23:16:55.352Z",
+      "updatedAt": "2026-06-03T23:16:55.352Z"
+    },
+    {
+      "sessionId": "4d3dce38-d3b4-42cb-a96f-212ef0ee4dae",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "handle this update: npm install -g @agentclientpro...",
+      "createdAt": "2026-06-03T21:42:32.540Z",
+      "updatedAt": "2026-06-03T21:42:32.540Z"
+    },
+    {
+      "sessionId": "019e8dd1-23ff-7f42-bce3-1ea8ca18c10a",
+      "agentId": "codex-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "how many briefs and scripts did we do last week",
+      "createdAt": "2026-06-03T14:10:20.083Z",
+      "updatedAt": "2026-06-03T14:10:20.083Z"
+    },
+    {
+      "sessionId": "6672cdd0-2873-4a4a-aa44-384e42656016",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "write the scripts",
+      "createdAt": "2026-06-03T06:50:12.144Z",
+      "updatedAt": "2026-06-03T06:50:12.144Z"
+    },
+    {
+      "sessionId": "aa6069a3-714f-4c34-98b7-b2c4a71b7adf",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "run an ads analysis for the top 20 spenders in the...",
+      "createdAt": "2026-06-02T20:12:29.820Z",
+      "updatedAt": "2026-06-02T20:12:29.821Z"
+    },
+    {
+      "sessionId": "019e865b-6ed0-7502-9e0e-fc63e3e1adc3",
+      "agentId": "codex-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "hey comfortwear Reach Digital_Comfort Ortho Wear_S...",
+      "createdAt": "2026-06-02T03:25:14.523Z",
+      "updatedAt": "2026-06-02T03:25:14.523Z"
+    },
+    {
+      "sessionId": "019e83c2-c9a3-7ca0-93b2-7ffc69579317",
+      "agentId": "codex-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "This is the transcript of a meeting I had with Arc...",
+      "createdAt": "2026-06-01T15:59:14.596Z",
+      "updatedAt": "2026-06-01T15:59:14.596Z"
+    },
+    {
+      "sessionId": "0545ac5e-fada-40b0-b459-31ef25471f7c",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "need you to run research and add a new brand to ou...",
+      "createdAt": "2026-06-01T15:27:31.790Z",
+      "updatedAt": "2026-06-01T15:27:31.790Z"
+    },
+    {
+      "sessionId": "019e7d06-c0e3-7892-836e-b60347566b83",
+      "agentId": "codex-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "alright I have a bit of a different task for you r...",
+      "createdAt": "2026-05-31T07:56:24.496Z",
+      "updatedAt": "2026-05-31T07:56:24.496Z"
+    },
+    {
+      "sessionId": "e630db5c-9bac-40ea-8bb3-1a2ef1f666a0",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "/Users/marce/Library/Mobile Documents/iCloud~md~ob...",
+      "createdAt": "2026-05-31T03:14:44.932Z",
+      "updatedAt": "2026-05-31T03:14:44.932Z"
+    },
+    {
+      "sessionId": "2d6dd5fa-164c-4dec-98ff-0b742be36d32",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "bro wth is happening here why is the test log full...",
+      "createdAt": "2026-05-29T15:56:38.916Z",
+      "updatedAt": "2026-05-29T15:56:38.916Z"
+    },
+    {
+      "sessionId": "dbe035f3-2932-4efe-8295-a2d01b4b3d03",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "write the scripts",
+      "createdAt": "2026-05-29T04:23:15.962Z",
+      "updatedAt": "2026-05-29T04:23:15.962Z"
+    },
+    {
+      "sessionId": "e2f25bca-5946-4c48-bb53-7f25421f1c3d",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "write the scripts",
+      "createdAt": "2026-05-29T04:18:40.926Z",
+      "updatedAt": "2026-05-29T04:18:40.926Z"
+    },
+    {
+      "sessionId": "8e5c8426-90eb-4070-8900-cb7ba17d549e",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "run the batch validation",
+      "createdAt": "2026-05-29T03:40:19.100Z",
+      "updatedAt": "2026-05-29T03:40:19.100Z"
+    },
+    {
+      "sessionId": "156a2a5e-9e5f-455a-b51a-22afa4bf9469",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "we need to start a new batch, T004 and I want us t...",
+      "createdAt": "2026-05-28T11:26:54.984Z",
+      "updatedAt": "2026-05-28T11:26:54.984Z"
+    },
+    {
+      "sessionId": "afadc60e-dab8-4d66-93c1-27dd0908d968",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "push to clickup",
+      "createdAt": "2026-05-27T23:08:46.673Z",
+      "updatedAt": "2026-05-27T23:08:46.673Z"
+    },
+    {
+      "sessionId": "019e6b02-4c05-7f91-8efd-6e093baca513",
+      "agentId": "codex-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "I want you to run a full batch critique for this, ...",
+      "createdAt": "2026-05-27T20:04:11.735Z",
+      "updatedAt": "2026-05-27T20:04:11.735Z"
+    },
+    {
+      "sessionId": "921cfef6-8f1b-4236-8e99-8d59435767b8",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "please run a full batch critique, I notice a lot o...",
+      "createdAt": "2026-05-27T18:18:48.080Z",
+      "updatedAt": "2026-05-27T18:18:48.080Z"
+    },
+    {
+      "sessionId": "9c93740c-3781-4f68-b40a-51e682920ede",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "All right I want us to take a moment to think deep...",
+      "createdAt": "2026-05-27T18:14:43.737Z",
+      "updatedAt": "2026-05-27T18:14:43.737Z"
+    },
+    {
+      "sessionId": "e03c696a-7039-4ed1-ac2e-38b883fd6928",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "can you run the batch validation",
+      "createdAt": "2026-05-27T01:43:28.131Z",
+      "updatedAt": "2026-05-27T01:43:28.131Z"
+    },
+    {
+      "sessionId": "019e66af-3bc7-7bf0-8d5a-ef988a33d9b7",
+      "agentId": "codex-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "hey we just updated the motion cli tool and now a ...",
+      "createdAt": "2026-05-26T23:48:56.249Z",
+      "updatedAt": "2026-05-26T23:48:56.249Z"
+    },
+    {
+      "sessionId": "019e66ac-5771-7803-98ab-5fc31eb40da2",
+      "agentId": "codex-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "hey we just updated the motion cli tool and now a ...",
+      "createdAt": "2026-05-26T23:44:12.517Z",
+      "updatedAt": "2026-05-26T23:44:12.517Z"
+    },
+    {
+      "sessionId": "019e6683-f36e-7e01-8d22-a5751d1e9042",
+      "agentId": "codex-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "I'm trying to use the MotionCLI tool to pull data ...",
+      "createdAt": "2026-05-26T23:07:30.748Z",
+      "updatedAt": "2026-05-26T23:07:30.748Z"
+    },
+    {
+      "sessionId": "019e6683-8bc8-75e0-b290-cb971e5574c3",
+      "agentId": "codex-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "I'm trying to use the MotionCLI tool to pull data ...",
+      "createdAt": "2026-05-26T22:59:40.081Z",
+      "updatedAt": "2026-05-26T22:59:40.081Z"
+    },
+    {
+      "sessionId": "019e6682-c685-7771-b0dd-86a031be7d3c",
+      "agentId": "codex-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "I'm trying to use the MotionCLI tool to pull data ...",
+      "createdAt": "2026-05-26T22:59:10.538Z",
+      "updatedAt": "2026-05-26T22:59:10.538Z"
+    },
+    {
+      "sessionId": "d430c258-8c26-4d68-990c-761b5a922ad9",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/marce/Library/Mobile Documents/iCloud~md~obsidian/Documents/Reach Digital",
+      "title": "I'm trying to use the MotionCLI tool to pull data ...",
+      "createdAt": "2026-05-26T22:33:01.161Z",
+      "updatedAt": "2026-05-26T22:33:01.161Z"
+    }
+  ],
+  "lastUsedModels": {
+    "gemini-cli": "gemini-3.1-pro-preview",
+    "claude-code-acp": "claude-opus-4-6",
+    "codex-acp": "gpt-5.5"
+  },
+  "lastUsedModes": {
+    "claude-code-acp": "bypassPermissions",
+    "gemini-cli": "yolo"
+  },
+  "enableFloatingChat": false,
+  "floatingButtonImage": "",
+  "floatingWindowSize": {
+    "width": 400,
+    "height": 500
+  },
+  "floatingWindowPosition": {
+    "x": 975,
+    "y": 772
+  },
+  "floatingButtonPosition": null
+}

@@ -49,7 +49,7 @@ Vertical 9:16 image, [visual treatment], [lighting], [environment]. In the lower
 
 When the hero includes the real product:
 
-- Upload the product photo through `.claude/tools/fal-ai/upload.js`.
+- Upload the product photo through `00 Global/Hermes/Tools/fal-ai/upload.js`.
 - Refer to it in the prompt as `Product Image`.
 - State its location, angle, scale, and relationship to the scene.
 - Do not rely on the product or brand name alone to preserve fidelity.

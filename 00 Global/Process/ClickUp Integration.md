@@ -4,9 +4,9 @@
 
 **On every new session, detect who is using the system** before creating any ClickUp tasks:
 
-1. Check if `.claude/strategist.json` exists in the project root. If it does, read the strategist name and ClickUp ID from it.
+1. Check if `00 Global/Hermes/strategist.json` exists in the project root. If it does, read the strategist name and ClickUp ID from it.
 2. If the file doesn't exist, run `whoami` and `git config user.name` to try to match against the team roster below.
-3. If no match, ask: "Which strategist are you?" and save the answer to `.claude/strategist.json`:
+3. If no match, ask: "Which strategist are you?" and save the answer to `00 Global/Hermes/strategist.json`:
    ```json
    { "name": "Kylie McCreary", "clickup_id": "75585377" }
    ```
@@ -51,7 +51,7 @@ For vault repo and tool repo collaborator access:
 
 ## Loading briefs and scripts
 
-**CLI tool:** `$HOME/go/bin/clickup-pp-cli` — handles all vault-to-ClickUp loading. Command reference: `.claude/commands/clickup-load.md`.
+**CLI tool:** `$HOME/go/bin/clickup-pp-cli` — handles all vault-to-ClickUp loading. Command reference: `00 Global/Hermes/Commands/clickup-load.md`.
 
 ```bash
 # Load scripts (auto-detects brand, list, task type)

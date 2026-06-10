@@ -1,0 +1,5 @@
+.terminal-ai-open-root-btn,
+.empty-state-cta .terminal-ai-open-root-btn,
+[class*="terminal-ai-open-root"] {
+  display: none !important;
+}

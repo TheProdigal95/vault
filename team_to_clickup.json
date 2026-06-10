@@ -1,0 +1,75 @@
+{
+  "_comment": "Team member name → ClickUp user ID. Sourced from `clickup-pp-cli team --json --compact` on 2026-06-09. Mirrors the Go `teamMembers` map in `.claude/tools/clickup-pp-cli/internal/cli/pm_load.go` (lines 33-47) — keep both in sync, but this JSON is the canonical source for Hermes/skills/agents. Default assignees (Diksha for load, Karra for footage) match the hardcoded `dikshaID` / `karraID` constants in the binary.",
+  "workspace_id": "36744350",
+  "workspace_name": "Reach Digital's Workspace",
+  "user_ids": {
+    "Aileen Lantong": "75541035",
+    "Anca Elamparo": "60890419",
+    "Andre V": "87441334",
+    "Archit Batlaw": "55374544",
+    "Cristina Cepeda": "75446242",
+    "Diksha Sharma": "75430705",
+    "Ela Prado": "87442792",
+    "Gadis Kandina": "75467651",
+    "Jimena Vázquez": "87400701",
+    "Karra Worang": "87362004",
+    "Kylie McCreary": "75585377",
+    "Linda B": "87437898",
+    "Marcelo Acosta": "87415563",
+    "Mateo Galvan": "87351538",
+    "Matt Hessler": "60043198",
+    "Mehr Gupta": "87437226",
+    "Nashua Quessep": "81546613",
+    "Rahul Issar": "48852250",
+    "Shadrach de Villa": "306736557",
+    "Shajar Romero": "75509087",
+    "Video Editor RD": "87428899",
+    "Vishnu R": "87409875",
+    "kp": "48852148"
+  },
+  "emails": {
+    "Aileen Lantong": "admin@reach-digital.co",
+    "Anca Elamparo": "anca@reach-digital.co",
+    "Andre V": "andre@reach-digital.co",
+    "Archit Batlaw": "archit@reach-digital.co",
+    "Cristina Cepeda": "cristina@reach-digital.co",
+    "Diksha Sharma": "diksha@reach-digital.co",
+    "Ela Prado": "ela@reach-digital.co",
+    "Gadis Kandina": "gadis@reach-digital.co",
+    "Jimena Vázquez": "jimena@reach-digital.co",
+    "Karra Worang": "karra@reach-digital.co",
+    "Kylie McCreary": "kylie@reach-digital.co",
+    "Linda B": "linda@reach-digital.co",
+    "Marcelo Acosta": "marcelo@reach-digital.co",
+    "Mateo Galvan": "mateo@reach-digital.co",
+    "Matt Hessler": "matt@reach-digital.co",
+    "Mehr Gupta": "mehr@reach-digital.co",
+    "Nashua Quessep": "nashua@reach-digital.co",
+    "Rahul Issar": "rahul@reach-digital.co",
+    "Shadrach de Villa": "shad@reach-digital.co",
+    "Shajar Romero": "shajar@reach-digital.co",
+    "Video Editor RD": "ve1@reach-digital.co",
+    "Vishnu R": "vishnu@reach-digital.co",
+    "kp": "kp@reach-digital.co"
+  },
+  "default_assignees": {
+    "load_scripts_or_briefs": {
+      "strategist": "from .claude/strategist.json (clickup_id field)",
+      "reviewer": "Diksha Sharma (75430705)"
+    },
+    "footage_request": {
+      "strategist": "from .claude/strategist.json (clickup_id field)",
+      "owner": "Karra Worang (87362004)"
+    }
+  },
+  "in_go_binary": {
+    "dikshaID_constant": "75430705",
+    "karraID_constant": "87362004",
+    "source": ".claude/tools/clickup-pp-cli/internal/cli/pm_load.go line 49-52"
+  },
+  "notes": {
+    "michael_starr_81508885": "In the Go teamMembers map but NOT returned by the live `team` API on 2026-06-09 — likely deactivated/former. Keep in Go map until confirmed, do not add to this JSON without verification.",
+    "inactive_in_pm_load_go": "kp is in the live team but only as 'kp' (lowercase, single token). The Go map uses 'kp' as the key directly."
+  },
+  "how_to_update": "Refresh by running: `clickup-pp-cli team --json --compact | tail -n +2 | python3 -c \"import json,sys; d=json.load(sys.stdin); [print(f'{m[\\\"user\\\"][\\\"username\\\"]} {m[\\\"user\\\"][\\\"id\\\"]} {m[\\\"user\\\"][\\\"email\\\"]}') for m in d['results']['teams'][0]['members']]\"` and updating the user_ids / emails maps. Re-seed the Go teamMembers map (line 33-47) with the same data (lowercase first name + lowercase first-last) and rebuild the binary with: `go build -C ~/printing-press/library/clickup -o /Users/marce/go/bin/clickup-pp-cli ./cmd/clickup-pp-cli`"
+}

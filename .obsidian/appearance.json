@@ -1,0 +1,12 @@
+{
+  "theme": "obsidian",
+  "cssTheme": "Minimal",
+  "showRibbon": true,
+  "translucency": false,
+  "nativeMenus": true,
+  "enabledCssSnippets": [
+    "hide-terminal-ai-buttons",
+    "terminal-ai-darker-bg"
+  ],
+  "accentColor": ""
+}

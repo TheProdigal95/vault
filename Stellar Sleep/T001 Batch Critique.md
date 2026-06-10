@@ -325,7 +325,7 @@ Pattern: "Willpower" × 4 items, body/brain Reframe × 2, "built on CBT-I" produ
 Rule to add (to writer sub-agent self-audit):
 > Before returning a script or brief, grep the entire output file (`T[###] Scripts.md` / `T[###] Briefs.md`) for the item's distinctive hook-payoff phrase, product-bridge phrase, and primary reframe verb. If any exact or near-verbatim match exists in another script or brief already in the batch, rewrite. Cross-script phrase uniqueness is a Tier 1 responsibility, not a Tier 2 catch.
 
-Target doc: `.claude/agents/script-writer.md` + `.claude/agents/brief-writer.md` — evidence-report format.
+Target doc: `00 Global/Hermes/Commands/script-writer.md` + the brief-writing section of the same canonical command (formerly `.claude/agents/script-writer.md` + `.claude/agents/brief-writer.md`, deleted during the 2026-06-09 Hermes port) — evidence-report format.
 Count: 3 duplicated phrases this batch / 1 batch.
 
 ---

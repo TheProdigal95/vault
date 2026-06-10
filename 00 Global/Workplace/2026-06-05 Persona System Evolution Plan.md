@@ -394,7 +394,7 @@ This step prevents prescribing ad formats based purely on organic patterns that 
 - YouTube search + download: yt-dlp handles both. Proven.
 - TikTok search: agent-browser opens search results, captures metadata. Download via yt-dlp with the video URLs.
 - TikTok/YouTube feed scrolling: agent-browser. Screenshots for strategist review.
-- Video analysis: Gemini via existing `.claude/tools/gemini-api/`.
+- Video analysis: Gemini via existing `00 Global/Hermes/Tools/gemini-api/`.
 - Instagram/Facebook: agent-browser for browsing, manual download for now.
 
 **Future optional automation:** A `/creative-consumption` slash command could orchestrate the full flow — generates search terms from pain clusters, runs the searches, captures metadata, downloads top performers, runs Gemini analysis, and produces the Persona Feed Profile. The pieces exist today; the command wires them together after a manual pilot proves the workflow.
@@ -475,7 +475,7 @@ than the bathroom setting."]
 - YouTube + TikTok download: `yt-dlp [URL]` handles both platforms.
 - TikTok search + metadata: agent-browser opens search results, scrolls the feed, captures creator names, engagement counts, descriptions, dates, hashtags, audio sources.
 - Feed browsing + screenshots: agent-browser scrolls and screenshots the feed grid on any platform.
-- Video analysis: Gemini via `.claude/tools/gemini-api/analyze-ads.js` (same pipeline as ad analysis, just pointed at organic content).
+- Video analysis: Gemini via `00 Global/Hermes/Tools/gemini-api/analyze-ads.js` (same pipeline as ad analysis, just pointed at organic content).
 - Pattern extraction: done in the main session after all Gemini analyses return.
 
 **What a `/creative-consumption` slash command would automate:**
@@ -905,7 +905,7 @@ Each angle gets a new field: `Market sophistication response: [Claim / Sharper c
 |---|---|---|---|---|---|
 ```
 
-**Build required:** Add a report-safe recency mode to `.claude/tools/persona-counter/` that filters `reviews.jsonl` by the `date` field before computing frequencies, while preserving the full-corpus tagged JSONL. Output both the full-corpus and filtered tables. If recent-period N is too small to support a trend read, render `Insufficient recent sample` instead of Growing / Declining.
+**Build required:** Add a report-safe recency mode to `00 Global/Hermes/Tools/persona-counter/` that filters `reviews.jsonl` by the `date` field before computing frequencies, while preserving the full-corpus tagged JSONL. Output both the full-corpus and filtered tables. If recent-period N is too small to support a trend read, render `Insufficient recent sample` instead of Growing / Declining.
 
 ---
 
@@ -947,7 +947,7 @@ Each angle gets a new field: `Market sophistication response: [Claim / Sharper c
 11. Produce Persona Feed Profile draft for strategist review
 12. Clean up downloaded media after analysis
 
-**Optional command after pilot:** `.claude/commands/creative-consumption.md` could automate the flow if the pilot produces useful, non-obvious production guidance and the manual steps are repetitive enough to justify a command.
+**Optional command after pilot:** `00 Global/Hermes/Commands/creative-consumption.md` could automate the flow if the pilot produces useful, non-obvious production guidance and the manual steps are repetitive enough to justify a command.
 
 **Build scope if approved:** The workflow pieces exist. Automation, if ever approved, should only orchestrate the proven manual flow after the pilot demonstrates useful, non-obvious guidance.
 
@@ -955,7 +955,7 @@ Each angle gets a new field: `Market sophistication response: [Claim / Sharper c
 
 ### 10.13 — Persona-Counter Recency Report Mode
 
-**File:** `.claude/tools/persona-counter/` (existing tool)
+**File:** `00 Global/Hermes/Tools/persona-counter/` (existing tool)
 
 **Change:** Add `--since YYYY-MM-DD` plus a report-safe mode that computes filtered frequencies without writing a partial tagged JSONL over the canonical corpus. Output both full-corpus and filtered frequency tables, including filtered `N` per persona and an insufficient-sample flag.
 

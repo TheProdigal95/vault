@@ -15,13 +15,13 @@ Changes to the spec card system, generation prompts, and visual design language.
 **Files added:**
 - `Creative Hero Workflow.md`
 - `Creative Hero Prompting Playbook.md`
-- `.claude/commands/creative-image.md`
+- `00 Global/Hermes/Commands/creative-image.md`
 - `.agents/skills/source-command-creative-image/SKILL.md`
-- `.claude/tools/add_to_canvas.js` — optional `--prompt-file` support for stable prompt nodes beside rendered variants
+- `00 Global/Hermes/Tools/add_to_canvas.js` — optional `--prompt-file` support for stable prompt nodes beside rendered variants
 
 **Files updated:**
 - `Overview.md`
-- `.claude/commands/generate-static.md`
+- `00 Global/Hermes/Commands/generate-static.md`
 - `.agents/skills/source-command-generate-static/SKILL.md`
 - `00 Global/Criteria/Creative Image Ad Criteria.md`
 - `00 Global/Process/Brief Structure.md`

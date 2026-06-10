@@ -34,23 +34,23 @@ Before any `brief-writer` sub-agent runs, the main session critiques the Batch P
 
 ### Tier 1 — Writer Sub-Agent (`brief-writer`, during draft)
 
-The `brief-writer` sub-agent (defined at `.claude/agents/brief-writer.md`) produces 2-3 briefs per invocation (grouped by format or topic) and runs the full scoring + structural pipeline before returning. Per brief:
+The `brief-writer` Hermes sub-agent (formerly at `.claude/agents/brief-writer.md`, now orchestrated by the `script-writer` skill at `00 Global/Hermes/Commands/script-writer.md` + `~/.hermes/profiles/reach-digital/skills/reach-digital/script-writer/SKILL.md` — the brief-writing role is invoked via the script-writer skill for static batches) produces 2-3 briefs per invocation (grouped by format or topic) and runs the full scoring + structural pipeline before returning. Per brief:
 1. **Hook Quality Bar** — 5-test gate. Dead hook → rethink before scoring.
 2. **4-Question Gate** — fast-fail. Q1 failure blocks all downstream checks.
-3. **Scoring loop** — spawns `scoring-evaluator` sub-agent (`.claude/agents/scoring/scoring-evaluator.md`). 7 dimensions scored 0-100. Copy iterates until all 90+. Cap at 5 iterations. Copy Editor has veto power.
+3. **Scoring loop** — spawns `scoring-evaluator` sub-agent (formerly at `.claude/agents/scoring/scoring-evaluator.md`; the scoring logic is now at `00 Global/Statics Generator/Scoring Agents/` and invoked from within the `script-writer` skill). 7 dimensions scored 0-100. Copy iterates until all 90+. Cap at 5 iterations. Copy Editor has veto power.
 4. **4-Question Gate** — post-scoring sanity check.
 5. **Structural pass/fail checks** — Brief Structure section order, References format, Mandatory Disclaimer placement, Diagram Example spec, per-format checklist, per-platform overlay.
 6. **Within-group cross-check** — headline uniqueness, product spec consistency, VoC language diversity across briefs in the group.
 
 The 7 scored dimensions (replacing equivalent pass/fail checks): Persona Fit, Awareness Stage Alignment, Messaging Angle Coherence, Three Selves, Brand Compliance, Format Compliance, Copy Editor. Rubric files at `00 Global/Statics Generator/Scoring Agents/`.
 
-**Evidence-based return.** The writer returns a structured evidence report covering all briefs in the group — scoring history per dimension per iteration, plus structural results. Example: `Iteration 1: Persona 78 | Awareness 91 | Angle 85 → Iteration 2: Persona 91 | Awareness 91 | Angle 92 → Final: ALL ≥90 ✅`. See `.claude/agents/brief-writer.md` for the required evidence-report format.
+**Evidence-based return.** The writer returns a structured evidence report covering all briefs in the group — scoring history per dimension per iteration, plus structural results. Example: `Iteration 1: Persona 78 | Awareness 91 | Angle 85 → Iteration 2: Persona 91 | Awareness 91 | Angle 92 → Final: ALL ≥90 ✅`. See `00 Global/Statics Generator/Implementation Log.md` and `00 Global/Statics Generator/Scoring Agents/` for the required evidence-report format.
 
 The sub-agent does not return until every brief passes all scored dimensions at 90+ and every structural check has its evidence line.
 
 ### Tier 2 — Orchestrator (`critique-orchestrator`, after all sub-agents return)
 
-The `critique-orchestrator` sub-agent (defined at `.claude/agents/critique-orchestrator.md`) runs a **category-sweep audit first, item-level re-verify second**. Category sweeps mirror the audits that historically caught real failures — they look at one dimension across the whole batch instead of walking each brief end-to-end.
+The `critique-orchestrator` sub-agent (formerly at `.claude/agents/critique-orchestrator.md`; orchestration now handled by the `reach-digital-ops` skill + Hermes delegation when the post-writer sweep is needed) runs a **category-sweep audit first, item-level re-verify second**. Category sweeps mirror the audits that historically caught real failures — they look at one dimension across the whole batch instead of walking each brief end-to-end.
 
 **Step A — Category sweeps across the batch.**
 

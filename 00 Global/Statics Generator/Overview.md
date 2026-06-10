@@ -149,7 +149,7 @@ Seven scoring dimensions that replace pass/fail checks in Tier 1. Each rubric fi
 | `Format Compliance.md` | Copy fits format constraints | Creative Image Ad Criteria + Brief Structure + format template |
 | `Copy Editor.md` | Grammar, banned constructions, formatting. **Veto power.** | Universal Copy Rules, Headline & Text Hook Criteria |
 
-**One evaluator, not seven agents.** The `scoring-evaluator` sub-agent (`.claude/agents/scoring/scoring-evaluator.md`) reads all 7 rubrics in a single invocation and returns 7 scores. One evaluator per iteration = up to 75 agent invocations per batch (vs 525 if seven agents per iteration).
+**One evaluator, not seven agents.** The `scoring-evaluator` sub-agent (formerly at `.claude/agents/scoring/scoring-evaluator.md`; the rubric + scoring logic now lives at `00 Global/Statics Generator/Scoring Agents/` and is invoked from within the `script-writer` skill) reads all 7 rubrics in a single invocation and returns 7 scores. One evaluator per iteration = up to 75 agent invocations per batch (vs 525 if seven agents per iteration).
 
 **The rules live in criteria docs, not rubric files.** When a new rule gets promoted via the compounding rule, every future scoring run automatically enforces it.
 
@@ -188,7 +188,7 @@ See `Format Multiplication.md` for the workflow.
 | Playwright (local) | HTML → PNG for spec cards | Free |
 | ffmpeg (local) | MP4 → GIF conversion | Free |
 
-**API wrapper:** `.claude/tools/fal-ai/` — same Node.js pattern as Gemini API wrapper. `FAL_KEY` in `.env`.
+**API wrapper:** `00 Global/Hermes/Tools/fal-ai/` — same Node.js pattern as Gemini API wrapper. `FAL_KEY` in `.env`.
 
 **Fallback models on fal.ai:** Kling O3 Standard, Seedance 2.0 (ByteDance), Sora 2 (OpenAI), NanoBanana Pro (previous gen, better at filling gaps).
 
@@ -433,8 +433,8 @@ These dimensions encode into our scoring agents (Awareness Stage Alignment, Mess
     ├── Format Compliance.md
     └── Copy Editor.md
 
-.claude/agents/scoring/scoring-evaluator.md
-.claude/tools/fal-ai/                    ← generate-image.js supports --model nb2|gpt
-.claude/commands/generate-static.md
-.claude/commands/creative-image.md
+00 Global/Statics Generator/Scoring Agents/scoring-evaluator.md   ← (formerly at `.claude/agents/scoring/scoring-evaluator.md`, moved 2026-06-09 during the Hermes port)
+00 Global/Hermes/Tools/fal-ai/                    ← generate-image.js supports --model nb2|gpt
+00 Global/Hermes/Commands/generate-static.md
+00 Global/Hermes/Commands/creative-image.md
 ```

@@ -150,7 +150,7 @@ Omit `--images` entirely when the hero pass has no uploaded references.
 
 ```bash
 # Text-to-image hero pass
-node .claude/tools/fal-ai/generate-image.js \
+node 00 Global/Hermes/Tools/fal-ai/generate-image.js \
   --model [nb2|gpt] \
   --prompt-file "[prompt-file]" \
   --output "[Brand]/00 Assets/Statics/T[###]-creative-heroes/[concept-slug]" \
@@ -158,7 +158,7 @@ node .claude/tools/fal-ai/generate-image.js \
   --aspect-ratio "9:16"
 
 # Hero pass with a product or approved prior-output reference
-node .claude/tools/fal-ai/generate-image.js \
+node 00 Global/Hermes/Tools/fal-ai/generate-image.js \
   --model [nb2|gpt] \
   --prompt-file "[prompt-file]" \
   --images "[uploaded-reference-url]" \
@@ -178,7 +178,7 @@ Save outputs directly to `[Brand]/00 Assets/Statics/`. Add every variant and its
 Save the stable prompt as a `.txt` file beside the generated variants, then add the row to the canvas:
 
 ```bash
-node .claude/tools/add_to_canvas.js \
+node 00 Global/Hermes/Tools/add_to_canvas.js \
   --canvas "[Brand]/T[###] Images.canvas" \
   --files "[comma-separated-vault-relative-image-paths]" \
   --label "Creative Image Heroes - [concept] - v1" \

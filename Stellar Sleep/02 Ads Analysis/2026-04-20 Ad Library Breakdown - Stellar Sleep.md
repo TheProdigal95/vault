@@ -8,7 +8,7 @@ cssclasses:
 *Analysis date: April 20, 2026*
 *Source: Meta Ad Library (active status, page_id 111492238407064)*
 *Method: Apify scrape → media download → Gemini per-ad visual analysis*
-*Raw data: `~/.claude/tools/ad-library/data/stellar-sleep/ads-raw.json` · Per-ad analyses: `~/.claude/tools/ad-library/data/stellar-sleep/analysis/`*
+*Raw data: `~/00 Global/Hermes/Tools/ad-library/data/stellar-sleep/ads-raw.json` · Per-ad analyses: `~/00 Global/Hermes/Tools/ad-library/data/stellar-sleep/analysis/`*
 
 > This audit supersedes the "Ad Library Orientation" block in [[Persona Summary - Stellar Sleep]], which was built from primary-text + format fields only and missed video + visual angle diversity.
 
@@ -179,4 +179,4 @@ Before T001 scripting, confirm:
 
 ---
 
-*Raw ads retained at `~/.claude/tools/ad-library/data/stellar-sleep/` for re-run. Per-ad analysis files preserved in `analysis/` subfolder; media downloads cleaned up after this report.*
+*Raw ads retained at `~/00 Global/Hermes/Tools/ad-library/data/stellar-sleep/` for re-run. Per-ad analysis files preserved in `analysis/` subfolder; media downloads cleaned up after this report.*

@@ -1,6 +1,6 @@
 # Reach Digital Creative Strategy Vault
 
-This is the Obsidian vault where all creative strategy work happens for Reach Digital's DTC brand clients. Everything lives in markdown. Codex is an active collaborator — analyzing ads, writing scripts, running research, and producing creative briefs.
+This is the Obsidian vault where all creative strategy work happens for Reach Digital's DTC brand clients. Everything lives in markdown. Hermes is the active AI collaborator — analyzing ads, writing scripts, running research, and producing creative briefs via its skill system and delegated subagents.
 
 > **Maintenance note:** This file is the skeleton loaded every session. Feature-specific setup, integrations, templates, and detailed workflows belong in `00 Global/Process/*.md`, not here. Keep this file under 250 lines.
 
@@ -84,12 +84,12 @@ The system, tools, strategic frameworks, research pipeline, and future roadmap a
 
 ## Slash Commands — Use These, Don't Reinvent Them
 
-This vault has custom slash commands sourced from `.claude/commands/` and migrated for Codex as skills under `.agents/skills/source-command-*` (project-level, shared with the repo). When the user's request matches one of these, **invoke the matching Codex skill** instead of trying to do it manually. The commands contain the exact tools, paths, and logic needed.
+This vault has custom slash commands sourced from `00 Global/Hermes/Commands/`. They are loaded into Hermes as skills under `~/.hermes/profiles/reach-digital/skills/reach-digital/<name>/` (each skill's `SKILL.md` is a thin pointer that points back to the canonical command file). When the user's request matches one of these, **invoke the matching Hermes skill** instead of trying to do it manually. The commands contain the exact tools, paths, and logic needed.
 
 **Important:**
-- Always use project-relative paths (`node .claude/tools/grab/grab.js`) — never hardcoded paths like `/opt/homebrew/bin/node` or `~/.claude/tools/`.
-- If global commands exist at `~/.claude/commands/` that conflict with these, the global ones may be outdated. The canonical source versions are in this project's `.claude/` directory; the Codex-facing wrappers are in `.agents/skills/source-command-*`.
-- **Before first use of Gemini tools**, check that `.claude/tools/gemini-api/.env` exists and `node_modules/` is installed. If not, run: `cp ~/.claude/tools/gemini-api/.env .claude/tools/gemini-api/.env` (if migrating from global) or ask the user for their key, then `cd .claude/tools/gemini-api && npm install && cd ../../..`. This is a one-time setup per machine.
+- Always use project-relative paths (`node 00 Global/Hermes/Tools/grab/grab.js`) — never hardcoded paths like `/opt/homebrew/bin/node` or `~/00 Global/Hermes/Tools/`.
+- If global commands exist at `~/00 Global/Hermes/Commands/` that conflict with these, the global ones may be outdated (legacy Claude Code). The canonical source versions are in this vault's `00 Global/Hermes/Commands/` directory; the Hermes-facing wrappers live in `~/.hermes/profiles/reach-digital/skills/reach-digital/`.
+- **Before first use of Gemini tools**, check that `00 Global/Hermes/Tools/gemini-api/.env` exists and `node_modules/` is installed. If not, run: `cp ~/00 Global/Hermes/Tools/gemini-api/.env 00 Global/Hermes/Tools/gemini-api/.env` (if migrating from global) or ask the user for their key, then `cd 00 Global/Hermes/Tools/gemini-api && npm install && cd ../../..`. This is a one-time setup per machine.
 
 ### `/transcribe` — Video & Audio Transcription
 
@@ -134,7 +134,7 @@ Full trigger list + hard rules live in the **Researching a New Brand** section b
 **Critical rules:**
 - If the user pastes URLs with analysis intent, chain directly into Gemini analysis — never ask them to download manually. Video analysis = 4-column table (`| Timestamp | Visual Action | Voiceover | On-Screen Captions |`).
 - **NEVER fabricate or invent analysis for ads you couldn't download.** If a download fails, say it failed. Only analyze what you actually have on disk. Do not write descriptions, breakdowns, or visual analyses based on the ad name alone — you must have the actual media file. Making up analysis is worse than skipping an ad.
-- Always delete media after analysis is saved (`rm -rf .claude/tools/grab/downloads/session-*`).
+- Always delete media after analysis is saved (`rm -rf 00 Global/Hermes/Tools/grab/downloads/session-*`).
 
 ### `/creative-image` — Creative Hero Image Pre-Pass
 
@@ -261,7 +261,7 @@ Each doc contains the 3-tier QA workflow (writer sub-agent → orchestrator → 
 - Never load briefs, scripts, or create footage requests unless explicitly told to.
 - Static briefs and video scripts both load into the brand's **single Creative Briefs list**. There is never a separate Scripts list. Same list, same assignees, same "don't touch unless told" rule. Only the `Task type` custom field and status string differ.
 - **Task name = the file slug** (the `Reach Digital_[Brand]_[Concept]_[##]_[T###]` line in the source doc, e.g., `Reach Digital_IM8_GLP1 Muscle Loss Explainer_13_T002`). **Task description = everything after the slug through the Close / final designer-facing section — exclude anything after** (Hook-to-Body Transition Verification and similar QA/internal blocks are excluded).
-- Always assign the current strategist (from `.claude/strategist.json`) + Diksha Sharma for every task type (briefs, scripts, anything else), with one exception: footage requests assign the strategist + Karra Worang.
+- Always assign the current strategist (from `00 Global/Hermes/strategist.json`) + Diksha Sharma for every task type (briefs, scripts, anything else), with one exception: footage requests assign the strategist + Karra Worang.
 - Resolving a brand's list: check the Brand → Creative Briefs list table first. If the brand isn't there, match the vault brand folder to the ClickUp space; if multiple candidate Creative Briefs lists exist, pick the **most populated and most recently active** one — that's the live list, the others are dead duplicates. Don't ask — resolve it, then add the brand to the table so the next run doesn't re-solve it.
 
 ---
@@ -281,7 +281,7 @@ Each doc contains the 3-tier QA workflow (writer sub-agent → orchestrator → 
 
 These apply to every task in this vault — writing, editing, analyzing, briefing. They override default LLM instincts toward overproduction, silent interpretation, and drive-by "improvements."
 
-- **Strategists work fast.** They provide raw voice-note-style notes and expect Codex to fill gaps — run Gemini analysis on media, cross-reference patterns from prior brands, surface things they didn't mention. Don't just reformat their notes. Add value.
+- **Strategists work fast.** They provide raw voice-note-style notes and expect Hermes to fill gaps — run Gemini analysis on media, cross-reference patterns from prior brands, surface things they didn't mention. Don't just reformat their notes. Add value.
 - **Surface your interpretation before committing.** When strategist notes are ambiguous ("make it more like that IM8 one," "tighten this," "you know what I mean"), name the read you're about to act on — or present the two or three readings if real ambiguity exists. Filling gaps is expected; hiding which gap you filled is what burns a revision cycle.
 - **Edit surgically.** When revising an existing brief, script, working document, context doc, or Notion page, only change what was asked. Don't rephrase adjacent bullets, don't "improve" other sections, don't reformat references, don't restructure paragraphs you weren't told to touch. Every changed line should trace directly to the request. If you spot something else worth fixing, call it out separately — don't silently bundle it into the same edit.
 - **No speculative additions.** Don't add sections, bullets, scripts, variants, headlines, or content that wasn't requested. A brief revision doesn't need a new Designer Note. A script fix doesn't need extra hook variants. A working document tweak doesn't need fresh strategic analysis. If you think something's missing, ask first — don't just add it.
