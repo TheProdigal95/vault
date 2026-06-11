@@ -76,6 +76,7 @@ becomes `❌ MELATONIN<br>❌ MAGNESIUM PILLS<br>❌ HERBAL TEAS<br><br>NONE OF 
 - **Problem-first hooks must bridge to solution.** Every problem-first hook (reframe, provocation, conditional) must end with a phrase hinting a solution is coming. "And one scoop a day can fix it." "One supplement can change that." The body then delivers on that hint. Test by reading the hook's last sentence and the body's first sentence back-to-back — if there's a jarring shift from problem to solution, add a bridge phrase.
 - All variations must transition smoothly into the same body opening.
 - **All hook variations require voiceover.** If the body has VO, no hook may be caption-only or silent. When a hook variation uses B-roll or lifestyle footage with no on-screen talent, write a VO line and tag it `[AI narrator]` or `[TONY]` per the script's speaker format.
+- **Preserve strategist-drafted hooks.** When the strategist provides draft hooks for an actor to read on camera, edit only for criteria compliance (fix stats, name the product where "this" is vague) — preserve the VO phrasing and energy; don't restructure the thought. Strategist hooks carry real UGC cadence; AI rewrites sound written, not spoken, and the actor must sound natural above all. Captions are editorial and CAN be rewritten for different core types (the actor doesn't read those). Don't replace a strategist's "from the first sip"-style temporal-discounting opener with an alternative-callout opener unless asked.
 
 ---
 
@@ -233,7 +234,7 @@ Offer elements (welcome kit, guarantee, discount) go in the platform end card, n
 
 If there are no real source links or footage needs, omit the Footage section entirely. Never include `### Footage` with `N/A`, `n/a`, `None`, or a note saying no footage is needed.
 
-**References section** — things we *model from*: Notion format entries, Top Spender ads we're borrowing visual treatment from, Visual Treatment techniques. The editor reads these to understand style; they do not pull assets from them.
+**References section** — things we *model from*: Top Spender ads we're borrowing visual treatment from, Visual Treatment techniques, format precedents. The editor reads these to understand style; they do not pull assets from them. ~~(Notion Creative References Database was retired 2026-06-11; any old references are now in vault `02 Ads Analysis/` docs.)~~
 
 **Audio section** — specific music, trending audio, or sound-bed links the editor should use or approximate. These live under `### Audio`, not inside References and not inside Footage.
 
@@ -279,9 +280,9 @@ Skip any heading with no entries. Add brand-specific or script-specific headings
 - No top-spender ad just because its language influenced the script copy. Reference it only if the editor will visually borrow from it.
 - No internal-only links the editor cannot open.
 
-### Notion References Database
+### ~~Notion References Database~~ (deprecated 2026-06-11 — Notion is no longer wired into Hermes)
 
-Always search the Creative References Database for relevant entries (CGI techniques, format entries, caption styles) before finalizing References. The database is the cross-brand library of winning visual elements.
+> **⚠️ Notion is deprecated.** Do not search or write to Notion. Cross-brand visual references that used to live in the Notion Creative References Database are now in vault `02 Ads Analysis/` docs (per-brand). If a References entry in a Working Document calls out a format precedent that you can't find in the brand's `02 Ads Analysis/`, surface to the strategist — don't reach for Notion.
 
 ---
 
