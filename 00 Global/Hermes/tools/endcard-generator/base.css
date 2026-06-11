@@ -1,0 +1,277 @@
+/*
+ * IM8 End Card — Base CSS
+ *
+ * Canonical component styles derived from DESIGN.md tokens.
+ * Every template imports this via {{BASE_CSS}} placeholder.
+ * Templates only override what's genuinely different for that composition.
+ *
+ * Source of truth: IM8/00 Context/DESIGN.md YAML front matter.
+ */
+
+/* ── Fonts ── */
+
+@font-face {
+  font-family: "Arizona Flare";
+  src: local("ABC Arizona Flare Variable Unlicensed Trial");
+  font-weight: 100 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arizona Flare";
+  src: local("ABC Arizona Flare Variable Unlicensed Trial Italic"),
+       local("ABC Arizona Flare Variable Unlicensed Trial");
+  font-weight: 100 700;
+  font-style: italic;
+}
+
+/* ── Reset & Canvas ── */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* {{PALETTE_VARS}} */
+
+html, body {
+  margin: 0;
+  width: 1080px;
+  height: 1920px;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* ── Background ── */
+
+.bg-img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+/* ── Content Container ── */
+/* Default: top-aligned, standard padding from DESIGN.md spacing tokens */
+
+.content {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 76px 28px;
+  z-index: 1;
+}
+
+/* ── Layer A: Logo ── */
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+.logo-wrapper img {
+  height: 56px;
+  object-fit: contain;
+  filter: var(--logo-filter);
+}
+
+/* ── Layer A: Capsule Label ── */
+/* DESIGN.md: capsule — 60px radius, 26px/700 Manrope, 3px tracking */
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 36px;
+  background: var(--pill-bg);
+  border: 2px solid var(--pill-border);
+  border-radius: 60px;
+  margin-bottom: 30px;
+  flex-shrink: 0;
+}
+.pill-text {
+  font-family: "Manrope", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--pill-text);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* ── Layer B: Headline ── */
+/* Default: bold sans register (700, uppercase). Templates override for serif register. */
+
+.headline {
+  font-family: "Arizona Flare", serif;
+  font-size: 88px;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  line-height: 1.05;
+  text-transform: uppercase;
+  width: 100%;
+  white-space: pre-line;
+  margin-bottom: 24px;
+  flex-shrink: 0;
+  text-shadow: var(--text-shadow);
+}
+
+/* ── Layer B: Subhead ── */
+/* DESIGN.md: subhead — 46px/400 italic, secondary color */
+
+.subhead {
+  font-family: "Arizona Flare", serif;
+  font-size: 46px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 30px;
+  flex-shrink: 0;
+  text-shadow: var(--text-shadow);
+}
+
+/* ── Layer C: Photo Window ── */
+/* DESIGN.md: 928px wide, 20px radius, flex-grows to fill */
+
+.photo-wrapper {
+  width: 928px;
+  flex: 1 1 0%;
+  min-height: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  border: var(--photo-border);
+  margin-bottom: 30px;
+  position: relative;
+  background: var(--bg);
+}
+
+/* ── Layer C: B-Roll Videos ── */
+
+.broll {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0;
+}
+#broll-1 { opacity: 1; }
+
+/* ── Layer C: Hero Image ── */
+
+.hero-img-wrapper {
+  width: 928px;
+  flex: 1 1 0%;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.hero-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ── Layer D: Badges ── */
+/* DESIGN.md: badge — 20px/12px padding, 32px/800 Manrope, 16px gap */
+
+.badges {
+  display: flex;
+  gap: 16px;
+  width: 928px;
+  margin-bottom: 30px;
+  flex-shrink: 0;
+}
+.badge {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 12px;
+  border: 2px solid var(--badge-border);
+  border-radius: var(--badge-radius);
+  background: var(--badge-bg);
+  box-shadow: var(--badge-shadow);
+}
+.badge-title {
+  font-family: "Manrope", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--badge-text);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* ── Layer E: CTA Button ── */
+/* DESIGN.md: cta — 928px, 38px padding, 20px radius, 48px/800 Manrope */
+
+.cta {
+  width: 928px;
+  padding: 38px 0;
+  background: var(--cta-bg);
+  border-radius: 20px;
+  text-align: center;
+  flex-shrink: 0;
+  margin-bottom: 30px;
+}
+.cta-text {
+  font-family: "Manrope", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--cta-text);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* ── Layer E: Disclaimer ── */
+/* DESIGN.md: disclaimer-box — 928px, 14px radius, 18px/400 Manrope */
+
+.disclaimer {
+  width: 928px;
+  padding: 16px 24px;
+  border: 1.5px solid var(--border-color);
+  border-radius: 14px;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+}
+.disclaimer-text {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* ── Layer E: Footnote ── */
+
+.footnote {
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-muted);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* ── Layer E: Logo Bottom ── */
+
+.logo-bottom {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.logo-bottom img {
+  height: 48px;
+  object-fit: contain;
+  filter: var(--logo-filter);
+}
