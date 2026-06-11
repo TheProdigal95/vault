@@ -115,12 +115,18 @@ Column 1 = ClickUp task `date_created`, formatted as `M/DD` (no leading zero on 
 
 ## Air link source
 
-The Air link in Column 5 comes from a **bookmark** in the ClickUp task comments (not from `comment_text` plain text). The bookmark has:
-- `type`: `bookmark`
-- `bookmark.service`: `custom`
-- `bookmark.url`: the air.inc URL
+The Air link in Column 5 comes from a ClickUp task comment. It can live in any of three places — check all of them in order:
 
-Some tasks have multiple comments — pick the most recent one with an `app.air.inc` URL in the bookmark.
+1. **Bookmark block** in the rich-text `comment[]` array:
+   - `type`: `bookmark`
+   - `bookmark.service`: `custom`
+   - `bookmark.url`: the air.inc URL
+2. **Link-mention block** in `comment[]` (the "done [link]" / inline-link format editors use):
+   - `type`: `link_mention`
+   - The URL appears in `block.text` or a sibling field — grep the whole block dict for `app.air.inc`
+3. **Plain text** in `comment_text` as a last-resort fallback.
+
+Some tasks have multiple comments — pick the most recent one with an `app.air.inc` URL. If a task is in `approved ready for client` status but no comment block contains an air link, **do not** mark the row as "Shared With Client" — flag it to the strategist.
 
 ## Open design questions
 

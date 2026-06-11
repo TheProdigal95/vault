@@ -58,6 +58,7 @@ Derived from Lifeforce T002 and GrowthPod portfolio patterns.
 - Image Direction column = the visual concept. Not the layout, not the copy.
 - Must be formatted as bullet points in the brief — separate platform UI, image content, and style notes.
 - Do NOT duplicate copy in the image direction. If copy appears in the image, write "text from the copy section" — don't repeat it.
+- **Primary text is out of scope for image-generation briefs.** When the brief is for AI image generation (format multiplication, generation-pipeline testing, `/generate-static`), only the headline, subheading, feature pills, CTA, and image direction render. Write the Meta primary text once and move on — do NOT run scoring loops or revision passes on primary text; it has zero effect on the generated image. Reserve deep primary-text QA for batch production, where primary text ships to Meta ads.
 
 ---
 

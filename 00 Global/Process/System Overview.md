@@ -19,13 +19,13 @@ Everything lives in markdown. The vault is the single source of truth.
 | Tool | What it does | Where it lives |
 |---|---|---|
 | **`/motion-pull`** | Pulls top-spender data from the Motion GraphQL API (metrics, CDN URLs, Motion share links). Subcommands: `pull` (top creatives + download), `angles` (angle spend breakdown), `formats` (format trends), `highlights` (AI signals), `delta` / `stale` / `history` (longitudinal tracking). Stores every pull in local SQLite. **Replaces the old CSV + `/grab` batch-download workflow for Motion.** | `00 Global/Hermes/Commands/motion-pull.md` · Binary: `$HOME/go/bin/motion-pp-cli` |
-| **`/grab`** | Downloads ad media from YouTube, TikTok, and direct URLs. Extracts ad copy from metadata. Videos get 4-column Gemini analysis. **Use for non-Motion sources only** — Motion pulls go through `/motion-pull`. Never fabricates analysis for failed downloads. | `00 Global/Hermes/Commands/grab.md` + `00 Global/Hermes/Tools/grab/grab.js` |
-| **`/transcribe`** | Routes video/audio to MLX (local, free, speech-only) or Gemini (visual + audio breakdown with 4-column table). | `00 Global/Hermes/Commands/transcribe.md` + `00 Global/Hermes/Tools/mlx-transcribe.py` |
-| **`/ad-library`** | Batch scrapes Meta Ad Library via Apify. Downloads media, optional Gemini analysis. Supports 10-20 brands at once. | `00 Global/Hermes/Commands/ad-library.md` + `00 Global/Hermes/Tools/ad-library/` |
-| **Gemini API** | Video analysis (4-column tables + edit-style breakdown), image analysis, text generation, image generation. Essential for visual analysis of top spenders — edit pace, b-roll patterns, color treatment, caption style — which the CLI's metric pull doesn't cover. | `00 Global/Hermes/Tools/gemini-api/gemini-api.js` |
+| **`/grab`** | Downloads ad media from YouTube, TikTok, and direct URLs. Extracts ad copy from metadata. Videos get 4-column Gemini analysis. **Use for non-Motion sources only** — Motion pulls go through `/motion-pull`. Never fabricates analysis for failed downloads. | `00 Global/Hermes/Commands/grab.md` + `00 Global/Hermes/tools/grab/grab.js` |
+| **`/transcribe`** | Routes video/audio to MLX (local, free, speech-only) or Gemini (visual + audio breakdown with 4-column table). | `00 Global/Hermes/Commands/transcribe.md` + `00 Global/Hermes/tools/mlx-transcribe.py` |
+| **`/ad-library`** | Batch scrapes Meta Ad Library via Apify. Downloads media, optional Gemini analysis. Supports 10-20 brands at once. | `00 Global/Hermes/Commands/ad-library.md` + `00 Global/Hermes/tools/ad-library/` |
+| **Gemini API** | Video analysis (4-column tables + edit-style breakdown), image analysis, text generation, image generation. Essential for visual analysis of top spenders — edit pace, b-roll patterns, color treatment, caption style — which the CLI's metric pull doesn't cover. | `00 Global/Hermes/tools/gemini-api/gemini-api.js` |
 | **Research Engine** | Reddit research sprints — scrapes conversations, extracts evidence, discovers themes, mines language patterns. | MCP server (separate from vault) |
 | **Review Scraper** | Scrapes product reviews from any ecommerce site into standardized JSONL. | `/review-scraper` skill |
-| **`/generate-static`** | Converts approved briefs to model-specific prompts, generates images via fal.ai (NanoBanana 2 or GPT Image 2), and animates statics via Veo 3.1. Supports standalone generation, ad-swipe, format multiplication, and final composition around an approved creative hero. | `00 Global/Hermes/Commands/generate-static.md` + `00 Global/Hermes/Tools/fal-ai/` + `00 Global/Statics Generator/` |
+| **`/generate-static`** | Converts approved briefs to model-specific prompts, generates images via fal.ai (NanoBanana 2 or GPT Image 2), and animates statics via Veo 3.1. Supports standalone generation, ad-swipe, format multiplication, and final composition around an approved creative hero. | `00 Global/Hermes/Commands/generate-static.md` + `00 Global/Hermes/tools/fal-ai/` + `00 Global/Statics Generator/` |
 | **`/creative-image`** | Optional hero-first pre-pass for creative image static ads. Deepens the angle, proposes metaphorical or scenario-based concepts, generates text-free hero variants via the existing fal.ai wrapper, then hands an approved hero to `/generate-static` for final composition. | `00 Global/Hermes/Commands/creative-image.md` + `00 Global/Statics Generator/Creative Hero Workflow.md` |
 
 ### Creative Skills (slash commands)
@@ -42,7 +42,6 @@ Everything lives in markdown. The vault is the single source of truth.
 | Platform | What Claude does | How |
 |---|---|---|
 | **Motion** | Pulls top-spender metrics, downloads media via CDN, constructs Motion share links for references. Subcommands cover angle/format trends, AI highlights, delta tracking. | `motion-pp-cli` (Go CLI calling Motion GraphQL API directly) |
-| **Notion** | Manages Creative References Database — adds entries, searches, reads pages | Notion MCP (OAuth, configured in `~/.hermes/profiles/reach-digital/config.yaml` under `mcp_servers`) |
 | **ClickUp** | Loads briefs for designers, creates footage requests, comments on tasks | ClickUp Go CLI (`clickup-pp-cli`, personal API token) + ClickUp MCP (OAuth) |
 
 ### Criteria System
@@ -63,13 +62,9 @@ Brand-specific overrides (guardrails, claims, ingredients, pricing) live in each
 
 **Compliance docs, when present, are mandatory reading.** Some brands have a `Compliance` doc in `00 Context/` — if one exists, it must be read before writing any creative for that brand. Compliance rules override all other criteria. Not every brand has one, and that's fine — proceed normally without it.
 
-### Creative References Database (Notion)
+### Creative References Database (deprecated)
 
-A cross-brand library of winning creative elements. The strategist decides what gets added — Hermes never auto-populates entries. Before adding, Hermes checks for duplicates.
-
-**Types:** Hook (Video/Static), Script Structure, Copy (Headline/Body), Format, Proof Structure, Caption Style, Meme Template, Effect/Filter, Landing Page, Email, UGC Format
-
-**Views:** All References, Hooks & Copy, Structures & Formats, Formats (gallery), Memes & Effects (gallery)
+The cross-brand reference library lived in Notion, which is **no longer wired into Hermes**. If reference logging is still wanted, the strategist manages it manually in Notion — Hermes does not auto-populate or read it.
 
 ---
 

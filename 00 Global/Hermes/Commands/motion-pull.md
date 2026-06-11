@@ -4,7 +4,7 @@ Pull structured top-spender data directly from the Motion GraphQL API and store 
 
 **Binary:** `$HOME/go/bin/motion-pp-cli` (always call by absolute path — do not rely on bare `motion-pp-cli` in PATH)
 
-**Auth:** Motion uses cookie-based browser sessions. The CLI uses the Surf transport which reads the Chrome profile at `~/00 Global/Hermes/Tools/grab/motion-profile/` — the same profile grab.js uses. If auth fails, run a one-time Motion login via grab.js first (see `00 Global/Process/Setup.md`).
+**Auth:** Motion uses cookie-based browser sessions. The CLI uses the Surf transport which reads the Chrome profile at `~/.reach-digital/motion-profile/` — the same profile grab.js uses. If auth fails, run a one-time Motion login via grab.js first (see `00 Global/Process/Setup.md`).
 
 ---
 
@@ -160,7 +160,7 @@ Use `/grab` only for YouTube, TikTok, or other non-Motion URLs.
 
 If you get a 401 / redirect to login:
 1. The Motion Chrome profile may need a fresh login session
-2. Run: `node 00 Global/Hermes/Tools/grab/grab.js "https://app.motionapp.com"` (or any Motion URL) — this opens the browser, you log in once, and the session is saved to the profile
+2. Run: `node 00 Global/Hermes/tools/grab/grab.js "https://app.motionapp.com"` (or any Motion URL) — this opens the browser, you log in once, and the session is saved to the profile
 3. Retry the motion-pp-cli command
 
 ---

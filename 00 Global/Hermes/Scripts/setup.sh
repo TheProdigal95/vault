@@ -14,11 +14,11 @@
 #
 # Phases:
 #   1. System deps       — yt-dlp, ffmpeg, go, node, python3, agent-browser, claude-agent-acp
-#   2. Node tools        — npm install in each tool dir under 00 Global/Hermes/Tools/
+#   2. Node tools        — npm install in each tool dir under 00 Global/Hermes/tools/
 #   3. Go CLIs           — build motion-pp-cli + clickup-pp-cli from printing-press source
-#   4. API keys          — verify .env has GOOGLE_API_KEY, FAL_KEY, CLICKUP_API_TOKEN
+#   4. API keys          — verify .env has GOOGLE_API_KEY, FAL_KEY; verify ClickUp config.toml has a valid auth_header
 #   5. Strategist         — create 00 Global/Hermes/strategist.json template if missing
-#   6. MCP servers        — verify ClickUp is configured; print Notion/Drive manual steps
+#   6. MCP servers        — verify ClickUp is configured; print Google Drive manual steps (Notion deprecated)
 #   7. Browser profiles   — ensure review-sampler/profiles/{trustpilot,amazon} dirs exist
 #   8. Smoke test         — run reach-digital-ops/scripts/smoke-test.sh at the end
 # ============================================================================
@@ -29,7 +29,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VAULT_DIR="$(cd "$SCRIPT_DIR/../../.." && pwd)"
 HERMES_DIR="$VAULT_DIR/00 Global/Hermes"
-TOOLS_DIR="$HERMES_DIR/Tools"
+TOOLS_DIR="$HERMES_DIR/tools"
 COMMANDS_DIR="$HERMES_DIR/Commands"
 PROFILE_DIR="$HOME/.hermes/profiles/reach-digital"
 SMOKE_TEST="$PROFILE_DIR/skills/reach-digital/reach-digital-ops/scripts/smoke-test.sh"
@@ -219,7 +219,7 @@ if ! command -v go >/dev/null 2>&1; then
 fi
 
 # --- Phase 2: Node tools -------------------------------------------------------
-hdr "Phase 2: Node tools (00 Global/Hermes/Tools/)"
+hdr "Phase 2: Node tools (00 Global/Hermes/tools/)"
 if ! command -v npm >/dev/null 2>&1; then
   err "npm not found — cannot install Node tools. Re-run Phase 1 first."
 else
@@ -294,15 +294,33 @@ if [ ! -f "$ENV_FILE" ]; then
   err "Create it (e.g. by copying from a working machine or by running 'hermes auth' which writes one)."
   if [ "$CHECK_ONLY" = false ]; then exit 1; fi
 else
-  for key in GOOGLE_API_KEY FAL_KEY CLICKUP_API_TOKEN; do
+  for key in GOOGLE_API_KEY FAL_KEY; do
     val=$(grep "^$key=" "$ENV_FILE" 2>/dev/null | head -1 | cut -d= -f2-)
     if [ -n "$val" ] && [ "$val" != "#" ] && [[ "$val" != \#* ]]; then
       ok "$key set"
     else
       err "$key missing or commented out in $ENV_FILE"
-      note "Get keys from: Gemini https://aistudio.google.com/apikey · FAL https://fal.ai/dashboard/keys · ClickUp: Settings → Apps → API"
+      note "Get keys from: Gemini https://aistudio.google.com/apikey · FAL https://fal.ai/dashboard/keys"
     fi
   done
+  # ClickUp: NOT an env var. The Go CLI reads ~/.config/clickup-pp-cli/config.toml → auth_header.
+  # Verify the config file is present and the CLI can do a live API call.
+  CLICKUP_CFG="$HOME/.config/clickup-pp-cli/config.toml"
+  if [ -f "$CLICKUP_CFG" ] && grep -qE "^auth_header\s*=\s*['\"]pk_" "$CLICKUP_CFG"; then
+    if [ -x "/Users/marce/go/bin/clickup-pp-cli" ] || command -v clickup-pp-cli >/dev/null 2>&1; then
+      if clickup-pp-cli team --json --compact >/dev/null 2>&1; then
+        ok "ClickUp CLI auth: config.toml has valid pk_ token, live API reachable"
+      else
+        err "ClickUp CLI auth: config.toml has a pk_ token but live API returns 401 — token may be revoked"
+        note "Rotate at: https://app.clickup.com → Settings → Apps → API → Personal API Token, then 'clickup-pp-cli auth set-token <NEW>' or edit $CLICKUP_CFG"
+      fi
+    else
+      warn "ClickUp CLI binary not found yet (will be installed in phase 3); cannot verify auth"
+    fi
+  else
+    err "ClickUp CLI auth: $CLICKUP_CFG missing or has no pk_ auth_header"
+    note "Generate a token at https://app.clickup.com → Settings → Apps → API → Personal API Token, then 'clickup-pp-cli auth set-token <NEW>' (which writes $CLICKUP_CFG)"
+  fi
 fi
 
 # --- Phase 5: Strategist identity ----------------------------------------------

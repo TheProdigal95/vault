@@ -4,7 +4,12 @@ Load scripts or briefs from a vault markdown file into ClickUp as tasks.
 
 **Binary:** `$HOME/go/bin/clickup-pp-cli` (always call by absolute path)
 
-**Auth:** Set `CLICKUP_API_TOKEN` to your personal ClickUp API token.
+**Auth:** The Go CLI reads its token from `~/.config/clickup-pp-cli/config.toml` → `auth_header` (real user home, NOT profile-scoped `$HOME`). You do **NOT** need to set `CLICKUP_API_TOKEN` in your shell — that env var was removed from `~/.zshrc` on 2026-06-10 because a stale value caused red-herring 401s on direct API. To rotate the token:
+```bash
+clickup-pp-cli auth set-token "pk_XXXX..."
+# or edit ~/.config/clickup-pp-cli/config.toml directly
+```
+Verify with `clickup-pp-cli team --json --compact` (live API acceptance check).
 
 ---
 
@@ -110,8 +115,11 @@ For brands not in the table, pass `--list-id <id>`. After loading, add the brand
 ## Auth setup
 
 ```bash
-# Add to ~/.zshrc or ~/.bashrc
-export CLICKUP_API_TOKEN="pk_XXXX..."
+# The ClickUp Go CLI does NOT use an env var — it reads ~/.config/clickup-pp-cli/config.toml
+# Set the token there instead. To rotate, either run:
+#   clickup-pp-cli auth set-token "pk_XXXX..."
+# or edit the file directly. (Adding CLICKUP_API_TOKEN to ~/.zshrc used to be the
+# way, but was removed 2026-06-10 — it caused red-herring 401s on direct API.)
 ```
 
 Or use the CLI auth command:

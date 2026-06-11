@@ -33,15 +33,15 @@ The reach-digital profile at `~/.hermes/profiles/reach-digital/` ships pre-confi
 |---|---|---|
 | **Nous Portal** (OAuth) | `auth.json` token, auto-refreshes (~15 min TTL) | Main session model, web extract, compression, title gen, classification, QA |
 | **Google AI Studio** (API key) | `GOOGLE_API_KEY` in `.env` | Vision, transcription (Gemini Flash) |
-| **FAL.ai** (API key) | `FAL_KEY` in `.env` | Image gen, video animation (under `00 Global/Hermes/Tools/fal-ai/`) |
-| **ClickUp** (personal API token) | `CLICKUP_API_TOKEN` in `~/.zshrc` | Go CLI for routine loading; MCP for ad-hoc reads |
+| **FAL.ai** (API key) | `FAL_KEY` in `.env` | Image gen, video animation (under `00 Global/Hermes/tools/fal-ai/`) |
+| **ClickUp** (personal API token) | `~/.config/clickup-pp-cli/config.toml` → `auth_header` (real user home, NOT profile-scoped `$HOME`) | Go CLI for routine loading; MCP for ad-hoc reads |
 | **ClickUp MCP** (OAuth 2.1 PKCE) | `auth.json` token, set 2026-06-09 | 51 tools enabled, browser-OAuth on first use |
 
-### 8 reach-digital skills (auto-loaded)
+### 11 reach-digital skills (auto-loaded)
 
-Pinned in `~/.hermes/profiles/reach-digital/skills/reach-digital/`: `batch-planner`, `brand-researcher`, `clickup-load`, `grab-media`, `motion-top-spenders`, `reach-digital-ops`, `script-writer`, `transcribe`. Each SKILL.md is a thin pointer to the canonical reference at `00 Global/Hermes/Commands/<name>.md`.
+In `~/.hermes/profiles/reach-digital/skills/reach-digital/`: `batch-planner`, `brand-researcher`, `clickup-load`, `grab-media`, `motion-top-spenders`, `reach-digital-ops`, `scoring-evaluator`, `script-writer`, `setup`, `sheets-tracker-sync`, `transcribe`. Most SKILL.md files are thin pointers to the canonical reference at `00 Global/Hermes/Commands/<name>.md`; a few (`scoring-evaluator`, `setup`, `batch-planner`) are self-contained.
 
-### Tools (`00 Global/Hermes/Tools/`)
+### Tools (`00 Global/Hermes/tools/`)
 
 | Tool | Purpose | Install state |
 |---|---|---|
@@ -54,7 +54,7 @@ Pinned in `~/.hermes/profiles/reach-digital/skills/reach-digital/`: `batch-plann
 | `endcard-generator` | Node — end card composition + visual comparison | Pre-installed |
 | `persona-counter` / `review-sampler` | Node — persona discovery | Pre-installed |
 
-For each Node tool: `cd 00\ Global/Hermes/Tools/<name> && npm install`. For Go CLIs: source lives at `~/printing-press/library/<name>/`; rebuild with `make -C ~/printing-press/library/<name> install`.
+For each Node tool: `cd 00\ Global/Hermes/tools/<name> && npm install`. For Go CLIs: source lives at `~/printing-press/library/<name>/`; rebuild with `make -C ~/printing-press/library/<name> install`.
 
 ### Strategist identity
 
@@ -77,18 +77,9 @@ Configured in `~/.hermes/profiles/reach-digital/config.yaml` under `mcp_servers:
 | Server | URL | Status |
 |---|---|---|
 | ClickUp | `https://mcp.clickup.com/mcp` | **Configured** (OAuth 2.1 PKCE, 51/51 tools enabled) |
-| Notion | `https://mcp.notion.com/mcp` | Add manually (see below) |
 | Google Drive | `npx @piotr-agier/google-drive-mcp` | Add manually (OAuth required) |
 
-**Notion** — add to `config.yaml`:
-```yaml
-mcp_servers:
-  notion:
-    url: "https://mcp.notion.com/mcp"
-    timeout: 180
-    connect_timeout: 60
-```
-Then `hermes mcp test notion` to verify.
+> Notion is **deprecated** — no longer wired into Hermes. Don't add the MCP server.
 
 **Google Drive** — create OAuth credentials at Google Cloud Console, save to `~/.config/google-drive-mcp/gcp-oauth.keys.json`, then add the `google_drive:` block to `config.yaml` (template in the config docs).
 
@@ -98,11 +89,11 @@ All OAuth-based servers prompt for browser login on first use in Hermes.
 
 | Service | Profile path | When needed |
 |---|---|---|
-| **Motion** | `00 Global/Hermes/Tools/grab/motion-profile` | Required for `/motion-pull` |
-| **Trustpilot** | `00 Global/Hermes/Tools/review-sampler/profiles/trustpilot` | Optional — unlimited review pagination |
-| **Amazon** | `00 Global/Hermes/Tools/review-sampler/profiles/amazon` | Required for Amazon review scraping |
+| **Motion** | `00 Global/Hermes/tools/grab/motion-profile` | Required for `/motion-pull` |
+| **Trustpilot** | `00 Global/Hermes/tools/review-sampler/profiles/trustpilot` | Optional — unlimited review pagination |
+| **Amazon** | `00 Global/Hermes/tools/review-sampler/profiles/amazon` | Required for Amazon review scraping |
 
-Example: `agent-browser --session motion --profile 00\ Global/Hermes/Tools/grab/motion-profile --headed open https://projects.motionapp.com/login`. If a session expires, the relevant tool returns an auth-required error — just rerun the login.
+Example: `agent-browser --session motion --profile 00\ Global/Hermes/tools/grab/motion-profile --headed open https://projects.motionapp.com/login`. If a session expires, the relevant tool returns an auth-required error — just rerun the login.
 
 ### Optional: Pinokio MLX (local transcription, macOS only)
 

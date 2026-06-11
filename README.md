@@ -121,7 +121,7 @@ The reach-digital profile at `~/.hermes/profiles/reach-digital/` ships pre-confi
 | **Provider auth** | Nous Portal (OAuth) + Google AI Studio + FAL + ClickUp (API token + MCP OAuth) |
 | **Reach-digital skills (8)** | batch-planner, brand-researcher, clickup-load, grab-media, motion-top-spenders, reach-digital-ops, script-writer, transcribe |
 | **Go CLIs** | `motion-pp-cli` + `clickup-pp-cli` — pre-built, installed at `$HOME/go/bin/`, source at `~/printing-press/library/<name>/` |
-| **Node tools** | gemini-api, site-scraper, review-sampler, persona-counter, ad-classifier, fal-ai, endcard-generator — pre-installed under `00 Global/Hermes/Tools/` |
+| **Node tools** | gemini-api, site-scraper, review-sampler, persona-counter, ad-classifier, fal-ai, endcard-generator — pre-installed under `00 Global/Hermes/tools/` |
 | **MCP servers** | ClickUp (configured, 51 tools) + Notion (add manually) + Google Drive (add manually) |
 | **Obsidian** | Minimal theme, 4 plugins, 2 CSS snippets, dark mode, appearance config |
 
@@ -148,7 +148,7 @@ Full reference: [Setup.md](00%20Global/Process/Setup.md)
 |---|---|
 | Tool not found | Run the smoke test to see which binary is missing. Install via brew (`/opt/homebrew/bin/`) or `go install` for Go CLIs. |
 | Motion grabs fail | Re-run the Motion login (session expired). |
-| Gemini analysis broken | `cat 00 Global/Hermes/Tools/gemini-api/.env` — key should be there. |
+| Gemini analysis broken | `cat 00 Global/Hermes/tools/gemini-api/.env` — key should be there. |
 | ClickUp tasks assigned wrong | Edit `00 Global/Hermes/strategist.json` with your name + ClickUp ID. |
 | Obsidian plugins missing | Restart Obsidian (Cmd+Q, reopen). |
 | Agent Client says "auth required" | Re-link via `hermes auth refresh`; restart Obsidian. |

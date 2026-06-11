@@ -246,3 +246,49 @@ Add to vault Process: this doc (`Air API.md`).
 1. **Generate the API key when you can** and send me `AIR_API_KEY` + workspace ID. I can build the rest in parallel (CLI scaffold, etc.) while we wait.
 2. **Does the QA digest need Comments?** I noted above that the public API doesn't expose comments. If "what did reviewers say?" is a must-have for the morning TL;DR, we need a different approach (browser automation, or a screen-scraping skill). If metadata + video are enough for v1, we can skip this.
 3. **CLI name: `air-pp-cli` (matches the others) or something else?** Default: keep `air-pp-cli` for consistency.
+
+## What I missed in my initial scope (the high-value extras)
+
+I scoped the initial CLI down to ~6 read-only subcommands for the QA digest. But the full API has writes and feature endpoints that could be very useful for the creative ops workflow. Here's what I left out and why each could matter:
+
+**Writes (programmatic state changes — all of these work via API key auth):**
+
+| Endpoint | What it does | Why we might want it |
+|---|---|---|
+| `POST /assets/:assetId/cdnLink` | Create a **public shareable URL** for an asset (with optional expiration) | **Big one.** Today, sharing an asset with a client means: open the asset in the web app, click "Share", copy URL, paste in Slack/email. With the CLI, we can `air-pp-cli assets share <id> --expiry 7d` and embed that URL in the morning digest, the QA notes, anywhere. |
+| `POST /uploads` + `PUT <signed-S3-URL>` | Upload a local file as a new asset | Bulk-ingest from a folder (e.g., `for f in ~/Downloads/approved-assets/*; do air-pp-cli assets upload "$f" --board <id>; done`). Useful for: AI-generated content, designer exports, anything coming from outside the web app. |
+| `POST /imports` + `GET /imports/:id/status` | Import an asset from a public URL (Air fetches + stores) | One-shot ingestion of assets hosted elsewhere (Dropbox, S3, another DAM, a vendor's CDN). No local file needed. |
+| `POST /uploads/uploadPart` + `POST /uploads/completeMultipart` | Chunked upload for files ≥5GB | Less relevant for our 60-90s ad videos (well under 5GB), but if we ever ingest a long-form asset or full episode, this is the path. |
+| `PUT /assets/:assetId/customfields/:customFieldId` | Set a custom field value (e.g., "Status = QA Reviewed") | Programmatic status updates. After Gemini runs and flags a video clean, the CLI can mark it reviewed without a human in the loop. |
+| `POST /assets/:assetId/versions/:versionId/tags` | Attach a tag to an asset version | Auto-tagging by batch name, brand, status. Avoids the "did someone remember to tag this?" problem. |
+| `POST /boards` | Create a board | Auto-create per-batch boards ("T003 — X Brand") on day 1 of a batch, with the right structure, custom fields, default guests. Saves 10-20 min per batch. |
+| `POST/PATCH/DELETE /boards/:boardId/guests[/:guestId]` | Add/remove people from a board | Auto-add editors/designers to the right boards when a batch starts, remove when it wraps. |
+| `POST /tags` | Create a tag | Pre-create the tag taxonomy once, then auto-apply. |
+| `POST /customfields/.../values` | Add a value to a select custom field | Pre-create the option lists (e.g., "QA Reviewed" as a Status value) programmatically. |
+
+**Discovery / metadata (cheap to add, often needed):**
+
+| Endpoint | What it does | Why we might want it |
+|---|---|---|
+| `GET /v1/workspaces` | List workspaces accessible to the API key | Multi-workspace users (we're not, but the option is there). |
+| `GET /boards` (with filters) | List all boards, paginated | Inventory: "show me every board in the workspace with its custom field schema." Useful for auditing the workspace structure. |
+| `GET /customfields` | List all custom fields and their values | Build a "what status values exist" map so the CLI can autocomplete `--status` in other commands. |
+| `GET /tags` | List all tags | Same: tag autocomplete + inventory. |
+| `GET /assets/:assetId/boards` | List parent boards for an asset | "Where does this asset live?" Useful for cross-board cleanup. |
+| `GET /assets/:assetId/versions` | List versions of an asset | Track which version is the latest, which is approved, etc. |
+
+**Recommended expanded scope for the air-pp-cli (v1):**
+
+1. **Read scope (same as my original):** doctor, boards list/get, assets list/get/download, customfields list, tags list
+2. **Writes to add (v1, gated by `--write` flag for safety):**
+   - `air-pp-cli assets share <id> [--expiry 7d]` — the public CDN link
+   - `air-pp-cli assets tag <id> <tag>` — add a tag
+   - `air-pp-cli customfields set <assetId> <field> <value>` — set a status
+3. **Writes to defer (v2, until we know the use case):**
+   - Uploads / imports / multipart — large surface area, build only when needed
+   - Board / guest management — only relevant if we automate batch setup
+   - Tag / custom field creation — assume the workspace is already set up
+
+This expands my original 6-subcommand scope to ~9 subcommands, but each is small and the share/tag/customfield writes unlock the most useful automations. We can do the bigger writes later.
+
+**Net: my original scope was too narrow.** The "CDN link" alone is a significant productivity win (no more copy-paste from the web UI). The `customfields set` write lets us close the loop on the QA digest (Gemini says it's clean → CLI marks it reviewed). Both fit naturally in the same CLI.

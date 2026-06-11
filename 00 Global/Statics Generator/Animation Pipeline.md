@@ -66,7 +66,7 @@ Describe the motion between the two frames for Veo 3.1. This prompt governs what
 
 ### Step 4: Generate via fal.ai Veo 3.1
 
-Call `00 Global/Hermes/Tools/fal-ai/generate-video.js` with:
+Call `00 Global/Hermes/tools/fal-ai/generate-video.js` with:
 - First frame image
 - Last frame image
 - Animation prompt from Step 3

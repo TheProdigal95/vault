@@ -101,7 +101,7 @@ When inputs conflict (data patterns suggest vulnerability, brand tone suggests a
 
 ## Process Log
 
-[Before/after examples from iteration. Compounds across batches.]
+[Before/after examples from iteration. Starts fresh each batch — do NOT carry forward from the previous Working Document.]
 
 ---
 
@@ -110,7 +110,7 @@ When inputs conflict (data patterns suggest vulnerability, brand tone suggests a
 [List of files agents need to read when writing scripts]
 ```
 
-**If a previous batch exists** (e.g., starting T002 after T001), carry forward the brand-specific Script Criteria, Process Log, and Context Files sections from the previous Working Document. Append new rules from the latest top spenders — don't rewrite, reorder, or reword existing entries. The Process Log especially is a running record; add new before/after examples at the end, never edit prior ones. The global Criteria docs are always the baseline — brand Working Documents only contain overrides.
+**If a previous batch exists** (e.g., starting T002 after T001), carry forward the brand-specific Script Criteria and Context Files sections from the previous Working Document. Append new rules from the latest top spenders — don't rewrite, reorder, or reword existing entries. **The Process Log is the exception: it starts empty each batch — do NOT carry it forward from the previous Working Document, since each batch's learnings are self-contained.** The global Criteria docs are always the baseline — brand Working Documents only contain overrides.
 
 **Dead-angle tracking (carry-forward).** Starting from T002, the Working Document must include a **Dead Angles** section listing angles, formats, or persona combinations that have been tested with meaningful spend and produced zero or near-zero purchases. Include the spend denominator so future batches know the evidence strength (e.g., "Kids/Longevity — $4,697 spend, 0 purchases across 2 creatives"). Dead angles are exclusions — concepts targeting dead angles fail Concept Validation test #6 (testable hypothesis) unless the batch plan explicitly justifies why the re-test is warranted.
 

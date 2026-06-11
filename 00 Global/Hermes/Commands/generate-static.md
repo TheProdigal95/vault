@@ -32,16 +32,16 @@ User: /generate-static
 5. Upload reference images to fal.ai storage. Standard mode uses spec card + style card + product photo. Creative-hero handoff uses approved hero + spec card + product photo when fidelity matters; otherwise approved hero + spec card + style card:
    ```bash
    # Standard final composition
-   node 00 Global/Hermes/Tools/fal-ai/upload.js --files "[Brand]/00 Context/Brand Spec Card.png" "[Brand]/00 Context/Visual Style Card.png" "[product_photo_path]"
+   node 00 Global/Hermes/tools/fal-ai/upload.js --files "[Brand]/00 Context/Brand Spec Card.png" "[Brand]/00 Context/Visual Style Card.png" "[product_photo_path]"
 
    # Creative-hero handoff with product
-   node 00 Global/Hermes/Tools/fal-ai/upload.js --files "[approved_hero_path]" "[Brand]/00 Context/Brand Spec Card.png" "[product_photo_path]"
+   node 00 Global/Hermes/tools/fal-ai/upload.js --files "[approved_hero_path]" "[Brand]/00 Context/Brand Spec Card.png" "[product_photo_path]"
    ```
 6. Convert the brief's approved copy into a model-specific prompt using the format template's rendering specs. For GPT: prepend the E+ Safe Zone Block from `GPT Image 2 Block.md`, use the template's GPT Image 2 Prompt section. For NB2: use the template's NB2 Image Generation Prompt section.
 7. Generate 4 image variants:
    ```bash
    # NB2
-   node 00 Global/Hermes/Tools/fal-ai/generate-image.js \
+   node 00 Global/Hermes/tools/fal-ai/generate-image.js \
      --model nb2 \
      --prompt "[full NB2 prompt]" \
      --images "[reference_urls_for_selected_workflow]" \
@@ -51,7 +51,7 @@ User: /generate-static
      --resolution "1K"
 
    # GPT Image 2
-   node 00 Global/Hermes/Tools/fal-ai/generate-image.js \
+   node 00 Global/Hermes/tools/fal-ai/generate-image.js \
      --model gpt \
      --prompt "[E+ Safe Zone Block + GPT prompt]" \
      --images "[reference_urls_for_selected_workflow]" \
@@ -87,7 +87,7 @@ User: /generate-static
 3. Generate a brief using the format template, selecting hook tactics appropriate for the awareness stage (see deployment-by-awareness-stage table in `Headline & Text Hook Criteria.md`)
 4. **Hook Quality Bar** — 5-test gate. Dead hook → rethink
 5. **4-Question Gate** — fast-fail. Q1 failure → rework
-6. **Scoring loop** — spawn scoring-evaluator, iterate to 90+ on all 7 dimensions (cap 5)
+6. **Scoring loop** — invoke the `scoring-evaluator` skill (inline, or as a single depth-1 delegate), iterate to 90+ on all 7 dimensions (cap 5)
 7. **4-Question Gate** — post-scoring sanity check
 8. Auto-select model based on brief content signals
 9. Convert to model-specific prompt → upload references → generate via fal.ai
@@ -240,4 +240,4 @@ Generated images stay in `[Brand]/00 Assets/Statics/` and on the batch canvas. D
 If the strategist wants to animate a winning static:
 1. Read `00 Global/Statics Generator/Animation Pipeline.md`
 2. Follow the 6-step workflow (ideate → generate missing frame → animate via Veo 3.1)
-3. Use `00 Global/Hermes/Tools/fal-ai/generate-video.js` for the Veo 3.1 API call
+3. Use `00 Global/Hermes/tools/fal-ai/generate-video.js` for the Veo 3.1 API call

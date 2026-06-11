@@ -8,10 +8,10 @@ Generates lint-ready Hyperframes end card projects from brief data, manual param
 - `IM8/00 Assets/Animations/Animation Workflow.md` — Manual workflow being automated
 
 **Tools:**
-- `node 00 Global/Hermes/Tools/endcard-generator/generate.js` — Template-based composition generator
-- `node 00 Global/Hermes/Tools/endcard-generator/ref-to-composition.mjs` — Reference image → composition (uses DESIGN.md)
-- `node 00 Global/Hermes/Tools/endcard-generator/design-tokens.js` — DESIGN.md parser / CSS custom property bridge
-- `node 00 Global/Hermes/Tools/endcard-generator/extract-design.mjs` — Extract/update design tokens from reference images
+- `node 00 Global/Hermes/tools/endcard-generator/generate.js` — Template-based composition generator
+- `node 00 Global/Hermes/tools/endcard-generator/ref-to-composition.mjs` — Reference image → composition (uses DESIGN.md)
+- `node 00 Global/Hermes/tools/endcard-generator/design-tokens.js` — DESIGN.md parser / CSS custom property bridge
+- `node 00 Global/Hermes/tools/endcard-generator/extract-design.mjs` — Extract/update design tokens from reference images
 
 ---
 
@@ -46,7 +46,7 @@ User: /generate-endcard
 
 4. Run the generator:
    ```bash
-   node 00 Global/Hermes/Tools/endcard-generator/generate.js \
+   node 00 Global/Hermes/tools/endcard-generator/generate.js \
      --type [type] \
      --palette [palette] \
      --headline "[headline text]" \
@@ -119,14 +119,14 @@ The fastest path from a static reference to an animated composition. Uses DESIGN
 1. Locate the brand's DESIGN.md at `[Brand]/00 Context/DESIGN.md`.
    - If no DESIGN.md exists, offer to generate one from reference images:
      ```bash
-     node 00 Global/Hermes/Tools/endcard-generator/extract-design.mjs \
+     node 00 Global/Hermes/tools/endcard-generator/extract-design.mjs \
        [ref1.png] [ref2.png] [ref3.png] \
        --brand [Brand] --output "[Brand]/00 Context/DESIGN.md"
      ```
 
 2. Run the single-command orchestrator:
    ```bash
-   node 00 Global/Hermes/Tools/endcard-generator/ref-to-composition.mjs \
+   node 00 Global/Hermes/tools/endcard-generator/ref-to-composition.mjs \
      [ref.png] \
      --design-md "[Brand]/00 Context/DESIGN.md" \
      --output "[Brand]/00 Assets/Animations/[batch]-[slug]-anim/" \
@@ -151,7 +151,7 @@ The fastest path from a static reference to an animated composition. Uses DESIGN
 
 **Checking DESIGN.md coverage first (optional):**
 ```bash
-node 00 Global/Hermes/Tools/endcard-generator/extract-design.mjs \
+node 00 Global/Hermes/tools/endcard-generator/extract-design.mjs \
   [ref.png] --brand [Brand] --update "[Brand]/00 Context/DESIGN.md"
 ```
 Reports whether the design system covers this image or needs new tokens.
@@ -222,12 +222,12 @@ If the score is below 95, iterate on layout only — colors, fonts, and spacing 
 
 ```bash
 # 1. Extract visual properties (pass --brand for font mapping)
-node 00 Global/Hermes/Tools/gemini-api/analyze-endcard.mjs [ref.png] --brand [Brand] --output extraction.json
+node 00 Global/Hermes/tools/gemini-api/analyze-endcard.mjs [ref.png] --brand [Brand] --output extraction.json
 
 # 2. Generate HTML from extraction data
 
 # 3. Compare against reference
-node 00 Global/Hermes/Tools/endcard-generator/compare-visual.mjs --ref [ref.png] --html [project/index.html]
+node 00 Global/Hermes/tools/endcard-generator/compare-visual.mjs --ref [ref.png] --html [project/index.html]
 
 # 4. If score < 95: read diff-report.json, apply CSS fixes, re-run compare (max 3 iterations)
 ```
@@ -239,7 +239,7 @@ The `--brand` flag is critical — it maps generic serif/sans-serif classificati
 When the extraction detects `background_type: "texture"` (blue-molecular, red-organic, terracotta palettes), the composition needs a clean `bg.png` without any text, logos, badges, or product overlays. Use the single-command tool:
 
 ```bash
-node 00 Global/Hermes/Tools/endcard-generator/generate-bg.js \
+node 00 Global/Hermes/tools/endcard-generator/generate-bg.js \
   --image [ref.png] \
   --output [project]/bg.png \
   --width 1080 --height 1920 \
@@ -276,7 +276,7 @@ For b-roll window compositions (types 3A, 3F): skip hero extraction — the wind
 Brand logos often have solid backgrounds. Use the single-command tool to convert to white-on-transparent:
 
 ```bash
-node 00 Global/Hermes/Tools/endcard-generator/process-logo.js \
+node 00 Global/Hermes/tools/endcard-generator/process-logo.js \
   --image [source-logo.png] \
   --output [project]/logo.png \
   --threshold 200
@@ -289,7 +289,7 @@ Pixels brighter than threshold → transparent. Darker → white. Default thresh
 Convert any Hyperframes end card to a native AE composition:
 
 ```bash
-node 00 Global/Hermes/Tools/endcard-generator/export-ae.js \
+node 00 Global/Hermes/tools/endcard-generator/export-ae.js \
   --project [project-dir] \
   --output [project-dir]/[name].jsx
 ```
@@ -310,7 +310,7 @@ To use: `File → Scripts → Run Script File...` in AE, then select the project
 Collect 5-10 representative end card reference images, then:
 
 ```bash
-node 00 Global/Hermes/Tools/endcard-generator/extract-design.mjs \
+node 00 Global/Hermes/tools/endcard-generator/extract-design.mjs \
   ref1.png ref2.png ref3.png ref4.png ref5.png \
   --brand [Brand] --output "[Brand]/00 Context/DESIGN.md"
 ```
@@ -322,7 +322,7 @@ Review and refine the output — AI extraction is approximate. Verify hex values
 Before generating from a reference, optionally verify the design system covers it:
 
 ```bash
-node 00 Global/Hermes/Tools/endcard-generator/extract-design.mjs \
+node 00 Global/Hermes/tools/endcard-generator/extract-design.mjs \
   [ref.png] --brand [Brand] --update "[Brand]/00 Context/DESIGN.md"
 ```
 
@@ -331,7 +331,7 @@ Reports: `covered: true/false`, palette match, new tokens needed, discrepancies.
 ### Using DESIGN.md tokens in generate.js
 
 ```bash
-node 00 Global/Hermes/Tools/endcard-generator/generate.js \
+node 00 Global/Hermes/tools/endcard-generator/generate.js \
   --type 3a --palette light --headline "..." --cta "..." \
   --design-md "[Brand]/00 Context/DESIGN.md" \
   --output [path]
@@ -343,16 +343,16 @@ Without `--design-md`, falls back to `palettes.json` (backward compatible).
 
 ```bash
 # Summary of token counts
-node 00 Global/Hermes/Tools/endcard-generator/design-tokens.js [DESIGN.md] --summary
+node 00 Global/Hermes/tools/endcard-generator/design-tokens.js [DESIGN.md] --summary
 
 # CSS custom properties for a palette
-node 00 Global/Hermes/Tools/endcard-generator/design-tokens.js [DESIGN.md] --palette light
+node 00 Global/Hermes/tools/endcard-generator/design-tokens.js [DESIGN.md] --palette light
 
 # Export all palettes as palettes.json-compatible JSON
-node 00 Global/Hermes/Tools/endcard-generator/design-tokens.js [DESIGN.md] --all-palettes
+node 00 Global/Hermes/tools/endcard-generator/design-tokens.js [DESIGN.md] --all-palettes
 
 # Typography utility classes
-node 00 Global/Hermes/Tools/endcard-generator/design-tokens.js [DESIGN.md] --typography
+node 00 Global/Hermes/tools/endcard-generator/design-tokens.js [DESIGN.md] --typography
 ```
 
 ## Hard Rules

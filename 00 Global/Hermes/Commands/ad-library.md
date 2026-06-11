@@ -6,10 +6,10 @@ Pull a brand's entire Meta Ad Library, download all media, and analyze every cre
 
 **First-time setup:**
 ```bash
-cd 00 Global/Hermes/Tools/ad-library && npm install
+cd 00 Global/Hermes/tools/ad-library && npm install
 ```
 
-**API keys:** Create `00 Global/Hermes/Tools/ad-library/.env` with:
+**API keys:** Create `00 Global/Hermes/tools/ad-library/.env` with:
 ```
 APIFY_TOKEN=your_token
 GEMINI_API_KEY=your_key
@@ -32,21 +32,21 @@ Lines starting with `#` are ignored. Save this file anywhere convenient (e.g., i
 ### Step 2: Run the batch
 
 ```bash
-node 00 Global/Hermes/Tools/ad-library/batch.js --file /path/to/brands.txt
+node 00 Global/Hermes/tools/ad-library/batch.js --file /path/to/brands.txt
 ```
 
 Optional: specify output directory:
 ```bash
-node 00 Global/Hermes/Tools/ad-library/batch.js --file /path/to/brands.txt --output /path/to/data
+node 00 Global/Hermes/tools/ad-library/batch.js --file /path/to/brands.txt --output /path/to/data
 ```
 
 Scrape-only mode (skip media download, useful when you only need the ad copy/headlines from JSON). `--no-media` is an alias for `--scrape-only` (used by the brand-research pipeline, proposal §5.5):
 ```bash
-node 00 Global/Hermes/Tools/ad-library/batch.js --file /path/to/brands.txt --scrape-only
-node 00 Global/Hermes/Tools/ad-library/batch.js --file /path/to/brands.txt --no-media
+node 00 Global/Hermes/tools/ad-library/batch.js --file /path/to/brands.txt --scrape-only
+node 00 Global/Hermes/tools/ad-library/batch.js --file /path/to/brands.txt --no-media
 ```
 
-**Default output:** `00 Global/Hermes/Tools/ad-library/data/[brand-slug]/` for each brand.
+**Default output:** `00 Global/Hermes/tools/ad-library/data/[brand-slug]/` for each brand.
 
 **What it does:** For each brand sequentially: scrapes via Apify (2-10 min), downloads all media. Reports results at the end.
 
@@ -56,13 +56,13 @@ For a single brand, use the individual scripts:
 
 ```bash
 # Scrape
-node 00 Global/Hermes/Tools/ad-library/scrape.js --brand "BrandName" --url "AD_LIBRARY_URL"
+node 00 Global/Hermes/tools/ad-library/scrape.js --brand "BrandName" --url "AD_LIBRARY_URL"
 
 # Download media
-node 00 Global/Hermes/Tools/ad-library/download.js --data 00 Global/Hermes/Tools/ad-library/data/brand-slug
+node 00 Global/Hermes/tools/ad-library/download.js --data 00 Global/Hermes/tools/ad-library/data/brand-slug
 
 # Analyze with Gemini (full visual analysis — use for deep dives, not for every PVP)
-node 00 Global/Hermes/Tools/ad-library/analyze.js --data 00 Global/Hermes/Tools/ad-library/data/brand-slug
+node 00 Global/Hermes/tools/ad-library/analyze.js --data 00 Global/Hermes/tools/ad-library/data/brand-slug
 ```
 
 **How to get the Ad Library URL:**
@@ -83,7 +83,7 @@ For PVP sprints where you're mapping messaging angles across 10-20 brands, you d
 3. Categorize the ad copy by messaging angle (see Messaging Analysis Framework below)
 4. For video ads where you want the voiceover, download the videos and MLX transcribe them:
    ```bash
-   python3 00 Global/Hermes/Tools/mlx-transcribe.py /path/to/brand-data/downloads/ --output /path/to/transcripts/
+   python3 00 Global/Hermes/tools/mlx-transcribe.py /path/to/brand-data/downloads/ --output /path/to/transcripts/
    ```
 5. Clean up media when done
 
@@ -134,12 +134,12 @@ Media files (images + videos) are the storage hog. After you've analyzed what yo
 
 **Clean one brand:**
 ```bash
-node 00 Global/Hermes/Tools/ad-library/cleanup.js --data 00 Global/Hermes/Tools/ad-library/data/brand-slug
+node 00 Global/Hermes/tools/ad-library/cleanup.js --data 00 Global/Hermes/tools/ad-library/data/brand-slug
 ```
 
 **Clean all brands:**
 ```bash
-node 00 Global/Hermes/Tools/ad-library/cleanup.js --data 00 Global/Hermes/Tools/ad-library/data --all
+node 00 Global/Hermes/tools/ad-library/cleanup.js --data 00 Global/Hermes/tools/ad-library/data --all
 ```
 
 This deletes the `downloads/` folder (media) but keeps `ads-raw.json` (ad copy, structured data) and `analysis/` (Gemini analysis markdown files). Those are small and worth keeping for reference.

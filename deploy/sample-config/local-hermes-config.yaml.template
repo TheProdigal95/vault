@@ -2,9 +2,8 @@ profile: __USERNAME__
 
 terminal:
   backend: ssh
-  ssh:
-    host: __VPS_HOST__
-    port: 22
-    user: hermes
+  ssh_host: __VPS_HOST__
+  ssh_port: 22
+  ssh_user: hermes
     # Make sure your local SSH key is loaded into the agent:
     #   eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed25519

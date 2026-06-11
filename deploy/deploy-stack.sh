@@ -12,7 +12,7 @@
 #   1. Verifies the 3 repos are cloned to /opt/reach-digital/{vault,printing-press,hermes-profile}
 #   2. Installs Hermes Agent CLI
 #   3. Builds the Go CLIs (motion-pp-cli, clickup-pp-cli) from printing-press
-#   4. Installs Node tool deps in vault/00 Global/Hermes/Tools/
+#   4. Installs Node tool deps in vault/00 Global/Hermes/tools/
 #   5. Creates the "default" Hermes profile and installs the reach-digital distribution
 #   6. Runs the vault's setup.sh smoke test
 #   7. Prints a summary
@@ -90,11 +90,11 @@ done
 
 # --- Phase 3: install Node tool deps -----------------------------------------
 hdr "Phase 3: install Node tool deps"
-if [ ! -d "$VAULT/00 Global/Hermes/Tools" ]; then
-  warn "Vault tools dir not found: $VAULT/00 Global/Hermes/Tools"
+if [ ! -d "$VAULT/00 Global/Hermes/tools" ]; then
+  warn "Vault tools dir not found: $VAULT/00 Global/Hermes/tools"
   warn "(Make sure the vault was cloned correctly. Skipping.)"
 else
-  for tool_dir in "$VAULT/00 Global/Hermes/Tools"/*/; do
+  for tool_dir in "$VAULT/00 Global/Hermes/tools"/*/; do
     [ -d "$tool_dir" ] || continue
     name="$(basename "$tool_dir")"
     if [ ! -f "$tool_dir/package.json" ]; then
@@ -129,6 +129,13 @@ else
   }
   ok "reach-digital profile installed"
 fi
+
+# Hindsight long-term memory: the installed profile is configured for it
+# (memory.provider: hindsight + hindsight/config.json), but the embedded daemon
+# needs an OpenRouter key and downloads its embedding model on first use.
+echo "    → Hindsight memory: set HINDSIGHT_LLM_API_KEY (or OPENROUTER_API_KEY) in each profile's .env;"
+echo "      the embedded daemon + ~200MB embedding model initialize on first memory use."
+echo "      Verify later with: hindsight-embed -p reach-digital daemon status"
 
 # --- Phase 5: smoke test ------------------------------------------------------
 hdr "Phase 5: smoke test"

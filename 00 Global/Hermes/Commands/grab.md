@@ -26,21 +26,21 @@ All commands use paths relative to the project root. Claude Code runs from the v
 
 **Single URL:**
 ```bash
-node 00 Global/Hermes/Tools/grab/grab.js "URL_HERE"
+node 00 Global/Hermes/tools/grab/grab.js "URL_HERE"
 ```
 
 **Multiple URLs:**
 ```bash
-node 00 Global/Hermes/Tools/grab/grab.js "URL1" "URL2" "URL3"
+node 00 Global/Hermes/tools/grab/grab.js "URL1" "URL2" "URL3"
 ```
 
 **Motion report batch mode (Top Spenders workflow):**
 ```bash
 # Download ALL creatives from a Motion report page
-node 00 Global/Hermes/Tools/grab/grab.js "MOTION_REPORT_URL"
+node 00 Global/Hermes/tools/grab/grab.js "MOTION_REPORT_URL"
 
 # Download only specific ads (matched by name from CSV)
-node 00 Global/Hermes/Tools/grab/grab.js "MOTION_REPORT_URL" --ad-names "Ad Name 1" "Ad Name 2" "Ad Name 3"
+node 00 Global/Hermes/tools/grab/grab.js "MOTION_REPORT_URL" --ad-names "Ad Name 1" "Ad Name 2" "Ad Name 3"
 ```
 
 ## What it produces
@@ -51,7 +51,7 @@ For Motion: `AdName.mp4` or `AdName.jpeg`, named by the ad name from the report 
 
 For scripts, briefs, and analysis docs, use the Motion creative-page URL (`https://projects.motionapp.com/.../creative/<CreativeAsset:id>?startDate=...`) as the reference link whenever available. The CDN preview URL is for media inspection/download, not the canonical reference. The media asset ID in the CDN URL can differ from the Motion `CreativeAsset` ID; extract the creative-page ID from Motion's report/cache or the "Copy link" creative page, not from the CDN filename.
 
-All files go to `00 Global/Hermes/Tools/grab/downloads/session-<datetime>/`.
+All files go to `00 Global/Hermes/tools/grab/downloads/session-<datetime>/`.
 
 ## Video analysis format (4-column table)
 
@@ -65,7 +65,7 @@ All files go to `00 Global/Hermes/Tools/grab/downloads/session-<datetime>/`.
 
 **Gemini prompt for video analysis:**
 ```bash
-node 00 Global/Hermes/Tools/gemini-api/gemini-api.js "Please watch the attached video, and convert it into a script with 4 columns. Format as a markdown table with columns: | Timestamp | Visual Action | Voiceover | On-Screen Captions |
+node 00 Global/Hermes/tools/gemini-api/gemini-api.js "Please watch the attached video, and convert it into a script with 4 columns. Format as a markdown table with columns: | Timestamp | Visual Action | Voiceover | On-Screen Captions |
 
 Rules:
 - Capture EVERY scene transition, shot change, and visual element
@@ -80,13 +80,13 @@ Rules:
 
 ## Top spenders workflow
 
-1. **Motion report URL provided:** Extract ad names from the CSV table, run `node 00 Global/Hermes/Tools/grab/grab.js "REPORT_URL" --ad-names "Ad 1" "Ad 2" ...`
-2. **Individual URLs provided:** Run `node 00 Global/Hermes/Tools/grab/grab.js "URL1" "URL2" ...`
+1. **Motion report URL provided:** Extract ad names from the CSV table, run `node 00 Global/Hermes/tools/grab/grab.js "REPORT_URL" --ad-names "Ad 1" "Ad 2" ...`
+2. **Individual URLs provided:** Run `node 00 Global/Hermes/tools/grab/grab.js "URL1" "URL2" ...`
 3. **Check what actually downloaded.** Only proceed with analysis for files that exist on disk. If some ads failed to download, tell the user which ones failed — do NOT fabricate analysis for them.
 4. **For each downloaded video:** Run Gemini 4-column analysis + strategic analysis (hook, structure, persuasion techniques, visual style, caption style, close, what makes it work)
 5. **For each downloaded image:** Run Gemini visual description (layout, text, style, CTA)
 6. **Merge** user's raw notes + Gemini output into the Top Spenders Analysis doc. Only include Gemini analysis for ads you actually downloaded and analyzed. For failed downloads, note "Download failed — not analyzed" in the doc.
-7. **Delete all media after analysis is saved:** `rm -rf 00 Global/Hermes/Tools/grab/downloads/session-*`
+7. **Delete all media after analysis is saved:** `rm -rf 00 Global/Hermes/tools/grab/downloads/session-*`
 
 ## CRITICAL: Never fabricate analysis
 
@@ -107,13 +107,13 @@ Rules:
 
 ## Motion setup
 
-Motion cookies persist in a Chrome profile at `~/00 Global/Hermes/Tools/grab/motion-profile/` (user's home directory — not shared, per-user auth).
+Motion cookies persist in a Chrome profile at `~/.reach-digital/motion-profile/` (user's home directory — not shared, per-user auth).
 
 **When grab.js returns `MOTION_LOGIN_REQUIRED`:**
 1. Tell the user: "Motion needs a one-time login. I'm opening a browser."
 2. Kill stale daemons and open headed browser:
-   - macOS/Linux: `pkill -f agent-browser 2>/dev/null; sleep 1; agent-browser --session motion --profile ~/00 Global/Hermes/Tools/grab/motion-profile --headed open https://projects.motionapp.com/login`
-   - Windows: `agent-browser --session motion --profile "$env:USERPROFILE\.claude\tools\grab\motion-profile" --headed open https://projects.motionapp.com/login`
+   - macOS/Linux: `pkill -f agent-browser 2>/dev/null; sleep 1; agent-browser --session motion --profile ~/.reach-digital/motion-profile --headed open https://projects.motionapp.com/login`
+   - Windows: `agent-browser --session motion --profile "$env:USERPROFILE\.reach-digital\motion-profile" --headed open https://projects.motionapp.com/login`
 3. **Wait for user to confirm login.** Do NOT proceed until they say so.
 4. Close the browser: `agent-browser --session motion close`
 5. Retry the grab command.

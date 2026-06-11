@@ -54,7 +54,7 @@ Steps:
 Omit `--images` entirely when the hero pass has no uploaded references.
 
 ```bash
-node 00 Global/Hermes/Tools/fal-ai/generate-image.js \
+node 00 Global/Hermes/tools/fal-ai/generate-image.js \
   --model [nb2|gpt] \
   --prompt-file "[prompt-file]" \
   --images "[optional-uploaded-reference-url]" \
@@ -66,7 +66,7 @@ node 00 Global/Hermes/Tools/fal-ai/generate-image.js \
 6. Save each stable prompt as a `.txt` file beside its variants, then add prompt nodes and all variants to `[Brand]/T00N Images.canvas` under `Creative Image Heroes`:
 
 ```bash
-node 00 Global/Hermes/Tools/add_to_canvas.js \
+node 00 Global/Hermes/tools/add_to_canvas.js \
   --canvas "[Brand]/T[###] Images.canvas" \
   --files "[comma-separated-vault-relative-image-paths]" \
   --label "Creative Image Heroes - [concept] - v1" \

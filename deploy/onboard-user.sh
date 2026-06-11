@@ -80,10 +80,19 @@ if [ -d "$PROFILE_DIR" ]; then
   warn "Profile $USERNAME already exists at $PROFILE_DIR"
   warn "(Skipping profile create. Re-run with --force to recreate.)"
 else
-  # Clone the existing reach-digital profile (config, skills, MCP — but not memories/sessions/.env)
-  hermes profile create "$USERNAME" --clone --clone-from reach-digital --yes
+  # Clone the reach-digital profile (config.yaml, SOUL.md, skills, MCP). NOTE:
+  # `--clone` ALSO copies .env, so we scrub the source secret values immediately —
+  # each user supplies their own keys. (There is no --yes flag; profile create is
+  # non-interactive.)
+  hermes profile create "$USERNAME" --clone --clone-from reach-digital
+  if [ -f "$PROFILE_DIR/.env" ]; then
+    # Blank every VAR=value to VAR= so the source machine's keys never leak into
+    # a teammate's profile, while leaving the key names as a template to fill in.
+    sed -i.bak -E 's/^([A-Za-z_][A-Za-z0-9_]*=).*/\1/' "$PROFILE_DIR/.env" && rm -f "$PROFILE_DIR/.env.bak"
+    ok "Scrubbed cloned .env — key names kept, values blank for $USERNAME to fill"
+  fi
   ok "Profile $USERNAME created (cloned from reach-digital)"
-  note "Their .env, memories, sessions are empty — they fill those in."
+  note "Their .env values are blank, memories/sessions empty — they fill those in."
 fi
 
 # --- Phase 3: generate the local-app config snippet --------------------------
@@ -99,13 +108,12 @@ profile: $USERNAME
 
 terminal:
   backend: ssh
-  ssh:
-    host: $VPS_PUBLIC_HOST
-    port: $VPS_SSH_PORT
-    user: $(whoami)
-    # The local app uses your SSH key to authenticate.
-    # Make sure your ~/.ssh/id_ed25519 (or id_rsa) is loaded into the agent:
-    #   eval "\$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed25519
+  ssh_host: $VPS_PUBLIC_HOST
+  ssh_port: $VPS_SSH_PORT
+  ssh_user: $(whoami)
+  # The local app uses your SSH key to authenticate.
+  # Make sure your ~/.ssh/id_ed25519 (or id_rsa) is loaded into the agent:
+  #   eval "\$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed25519
 EOF
 
 ok "Snippet written to $SNIPPET_FILE"
@@ -119,4 +127,4 @@ echo ""
 echo "================================================================="
 echo ""
 ok "Done. Send $USERNAME the snippet + the team onboarding doc:"
-echo "    $REPO_ROOT/vault/deploy/ONBOARDING.md   (use \$VAULT/deploy/ONBOARDING.md on the VPS)"
+echo "    deploy/ONBOARDING.md   (in the vault repo on the VPS)"

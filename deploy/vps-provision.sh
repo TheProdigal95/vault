@@ -197,8 +197,22 @@ else
 fi
 
 # Utilities the stack needs
-apt-get install -y -qq git jq htop tmux build-essential python3-pip unzip
-ok "Installed: git, jq, htop, tmux, build-essential, python3-pip, unzip"
+apt-get install -y -qq git jq htop tmux build-essential python3-pip python3-venv unzip
+ok "Installed: git, jq, htop, tmux, build-essential, python3-pip, python3-venv, unzip"
+
+# Media + browser stack the creative tools need (grab / transcribe / research / site-scraper).
+# Guarded with `|| warn` so a single failure never aborts the hardened provision.
+apt-get install -y -qq ffmpeg
+apt-get install -y -qq yt-dlp 2>/dev/null \
+  || python3 -m pip install --quiet --upgrade --break-system-packages yt-dlp 2>/dev/null \
+  || python3 -m pip install --quiet --upgrade yt-dlp 2>/dev/null \
+  || warn "yt-dlp install failed — install manually (apt install yt-dlp / pip install yt-dlp)"
+npm install -g agent-browser claude-agent-acp >/dev/null 2>&1 \
+  || warn "agent-browser/claude-agent-acp global npm install failed — install manually"
+npx --yes playwright install --with-deps chromium >/dev/null 2>&1 \
+  || warn "playwright chromium install failed — run manually: npx playwright install --with-deps chromium"
+ok "Media/browser stack: ffmpeg, yt-dlp, agent-browser, claude-agent-acp, playwright chromium"
+note "MLX transcription is Apple-Silicon-only — on this Linux VPS /transcribe uses Gemini, not MLX."
 
 # --- Phase 8: timezone -------------------------------------------------------
 hdr "Phase 8: timezone"

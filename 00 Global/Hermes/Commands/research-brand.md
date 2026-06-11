@@ -6,17 +6,17 @@ Run the end-to-end brand research pipeline for a new brand, or refresh an existi
 
 **One-time per machine** (skip if already done):
 ```bash
-cd 00 Global/Hermes/Tools/site-scraper   && npm install && npx playwright install chromium && cd ../../..
-cd 00 Global/Hermes/Tools/review-sampler  && npm install && cd ../../..
-cd 00 Global/Hermes/Tools/persona-counter && npm install && cd ../../..
-cd 00 Global/Hermes/Tools/ad-classifier   && npm install && cd ../../..
+cd 00 Global/Hermes/tools/site-scraper   && npm install && npx playwright install chromium && cd ../../..
+cd 00 Global/Hermes/tools/review-sampler  && npm install && cd ../../..
+cd 00 Global/Hermes/tools/persona-counter && npm install && cd ../../..
+cd 00 Global/Hermes/tools/ad-classifier   && npm install && cd ../../..
 ```
 
 **Ad-classifier API key** (one-time):
 ```bash
-cp 00 Global/Hermes/Tools/gemini-api/.env 00 Global/Hermes/Tools/ad-classifier/.env
+cp 00 Global/Hermes/tools/gemini-api/.env 00 Global/Hermes/tools/ad-classifier/.env
 ```
-Or create `00 Global/Hermes/Tools/ad-classifier/.env` with `GEMINI_API_KEY=your_key`.
+Or create `00 Global/Hermes/tools/ad-classifier/.env` with `GEMINI_API_KEY=your_key`.
 
 **Check `Setup.md`** (`00 Global/Process/Setup.md`) if any tool reports missing dependencies or a first-time machine setup is needed.
 
@@ -75,7 +75,7 @@ Refresh outputs overwrite only the docs they regenerate. Everything else is unto
 
 1. **Parse the invocation.** Extract brand name, mode (first-time or refresh), website URL, ad library URL, competitors with rationales, and optional customer data sources.
 
-2. **Check prerequisites.** Verify `00 Global/Hermes/Tools/ad-classifier/.env` exists and contains `GEMINI_API_KEY`. If missing, stop and ask before proceeding.
+2. **Check prerequisites.** Verify `00 Global/Hermes/tools/ad-classifier/.env` exists and contains `GEMINI_API_KEY`. If missing, stop and ask before proceeding.
 
 3. **Collect any missing required fields.** For first-time run: if `website` or `ad_library` not provided, prompt before dispatching. Competitors can be empty.
 
@@ -107,7 +107,7 @@ The brand is ready for T001 batch planning after Checkpoint 3 approval.
 ## Notes
 
 - **Target runtime: ~90 min wall clock.** The pipeline runs mostly automated — strategist only pauses at Phase 0 intake + Checkpoint 3.
-- **Ad classification is text-only.** No media is downloaded for classification. The pipeline uses `~/00 Global/Hermes/Tools/ad-library/scrape.js` directly (metadata-only by default) with `--output` pinned to the brand's `_data/ad-library-scrape/` folder, then `flatten-apify.js` converts Apify's nested schema to the flat schema the classifier reads. Gemini reads primary text + headline + description + on-image text + caption only.
+- **Ad classification is text-only.** No media is downloaded for classification. The pipeline uses `00 Global/Hermes/tools/ad-library/scrape.js` directly (metadata-only by default) with `--output` pinned to the brand's `_data/ad-library-scrape/` folder, then `flatten-apify.js` converts Apify's nested schema to the flat schema the classifier reads. Gemini reads primary text + headline + description + on-image text + caption only.
 - **Compliance/guardrails docs are never touched.** They are client-supplied, placed by the strategist, and not pipeline output.
 - **Reddit sprints are out of scope.** Strategist-initiated ad-hoc via Research Engine MCP, separate from this pipeline.
 - **Persona numbers have one source of truth:** `_data/persona-dictionary.json` + classified `reviews.jsonl` + `_data/ad-classifications.json`. Persona Summary, Review Analysis, and Persona Context all render from these — no manual number re-entry.

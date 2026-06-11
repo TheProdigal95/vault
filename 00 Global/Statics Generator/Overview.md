@@ -188,7 +188,7 @@ See `Format Multiplication.md` for the workflow.
 | Playwright (local) | HTML → PNG for spec cards | Free |
 | ffmpeg (local) | MP4 → GIF conversion | Free |
 
-**API wrapper:** `00 Global/Hermes/Tools/fal-ai/` — same Node.js pattern as Gemini API wrapper. `FAL_KEY` in `.env`.
+**API wrapper:** `00 Global/Hermes/tools/fal-ai/` — same Node.js pattern as Gemini API wrapper. `FAL_KEY` in `.env`.
 
 **Fallback models on fal.ai:** Kling O3 Standard, Seedance 2.0 (ByteDance), Sora 2 (OpenAI), NanoBanana Pro (previous gen, better at filling gaps).
 
@@ -434,7 +434,7 @@ These dimensions encode into our scoring agents (Awareness Stage Alignment, Mess
     └── Copy Editor.md
 
 00 Global/Statics Generator/Scoring Agents/scoring-evaluator.md   ← (formerly at `.claude/agents/scoring/scoring-evaluator.md`, moved 2026-06-09 during the Hermes port)
-00 Global/Hermes/Tools/fal-ai/                    ← generate-image.js supports --model nb2|gpt
+00 Global/Hermes/tools/fal-ai/                    ← generate-image.js supports --model nb2|gpt
 00 Global/Hermes/Commands/generate-static.md
 00 Global/Hermes/Commands/creative-image.md
 ```

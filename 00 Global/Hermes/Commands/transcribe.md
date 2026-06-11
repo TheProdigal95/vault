@@ -19,16 +19,16 @@ Transcribe a video or audio file. Route between MLX (local, fast) and Gemini (AP
 
 ## MLX Transcription (local)
 
-**Tool location:** `00 Global/Hermes/Tools/mlx-transcribe.py`
+**Tool location:** `00 Global/Hermes/tools/mlx-transcribe.py`
 
 **Run with:**
 ```bash
-python3 00 Global/Hermes/Tools/mlx-transcribe.py /path/to/video.mp4
+python3 00 Global/Hermes/tools/mlx-transcribe.py /path/to/video.mp4
 ```
 
 **For a folder of videos:**
 ```bash
-python3 00 Global/Hermes/Tools/mlx-transcribe.py /path/to/folder/ --output /path/to/output/
+python3 00 Global/Hermes/tools/mlx-transcribe.py /path/to/folder/ --output /path/to/output/
 ```
 
 **Models available** (use `--model`):
@@ -46,21 +46,21 @@ python3 00 Global/Hermes/Tools/mlx-transcribe.py /path/to/folder/ --output /path
 
 ## Gemini Transcription (API)
 
-**Tool location:** `00 Global/Hermes/Tools/gemini-api/gemini-api.js`
+**Tool location:** `00 Global/Hermes/tools/gemini-api/gemini-api.js`
 
 **For speech-to-text only:**
 ```bash
-node 00 Global/Hermes/Tools/gemini-api/gemini-api.js "Transcribe this video. Output clean text with paragraph breaks." --video /path/to/video.mp4
+node 00 Global/Hermes/tools/gemini-api/gemini-api.js "Transcribe this video. Output clean text with paragraph breaks." --video /path/to/video.mp4
 ```
 
 **For detailed visual + audio breakdown:**
 ```bash
-node 00 Global/Hermes/Tools/gemini-api/gemini-api.js "Please watch the attached video, and convert it into a script with 1 column for the visual action that's happening, 1 column for the voiceover that's happening, and 1 column for the on-screen captions. Format as a markdown table with columns: | Timestamp | Visual Action | Voiceover | On-Screen Captions | Be thorough and capture every scene transition, every spoken word, and every text overlay." --video /path/to/video.mp4
+node 00 Global/Hermes/tools/gemini-api/gemini-api.js "Please watch the attached video, and convert it into a script with 1 column for the visual action that's happening, 1 column for the voiceover that's happening, and 1 column for the on-screen captions. Format as a markdown table with columns: | Timestamp | Visual Action | Voiceover | On-Screen Captions | Be thorough and capture every scene transition, every spoken word, and every text overlay." --video /path/to/video.mp4
 ```
 
 **For batch transcription via Gemini File Manager API** (uploads to Gemini servers, better for large files):
 ```bash
-node 00 Global/Hermes/Tools/gemini-api/transcribe-videos.js
+node 00 Global/Hermes/tools/gemini-api/transcribe-videos.js
 ```
 Note: This script has hardcoded paths. Modify the source/destination paths in the script before running.
 

@@ -1,5 +1,7 @@
 # Notion Integration
 
+> **⚠️ DEPRECATED (2026-06-11).** Notion is no longer wired into Hermes — the Notion MCP server is not registered in the profile config, and Hermes does not read or write Notion. This doc is retained only as a reference to the workspace page IDs in case the integration is ever revived. Do **not** treat anything below as an active workflow, and do not add the Notion MCP server.
+
 **Setup:** Notion MCP authenticates via OAuth — no API keys. Claude Code prompts for Notion login on first use. The user must be a member of the Reach Digital workspace. All IDs below are shared across the team.
 
 ## Key pages

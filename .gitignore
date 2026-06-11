@@ -20,14 +20,11 @@ Thumbs.db
 # Agent Client plugin session data (regenerated every time the plugin runs)
 .obsidian/plugins/agent-client/sessions/
 
-# Node / JS deps
+# Node / JS deps (lockfiles ARE tracked for reproducible installs on deploy)
 node_modules/
 .npm/
 .yarn/
 .pnpm-store/
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
 
 # Secrets / env
 .env
@@ -74,8 +71,8 @@ out/
 coverage/
 
 # Generated endcard renders (base64-embedded fonts, large)
-.claude/tools/fal-ai/endcard-renderer/ec-*.html
-.claude/tools/endcard-generator/renders/
+00 Global/Hermes/tools/fal-ai/endcard-renderer/ec-*.html
+00 Global/Hermes/tools/endcard-generator/renders/
 
 # Python
 __pycache__/
@@ -85,16 +82,16 @@ __pycache__/
 venv/
 .env
 
-# Local config overrides
-.claude/settings.local.json
-.claude/.DS_Store
-
 # Claude Code plugin output (not part of the reach-digital workflow)
 Agent Client/
 
-# Stale duplicate of 00 Global/Hermes/Tools/ (lowercase, 1.3GB, pre-2026-06-09 port)
-# The canonical path is `Tools/` (capital T). Safe to delete: rm -rf "00 Global/Hermes/tools"
-00 Global/Hermes/tools/
+# Hermes tool SOURCE is tracked — the slash commands depend on it, so a fresh
+# clone MUST include it. Ignore only heavy regenerable data and large generated
+# renders. (node_modules/ and .env are already ignored above; .env.example
+# templates ARE tracked so a new machine can scaffold its own .env.)
+00 Global/Hermes/tools/**/data/
+00 Global/Hermes/tools/**/downloads/
+00 Global/Hermes/tools/**/renders/
 
 # OS metadata
 ._*
