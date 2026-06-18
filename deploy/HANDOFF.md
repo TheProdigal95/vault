@@ -22,18 +22,18 @@ gh auth login
 # A browser window opens. Approve.
 
 # 1b. Create the 3 private repos
-gh repo create reach-digital/vault --private --description "Reach Digital creative strategy vault" --source ~/Documents/reach-digital-hermes --remote origin --push
-gh repo create reach-digital/hermes-profile --private --description "Reach Digital Hermes profile distribution" --source ~/hermes-profile --remote origin --push
-gh repo create reach-digital/printing-press --private --description "Reach Digital printing-press Go CLI libraries" --source ~/printing-press --remote origin --push
+gh repo create TheProdigal95/vault --private --description "Reach Digital creative strategy vault" --source ~/Documents/reach-digital-hermes --remote origin --push
+gh repo create TheProdigal95/hermes-profile --private --description "Reach Digital Hermes profile distribution" --source ~/hermes-profile --remote origin --push
+gh repo create TheProdigal95/printing-press --private --description "Reach Digital printing-press Go CLI libraries" --source ~/printing-press --remote origin --push
 ```
 
 **Verify:**
-- Open https://github.com/reach-digital in your browser
+- Open https://github.com/TheProdigal95 in your browser
 - You should see 3 repos, all private, all with the expected files
 
 **If a push fails with "repository not empty" or similar**, you have a non-empty remote. Either:
 - Delete the remote and recreate: `gh repo delete reach-digital/<name> --confirm`
-- Or: `git -C ~/.../<repo> remote add origin git@github.com:reach-digital/<name>.git && git -C ~/.../<repo> push -u origin main --force`
+- Or: `git -C ~/.../<repo> remote add origin git@github.com:TheProdigal95/<name>.git && git -C ~/.../<repo> push -u origin main --force`
 
 ---
 
@@ -73,11 +73,11 @@ apt update && apt install -y git curl
 # Clone the vault temporarily so we can run vps-provision.sh
 mkdir -p /opt/reach-digital
 cd /opt/reach-digital
-git clone https://github.com/reach-digital/vault.git
+git clone https://github.com/TheProdigal95/vault.git
 # ^ This will fail if the repo is private. If it does:
 #   - Either: temporarily make the vault public, clone, then make it private again
 #   - Or:    SSH in with the key that has access (the same one you used to create the VPS)
-#            git clone git@github.com:reach-digital/vault.git
+#            git clone git@github.com:TheProdigal95/vault.git
 
 # Run the provisioner
 bash vault/deploy/vps-provision.sh hermes
@@ -112,9 +112,9 @@ sudo chown -R hermes:hermes /opt/reach-digital
 
 # Clone the 3 repos
 cd /opt/reach-digital
-git clone git@github.com:reach-digital/vault.git
-git clone git@github.com:reach-digital/printing-press.git
-git clone git@github.com:reach-digital/hermes-profile.git
+git clone git@github.com:TheProdigal95/vault.git
+git clone git@github.com:TheProdigal95/printing-press.git
+git clone git@github.com:TheProdigal95/hermes-profile.git
 
 # (you'll be prompted for your GitHub SSH key password if you set one)
 # If you get "permission denied", your SSH key on the VPS isn't authorized for the
@@ -142,7 +142,7 @@ This will:
 
 ```bash
 # From the VPS, as the hermes user
-bash /opt/reach-digital/vault/deploy/onboard-user.sh marcela
+bash /opt/TheProdigal95/vault/deploy/onboard-user.sh marcela
 
 # (Use your actual first name or slack handle)
 ```
@@ -168,10 +168,10 @@ The script will:
 #    cat ~/.ssh/id_ed25519.pub
 
 # 2. Add them to the VPS
-bash /opt/reach-digital/vault/deploy/onboard-user.sh <their-name> --ssh-key-path /tmp/their-key.pub
+bash /opt/TheProdigal95/vault/deploy/onboard-user.sh <their-name> --ssh-key-path /tmp/their-key.pub
 
 # 3. Send them the printed config snippet + ONBOARDING.md
-#    ONBOARDING.md is at /opt/reach-digital/vault/deploy/ONBOARDING.md
+#    ONBOARDING.md is at /opt/TheProdigal95/vault/deploy/ONBOARDING.md
 ```
 
 **Each team member then**:
@@ -210,7 +210,7 @@ bash /opt/reach-digital/vault/deploy/onboard-user.sh <their-name> --ssh-key-path
 | Profile install fails on step 4 | Hermes version < 0.12.0 | `hermes update`, then re-run step 4 |
 | Smoke test reports `GOOGLE_API_KEY set: NO` | `.env` is empty | `hermes auth` as the hermes user, set up Nous Portal or paste the key directly |
 | Team member gets "command not found" in the Hermes app | Their local config's `host:` is wrong | Re-issue the config snippet with the correct VPS hostname |
-| VPS dies | Hardware failure, host issue, etc. | Restore from snapshot, then `bash /opt/reach-digital/vault/deploy/restore.sh` |
+| VPS dies | Hardware failure, host issue, etc. | Restore from snapshot, then `bash /opt/TheProdigal95/vault/deploy/restore.sh` |
 
 ---
 

@@ -52,17 +52,17 @@ Compare to per-user local installs: 6 × 20 min of setup time + 6 × $5-20/mo in
 
 | Repo | What's in it | When it changes |
 |---|---|---|
-| `reach-digital/vault` (this repo) | Brand docs, T-batch files, Node tools source, deploy/ scripts, AGENTS.md | Daily (new T-batch, new context doc) |
-| `reach-digital/hermes-profile` | The 9 skills, MCP wiring, Hermes config, SOUL.md | Monthly (new skill, new model) |
-| `reach-digital/printing-press` | The Go CLI source (motion-pp-cli, clickup-pp-cli) + local patches | Rarely (when an upstream API changes) |
+| `TheProdigal95/vault` (this repo) | Brand docs, T-batch files, Node tools source, deploy/ scripts, AGENTS.md | Daily (new T-batch, new context doc) |
+| `TheProdigal95/hermes-profile` | The 9 skills, MCP wiring, Hermes config, SOUL.md | Monthly (new skill, new model) |
+| `TheProdigal95/printing-press` | The Go CLI source (motion-pp-cli, clickup-pp-cli) + local patches | Rarely (when an upstream API changes) |
 
 ## Deployment flow (you, the deployer)
 
 1. **Run HANDOFF.md** to create the 3 private GitHub repos and push the prepared commits.
 2. **Rent the VPS** (Hetzner or DigitalOcean, 8GB Ubuntu 22.04).
-3. **SSH in as root** and run `bash /opt/reach-digital/vault/deploy/vps-provision.sh` to harden it.
+3. **SSH in as root** and run `bash /opt/TheProdigal95/vault/deploy/vps-provision.sh` to harden it.
 4. **Clone the 3 repos to `/opt/reach-digital/`** (as the deploy user, not root).
-5. **Run `bash /opt/reach-digital/vault/deploy/deploy-stack.sh`** to build the stack.
+5. **Run `bash /opt/TheProdigal95/vault/deploy/deploy-stack.sh`** to build the stack.
 6. **For each team member: `bash deploy/onboard-user.sh <username> --ssh-key-path <path>`** to create their profile and generate their config snippet.
 7. **Send each team member their config snippet + ONBOARDING.md.** They install the Hermes app, paste the config, and they're running.
 
@@ -73,7 +73,7 @@ Compare to per-user local installs: 6 × 20 min of setup time + 6 × $5-20/mo in
 hermes profile update reach-digital
 
 # Update the vault (brand docs, T-batch files, Node tool source)
-cd /opt/reach-digital/vault && git pull
+cd /opt/TheProdigal95/vault && git pull
 
 # Update printing-press (rebuild the Go CLIs)
 cd /opt/reach-press/printing-press && git pull
@@ -83,7 +83,7 @@ cd /opt/reach-press/printing-press && git pull
 ## Backup and restore
 
 - **Daily snapshot of the VPS** ($5/mo on Hetzner, free on DigitalOcean) \xe2\x80\x94 captures the full state.
-- **If the VPS dies:** spin up a new one, restore the snapshot, then run `bash /opt/reach-digital/vault/deploy/restore.sh` to re-apply hardening and verify.
+- **If the VPS dies:** spin up a new one, restore the snapshot, then run `bash /opt/TheProdigal95/vault/deploy/restore.sh` to re-apply hardening and verify.
 
 ## Known limits and workarounds
 
