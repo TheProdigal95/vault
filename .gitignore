@@ -28,6 +28,9 @@ node_modules/
 
 # Secrets / env
 .env
+.env.*
+**/.env
+**/.env.*
 .env.local
 .env.*.local
 *.pem

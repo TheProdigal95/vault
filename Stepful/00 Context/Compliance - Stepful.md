@@ -18,6 +18,51 @@
 - Insinuate that our program is accredited   
 - Use the term money back guarantee unless it is referring to the 72 hour period where students can cancel and get their registration fee back 
 
+---
+
+## Client Feedback Update — June 2026
+
+These rules override any prior Stepful creative notes when writing or QA-ing ads.
+
+### Enrollment Fee / Tuition Clarity
+
+- The **$49 fee reserves a student's seat in class**. It is not the full tuition and must not be framed as a fee to apply, a fee to "find out," or the only amount required.
+- **Do not say:** "Pay $49 to find out," "$49 to apply," "$49 tuition," "$49 program," or any framing that implies $49 is the total price.
+- **CCMA approved language:** "Secure your spot for $49. Additional tuition payments as low as $163 every two weeks begin after the first week of class."
+- **CPhT approved language:** "Secure your spot for $49. Additional tuition payments of $131 every two weeks begin after the first week of class."
+
+### AI Testimonials
+
+- **T001 exception from client feedback:** AI UGC characters in the current batch do not need to map 1:1 to a real student testimonial.
+- **Future batches:** AI testimonial ads must map **1:1 to a real student testimonial**. Do not synthesize, combine, or embellish multiple student stories into a single avatar/script.
+- Required disclosure language when using an AI avatar/testimonial recreation: **"AI-generated avatar based on a real student’s testimonial"**
+- Any student testimonial claim must be traceable to the exact original testimonial/review in future batches.
+
+### Salary Mentions
+
+- Salary can be used as an external statistic/fact, not as a promised student outcome or first-person alumni result unless the student's actual new-job salary is documented.
+- **Approved CCMA salary language:** "Medical Assistants make a median annual wage of $44.2k. Source: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Median Annual Wage, May 2024. Outcomes and wages vary."
+- Do not write first-person salary claims like "I'm making $44.2K/year," "now I make $44.2K," or "earning $44.2K" unless there is documented alumni salary proof for that specific person.
+- Avoid salary-led hooks, implied earnings transformations, "make $X after Stepful," or any creative where salary is the main reason to enroll.
+
+### Role-Specific Work Settings
+
+- Working in a **pharmacy** should be exclusive to Pharmacy Tech / CPhT ads. Do not show or mention pharmacy-counter work, pharmacy jobs, or pharmacy settings in CCMA / Medical Assistant ads.
+
+### Program Sequence / Certification Order
+
+- Do not state or imply students receive NHA CCMA certification **after** externship.
+- Correct sequence for CCMA: **online coursework → NHA CCMA certification exam/certification → in-person clinical externship hours → job coaching/job search support**.
+- Make the order explicit anywhere a timeline is shown.
+
+### Visual Safe Zone
+
+- Final image/end-card copy must remain inside the platform safe zone. Several prior ads placed copy too low/outside the visible area; flag and fix before delivery.
+
+### Strategic Emphasis
+
+- Do not over-index on salary. Stepful's stronger approved selling point is the combination of **online, part-time training + in-person clinical hours for hands-on experience + job support**.
+- Do not over-index on moms/single moms. They are one audience, not the only audience. Rotate in pre-med students, caregivers, military spouses, Amazon Flex employees, and broader career switchers.
 
 ---
 
@@ -109,7 +154,7 @@
 
 * 78% NHA CCMA Certification Pass Rate  
 * 80% Job placement rate  
-* $44,000 Median Annual Salary
+* $44.2k median annual wage (Medical Assistants, BLS OOH May 2024)
 
 **Requirements for these claims:**
 
@@ -125,11 +170,11 @@
 * ✅ Keep this timeframe and conditions clear  
 * ✅ Consider adding: Based on graduates who completed the program between \[date range\]
 
-**For $44K salary:**
+**For $44.2k Medical Assistant median wage:**
 
-* ✅ You cite BLS data, which is perfect  
-* ✅ Current disclaimer is good: Median Medical Assistant Salary based on the latest job postings in the United States  
-* ⚠️ Consider: According to the U.S. Bureau of Labor Statistics (May 2023\) to be more specific
+* ✅ Must be presented as a BLS statistic/fact, not as a Stepful student outcome  
+* ✅ Approved language: "Medical Assistants make a median annual wage of $44.2k. Source: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Median Annual Wage, May 2024. Outcomes and wages vary."  
+* ❌ Do not use salary as the main selling point, imply Stepful causes this salary, or write earnings-transformation hooks
 
 **Additional data claims to avoid:**
 
@@ -214,7 +259,7 @@
 
 **❌ AVOID:**
 
-* Become a Medical Assistant in 5 months (technically they're not certified/working until after externship \+ job search)  
+* Become a Medical Assistant in 5 months (the online portion prepares students for the CCMA exam; clinical hours and job coaching come after certification)  
 * Get a job in 3 months (your 4-month stat is more accurate)  
 * Complete everything in 6 months total (doesn't account for exam waiting periods, externship scheduling, job search)
 
@@ -380,7 +425,7 @@
 
 ✅ **SAY INSTEAD:**
 
-* According to the U.S. Bureau of Labor Statistics, Pharmacy Technicians earn a median salary of $44,000  
+* According to the U.S. Bureau of Labor Statistics Occupational Outlook Handbook, Pharmacy Technicians have a median annual wage of $43,460 (May 2024)  
 * The BLS projects \[X\]% job growth for Pharmacy Technicians through \[year\] (verify current projections at bls.gov)  
 * Link to sources: BLS occupational outlook, state pharmacy board websites, etc.
 
@@ -595,7 +640,7 @@
 
 ✅ **SAY INSTEAD:**
 
-* According to the U.S. Bureau of Labor Statistics, Pharmacy Technicians earn a median salary of $44,000  
+* According to the U.S. Bureau of Labor Statistics Occupational Outlook Handbook, Pharmacy Technicians have a median annual wage of $43,460 (May 2024)  
 * The BLS projects \[X\]% job growth for Pharmacy Technicians through \[year\] (verify current projections at bls.gov)  
 * Link to sources: BLS occupational outlook, state pharmacy board websites, ASHP, PTCB, NHA
 

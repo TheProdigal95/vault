@@ -92,12 +92,14 @@ The T001 batch separator row is colored (black or gray background) and contains 
 
 **Status column mapping:**
 
-| ClickUp status | Sheets Status |
+The tracker is client-facing and does **not** mirror internal ClickUp revision states one-to-one. Internal ClickUp revisions/review/design statuses remain `In progress` in the tracker until we mark the asset `Shared With Client`. After that, the client may change the tracker row to `Revisions Requested`. When that happens, Hermes must first inspect the tracker Notes/Feedback column and the Air asset/comments, summarize the exact client asks in simple bullets, post those bullets into the corresponding ClickUp task while tagging the person working on the concept, and then move ClickUp to the client-facing revision status (`external revisions`, verifying the exact list status before updating).
+
+| ClickUp / Client state | Sheets Status |
 |---|---|
 | `backlog / concept` | *(omit from tracker until briefed)* |
-| `design needs edits` | `In Progress` |
-| `in internal review` | `In Progress` |
-| `approved ready for client` | `Shared With Client` |
+| `design needs edits` / `internal revisions` / `internal review` / `in design` | `In progress` |
+| `ready for client` / `approved ready for client` / `shared with client` | `Shared With Client` |
+| Client marks the tracker row as `Revisions Requested` | `Revisions Requested`; then move ClickUp to `external revisions` |
 | `client approved` (if it exists) | `Ready To Launch` |
 | `live` (if it exists) | `Ready To Launch` + `Launch Status: Launched` |
 

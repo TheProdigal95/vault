@@ -16,9 +16,9 @@ How every static ad batch (image ads, native screenshot ads, brief docs, long-fo
 The main session runs the batch flow defined in [[Batch Template]]. When briefs are due:
 
 1. **Tier 0 — Plan Critique** — the main session critiques the Batch Plan before any writer sub-agent is dispatched. This is a blocking gate (see the Tier 0 section below). A flawed plan means every downstream brief inherits the flaw, so catch it here.
-2. **Draft in parallel (Tier 1)** — after Tier 0 passes, the main session dispatches ~5 `brief-writer` sub-agents in parallel, each handling 2-3 Batch Plan rows grouped by format or topic. Each sub-agent writes each brief, runs Hook Quality Bar + 4-Question Gate, spawns scoring-evaluator sub-agent for copy iteration (7 dimensions, 90+ threshold, cap 5 iterations), runs structural pass/fail checks, cross-checks within its group, and returns an evidence report covering all briefs in the group.
-3. **Tier 2 orchestration** — the main session dispatches the `critique-orchestrator` sub-agent with the path to the Briefs file, Working Document, Top Spenders, and `writer_agent=brief-writer`. For static batches, the orchestrator runs 3 cross-brief checks (product spec consistency, fabricated stats, compounding rule scan) and dispatches fix passes as needed. Most within-brief checks are now handled by the brief-writer's scoring loop.
-4. **Tier 3 critique** — once the orchestrator returns ✅ clean (or ⚠️ flags surfaced), the main session reads the cleaned Briefs file and writes `T[###] Batch Critique.md` using the Output Format below. Any promotion to global criteria is made as a concrete edit to the target criteria doc in the same turn, not left as a TODO.
+2. **Draft in parallel (Tier 1)** — after Tier 0 passes, the main session dispatches `brief-writer` as the primary static role, with the shared `script-writer` copywriting contract applied to each writer packet. Each writer handles 2-3 Batch Plan rows grouped by format or topic, writes each brief, runs Hook Quality Bar + 4-Question Gate, runs or applies the `scoring-evaluator` 7-dimension loop to 90+, runs structural pass/fail checks, cross-checks within its group, and returns an evidence report covering all briefs in the group.
+3. **Tier 2 orchestration** — the main session loads the `critique-orchestrator` skill and audits the Briefs file against the Working Document, brand docs, active criteria, and writer/scoring evidence. For static batches, the orchestrator runs cross-brief checks (product spec consistency, fabricated stats, compounding rule scan) and routes fix passes as needed. Top Spenders Analysis is not a required QA input at this stage; use the strategy already distilled into the Working Document unless the strategist asks otherwise or a cited asset/reference must be verified.
+4. **Tier 3 critique** — once the orchestrator returns ✅ clean (or ⚠️ flags surfaced), the main session reads the cleaned Briefs file and writes `T[###] Batch Critique.md` using the Output Format below. Any promotion to global criteria is drafted as a concrete proposed rule/edit and requires explicit strategist approval before patching global criteria.
 
 The strategist sees only the Batch Critique. The orchestrator's report stays in the main session's context.
 
@@ -34,10 +34,10 @@ Before any `brief-writer` sub-agent runs, the main session critiques the Batch P
 
 ### Tier 1 — Writer Sub-Agent (`brief-writer`, during draft)
 
-The `brief-writer` Hermes sub-agent (formerly at `.claude/agents/brief-writer.md`, now orchestrated by the `script-writer` skill at `00 Global/Hermes/Commands/script-writer.md` + `~/.hermes/profiles/reach-digital/skills/reach-digital/script-writer/SKILL.md` — the brief-writing role is invoked via the script-writer skill for static batches) produces 2-3 briefs per invocation (grouped by format or topic) and runs the full scoring + structural pipeline before returning. Per brief:
+The `brief-writer` Hermes role is the active skill at `~/.hermes/profiles/reach-digital/skills/reach-digital/brief-writer/SKILL.md`, backed by the master copywriting contract in `script-writer` and the `scoring-evaluator` skill. It produces 2-3 briefs per invocation (grouped by format or topic) and runs the full scoring + structural pipeline before returning. Per brief:
 1. **Hook Quality Bar** — 5-test gate. Dead hook → rethink before scoring.
 2. **4-Question Gate** — fast-fail. Q1 failure blocks all downstream checks.
-3. **Scoring loop** — spawns `scoring-evaluator` sub-agent (formerly at `.claude/agents/scoring/scoring-evaluator.md`; the scoring logic is now at `00 Global/Statics Generator/Scoring Agents/` and invoked from within the `script-writer` skill). 7 dimensions scored 0-100. Copy iterates until all 90+. Cap at 5 iterations. Copy Editor has veto power.
+3. **Scoring loop** — applies the `scoring-evaluator` skill/rubrics. Nested delegation is disabled in Hermes, so scoring either runs inline in the writer's own turn or as a depth-1 task launched by the main session after writers return. 7 dimensions scored 0-100. Copy iterates until all 90+. Cap at 5 iterations. Copy Editor has veto power.
 4. **4-Question Gate** — post-scoring sanity check.
 5. **Structural pass/fail checks** — Brief Structure section order, References format, Mandatory Disclaimer placement, Diagram Example spec, per-format checklist, per-platform overlay.
 6. **Within-group cross-check** — headline uniqueness, product spec consistency, VoC language diversity across briefs in the group.
@@ -50,7 +50,7 @@ The sub-agent does not return until every brief passes all scored dimensions at 
 
 ### Tier 2 — Orchestrator (`critique-orchestrator`, after all sub-agents return)
 
-The `critique-orchestrator` sub-agent (formerly at `.claude/agents/critique-orchestrator.md`; orchestration now handled by the `reach-digital-ops` skill + Hermes delegation when the post-writer sweep is needed) runs a **category-sweep audit first, item-level re-verify second**. Category sweeps mirror the audits that historically caught real failures — they look at one dimension across the whole batch instead of walking each brief end-to-end.
+The `critique-orchestrator` role is the active Hermes skill at `~/.hermes/profiles/reach-digital/skills/reach-digital/critique-orchestrator/SKILL.md`. It runs a **category-sweep audit first, item-level re-verify second**. Category sweeps mirror the audits that historically caught real failures — they look at one dimension across the whole batch instead of walking each brief end-to-end.
 
 **Step A — Category sweeps across the batch.**
 

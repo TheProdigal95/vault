@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "source": "live"
+  },
+  "results": {
+    "data": {
+      "workspaceV2": {
+        "__typename": "WorkspaceV2",
+        "discoverFeed": {
+          "__typename": "DiscoverFeed",
+          "trendingVisualFormats": [
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 567,
+              "formatName": "Offer-First Banner",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1228580719174862/691f6eeae400180cbd39b573/dfba09f5-d7ab-4de1-8c70-56bdf3e05f09.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1842831053336657/68b8e455121ef587c25e26f9/24eb7eab-308f-4ea9-9bb4-e2448fe0abcd.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1116520370375291/69013ce952ed4a2ffcdcb8cd/f82bc686-be2b-4f5e-851b-1f9d9918c0ef.jpeg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 250,
+              "formatName": "Unboxing",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1264186934845765/678999f300052784aa9bd802/0b8d5c06-6d46-4dfd-bb74-4a63b4f47623.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/966959711541741/6712b2eda61172249c1d5f70/80065027-f429-467d-bdf8-ca57c2973007.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1925764711333587/68f8618652ed4a2ffc9c74be/de1171fe-c53e-49ae-bc32-3bf03f4cbf7e.jpeg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 190,
+              "formatName": "Try-On",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1499160571634121/69ae7c1e627a9fffb7bf9f92/74434495-02b4-42ec-8e51-397b2d421503.jpg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1707779737066104/6a1e2a05e8ca73cd43b1913c/3a8c84e4-4c20-4a12-a812-0a6f7a51578d.jpg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/951193787711061/6a097b4108c1a6eaf943d378/709b8922-c7e4-4390-a07e-9ca552d4929a.jpg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 159,
+              "formatName": "Slideshow",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/495649816757062/66d87c4c1cf0ed433fe3f970/6a736b9c-24ab-4687-8651-23f4fd0bc99a.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1559616451915530/6942167a06f16fea232beeff/34129d5d-58ac-4744-a0c2-923c60f57fa3.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1440757971111975/69e2684fc58c09bbcee605e3/28acaeab-b336-491f-8e7c-b87ebbe8c3ca.jpg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 152,
+              "formatName": "How To",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/799913031713426/66d87c861cf0ed433fe697c9/38432c7b-52e4-44fb-8706-fcdbc68c66c4.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/3569830079814843/68c91c3040f3f2ab54882ee9/636ab918-2c57-4d14-a51f-4b28d467a305.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/888399559733055/66b113453b9da79579cda0bb/84c190a0-8ffd-4ba5-9ce5-10feede79020.jpeg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 136,
+              "formatName": "Transformation",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1670136406979854/6851d4d2683cb77af161c7b5/08abe3a1-8add-49d5-9d2b-13fff4952899.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1121276183431440/68c9108440f3f2ab546bdaf4/5804ea69-611e-40de-b4f9-7a2d468c0010.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/705474025130913/66e2b2491cf0ed433faba7e4/251fc93e-f8bb-48e4-bc06-cb4c73eed27a.jpeg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 116,
+              "formatName": "POV",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1543159776817915/690ae3af2d77ca559dadf8f7/65d67728-0650-45e2-ab62-d7ad6d229ebb.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/2024049728450567/6919d006e4c6e2f6bc4b03a1/accb904f-aeb8-4c63-a0ee-d0e2f36dedcb.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/2456216321407209/685b7772683cb77af1ef9367/92d014a6-62c6-4e31-ad67-a791efb260f1.jpeg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 101,
+              "formatName": "Behind The Scenes",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/2225962867860582/68435f9b8fd0a6667c643a47/053a4f2b-6e71-4660-b650-395a70251a55.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/511414084677633/66e8520daa0d5e9098b83e34/bbd13599-de45-4ddc-846a-ba6fe33a3a76.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/762960892547291/66c3913cb822dc108960ca8c/1a84d0c9-d352-4084-b508-459c94733d43.jpeg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 95,
+              "formatName": "Grid Swap",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/612950297872319/6776cabec3e8edb857e1fdb1/6a56d771-07a6-47c3-9300-323a4bc3b6c4.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1483465532574907/6695d76a150451cda172cd49/26e1871f-d09a-485b-a5da-94a948a3ccf7.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1623566531947642/69285a0ce400180cbda353c4/73e84352-7abc-4e99-8de0-e7850fe737c6.jpeg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 88,
+              "formatName": "Celebrity",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/423786767085737/67052b4af21f9b4f9ea151a5/374a5a0c-1ea5-4ee8-811c-be8bc92d0a7c.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/4166450393604178/692f6c75e400180cbdf23ec3/aad8e746-da2c-49c3-a443-94ae75e888a8.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1028006062697382/68e44260e67c583eab06014b/465453cf-0904-48a0-b98a-a795912eda61.jpeg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 75,
+              "formatName": "Product Image",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/874401415613209/69cfcd2d4dbfa8a40bed32fb/8c14afd9-d281-416c-85b2-b8503f3f8cfb.jpg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1254533269046352/66d8a40b1cf0ed433fd70446/e48cbf66-4a85-440d-9889-a8a43be1b9ba.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1778140712834672/68d3aff9d85132051753266e/7b88b19b-69a2-465d-b0d6-7dcaa4f94c97.jpeg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 54,
+              "formatName": "ASMR",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1612674296364874/690feaf32d77ca559dd87018/b499a157-7be6-408c-bfbd-f7ba90783e98.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/834327429579832/6941696f25026a6aada82be0/bfc36995-5400-44eb-947b-c7e42812234d.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1516518706276278/6947b84e06f16fea239667d1/8b82f07f-7954-49f9-b95d-9925286a8691.jpeg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 49,
+              "formatName": "Quiz",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1166671125534437/693ca8a8d0221e60f3356176/3b63a057-5ecd-4020-8a2d-3444d1de06db.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/4509892489335742/69c0999d3ea14393208dca74/c921018b-4198-41f1-a5f5-fee3a58bce89.jpg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/2411361626034199/69e527edc58c09bbcef3670b/8d11d7d0-59ea-4f12-81f7-0e7eeb776fe4.jpg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 36,
+              "formatName": "Spokesperson",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/2359021747871250/69836bf009c0e6d8afd03afc/cb806206-d63d-4893-9845-6d9a471cabda.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/25440746198868426/694c5ac606f16fea234ea1d0/9dca415d-581c-4160-b5f2-e1fb0b8d6a4f.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1049482207144262/68ec83f4da749d26b06607a5/c26178e2-d821-4c82-96e4-9b36c7853874.jpeg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 34,
+              "formatName": "Street Interview",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/622168773651406/67895830c55ff7501b17f849/087d6946-5a06-42b1-9677-d9513275f2ce.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/632048345903642/6794b2f89136226a3f6598c7/5c4e84ae-88aa-45eb-971a-9d609bdd8e51.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1479093243180405/691ceb32e400180cbd384ac8/9d9625e0-5c00-4d53-9181-00a57adadf7d.jpeg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 27,
+              "formatName": "Trend",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1061709745287181/6847c1cf8fd0a6667c8e96c9/4a5b224a-a121-48c6-a5c9-822e796c264c.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1357212752369218/67ec3fd6d9733f8588fd4a7b/e7a03e88-40d6-4e72-ae2d-c11f058ca116.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/4162057327404012/68f19e4aa3b5812208961a0f/bb596437-fb99-4fe6-aa70-d1d20dec9e10.jpeg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 27,
+              "formatName": "Reaction Video",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/2187545354934961/66c622e9b822dc10893d0c6f/c7c0a436-257c-4687-b946-b2afd7f293f4.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/693030229980469/68213737bd670b5c32b5234e/6c28d9e7-959c-499f-9e22-9911033b66b9.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/967276152372880/69fcf1d59f9320f2b1a31101/f2c1a7e7-6d4f-480d-997a-5f6f0c674c69.jpg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 25,
+              "formatName": "Gamification",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/613757765132580/692ffb11e400180cbd2b65d7/fa9615a6-4c18-46db-8892-5cb39b742092.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1654693045236211/68423aed8fd0a6667c1fc4ed/6653dca1-4742-46d3-bca0-82814d0b3bef.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/710990662061763/69225551e400180cbd587465/594dd95f-22ce-4c4a-a79a-22b5428b9244.jpeg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 23,
+              "formatName": "Lifestyle Image",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/826720566312940/66d984911cf0ed433f7b65d5/77effc96-b848-4143-b886-6d59bd7f0879.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1610115242924637/6794ad759136226a3ff1c4ad/153bdcfb-25e1-4e39-b016-b8306306ac74.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/911059004563748/67873afec55ff7501be3747d/ee8f4063-4ca5-4c75-9316-866c596bb0aa.jpeg"
+              ]
+            },
+            {
+              "__typename": "TrendingVisualFormat",
+              "creativeCount": 22,
+              "formatName": "Text Overlay",
+              "thumbnails": [
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/556782817347788/67803064c55ff7501b362fb7/e176141f-791e-49e3-b4c4-c9c19c94996c.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/716654034480120/686ef891c95760ec2b59e828/a9b30c67-1e73-4198-8529-e1585393c628.jpeg",
+                "https://motionswipefile.blob.core.windows.net/swipe-file-cached-links/swipe-file-source-link/1075699221165474/690472fe52ed4a2ffc880bd2/c0b602d6-2539-4973-a0bf-b10017e22b3b.jpeg"
+              ]
+            }
+          ]
+        },
+        "id": "696935bf769728b7e3f4e911"
+      }
+    }
+  }
+}

@@ -10,6 +10,8 @@
 > - Ad classification precision below 70% on "The Dead-End Job Escaper" after retry (15%). Creative Pillars for this persona are directional only.
 > - Ad classification precision below 70% on "The Healthcare Credential Upgrader" after retry (22%). Creative Pillars for this persona are directional only.
 > - Crawler hit --max-pages (200) with queue_incomplete non-empty (839 URLs). Remaining URLs are state/city salary SEO pages — all core program and brand pages fully captured.
+>
+> **Client feedback override — June 2026:** Do not let moms/single moms dominate Stepful creative. Rotate in pre-med students (18–25), caregivers, military spouses, Amazon Flex/Amazon employees, and broader career switchers. Salary should not be the main selling point; lead with online/part-time training plus in-person clinical hours/hands-on experience.
 
 ---
 

@@ -435,7 +435,7 @@ Reach Digital_Comfort Ortho Wear_Testimonial_Don't Wear Your Skechers to Europe_
   - Slower on Rome pain beat
   - Upbeat on Portugal proof section
 - Color: No production polish; phone-quality; natural lighting
-- Format: Creator on couch for all creator beats; travel B-roll as proof shots only; green screen drops on creator's opening line in Hook B
+- Format: Creator on couch for all creator beats; travel B-roll as proof shots only; Hook B opens with direct travel shoe-fail footage before cutting to creator on couch
 
 ### References
 
@@ -446,8 +446,8 @@ Reach Digital_Comfort Ortho Wear_Testimonial_Don't Wear Your Skechers to Europe_
   - Use: contrarian travel hook structure, real travel B-roll visual grammar
 
 **Format**
-- TK8 GREEN SCREEN reference (Hook B): https://www.tiktok.com/@katelynfuhrmann/video/7644330718717299982
-  - 4s green screen play behind reactor → creator's concerned expression → green screen drops → creator takes over
+- NEW6 DIRECT reference (Hook B): https://www.tiktok.com/@thefashionfinancier/video/7522859698098408759
+  - Use: destroyed shoe in hand from 0:00-0:06 as travel shoe-fail pattern interrupt, then cut to creator warning. Blur all visible brand marks and handles.
 
 ### Editor Notes
 - Editor-sourced clips: under 5K followers; POV/feet/hands/environment only — no creator face as focal point; blur logos and handles. Provided TK clips are pre-approved.
@@ -456,6 +456,7 @@ Reach Digital_Comfort Ortho Wear_Testimonial_Don't Wear Your Skechers to Europe_
 ### Footage
 
 - Editor-source
+  - NEW6 @thefashionfinancier direct TikTok: destroyed shoe in Puerto Vallarta rain, use 0:00–0:06 as Hook B pattern interrupt; optional 0:06–0:12 flooded street context; blur all visible brand marks and handles
   - European stone archway or narrow street POV (Rome, Barcelona, Lisbon, or similar)
   - Cobblestone walking POV — any European street, piazza, or uneven stone surface
   - Hotel balcony or terrace with city view, feet up or rubbing ankle — feet only; alt: any hotel-room fatigue shot
@@ -467,14 +468,14 @@ Reach Digital_Comfort Ortho Wear_Testimonial_Don't Wear Your Skechers to Europe_
 
 | Time | Visual | Voiceover | Caption |
 |---|---|---|---|
-| 0:00–0:06 | AI UGC creator on couch, ComfortWear in lap. Comment stitch UI: "Reply to @travel_mama93 — Adding to cart because my feet can't survive another trip." | Please don't wear your Skechers to Europe. I'm begging you. I learned this the hard way. Here is what actually saved the next trip. | Reply to @travel_mama93<br><br>Please don't wear your SK3CHERS to Europe<br><br>here is what actually worked |
+| 0:00–0:06 | AI UGC creator on couch, ComfortWear in lap. Comment stitch UI: "Reply to @travel_mama93: Adding to cart because my feet can't survive another trip." | Please don't wear your Skechers to Europe. I'm begging you. I learned this the hard way. Here is what actually saved the next trip. | Reply to @travel_mama93<br><br>Please don't wear your Sk*tchers to Europe<br><br>here is what actually worked |
 
-### Hook B — Medical Boot Green Screen PI
+### Hook B — Disintegrated Shoe Direct PI
 
 | Time | Visual | Voiceover | Caption |
 |---|---|---|---|
-| 0:00–0:04 | GREEN SCREEN: Play TK8 behind AI UGC creator. Girl in medical boot dancing. Creator watches. | (No VO — reaction only) | she didn't bring the right shoes to Europe<br><br>two stress fractures |
-| 0:04–0:08 | Green screen drops. AI UGC creator on couch, ComfortWear in hand. | She didn't bring the right shoes to Europe. Two stress fractures. Please don't wear your Skechers to Europe. | Please don't wear your SK3CHERS to Europe<br><br>I'm begging you |
+| 0:00–0:04 | NEW6 DIRECT CLIP: close-up of hand holding destroyed heeled sandal, sole torn away from footbed. Blur all visible brand marks and handles. | Okay, this is a travel nightmare. Her shoes literally disintegrated. | her shoes completely fell apart on vacation |
+| 0:04–0:08 | Cut to AI UGC creator on couch, holding ComfortWear in hand, leaning in with urgent warning energy. | And trust me, you do not want this happening on day three in Europe. Please don't wear your Skechers there. | Please don't wear your Sk*tchers to Europe<br><br>your feet will thank me |
 
 ### Hook C — Rome Regret Confession
 
@@ -498,7 +499,7 @@ Reach Digital_Comfort Ortho Wear_Testimonial_Don't Wear Your Skechers to Europe_
 
 | Time | Visual | Voiceover | Caption |
 |---|---|---|---|
-| 0:40–0:51 | Back to original creator on couch, warm direct expression, shoes held up. Interactive URL button visible. Simulated "Following" button click. | Forty percent off right now, under sixty dollars, with a forty-five-day money-back guarantee. Link is below. Don't pack your Skechers. | 40% OFF — under $60<br><br>45-day money-back guarantee<br><br>link is below |
+| 0:40–0:51 | Back to original creator on couch, warm direct expression, shoes held up. Interactive URL button visible. Simulated "Following" button click. | Forty percent off right now, under sixty dollars, with a forty-five-day money-back guarantee. Link is below. Don't pack your Skechers. | 40% OFF, under $60<br><br>45-day money-back guarantee<br><br>link is below |
 
 ---
 

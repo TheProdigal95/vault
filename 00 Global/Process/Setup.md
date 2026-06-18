@@ -37,9 +37,9 @@ The reach-digital profile at `~/.hermes/profiles/reach-digital/` ships pre-confi
 | **ClickUp** (personal API token) | `~/.config/clickup-pp-cli/config.toml` → `auth_header` (real user home, NOT profile-scoped `$HOME`) | Go CLI for routine loading; MCP for ad-hoc reads |
 | **ClickUp MCP** (OAuth 2.1 PKCE) | `auth.json` token, set 2026-06-09 | 51 tools enabled, browser-OAuth on first use |
 
-### 11 reach-digital skills (auto-loaded)
+### 13 reach-digital skills (auto-loaded / available)
 
-In `~/.hermes/profiles/reach-digital/skills/reach-digital/`: `batch-planner`, `brand-researcher`, `clickup-load`, `grab-media`, `motion-top-spenders`, `reach-digital-ops`, `scoring-evaluator`, `script-writer`, `setup`, `sheets-tracker-sync`, `transcribe`. Most SKILL.md files are thin pointers to the canonical reference at `00 Global/Hermes/Commands/<name>.md`; a few (`scoring-evaluator`, `setup`, `batch-planner`) are self-contained.
+In `~/.hermes/profiles/reach-digital/skills/reach-digital/`: `batch-planner`, `brand-researcher`, `brief-writer`, `clickup-load`, `critique-orchestrator`, `grab-media`, `motion-top-spenders`, `reach-digital-ops`, `scoring-evaluator`, `script-writer`, `setup`, `sheets-tracker-sync`, `transcribe`. Copywriting must route through the right primary skill — `script-writer` for video scripts, `brief-writer` for statics, `critique-orchestrator` for QA — not ad hoc delegate prompts.
 
 ### Tools (`00 Global/Hermes/tools/`)
 

@@ -8,9 +8,9 @@
 
 | Program | Length | Certification | Clinical Hours | Key Differentiator | Avg Salary | Price Tier |
 |---|---|---|---|---|---|---|
-| Medical Assistant | 5 months (20 wks) | NHA CCMA | 80–160 hrs (externship) | Clinical Kit included; most popular program | $44,054 | ~$1,100–$1,450 |
-| Pharmacy Technician | 4 months (15 wks) | NHA ExCPT or PTCB CPhT | 130 hrs (externship) | NHA-Recognized; dual-exam prep | $44,000 | ~$1,100–$1,450 |
-| Pharmacy Tech Professional | 4 months (15 wks) | NHA ExCPT or PTCB CPhT | 130 hrs mandatory | ASHP/ACPE-accredited; limited states | $44,000 | ~$1,100–$1,450 |
+| Medical Assistant | 5 months (20 wks) | NHA CCMA | 80–160 hrs (externship) | Clinical Kit included; most popular program | $44.2k median annual wage (BLS OOH May 2024) | ~$1,100–$1,450 |
+| Pharmacy Technician | 4 months (15 wks) | NHA ExCPT or PTCB CPhT | 130 hrs (externship) | NHA-Recognized; dual-exam prep | $43,460 median annual wage (BLS OOH May 2024) | ~$1,100–$1,450 |
+| Pharmacy Tech Professional | 4 months (15 wks) | NHA ExCPT or PTCB CPhT | 130 hrs mandatory | ASHP/ACPE-accredited; limited states | $43,460 median annual wage (BLS OOH May 2024) | ~$1,100–$1,450 |
 | Dental Assistant | 4 months (16 wks) | DANB RHS | 80 hrs (optional) | 4 classes/week (not 2); optional externship | $47,300 | ~$1,100–$1,450 |
 | Medical Admin | 3 months (12 wks) | NHA CMAA | None (no clinical req.) | Fastest + cheapest; 100% online to cert; no externship | $38,000 | Lower tier |
 | Patient Care Technician | 8 weeks | NHA CPCT/A | None (no clinical req.) | Shortest program; no externship required | Not stated | Lower tier |
@@ -31,10 +31,11 @@
 
 **All variants:** Morning and Evening class times (Monday & Thursday). Multiple cohort start dates (Jun 11, Jun 12, Jul 9, Jul 10 as of scrape date). Classes 95% full as of scrape date.
 
-### Offer Structure (as of 2026-06-01)
+### Offer Structure (as of 2026-06-12 client feedback)
 - **One-time price:** Not stated on-page; estimated ~$1,100–$1,450 based on student reviews
 - **Payment plans:** Biweekly installments available
-- **Registration fee:** $49 enrollment fee (updated June 2026; was $59 prior)
+- **Enrollment / seat reservation fee:** $49 reserves the student's spot in class. This is **not** the full tuition and must not be framed as the fee to apply or to "find out" eligibility.
+- **Approved CCMA payment language:** "Secure your spot for $49. Additional tuition payments as low as $163 every two weeks begin after the first week of class."
 - **Grants:** Need-based tuition grants available — "most applicants paying out of pocket qualify"
 - **Exam rebate:** Students who register NHA exam through Stepful "may be eligible for a rebate on the exam fee" (exam fee itself = $165, NOT included in tuition)
 - **Guarantee:** 3-day money-back guarantee — students can check out the classroom risk-free and get a full refund within 3 days if it's not for them. After classes begin, full tuition refund within first two weeks; enrollment fees non-refundable after 3-day window.
@@ -42,11 +43,11 @@
 
 ### Mechanism & Ingredients (Verbatim Hero Claims)
 - **Hero claim:** "Stepful's 5-Month Online Medical Assistant Program prepares you for the NHA CCMA exam. After certification, we'll help you secure in-person clinical hours and a full-time job."
-- **Program steps:** 5 months online classes → In-person clinicals (80–160 hrs) → Land a full-time job
+- **Program steps:** 5 months online classes → NHA CCMA certification exam/certification → in-person clinicals (80–160 hrs) → job coaching / full-time job search support
 - **Class format:** "Join live, 90-minute classes twice a week with expert instructors. Complete daily assignments, mock exams, and simulations—100% online."
 - **86% NHA CCMA Certification Pass Rate** (homepage) / **78%** (program page) — "within the national average" / "students score about 10 points above the national average on the CCMA exam"
 - **80% Job placement rate:** "80% of our graduates accept full-time job offers within 4 months of starting job-readiness coaching after completing clinical hours."
-- **$44,000 Median Annual Salary** (Lightcast data)
+- **$44.2k median annual wage** — must be presented only as an external statistic/fact, not as an outcome. Approved language: "Medical Assistants make a median annual wage of $44.2k. Source: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Median Annual Wage, May 2024. Outcomes and wages vary."
 
 **Clinical Kit (included with tuition — verbatim list):**
 Venipuncture Trainer Arm, Simulation Finger, Stethoscope, Digital Thermometer, Sphygmomanometer, Reservoir Bag, Tourniquet, Kidney Dish, Vacutainer Tube, Lancets, Work Surface Cover, Sharps Container, Syringe Needles, Urinary Test Container, Gloves, Medication Vial
@@ -63,6 +64,8 @@ Venipuncture Trainer Arm, Simulation Finger, Stethoscope, Digital Thermometer, S
 - 80% job placement rate within 4 months of starting job coaching (post-clinical hours)
 - Employer logos displayed (graduates hired at named companies)
 - TIME #1 EdTech ranking
+- Approved scale/proof claims from client feedback: #1 Ranked EdTech Company in the US by TIME; 9,000+ graduates; 30,000+ students; Graduates Were Hired At: CVS, Walgreens, New York Presbyterian, Northwell Health
+- Mount Sinai partnership proof: Stepful and Mount Sinai Health System announced a strategic collaboration on May 20, 2026 to create a specialized Patient Care Associate training program for the NYC metro area. Source: https://www.mountsinai.org/about/newsroom/2026/stepful-and-mount-sinai-health-system-announce-strategic-collaboration-to-strengthen-clinical-support-workforce-in-new-york-city
 
 ### Objections Addressed On-Page (FAQ verbatim)
 - **"Is the program online or in-person?"** — "100% online for 5 months... After completing the online portion and earning your national NHA CCMA certification, you'll gain access to our clinical externship booking platform to secure interview opportunities for in-person clinical hours (80 to 160 hours)."
@@ -83,8 +86,10 @@ Venipuncture Trainer Arm, Simulation Finger, Stethoscope, Digital Thermometer, S
 
 **All variants:** Morning and Evening class times (Monday & Thursday).
 
-### Offer Structure (as of 2026-06-01)
+### Offer Structure (as of 2026-06-12 client feedback)
 - **Payment plans:** "upfront or through biweekly installments"
+- **Enrollment / seat reservation fee:** $49 reserves the student's spot in class. This is **not** the full tuition and must not be framed as the fee to apply or to "find out" eligibility.
+- **Approved CPhT payment language:** "Secure your spot for $49. Additional tuition payments of $131 every two weeks begin after the first week of class."
 - **Grants:** Need-based grants available for out-of-pocket students
 - **Exam fees NOT included:** ExCPT = $129, CPhT = $129. Rebates/discounts possible.
 - **Guarantee:** Same 3-day guarantee as MA program.
@@ -93,7 +98,7 @@ Venipuncture Trainer Arm, Simulation Finger, Stethoscope, Digital Thermometer, S
 - **Hero claim:** "Become a Certified Pharmacy Technician. Here at Stepful, we have a 4-month Online Pharmacy Tech Program that prepares you to take a national certification exam."
 - **Pass rate:** "75% NHA Certification Pass Rate — +10 Points Above the National Average"
 - **80% job placement rate** (same as MA)
-- **$44,000 median annual salary**
+- **$43,460 median annual wage** — BLS Occupational Outlook Handbook: "The median annual wage for pharmacy technicians was $43,460 in May 2024."
 - **130 clinical hours** required (must be available M-F 9-5)
 
 **Curriculum (verbatim):**

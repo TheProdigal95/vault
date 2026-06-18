@@ -5,139 +5,310 @@ cssclasses:
 ---
 # T005 — Lifeforce Meta [TBD] Batch
 
-> **Status:** Base document created. Raw Notes captured. Batch Plan, Concept Validation, and Script Criteria are TBD pending strategist input and the post-L14 ads analysis follow-up.
+> **Status:** Restarted from scratch. Ads analysis preserved. Raw hooks seeded. Batch Plan, Concept Validation, and Script Criteria pending strategist review.
 
 ---
 
 ## Raw Notes — Batch Strategy
 
-### Strategist-Provided Differentiator (Quarterly vs. Yearly Testing)
+> Drop your strategic thoughts, directions, and decisions for this specific batch here AFTER reviewing the Top Spenders Analysis. What should we do or avoid based on the data?
 
-> **The differentiator we're under-using in our ads:** Many providers test you yearly. Lifeforce tests you quarterly. That way you can actually stay in touch and catch things before they become a problem or before you're unoptimized. It's super optimal, it's much better.
+### Strategist Raw Hooks (June 11, 2026)
 
-**Why this matters as a hook/angle territory:**
-- It reframes Lifeforce from a one-time purchase decision into an **ongoing monitoring relationship** — moves the value prop from "we'll fix you" to "we'll keep catching what others miss."
-- **Direct competitor attack** on yearly-test providers (PCP, annual physical, cheap TRT clinics) without naming them.
-- **Pre-empts the "I already got tested" objection** — most men's ad audience has had a yearly physical. The angle is "that one test isn't enough."
-- **Frequency = vigilance = optimization continuity** — this is a different value frame than "we test more markers" (a one-time depth claim). The quarterly cadence is a *cadence* claim that compounds over time.
+> These are raw ideas — scroll-stoppers and soundbites to build hooks from. Hook opens the loop, body closes it with Lifeforce. Some are finished hooks, others are scaffolding that need bridging.
 
-**Format hooks this unlocks (raw — to operationalize in Batch Plan):**
-- **"You got tested once this year. That's the problem."** — Direct reframing of the annual physical.
-- **"What your yearly test missed"** — quarterly + 50+ biomarkers is the depth+frequency stack.
-- **"The 90-day check-in"** — temporal branding for the cadence itself.
-- **"Your numbers change. Your protocol should too."** — protocol-adjustment frame that cheap clinics can't offer.
-- **"3 months between checks is enough time to drift"** — concrete mechanism for why yearly is too slow.
-- **"Your doctor sees a snapshot. We see a film."** — the difference between point-in-time and continuous monitoring.
+**TRT:**
+- I was on TRT for a year and still felt horrible, (...)
+- Half the internet treats TRT like cheating, the other half like a magic pill and both are wrong
+- I spent years trying to transform my body before I tried peptides or TRT and that matters because it's not a magic pill
+- If you want to get rid of your man boobs, (...)
+- If you're a man with puffy face, a double chin and a beer belly, that's your sign to get your hormones in check NOW. Here's why.
+- If you want to stop sucking your belly at the pool, (...)
+- You can fix the Low-T saggy face and beer belly (...)
+- You can be on TRT for years and still feel fat and depressed if you don't pair it with the right (...)
+- If you're over 40, TRT CAN help you feel like 25 but it's not a magic bullet, you need to (...)
+- There's so many guys over 40 who start TRT and feel great during 3 months but then plateau, (...)
+- VO: Here is something men aren't warned about when they start TRT: your body is going to spazz for a while. / on-screen: STARTING TRT: WHAT YOUR BODY ACTUALLY DOES IN THE FIRST FEW MONTHS 🚨
+- TRT gave me the ability to put the work in and become lean and strong, eat right and train hard. But it's not magic. (...)
+- If you're over 45 and thinking about TRT or peptides, you need to hear this (...)
 
-**Persona overlay (to test against L14 audience):**
-- **Disciplined Underperformer** (30-45) — Likely the strongest fit. He's already optimizing and has had at least one "normal" yearly result that didn't catch the issue. The quarterly angle reframes his diligence gap.
-- **Longevity Optimizer** (45-60) — Strong fit. He's already paying for elite diagnostics; quarterly cadence is the next logical step in his stack.
-- **Suboptimal Dad** (35-50) — Adjacent fit. Works if framed around "your kids won't wait 12 months for you to feel better" — urgency from family timeline, not just health timeline.
+**CORE:**
+- If you eat healthy and workout consistently but don't see progress in the gym, it could be a vitamin D deficiency
+- If you want to stay in peak shape at 43, (...)
+- How long do you want to live? (...)
+- Would you put your children onto biohacking? (...)
+- "Doctors" that use only AI (...)
+- Why do you age? And HOW do you want to age?
+- How long can you live well? (...)
+- Brain aging is a major factor for health and longevity (...)
+- What's your biological age? It matters for more than just risk of death…
+- Is there a correlation between looking young and longevity? (...)
+- How long can you actually feel young? (...)
+- What are the best physical exams you should take quarterly if you want to optimize your quality of life and longevity?
+- How do YOU keep track of your health data?
+- Your personal aging markers can deeply impact (...)
 
-**CORE vs. TRT split consideration:**
-- Quarterly testing applies to **both product lines** but the *framing* differs:
-  - **CORE:** "Annual labs miss the drift" — broader biomarker story, 50+ markers, the 12-month blind spot.
-  - **TRT:** "TRT on yearly monitoring is a guess" — implies the protocol itself needs adjustment, not just biomarker reading. Higher stakes framing because TRT is a prescription.
-- The Tony Robbins "I spent 3.5 years with 150 scientists" line (T003 Concept 2 reference) supports the depth claim; quarterly supports the frequency claim. Stack them carefully — don't over-claim "elite" if you're also selling cadence.
+### Hermes Notes on Hook Framework
 
-**Constraint to enforce:**
-- Don't position quarterly as **frequent enough to fix everything** — that's a medical over-promise. Frame it as **frequent enough to catch drift before it becomes a problem.** This matches the strategist's exact phrasing and avoids compliance risk.
-
----
-
-### Strategist L14 Reads (June 11, 2026)
-
-**Correction — 4_G1_MEN classification:** The `2024_12_PR - 4_G1_MEN (1)` creative is **TRT, not CORE.** Primary text confirms TRT positioning. Lesson: when the creative name doesn't carry a clear product-line signal, always check the primary text in DataJSON — not the name. The "NP" (New Production) prefix doesn't indicate product line.
-
-**Reddit format is not the problem — messaging is.** Of the two Reddit statics in the top 20 (T00202 + T00203), only T00202 converts ($9K / 17 purchases / $537 CPA). T00203 is dead at $538 / 0 purchases. The format works; the hook on T00203 didn't land. Implication: **keep the Reddit format, iterate the messaging** — don't kill the angle.
-
-**TRT 90-Day Timeline engine (per strategist):**
-- Easy to understand — no clinical jargon, no setup required
-- Clear progression of steps — Day 1 / Week 2 / Month 1 / Month 3 cadence makes the protocol legible at a glance
-- Carries the phrase **"Feel like yourself again"** — this is the identity-loss hook embedded in the timeline structure
-- Identity loss is the *emotional* territory: men describe declining drive, presence, and identity before they describe symptoms
-- The timeline + identity-loss combination is the engine — not the timeline alone, not the phrase alone
-
-**Implication for brief design:** Future TRT variations should preserve all three — (1) the legibility of a step progression, (2) the "feel like yourself again" or equivalent identity-loss phrase, and (3) the explicit time markers that make the cadence concrete.
-
-**Batch direction (strategist):** 15-ad batch, mix of images and videos, prioritize what has historically given good results (good spend + cost per purchase). Find the winners and brief them — logic lives in the vault (T002/T003/T004 briefs + scripts), and Gemini analysis can run on the videos.
-
----
-
-### Pending Strategist Input (Ads Analysis Follow-up)
-
-> Strategist mentioned more notes to share on the ads analysis. Hold Batch Plan drafting until those notes are captured here.
-
-- [ ] Strategist's L14 reads and decisions — to be added in next pass.
-- [x] ~~Confirmation: is `2024_12_PR - 4_G1_MEN` a CORE or TRT creative?~~ → **TRT** (confirmed via primary text). Update L14 analysis buckets.
-
----
-
-### Carry-Forward Insights from T004
-
-- **Three conversion components confirmed by T004 data:** TRT angle + Identity Loss frame + Tony Robbins authority. Every concept in this batch should hit at least two of the three.
-- **Loss-aversion > curiosity hooks** in TRT. ("Don't skip this step" at ROAS 9.30 vs. "if your energy sucks" at ROAS 0.29.)
-- **Identity loss language** is the copy territory, not just the outcome. "I don't feel like myself" / golden-era references / "I stopped recognizing myself" — pull from TRT Reddit research.
-- **Native format (Reddit, Tweet) is a TRT play only** — didn't show up in CORE top 10 L14.
-- **CORE has a dead-creative problem (60%)** vs. TRT's healthier 11% dead rate. Plan CORE test slots accordingly — expect higher kill rate.
-- **Tony Robbins SALE framing is dead in TRT** (no current TRT "SALE" or urgency Tony variant). Sale/promo is a CORE-only frame.
+> **Hook = scroll-stopper + intrigue.** The body sells Lifeforce. The hook doesn't need product specificity — it needs to open a gap the viewer can't scroll past. Broad questions like "How long do you want to live?" work as the opening beat if they're bridged to Lifeforce's specific answer in the body.
+>
+> **CORE hook territory to develop:** The "longevity philosophy" soundbites need bridges. Strongest directions:
+> - "How long can you actually feel young?" → bridge to healthspan vs lifespan → Lifeforce's quarterly biomarker monitoring
+> - "What's your biological age?" → bridge to "your license says 43, your biomarkers might say 58" → Lifeforce measures and tracks it
+> - "How do YOU keep track of your health data?" → bridge to fragmentation problem → Lifeforce as the integrated platform
+> - "If you eat healthy and workout but don't see progress" → bridge to hidden deficiencies → Lifeforce testing 50+ markers
+>
+> **TRT hooks are strong out of the gate.** The counter-narrative territory ("TRT isn't magic") is differentiated from every other TRT ad in feed. The plateau and monitoring hooks map directly to Lifeforce's quarterly-testing engine.
 
 ---
 
 ## Batch Setup
 
-**Product:** [TBD — will be informed by strategist's L14 reads]
+**Product:** Lifeforce (CORE + TRT)
 **Product page:** [mylifeforce.com](https://mylifeforce.com)
 **Platform:** Meta
-**Personas:** [TBD — carry-forward from T004 or refit based on L14 audience split]
-
-> Existing T004 personas:
-> 1. The Disciplined Underperformer (30-45)
-> 2. The Suboptimal Dad (35-50)
-> 3. The Longevity Optimizer (45-60)
-> 4. Core (all male) — broader Lifeforce positioning
-
-**Concepts:** [TBD]
+**Format mix:** 9 image / 6 video
+**Product split:** 10 TRT / 5 CORE
+**Hooks per concept:** 3 (A/B/C variants) × 15 concepts = 45 hooks total
+**AI avatar constraint:** No AI-generated avatars claiming to be clients. Video concepts use b-roll + VO or Tony A-roll — no AI-narrator faces.
 
 ---
 
-## Batch Plan
+## Persona Allocation
 
-**15 ads total: 11 images, 4 videos. TRT-heavy (9 TRT / 5 CORE / 1 Quarterly-crossing).**
+> Declare the split before the Batch Plan. Justification grounded in Persona Performance (test log) + Persona Summary gap analysis.
 
-| # | Code | Concept | Product | Format | Source Archetype | Notes |
-|---|---|---|:---:|:---:|---|---|
-| T1 | TRT | 90 Day Timeline — new identity-loss angle | TRT | Image | TRT 90 Day Timeline | Same infographic structure, new "yourself again" emotional headline |
-| T2 | TRT | 90 Day Timeline — same structure, new milestone copy | TRT | Image | TRT 90 Day Timeline | Iterates the day-labels (Day 1 / Day 3-10 / Day 10-17 / Day 90) with quarterly-testing mention |
-| T3 | TRT | 90 Day Timeline → VIDEO | TRT | Video | TRT 90 Day Timeline (image) | Bring the static to life with motion; same milestone cards animating in |
-| T4 | TRT | Reddit native — new post topic | TRT | Image | Reddit T00202 | New personal-narrative post, keep organic voice (NOT sales-funnel structure) |
-| T5 | TRT | Reddit native — new post topic | TRT | Image | Reddit T00202 | Different topic (family/identity vs clinic-frustration), same native execution |
-| T6 | TRT | Tony Frame 2 — new authority quote | TRT | Image | TRT Tony Frame 2 | New Tony quote, same MCU treatment |
-| T7 | TRT | Tweet native — new tweet topic | TRT | Image | Tweet V4 | New crafted tweet, same dark-mode native aesthetic |
-| T8 | TRT | Case Study split-screen (first TRT test of this format) | TRT | Video | CORE Case Study hook2 | Apply the proven CORE split-screen hook format to a TRT story |
-| C1 | CORE | Tony SALE — new Tony quote + Peak Performance | CORE | Image | Tony SALE Peak Performance | Same visionary gaze, new headline, same "$349 → $199" price anchor |
-| C2 | CORE | Tony SALE — new Tony quote + $150 OFF | CORE | Image | Tony SALE Peak Performance | Different $-off offer framing, same Tony visionary treatment |
-| C3 | CORE | Case Study — new protagonist, new specific number | CORE | Video | Case Study hook2 | New personal-medical-dismissal hook, same body structure |
-| C4 | CORE | Case Study — different protagonist + different marker focus | CORE | Video | Case Study hook2 | New identity (e.g., woman, different age), new biomarker focus (e.g., cortisol, vitamin D) |
-| C5 | CORE | Sale Top Performer Edit — new lifestyle scene | CORE | Image | Sale Top Perf Edit | New male subject + scene, same "$599 → $199" strikethrough, same premium palette |
-| Q1 | Cross | CORE "$199 + Quarterly Check-ins" — integrating new differentiator | CORE | Image | New angle (uses Tony SALE visual grammar) | "Peak Performance" + quarterly-testing frame stacked |
-| Q2 | Cross | TRT Reddit — "Tested quarterly, not yearly" | TRT | Image | Reddit format + differentiator | New native post about why annual testing misses drift |
+| Persona | Allocation % | Concepts | Justification |
+|---|---|---|---|
+| Disciplined Underperformer (30-45) | ~35% | 6 | TRT counter-narrative + plateau hooks map here. CORE hidden deficiency + data fragmentation also this persona. |
+| Longevity Optimizer (45-60) | ~30% | 5 | CORE healthspan + biological age. TRT over-40 reality check. Tony authority frame. |
+| Suboptimal Dad (35-50) | ~25% | 3 | Body composition hooks (face, belly, pool). Identity loss. Partner perspective. |
+| Cross-persona / Broad | ~10% | 1 | Quarterly monitoring differentiator — applies to all three. |
 
-### Product-line balance notes
+---
 
-- **TRT carries 9 of 15 concepts** because: (a) TRT images convert reliably (55% of L14 TRT images have 3+ purchases), (b) TRT video is high-risk (0 of 4 L14 TRT videos underperform), (c) the new quarterly differentiator has to be tested in both product lines via TRT native format.
-- **CORE is high-risk per concept (60% dead in L14)** so test slots are smaller and deliberately mixed: 3 images + 2 videos. The 2 videos use the proven Case Study hook2 format; the 3 images use the 3 proven static archetypes (Tony SALE visionary, Tony SALE with offer, Sale Top Performer lifestyle).
-- **Quadratically-testing concepts get 2 of 15 slots** (Q1, Q2) because the differentiator is unproven at scale — don't over-index on it, but do test it in both product lines.
+## Batch Plan — 15 Concepts
 
-### Brief-to-Script handoff
+| # | Code | Territory | Persona | Format | L14 Engine | Hook Direction |
+|---|---|---|---|---|---|---|
+| **T1** | TRT | TRT isn't a magic pill — counter-narrative | Disciplined Underperformer | **Image** — Reddit or Tweet native | Reddit T00202 ($537 CPA) | "Half the internet treats TRT like cheating, the other half like a magic pill — both are wrong" + 2 variants |
+| **T2** | TRT | TRT plateau — still broken despite being on TRT | Disciplined Underperformer | **Image** — 90-Day Timeline variation | 90-Day Timeline (21 purch) | "I was on TRT for a year and still felt horrible" + plateau/quarterly-monitoring variants |
+| **T3** | TRT | Body composition — physical signs of hormone imbalance | Suboptimal Dad | **Image** — 90-Day Timeline or Tony Frame | Tony Frame 2 ($442 CPA) | "If you're a man with puffy face, a double chin and a beer belly, that's your sign to get your hormones in check NOW" + "If you want to get rid of your man boobs" + "If you want to stop sucking your belly at the pool" |
+| **T4** | TRT | What nobody tells you about starting TRT | Disciplined Underperformer | **Video** — b-roll + VO + on-screen captions | New (b-roll split-screen, no avatar) | On-screen: "STARTING TRT: WHAT YOUR BODY ACTUALLY DOES IN THE FIRST FEW MONTHS" / VO: "Here is something men aren't warned about when they start TRT: your body is going to spazz for a while" + 2 variants |
+| **T5** | TRT | Over 40/45 — TRT reality check | Longevity Optimizer | **Image** — Reddit native | Reddit T00202 | "If you're over 40, TRT CAN help you feel like 25 but it's not a magic bullet" + 2 variants |
+| **T6** | TRT | Quarterly monitoring for TRT | Cross-persona | **Image** — Tweet native or Tony Frame | Tweet V4 ($556 CPA) | "Most TRT clinics hand you a vial and wish you luck. Here's what actually needs to happen in your first 90 days" + 2 variants |
+| **T7** | TRT | Expectation vs reality — what TRT actually does | Disciplined Underperformer | **Image** — 90-Day Timeline | 90-Day Timeline | "I spent years trying to transform my body before I tried peptides or TRT — and that matters" + 2 variants |
+| **T8** | TRT | Identity loss → recovery | Suboptimal Dad | **Video** — Tony A-roll + AI VO + b-roll | Tony authority frame | "Feel like yourself again" emotional territory — identity loss, not symptom checklist + 2 variants |
+| **T9** | TRT | The protocol problem — cookie-cutter vs personalized | Disciplined Underperformer | **Image** — Reddit native | Reddit T00202 | "You can be on TRT for years and still feel fat and depressed if you don't pair it with the right..." + 2 variants |
+| **T10** | TRT | The 3 changes your family notices first | Suboptimal Dad | **Video** — b-roll + VO | New territory | Third-person behavioral observation: "The 3 changes your family notices first when your hormones are optimized" — voiced as narrator, not partner + 2 variants |
+| **C1** | CORE | Healthspan — how long can you actually feel young | Longevity Optimizer | **Image** — Tony SALE + offer | Tony SALE Peak Performance (12 purch, 0.32 ROAS) | "How long can you actually feel young?" + "How long do you want to live?" + "How long can you live well?" |
+| **C2** | CORE | Biological age — what's your number | Longevity Optimizer | **Image** — Tony SALE + offer | Tony SALE Peak Performance (12 purch, 0.32 ROAS) | "What's your biological age?" + "Your personal aging markers can deeply impact how fast you decline — and you're probably not testing half of them" + "There's a difference between aging and declining — most guys are doing the second one without knowing it" |
+| **C3** | CORE | Hidden deficiency — training blind | Disciplined Underperformer | **Video** — b-roll + VO (Case Study architecture, no avatar) | Case Study hook2 ($408 CPA) | "If you eat healthy and workout but don't see progress..." + "You're taking 8 supplements — do you actually know which ones you need?" + 3rd variant |
+| **C4** | CORE | Data fragmentation — nobody's tracking right | Longevity Optimizer | **Video** — b-roll + VO + on-screen dashboard visuals | New territory, Case Study architecture | "How do YOU keep track of your health data?" + "You should be testing these markers every 90 days" + 3rd variant |
+| **C5** | CORE | Biomarkers shift faster than you think — quarterly tracks the drift | Longevity Optimizer | **Video** — b-roll + VO or Tony A-roll hybrid | New territory | "Your biomarkers can shift significantly in 90 days. Here's why testing once a year leaves a blind spot" + 2 variants |
 
-Each brief below contains the Brief Name, Persona, Source Archetype (with L14 Motion link), Engine (what made the source work), Gemini evidence (anatomy extracted), Variation Target (what is new), Visual Direction, References, Constraints. The T005 Scripts doc expands each into a 4-column breakdown.
+### Format split summary
+
+| | Images | Videos |
+|---|---|---|
+| TRT | 7 (T1, T2, T3, T5, T6, T7, T9) | 3 (T4, T8, T10) |
+| CORE | 2 (C1, C2) | 3 (C3, C4, C5) |
+| **Total** | **9** | **6** |
+
+---
+
+## Concept Territory Data — VoC & Proof Points for Gemini
+
+> Each concept territory below. Hook writers pull from this — real customer language, brand stats, competitor complaints. **Do not fabricate.** Everything below traces to a source file.
+
+### T1 — TRT Isn't a Magic Pill
+
+**VoC language (from TRT VoC Research, r/trt):**
+- "200mg puts most men above normal range. TRT clinics are mostly a scam imo targeted at men who don't need it" — skeptic perspective
+- "In the vast majority of cases, testosterone doses prescribed by US clinics are not actually testosterone replacement" — on overprescribing
+- "TRT gave me the ability to put the work in and become lean and strong, eat right and train hard. But it's not magic." — strategist hook
+
+**Brand proof:** Lifeforce doesn't cookie-cut — 50+ biomarkers, quarterly monitoring, clinician adjusts protocol based on YOUR data. Not 200mg/week for everyone.
+
+**Competitor ammo:** TRT Nation, Hone Health complaints — "just gave me a vial," "no one looked at my other markers."
+
+---
+
+### T2 — TRT Plateau
+
+**VoC language (from TRT VoC Research):**
+- "Coming off TRT after 20 months... started at 19... ZERO libido, no morning wood, couldn't maintain an erection, overwhelmed with depression and anxiety"
+- "My experience coming off TRT with no PCT after 13 months... I just wasn't feeling great at either dose"
+- "There's so many guys over 40 who start TRT and feel great for 3 months but then plateau" — strategist hook
+
+**Brand proof:** Quarterly testing catches what annual misses. Protocol adjustments based on 50+ biomarkers, not just T levels. 85% of members report better quality of life in 3 months.
+
+**Key stat:** 80% of members improve their Lifescore within 12 months (Brand Context).
+
+---
+
+### T3 — Body Composition
+
+**VoC language (from TRT VoC Research):**
+- "Weight gain despite diet/exercise compliance"
+- "Muscle loss / difficulty building muscle despite training"
+- "My body doesn't respond to training anymore" — identity threat for active men
+- "Low-T saggy face and beer belly" — strategist hook
+
+**Brand proof:** Hormone optimization isn't just about T — it's the full panel. Thyroid, cortisol, metabolic markers all affect body composition. Lifeforce tests everything.
+
+---
+
+### T4 — What Nobody Tells You About Starting TRT
+
+**VoC language (from TRT VoC Research):**
+- "200mg every 3 weeks is going to get a large spike that will cause side effects and then the medicine will decay to almost nothing" — on bad protocols
+- "Please be careful using/listening to places like TRT Nation. After using TRT Nation for 3 weeks, my testosterone has dropped from 708 to only 72!!" — warning post
+- Protocol confusion: inject once vs twice weekly? SubQ vs IM? AI needed? HCG for fertility?
+
+**Brand proof:** Lifeforce clinician monitors 50+ biomarkers quarterly. Adjusts protocol based on data, not guesswork. Side effect management built into the model.
+
+**Temporal discounting (compliance):** Mood/drive: 3-7 days. Energy/libido: weeks 2-3. Body composition: 6-7 weeks. (Tony Clip 3, 05:15-05:27)
+
+---
+
+### T5 — Over 40/45 TRT Reality Check
+
+**VoC language (from TRT VoC Research):**
+- "I'm 35 years old and just got my labs back that showed my testosterone was at 308"
+- "My levels were similar to people in their 50s and 60s and I am 29"
+- "32/M. Bloods show total test 364 ng/dl and free test 8.79 ng/dl. Had 3 separate bloods done. Been to 2 primary doctors and 2 urologists. They all tell me I'm in range."
+
+**Brand proof:** Reference ranges designed for disease detection, not optimization. Normal (264 ng/dL) ≠ Optimal (600-900+). Lifeforce optimizes to optimal, not "in range."
+
+---
+
+### T6 — Quarterly Monitoring for TRT
+
+**VoC language (from TRT VoC Research):**
+- "Most TRT clinics give you a needle and wish you luck" — strategist direction
+- "Stop Googling your dosage at 2am. Get a clinician who adjusts your protocol based on your actual bloodwork, every 90 days."
+- Online clinic complaints: no comprehensive monitoring, cookie-cutter protocols, no lifestyle guidance
+
+**Brand proof:** Lifeforce = quarterly bloodwork + clinician consult + coaching. Not just a prescription — a platform.
+
+---
+
+### T7 — Expectation vs Reality
+
+**VoC language (from TRT VoC Research):**
+- "TRT gave me the ability to put the work in and become lean and strong... But it's not magic" — strategist hook
+- "I spent years trying to transform my body before I tried peptides or TRT and that matters because it's not a magic pill" — strategist hook
+- Success story language: "like a fog has lifted," "feel like myself again," "energy I haven't had in years"
+
+**Brand proof:** TRT works — but it's one piece. Lifeforce addresses the full picture: hormones, supplements, lifestyle, quarterly adjustments.
+
+---
+
+### T8 — Identity Loss → Recovery
+
+**VoC language (from TRT VoC Research + TRT & Relationships):**
+- "Does anyone else feel like they're just waking up to find out that you've been body snatched for the last few years and some limp dick asshole did everything possible to ruin your marriage while you were gone?" — 34M, T at 123 ng/dL
+- "I just want to be myself again. I want to wake up early, train, kick ass at work, come home and work on my house and hobbies, play with my kids, and love on my wife." — 36M, married with 3 kids
+- "Became arsehole and really didn't care much for life or anyone in it. Did TRT. Within two weeks, became who they used to be."
+- "80% of the time I feel like I'm swimming through mud"
+- "Nothing makes me happy or cheers me up"
+
+**Key phrases to mirror:** "feel like myself again" / "I don't recognize myself" / "the man I used to be" / "fog has lifted"
+
+**Brand proof:** Tony's language: "Your body isn't broken, but it's not maximizing." Lifeforce measures what's off and gives you a clinician to fix it.
+
+---
+
+### T9 — The Protocol Problem
+
+**VoC language (from TRT VoC Research):**
+- Cookie-cutter complaints: "200mg/week for everyone regardless of needs"
+- Protocol confusion: injection frequency, AI, HCG, blood timing — men drowning in conflicting Reddit advice
+- "95% of PCPs want nothing to do with a controlled substance if you're in range. They see it as a liability."
+
+**Brand proof:** Lifeforce clinicians spend 45 minutes reviewing YOUR data. Protocol adjusted quarterly based on YOUR biomarkers. Not a template.
+
+---
+
+### T10 — Partner Perspective
+
+**VoC language (from TRT & Relationships Research):**
+- "My partner (35M) has been on TRT for 2 months and waiting for things to get better is killing me. He still doesn't want to have sex and it's killing me." — 35F
+- "He despises having blood drawn, but he did it anyway because the more he researched symptoms, the more he saw that this could be part of his story. And he knew how much it mattered to me." — Wife of 32M
+- "My husband just found out his is 57 ng/dL. He has felt awful lately. I am relieved to know there is an explanation." — Wife posting
+- "My wife was asking the endocrinologist if my low testosterone could be responsible for why I was so lethargic and depressed... The Endo said 'of course yes! All of that.'" — Man describing wife's advocacy
+
+**Note:** ~25% of relationship-relevant evidence involves the partner initiating the conversation.
+
+---
+
+### C1 — Healthspan
+
+**VoC language (from Review Analysis):**
+- "My energy is higher, my body is stronger, my mindset is sharper. At 59, I genuinely feel better than I did twenty years ago" — Larry Zydek, 5★
+- "I have lost 30 lbs, my cholesterol dropped into healthy range, my A1C normalized, biological age dropped from 55 to 33" — Sara Lingenfelter, 5★
+
+**Brand proof:** 85% of members report better quality of life in 3 months. Quarterly testing catches drift before it becomes decline. "Adding life to your years" — not just lifespan, healthspan.
+
+**Competitor gap:** Function Health / InsideTracker give you data but no doctor to interpret it. Lifeforce gives you data + clinician + plan.
+
+---
+
+### C2 — Biological Age
+
+**VoC language (from Review Analysis):**
+- "My biological age dropped from 55 to 33 (I am 44)" — Sara Lingenfelter, 5★ — THIS IS THE FLAGSHIP QUOTE
+- "Discovered I had hormone issues that I likely was suffering from for years and my PC never addressed" — Stephen, 5★
+- "The detailed review of my biomarkers keeps me in check and keeps me focused" — S P Roma, 5★
+
+**Brand proof:** Lifescore algorithm measures quality of life, risk of dying early, speed of aging. 80% of members improve Lifescore within 12 months.
+
+---
+
+### C3 — Hidden Deficiency
+
+**VoC language (from Review Analysis + Brand Context):**
+- "More thorough than my PCP" — repeated across 60+ reviews
+- "More in-depth than my primary care has ever gone"
+- Members discovering health issues their PCP never tested for: hormone imbalances, vitamin deficiencies, inflammation markers
+
+**Brand proof:** 50+ biomarkers vs ~10 in a standard physical. Vitamin D is one of 40+ markers your doctor isn't checking. Lifeforce tests all of them, every 90 days.
+
+**Competitor gap:** "I have no idea what to do next" — Function Health user. Data without a doctor is noise.
+
+---
+
+### C4 — Data Fragmentation
+
+**VoC language (from Brand Context + Review Analysis):**
+- "Because they come to my house I actually do it" — on at-home blood draws
+- "The quarterly retesting keeps me accountable" — S P Roma, 5★
+- Fragmented health data: Apple Watch, yearly physical, old bloodwork — no integration, no clinician connecting the dots
+
+**Brand proof:** One dashboard. 50+ markers. Updated quarterly. A clinician who knows your history. Not fragmented — integrated.
+
+**Competitor gap:** InsideTracker gives recommendations that are generic and identical across users ("Personalized is a lie" — Trustpilot complaint). Lifeforce recommendations come from a real clinician reviewing YOUR data.
+
+---
+
+### C5 — What Yearly Testing Misses
+
+**VoC language (from Review Analysis + Competitor Reviews):**
+- "Discovered I had hormone issues that I likely was suffering from for years and my PC never addressed" — Stephen, 5★
+- "Felt heard for the first time" — especially women with hormone complaints (60+ reviews on clinician quality)
+
+**Brand proof:** Quarterly testing = 4x the data points of yearly. Catch shifts before they become problems. "Not frequent enough to fix everything — frequent enough to catch drift before it becomes a problem." (Compliance guardrail.)
+
+**Competitor gap:** Function Health follow-up tests only cover 25% of the original biomarkers. "Lifeforce tests 50+ biomarkers EVERY quarter. Not 25% on the follow-up. Every test, every time."
 
 ---
 
 ## Concept Validation
 
-> [TBD — runs after Batch Plan is confirmed. Each concept against 7-test quality bar, then differentiation rule.]
+> Runs after Batch Plan is confirmed. Each concept passes the 7 tests individually; differentiation rule is a batch-level cross-check.
+
+[TBD]
 
 ---
 
@@ -160,6 +331,8 @@ Each brief below contains the Brief Name, Persona, Source Archetype (with L14 Mo
 
 ### New T005 Rules (from Gemini/vision analysis of L14)
 
+- **Lifeforce naming convention (client request):** All concept Names must follow `Reach_{ProductLine}_{Hook}_{Concept}_{Size}` — e.g. `Reach_TRT_You can't discipline_1 in 3 Men Tweet_4x5` or `Reach_Core_Within Range_Women 50+ Hormone_9x16`. Product line = `TRT` or `Core`. Size = aspect ratio (`4x5`, `9x16`, `1x1`). Drops the standard `Reach Digital_<Brand>_<Concept>_NN_T<batch>` format — applies to Lifeforce only.
+
 - **Split-screen hook rule (Case Study video format):** The split-screen opening (LEFT protagonist at laptop + RIGHT blue-gloved hands on lab form) is **mandatory** for the Case Study format. It creates the visual tension between protagonist and medical result in the same frame — this is what made hook2 convert at $408 CPA while an IDENTICAL video with an academic-stat hook died at 0 purchases. The split is not a stylistic preference; it's the engine. Any Case Study variation that drops the split will likely underperform.
 - **First-person narrative mandatory (Case Study):** The voiceover must remain in first-person throughout ("I found," "my clinician," "three months later I was at 780"). No third-person, no academic framing, no explainer tone. The empathy comes from the narrator's personal frustration, not the medical facts.
 - **Specific T/marker number in the hook (Case Study + TRT):** "sitting at 380" format, not generic "low T." The specific number stops the scroll because it's relatable — viewers see their own number.
@@ -168,20 +341,20 @@ Each brief below contains the Brief Name, Persona, Source Archetype (with L14 Mo
 - **Don't use perfect Problem-Problem-Problem-Solution structure in Reddit posts:** That's why T00203 died while its twin T00202 converted at $537 CPA. Real Reddit narratives have texture, tangents, small personal details (kid's soccer game, weird supplement tried). A too-perfect sales-funnel structure triggers the "shill factor" in r/trt.
 - **No emojis in Reddit/Tweet native body copy:** Organic Reddit posts in this register don't use them. T00203's dead hook used 😟 — the emoji signals explainer tone, not user voice.
 - **No brand language in Reddit narrator voice:** "Hormone optimization platform" belongs in brand copy, not narrator voice. Narrator uses colloquial language ("the guys at Lifeforce," "Lifeforce tested my blood").
-- **Quarterly testing framing guardrail:** Don't position quarterly testing as "frequent enough to fix everything" — frame as "frequent enough to catch drift before it becomes a problem." Avoids medical over-promise. (Strategist compliance guardrail from Raw Notes.)
+- **Quarterly testing framing guardrail:** Don't position quarterly testing as "frequent enough to fix everything" — frame as "frequent enough to catch drift before it becomes a problem." Avoids medical over-promise. (Strategist compliance guardrail.)
 - **CORE/TRT split — Tony's role differs:** Tony in TRT = authority quote (elevation frame). Tony in CORE = SALE + offer framing. Don't mix them. Tony + SALE energy is dead in TRT. Tony as authority-only is untested at scale in CORE.
 
 ---
 
 ## Dead Angles
 
-*(Carry-forward from T004 — to be re-evaluated after L14 ads analysis)*
+*(Carry-forward from T004 + new from L14 — to be re-evaluated for T005)*
 
 - **Women's content (perimenopause / mom angle)** — Multiple batches, 0 purchases across all women's creative despite strong CTRs (1.93-2.06%). LP is TRT/male-optimized. Dead until women's LP is built.
 - **Peptides (Sermorelin, GLP-1, nutritional reframe)** — Tested in T003 (3 concepts). No breakout purchase signal. Hold pending T003 results confirmation.
 - **Tony "Sale" energy** — SALE framing with Tony underperformed vs aspirational Access framing. Avoid "ENDS TONIGHT" urgency paired with Tony. His frame is elevation, not discount.
 - **CORE "Cost Breakdown" angle** (new from L14) — Tony Robbins Cost Breakdown V1 and V2 both zero-purchase in L14 ($3,444 total dead). Stop testing this frame in CORE.
-- **CORE "LF vs. PCP" comparison** (new from L14) — $1,018 spent, 0 purchases, low CTR (0.66%). The static version is dead; the T004 video test (Concept 14) should be reviewed for whether the comparison has any video life.
+- **CORE "LF vs. PCP" comparison** (new from L14) — $1,018 spent, 0 purchases, low CTR (0.66%). The static version is dead.
 - **CORE "BOF Sale - Still thinking"** (new from L14) — $777 spent, 0 purchases, 0.78% CTR. Sale/offer-first BOF framing is dead in CORE.
 - **CORE "Us vs Them $1.37"** (new from L14) — $943 spent, 0 purchases despite 1.17% CTR. The $1.37 anchor worked as a T003 concept but the static is now dead; revisit only with a different visual treatment.
 
@@ -197,9 +370,10 @@ Each brief below contains the Brief Name, Persona, Source Archetype (with L14 Mo
 
 - `Lifeforce/00 Context/Brand Context - Lifeforce.md`
 - `Lifeforce/00 Context/Persona Context - Lifeforce.md`
+- `Lifeforce/00 Context/Product Context - Supplements.md`
 - `Lifeforce/00 Context/Reddit Research Sprints/TRT Voice of Customer Research.md`
 - `Lifeforce/00 Assets/A-Roll - Tony Robbins.md`
-- `Lifeforce/01 Ads Analysis/[L14 T005 Top Spenders Analysis - TBD].md` *(to be written next)*
+- `Lifeforce/01 Ads Analysis/2026-06-11 Top Spenders Analysis - T005.md`
 - `Lifeforce/T004 Working Document.md` *(for carry-forward context)*
 - `00 Global/Criteria/Video Script Criteria.md`
 - `00 Global/Criteria/Universal Copy Rules.md`

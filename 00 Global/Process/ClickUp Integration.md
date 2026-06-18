@@ -37,6 +37,7 @@ Every brand has ONE Creative Briefs list. Both static briefs and video scripts a
 | Stellar Sleep | `901113639668` | https://app.clickup.com/36744350/v/l/6-901113639668-1 | Folder `90117903610` in Active Client Space. |
 | Comfort Ortho Wear | `901113706036` | https://app.clickup.com/36744350/v/l/li/901113706036 | Creative Briefs list. Both briefs and scripts go here. |
 | Stepful | `901113894694` | https://app.clickup.com/36744350/v/l/6-901113894694-1 | Folder `90118025914` in Active Client Space. |
+| Oral Only | `901113119185` | https://app.clickup.com/36744350/v/l/6-901113119185-1 | Folder `90117601127` in Active Client Space. |
 
 **Fallback when a brand isn't in this table OR when a brand has multiple candidate "Creative Briefs" lists:** do not ask before proceeding. Match the brand folder in this vault to the brand space in ClickUp. Find the Creative Briefs list in that space; if multiple exist, pick the one that is **most populated AND most recently active** — that is the live list; the others are dead duplicates from folder copies. After loading, append the brand row to the table above so the next run doesn't need the fallback.
 
@@ -92,7 +93,7 @@ The rules below apply to BOTH static briefs and video scripts. Everything loads 
 - **Default task settings (briefs AND scripts, identical):**
   - Assignees: **current strategist** + Diksha Sharma. Always both. No exceptions unless the strategist explicitly names a different assignee in the request.
   - Priority: normal (unless told otherwise).
-  - Status: `brief approved, in design` for both briefs and scripts. This is the canonical starting status for all creative work in this list.
+  - Status: `ready for design` for both briefs and scripts. This is the canonical starting status for all newly pushed creative work across the updated brand lists.
   - Custom field `Task type`: `Static ads` for image briefs; `Video ads` for video scripts.
 
 ## Footage Requests

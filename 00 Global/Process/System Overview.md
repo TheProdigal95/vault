@@ -6,7 +6,7 @@
 
 ## What This System Is
 
-An AI-assisted creative strategy system built on Hermes Agent + Obsidian. One strategist + Hermes can research, analyze competitors, write scripts, produce briefs, and delegate to designers at the speed of a full creative team. The 8 reach-digital skills (motion-top-spenders, brand-researcher, batch-planner, clickup-load, grab-media, transcribe, script-writer, reach-digital-ops) live under `~/.hermes/profiles/reach-digital/skills/reach-digital/<name>/` and are loaded automatically by the profile.
+An AI-assisted creative strategy system built on Hermes Agent + Obsidian. One strategist + Hermes can research, analyze competitors, write scripts, produce briefs, and delegate to designers at the speed of a full creative team. The reach-digital skills (batch-planner, brand-researcher, brief-writer, clickup-load, critique-orchestrator, grab-media, motion-top-spenders, reach-digital-ops, scoring-evaluator, script-writer, setup, sheets-tracker-sync, transcribe) live under `~/.hermes/profiles/reach-digital/skills/reach-digital/<name>/` and are loaded by the profile/skill system.
 
 Everything lives in markdown. The vault is the single source of truth.
 

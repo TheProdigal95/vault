@@ -61,6 +61,9 @@ Custom commands are documented canonically in `00 Global/Hermes/Commands/` and a
 **Tool paths:** always project-relative and **lowercase** — `node "00 Global/Hermes/tools/grab/grab.js"`. Never hardcode `/opt/homebrew/bin/node` or a `~/`-prefixed vault path, and never use a capital `Tools/` (the on-disk dir is lowercase `tools/`; capital breaks on Linux). Before first use of the Gemini tools on a new machine, ensure `00 Global/Hermes/tools/gemini-api/.env` exists (copy from `.env.example` and add the key) and `node_modules/` is installed (`cd "00 Global/Hermes/tools/gemini-api" && npm install`).
 
 Commands and their triggers:
+- **`/script-writer` / `script-writer` skill** — "write scripts / draft scripts / fix scripts / dispatch writers / hooks / VO / captions." Primary video pipeline: Gemini writes copy, Hermes validates, patches, auto-runs deterministic checks + `critique-orchestrator` before presenting.
+- **`/brief-writer` / `brief-writer` skill** — "write briefs / draft static briefs / image ads / headline variations / design elements." Primary static pipeline: applies shared `script-writer` dispatch contract, Gemini writes copy, `scoring-evaluator` scores, `critique-orchestrator` runs cross-brief QA before presenting.
+- **`/critique-orchestrator` / `critique-orchestrator` skill** — "critique this batch / review scripts or briefs / audit T### / QA." Auto-runs after writer pipelines and can also be invoked directly for category-sweep batch QA and fix-pass routing.
 - **`/transcribe`** — "transcribe this / get the transcript / what does this video say / speech to text / I need the voiceover." Routes MLX (local, free, speech-only) vs Gemini (visual + audio breakdown); single files or batch folders.
 - **`/ad-library`** — "pull their ad library / scrape their ads / what's [brand] running / competitive ad audit." Scrapes Meta Ad Library via Apify, downloads media, optional Gemini analysis; batch mode for 10–20 brands.
 - **`/research-brand`** — full brand research pipeline (Phases 0–7). See **Researching a New Brand** below. Supports `--refresh=ads|reviews|competitors|product|brand|full`.
@@ -101,6 +104,24 @@ If a request maps to a command, invoke the skill. Don't re-cobble the steps.
 
 ---
 
+## Copywriting Gate — Do Not Bypass Skills
+
+Any task that writes, edits, reviews, formats, or dispatches creative copy for `T[###] Scripts.md`, `T[###] Briefs.md`, or `T[###] Creatives.md` must load the relevant Hermes skill before tool use:
+
+- Scripts / video / hooks / VO / captions → `script-writer`
+- Static briefs / image ad copy → `brief-writer` primary skill; it applies the shared `script-writer` copywriting contract
+- Batch critique / QA / fix sweeps → `critique-orchestrator`
+
+Do not send thin delegated prompts like “write complete briefs,” “use T002 format,” or “write 4-column scripts.” The dispatch context must explicitly include required criteria, exact prior-batch template excerpt, brand overrides, Working Document rows, and evidence-return requirements. Do not rely on AGENTS.md being injected into child requests.
+
+**End-to-end automation:** a request to write/run/fix scripts or briefs authorizes the whole pipeline. Do not stop after draft generation and do not ask the strategist to manually call QA. After `script-writer` or `brief-writer` finishes writer dispatch/consolidation, the main session automatically runs deterministic checks, `scoring-evaluator` for statics, `critique-orchestrator` for post-writer sweeps, and fix loops until no blocking issues remain.
+
+The original iCloud vault is not runtime context. Copywriting uses the active duplicate vault and active Hermes skills only; do not inspect iCloud unless the strategist explicitly asks for a port/audit comparison.
+
+Top Spenders Analysis belongs to Working Document / planning. Writers do not independently re-read top spender files during draft generation unless the strategist asks or a Working Document asset/reference must be verified.
+
+---
+
 ## Writing Briefs
 
 **Triggers:** writing/editing/reviewing any static image ad brief — "write the briefs", "draft T00X briefs", "refine this brief", editing References / Image Direction / Design Elements / Designer Note sections, or creating any `T[###] Briefs.md` / `T[###] Creatives.md`.
@@ -113,8 +134,8 @@ If a request maps to a command, invoke the skill. Don't re-cobble the steps.
 - Image Direction = image to generate + compliance only. **No supporting copy, CTAs, or payment logos** (those go in Design Elements). Never specify background color — designers own background.
 - **Image-generation briefs: write primary text once, skip the scoring/revision loop on it** — primary text is not rendered (see Creative Image Ad Criteria).
 - **Every edit follows the criteria — casual fixes included.** No "too small to re-check" exceptions.
-- **Routing:** full drafts and multi-finding fix passes → the **`script-writer` skill** (it writes briefs too; 2–3 briefs per delegated writer, grouped by format, parallel, with the scoring loop). Single-brief targeted edits → edit directly in the main session.
-- **3-tier QA:** delegated writers write + score each brief (via the `scoring-evaluator` skill) and cross-check within group; the main session runs the cross-brief orchestration checks and writes the Batch Critique. See `00 Global/Process/Critique Methodology - Static.md`.
+- **Routing:** full drafts and multi-finding fix passes → the **`brief-writer` skill** as the primary entrypoint, applying the shared **`script-writer` copywriting contract** for Gemini dispatch/prompt completeness (2–3 briefs per delegated writer, grouped by format, parallel, with the scoring loop). Single-brief targeted structural edits can be done directly; creative copy rewrites go back to Gemini.
+- **3-tier QA:** delegated writers write + score each brief (via `scoring-evaluator`) and cross-check within group; then the main session automatically runs `critique-orchestrator` cross-brief sweeps and fix loops before presenting. See `00 Global/Process/Critique Methodology - Static.md`.
 
 ---
 
@@ -130,8 +151,8 @@ If a request maps to a command, invoke the skill. Don't re-cobble the steps.
 - **Source links go in Footage, not References.** Any specific asset in the Visual column needs its source URL in Footage. Never fabricate a URL — surface to the strategist if a cited study can't be located.
 - Captions never repeat VO verbatim — two channels, two messages.
 - **Preserve strategist-drafted hooks** — edit for compliance, don't restructure the VO phrasing (see Video Script Criteria).
-- **Routing:** full drafts and multi-finding fix passes → the **`script-writer` skill** (3 scripts per delegated writer, grouped by structure/persona, parallel). Single-script targeted edits → edit directly.
-- **3-tier QA:** delegated writers run a 19-point checklist (binary pass/fail with evidence) + viewer read (3 read-throughs) + within-group cross-check; the main session validates evidence, runs cross-script + brand-compliance sweeps, and writes the Batch Critique. Rubrics at `00 Global/Video Script Scoring/`. See `00 Global/Process/Critique Methodology - Video.md`.
+- **Routing:** full drafts and multi-finding fix passes → the **`script-writer` skill** (3 scripts per delegated writer, grouped by structure/persona, parallel). Single-script targeted structural edits can be done directly; creative copy rewrites go back to Gemini.
+- **3-tier QA:** delegated writers run a 19-point checklist (binary pass/fail with evidence) + viewer read (3 read-throughs) + within-group cross-check; then the main session automatically runs deterministic SPM/format checks and `critique-orchestrator` cross-script + brand-compliance sweeps before presenting. Rubrics at `00 Global/Video Script Scoring/`. See `00 Global/Process/Critique Methodology - Video.md`.
 
 ---
 

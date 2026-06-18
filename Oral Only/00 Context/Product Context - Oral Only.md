@@ -43,7 +43,26 @@ Per ExcelMale user Day_Dreamer's report (Mar 2026), the actual pharmacy label re
 
 **Forum critique**: Several users (FunkOdyssey, intestinus_sturdius) dispute the DHT-stays-physiologic claim and note that "no-ester testosterone sublingually has not been proven bioavailable" outside the company's own data.
 
-### 2.3 Onboarding Flow (verbatim from plans page)
+### 2.3 Client Intake Product Notes (Rahul Call — 2026-06-16)
+
+> Source: `Client Intake Notes - Rahul Call - 2026-06-16.md`. Client-provided context; verify against compliance/source docs before writing claims.
+
+- Rahul described Nandrogen as liquid/gel-like liposomal testosterone, positioned as a different route than needle-based TRT.
+- Rahul's main segment framing: existing TRT users switching away from injections toward oral/sublingual because of needle burden, fluctuations, estrogen complications, fertility/testicular-shutdown concerns, and other injection-side-effect fears.
+- Claimed benefit vs. pills in the call: higher absorption than a standard pill. Only use if supported by approved sources.
+- Claimed benefit vs. injections in the call: fewer major side-effect patterns associated with injections. Use conservative, sourced language only.
+
+### 2.4 Dr Jaquish Slack Correction — Do Not Invent Generic Symptom Claims
+
+> See `External Slack Feedback - Dr Jaquish Talking Points.md`. Active direction from external Slack feedback, 2026-06-16.
+
+- Do **not** talk about mood swings.
+- Do **not** talk about energy crashes or caffeine-like energy dynamics.
+- Do **not** broaden into generic testosterone symptom claims unless directly supported by Dr Jaquish's teaching/videos.
+- Core source territory to preserve: Dr Jaquish teaches that regular TRT can stop building muscle after ~60 days; fast-acting testosterone/Nandrogen is his proposed alternative; no injections required.
+- Compliance overlay: do **not** turn this into ad claims that say or imply "perpetuity," "benefits don't fade," "works forever," "greatly/significantly diminished side effects," or guaranteed outcome timelines unless the brand provides approved substantiation/language.
+
+### 2.5 Onboarding Flow (verbatim from plans page)
 
 1. **Choose Your Plan** — Monthly / 6mo / 12mo
 2. **Complete Medical Intake** — symptom + history questionnaire
@@ -51,7 +70,7 @@ Per ExcelMale user Day_Dreamer's report (Mar 2026), the actual pharmacy label re
 4. **Talk to a Doctor** — physician reviews labs and builds treatment plan
 5. **Get Your Treatment** — ships free, monthly, discreet
 
-### 2.4 Dosing & Administration
+### 2.6 Dosing & Administration
 
 | | |
 |---|---|
@@ -62,7 +81,24 @@ Per ExcelMale user Day_Dreamer's report (Mar 2026), the actual pharmacy label re
 | Storage | Not disclosed; assume refrigerated after opening per standard for compounded sublinguals |
 | Refills | Monthly subscription, auto-ship |
 
-### 2.5 Pricing Detail
+### 2.7 Pricing Detail
+
+#### Approved Evergreen Acquisition Offer
+
+| Option | Price | Included / Frame |
+|---|---:|---|
+| 1 month | $189/month + lab cost | Baseline entry option |
+| 3 months | $126/month + initial lab cost | "Try 2 months of Oral Only™, get 1 free" |
+
+3-month value stack:
+- $63 savings per month
+- Free doctor consult
+- Free shipping
+- NAD+ free to support the TRT plan
+- Third month free
+- Free lab support
+
+#### Existing Site Pricing Architecture
 
 | Plan | Monthly | Total term | Lab fee | Effective annual cost |
 |---|---|---|---|---|
@@ -159,7 +195,7 @@ These show up in forum discussion but are NOT addressed on the site:
 | Dose frequency | Once daily | Twice daily with fatty meal | Twice daily with fatty meal | Once daily | 2-3× daily |
 | Cost/mo | $139-$189 | ~$80 | ~$80-200 | $150-300 | ~$150-300 |
 | FDA-approved | ❌ Compounded | ✅ | ✅ | ❌ Compounded | ✅ |
-| Hematocrit impact | Claimed lower | Comparable to injectable | Comparable to injectable | Not specified | Comparable to injectable |
+| Hematocrit impact | Claimed lower by brand/founder; **do not use as ad claim without approved substantiation** | Comparable to injectable | Comparable to injectable | Not specified | Comparable to injectable |
 | Liver first-pass | Bypassed (sublingual) | Bypassed (lymphatic) | Bypassed (lymphatic) | Varies | N/A (nasal) |
 | Monitoring | Quarterly labs included | Patient's responsibility | Patient's responsibility | Varies | Varies |
 | Physician access | Direct via TelegraMD | Local Rx required | Local Rx required | Via Maximus | Local Rx required |

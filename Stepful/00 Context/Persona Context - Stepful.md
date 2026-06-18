@@ -4,6 +4,20 @@
 
 ---
 
+## Client Feedback Addendum — June 2026 Audience Mix
+
+The review-derived personas above remain useful, but client feedback adds five explicit audiences that future batches should rotate in so Stepful is not framed as only for moms/single moms.
+
+1. **Pre-med students (18–25)** — Online and part-time format lets them follow along while taking pre-med classes. Completing the clinical externship can strengthen a med school application because it shows hands-on clinical exposure beyond job shadowing.
+2. **Caregivers** — People who have cared for a family member and now want to enter healthcare, but do not have time for years of med school.
+3. **Military spouses** — Strong audience because government tuition coverage can apply.
+4. **Amazon Flex / Amazon employees** — Strong audience because Amazon can cover tuition.
+5. **Career switchers** — People in dead-end jobs with no benefits who want a practical change into healthcare.
+
+**Creative mix rule:** Moms/single moms are a valid Life-Circumstances segment, but they cannot dominate the batch. Balance against pre-med, caregiver, military spouse, Amazon-funded, and broader career-switcher angles.
+
+---
+
 ## The Affordable Fast-Track Seeker — "I needed certification without wasting years or thousands"
 
 **Audience share:** 22.1% of reviews. Primary persona. Precision: 78%.

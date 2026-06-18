@@ -58,7 +58,7 @@ Full analysis: [[2026-06-10 Top Spenders Analysis - T006]]
 **Platform:** Meta
 **Personas:** Cost-Conscious Seeker (primary), GLP-1 Continuer (secondary)
 **Core archetype:** The person who tried everything, felt like food was always louder than their discipline, and discovered that the problem was never willpower — it was a biology that medicine can help with, and the care plan is genuinely affordable.
-**Strategic spine:** "Your diets, supplements, and willpower failed you. Our payment plans won't." Blame framing + emotional arc + food noise visualization + financial accessibility — all compliant with Elevate's compounded GLP-1 marketing guidelines.
+**Strategic spine:** "Your diets, supplements, and willpower failed you. Medicine won't." Blame framing + emotional arc + food noise visualization + financial accessibility — all compliant with Elevate's compounded GLP-1 marketing guidelines.
 
 ### Compliance guardrails (read before every brief/script)
 
@@ -78,24 +78,25 @@ Full doc: [[Compliance - Marketing Rules]]
 
 ### Allocation reasoning
 
-- **Static-first (~13-15 concepts)** because statics are where this account has conversion proof. The highest-spend converter (Payment Plan AMA, $1,306 / 2 purchases) is static. The most reliable converter (Search Bar, $651 / 3 purchases) is static. Statics are also faster to produce in-house — no talent, no shooting, no creator dependencies. The strategic spine of blame framing, food-noise visualization, and search UI mockups all work best in static format.
-- **Video second (~8-11 scripts)** because video is the gap this account needs to close. The only video that converts in the last 4 batches is Shame to Pride Selfie Walk (79% hold, 79% Thruplay, 1 purchase in L14 at $521). It needs volume and new emotional entry points. Insurance Testimonial UGC emerged this window ($2,880, 2 purchases) — a second video signal worth testing. Everything here has to be in formats that don't require cast talent (selfie walk, text-wall overlays, progression timelines).
+- **5 statics total** because we're delegating to the team now, not trying to build a large in-house static test. The 5 should cover the highest-confidence static patterns without spreading the team across too many concepts: blame framing, search/eligibility UI, food-noise visualization, payment plan directness, and emotional arc.
+- **Video remains the larger exploratory side (~8-11 scripts)** because the account still needs a scalable video winner, and the proven container is selfie walk/text-wall/trending audio. No talking heads for this batch because we haven't cast talent and current AI avatars are not realistic enough.
 
-### Statics (13-15)
+### Statics (5 total)
 
-| Track | Count | Container | Why this format | Compliance check |
+| # | Track | Container | Why this format | Compliance check |
 |---|---|---|---|---|
-| Blame framing split screen | 4-5 | Typographic, 2-panel | "This Failed You" is proven (2.29 ROAS). Iterate with new blame targets (diets, supplements, gym memberships, med spa pricing, branded medication cost). The "won't" side is always the payment plan access, never a medical results claim. | ✅ Blame targets are approved pain points (diet cycle fatigue, insurance denial, willpower blame). |
-| Search / quiz UI mockup | 3-4 | Native UI (Google, app store, notes app) | "Am I Eligible?" Search Bar has 3 purchases at $217 CPA — the most statistically reliable converter. New queries ("affordable medical weight loss," "weight loss medication without insurance," "medical weight loss that actually works"). Low creative friction, high processing fluency. | ✅ Eligibility & access framing is approved. |
-| Food noise visualization | 3-4 | Problem-first static (text + image) | City Poster converted at $110 CPA, 4.56 ROAS because it's the only creative that visually depicts the problem (food noise swirling across the face) alongside the solution (Affirm/Klarna, price). Most ads skip problem depiction. Iterate across settings: midnight fridge moment, grocery aisle paralysis, drive-through regret, scrolling food at 2am. | ✅ Food noise is an approved pain point. Pairing with payment logos keeps it access-framed. |
-| Emotional arc statics | 1-2 | Sequential image (NOT paired before/after) | Shame-to-pride arc is proven in video (selfie walk) but hasn't been translated to static. Tell the emotional transformation through sequential captions or layered text cards, not through before-body / after-body photography. | ✅ Emotional milestones are experience-based, not body-claims. Avoid all before/after visual framing. |
+| 1 | Emotional arc | Comic-book 4-vignette story | Translates Shame to Pride into a new sequential visual container: scared/skeptical/ashamed → starts quietly → proud/wants to tell everyone. | ✅ Emotional experience only; no body transformation or before/after body framing. |
+| 2 | Food noise visualization | GrowthPod-style creative image | Iterates City Poster, but as a cleaner metaphorical hero image for Andre: food noise visually crowding the mind + affordability layer. | ✅ Food noise is an approved lived-experience pain point. |
+| 3 | Failed methods / blame frame | Creative image visceral metaphor | Replaces plain split-screen/receipt with someone overwhelmed by receipts, diet books, supplements, apps — the emotional burden of everything that failed. | ✅ Diet cycle fatigue + willpower blame are approved pain points. |
+| 4 | Confession / emotional social proof | Native text message thread | Turns the selfie-walk secrecy→pride arc into a private conversation: "I didn't want anyone to know" → "now I'm sending the link." | ✅ Experience-based testimonial language only. |
+| 5 | Eligibility / access | Clean studio quiz-result pop-up | Iterates the Search Bar winner without repeating search UI: Pixar-adjacent character sees an eligibility result on their phone. | ✅ Eligibility + access framing is approved. |
 
 ### Videos (8-11)
 
 | Track | Count | Container | Why this format | Compliance check |
 |---|---|---|---|---|
 | Selfie walk (new emotional entry points) | 4-5 | Continuous take + text wall + trending IG audio | Proven container (79% hold, 79% Thruplay in T005). Each script enters a different emotion: anger at insurance, disbelief at the price, regret about waiting, skepticism overcome, quiet freedom. Same container, fresh doors. Each script needs a unique IG audio sourced manually. | ✅ Emotions are experience-based. No body claims, no weight numbers, no timeframe promises. |
-| Blame framing via selfie walk | 2-3 | Continuous take + text wall + trending IG audio | "Diets failed you but our payment plans won't" told in the selfie walk format. No talking head — the walking + text wall carries it. The message layer is the same "This Failed You" energy that converts on statics; the delivery is the proven video container. | ✅ Blame framing targets are approved pain points. "Won't" is payment-plan-framed, not results-framed. |
+| Blame framing via selfie walk | 2-3 | Continuous take + text wall + trending IG audio | "Diets failed you but medicine won't" told in the selfie walk format. No talking head — the walking + text wall carries it. The message layer is the same "This Failed You" energy that converts on statics; the delivery is the proven video container. | ✅ Blame framing targets are approved pain points. |
 | Emotional arc progression timeline | 2-3 | Video, sequential emotional milestones | "How I went from ashamed to wanting to tell everyone." Timeline milestones are emotional states (ashamed → hiding → felt a shift → proud → evangelizing), NOT physical results. Each milestone is one sentence + one b-roll beat. The emotional journey IS the proof. | ✅ No body claims, no weight numbers, no time-based promises. Progression is experience-based. |
 
 ### Dead angles (carry-forward)

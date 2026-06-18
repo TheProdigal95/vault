@@ -2,7 +2,13 @@
 
 Load scripts or briefs from a vault markdown file into ClickUp as tasks.
 
-**Binary:** `$HOME/go/bin/clickup-pp-cli` (always call by absolute path)
+**Binary:** `/Users/marce/go/bin/clickup-pp-cli` (always call by absolute path from Hermes; profile `$HOME` points at `~/.hermes/profiles/reach-digital/home`, so `$HOME/go/bin/...` is wrong inside tool runs)
+
+**Hermes load invocation:** prefix load commands with `HOME=/Users/marce` so the Go CLI reads the real macOS config:
+```bash
+HOME=/Users/marce /Users/marce/go/bin/clickup-pp-cli load "Lifeforce/T005 Scripts.md" --dry-run
+HOME=/Users/marce /Users/marce/go/bin/clickup-pp-cli load "Lifeforce/T005 Scripts.md"
+```
 
 **Auth:** The Go CLI reads its token from `~/.config/clickup-pp-cli/config.toml` → `auth_header` (real user home, NOT profile-scoped `$HOME`). You do **NOT** need to set `CLICKUP_API_TOKEN` in your shell — that env var was removed from `~/.zshrc` on 2026-06-10 because a stale value caused red-herring 401s on direct API. To rotate the token:
 ```bash
@@ -64,13 +70,15 @@ $HOME/go/bin/clickup-pp-cli footage-request \
 ## What it does
 
 **`load` command:**
-- Parses all slug lines (`Reach Digital_Brand_Concept_##_T###`) in the file
+- Parses all standard slug lines (`Reach Digital_Brand_Concept_##_T###`) in the file
 - Each slug → one ClickUp task, name = slug, description = content through Close
 - Auto-detects brand from file path → resolves Creative Briefs list ID
 - Auto-detects task type from filename (`Scripts.md` → `Video ads`, anything else → `Static ads`)
 - Sets `Task type` custom field
 - Assigns: current strategist (from `00 Global/Hermes/strategist.json`) + Diksha Sharma
-- Status: `brief approved, in design`
+- Status: `ready for design`
+
+**Lifeforce naming exception:** Lifeforce source docs and ClickUp task names must use the client-specific format `Reach_{TRT|Core}_{Hook}_{Concept}_{Size}` (example: `Reach_TRT_WhatNobodyTellsYou_StartingTRT_9x16`). Do **not** rewrite canonical Lifeforce files to `Reach Digital_...` just to satisfy the Go loader. If the loader cannot parse Lifeforce names, create a temporary loader copy with standard slugs, load from that temp file, then immediately rename the created ClickUp tasks via MCP `clickup_update_task` back to the original Lifeforce names and verify with `clickup_get_task`.
 
 **`footage-request` command:**
 - Creates a single footage request task
@@ -107,6 +115,7 @@ Update the JSON, then re-patch the Go `teamMembers` map (lowercase first + lower
 | Stellar Sleep | 901113639668 |
 | Comfort Ortho Wear | 901113706036 |
 | Lifeforce | — (needs `--list-id`) |
+| Oral Only | 901113119185 |
 
 For brands not in the table, pass `--list-id <id>`. After loading, add the brand to `brandListIDs` in `pm_load.go` and rebuild.
 

@@ -7,6 +7,8 @@ cssclasses:
 
 Working document: [[T001 Working Document]]
 
+> **Safe-zone note for designers:** Keep all CTA, pricing, source/disclaimer text, and key claim copy inside the Meta safe zone. Do not place footer copy at the bottom edge. Salary source/disclaimer copy should appear as small on-screen text, not VO.
+
 ---
 
 ## Ad #1 — CCMA 2-Month Cert Progression (Progression Timeline Carousel)
@@ -49,10 +51,10 @@ Reach Digital_Stepful_Education_CCMA 2-Month Cert Progression_01_T001
   - Month 2: OSHA & HIPAA Certification (your first healthcare credential)
   - Month 4: Phlebotomy practice + externship prep
   - Month 5: Ready to sit for the NHA CCMA exam
-  - Month 6+: Certified Medical Assistant. $44,000/year median salary.
-- **Final slide CTA line:** "$49 to start. Most students qualify for need-based tuition grants. Next class in a few days."
-- **Feature pills (cover slide):** 100% Online | At-Home Clinical Kit | $49 to Start
-- **In-image CTA (final slide):** Start for $49
+  - Month 6+: Certified Medical Assistant. Medical Assistants make a median $44.2K/year.*
+- **Final slide CTA line:** "Secure your spot for $49. Additional tuition payments as low as $163 every two weeks begin after the first week of class. Most students qualify for need-based tuition grants."
+- **Feature pills (cover slide):** 100% Online | At-Home Clinical Kit | Secure Your Spot for $49
+- **In-image CTA (final slide):** Secure Your Spot for $49
 
 ### Diagram Example
 
@@ -71,17 +73,17 @@ Reach Digital_Stepful_Education_CCMA 2-Month Cert Progression_01_T001
 │ Month 5  │ NHA CCMA exam ready                           │
 ├──────────┼───────────────────────────────────────────────┤
 │ Month 6+ │ Certified Medical Assistant                   │
-│          │ [$44K/year median salary]                     │
+│          │ [Median $44.2K/year wage*]                       │
 ├──────────┴───────────────────────────────────────────────┤
 │                   [Stepful wordmark]                     │
 │         Stepful. NHA CCMA exam prep, done in 5 months.  │
-│                   [Start for $49]                        │
+│                   [Secure Your Spot for $49]                        │
 └──────────────────────────────────────────────────────────┘
 ```
 
 ### Mandatory Disclaimer
 
-> Stepful's Medical Assistant program prepares you for the NHA CCMA certification exam. $44,000 median annual salary based on BLS data. Results vary. $49 registration fee. Additional tuition applies. Most students paying out of pocket qualify for need-based grants; eligibility varies. Externship placement support provided; timing typically within 1-3 months and varies by location.
+> Stepful's Medical Assistant program prepares you for the NHA CCMA certification exam. Medical Assistants make a median annual wage of $44.2k. Source: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Median Annual Wage, May 2024. Outcomes and wages vary. $49 registration fee reserves your seat; additional tuition payments as low as $163 every two weeks begin after the first week of class. Most students paying out of pocket qualify for need-based grants; eligibility varies. Externship placement support provided; timing varies by location.
 
 ### Primary Text
 
@@ -89,7 +91,7 @@ I kept going back to the Stepful website for months because I didn't want to get
 
 By month 2, I had my OSHA & HIPAA certification. A real healthcare credential. By month 5, I was ready to sit for the NHA CCMA exam. The at-home clinical kit showed up at my door in week 1, which was the moment it actually felt real.
 
-Swipe to see every milestone. $49 to start. Most students qualify for need-based tuition grants. Next class in a few days.
+Swipe to see every milestone. Secure your spot for $49. Additional tuition payments as low as $163 every two weeks begin after the first week of class. Most students qualify for need-based tuition grants.
 
 ---
 
@@ -132,10 +134,10 @@ Reach Digital_Stepful_Education_CPHT 4-Month Cert Progression_02_T001
   - Month 2: OSHA & HIPAA Certification (your first healthcare credential)
   - Month 3: Pharmacy tech training, medications, dispensing, patient interaction
   - Month 4: Ready to sit for the NHA ExCPT or PTCB CPhT exam
-  - After the program: Externship support + job coaching. $44,000/year median salary.
-- **Final slide CTA line:** "$49 to start. Most students qualify for need-based tuition grants."
-- **Feature pills (cover slide):** 100% Online | 4 Months | $49 to Start
-- **In-image CTA (final slide):** Start for $49
+  - After certification: externship support + job coaching. Pharmacy Technicians make a median $43,460/year.*
+- **Final slide CTA line:** "Secure your spot for $49. Additional tuition payments of $131 every two weeks begin after the first week of class. Most students qualify for need-based tuition grants."
+- **Feature pills (cover slide):** 100% Online | 4 Months | Secure Your Spot for $49
+- **In-image CTA (final slide):** Secure Your Spot for $49
 
 ### Diagram Example
 
@@ -156,17 +158,17 @@ Reach Digital_Stepful_Education_CPHT 4-Month Cert Progression_02_T001
 │ Month 4  │ NHA ExCPT or PTCB CPhT exam ready            │
 ├──────────┼───────────────────────────────────────────────┤
 │ After    │ Externship support + job coaching             │
-│          │ [$44K/year median salary]                     │
+│          │ [Median $43,460/year wage*]                    │
 ├──────────┴───────────────────────────────────────────────┤
 │                   [Stepful wordmark]                     │
 │   Stepful. NHA ExCPT or PTCB CPhT exam prep, 4 months. │
-│                   [Start for $49]                        │
+│                   [Secure Your Spot for $49]                        │
 └──────────────────────────────────────────────────────────┘
 ```
 
 ### Mandatory Disclaimer
 
-> Stepful's Pharmacy Technician program prepares you for the NHA ExCPT or PTCB CPhT certification exam. $44,000 median annual salary based on BLS data. Results vary. $49 registration fee. Additional tuition applies. Most students paying out of pocket qualify for need-based grants; eligibility varies. Externship placement support provided; timing typically within 1-3 months and varies by location.
+> Stepful's Pharmacy Technician program prepares you for the NHA ExCPT or PTCB CPhT certification exam. Pharmacy Technicians make a median annual wage of $43,460. Source: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Median Annual Wage, May 2024. Outcomes and wages vary. $49 registration fee reserves your seat; additional tuition payments of $131 every two weeks begin after the first week of class. Most students paying out of pocket qualify for need-based grants; eligibility varies. Externship placement support provided; timing varies by location.
 
 ### Primary Text
 
@@ -174,7 +176,7 @@ The money I invested in the Stepful Pharmacy Technician program was well worth i
 
 Month 1 I started classes. Month 2 I had my OSHA & HIPAA certification, my first healthcare credential. By month 4 I was ready for the national exam.
 
-Swipe to see every month. $49 to start. Most students qualify for need-based tuition grants.
+Swipe to see every month. Secure your spot for $49. Additional tuition payments of $131 every two weeks begin after the first week of class. Most students qualify for need-based tuition grants.
 
 ---
 
@@ -202,25 +204,25 @@ Reach Digital_Stepful_Side by Side_CCMA Stepping Stone Already Earning_03_T001
 - Compliance: No person shown. Pure typography and layout infographic. No talent.
 
 ### Designer Note
-- Left column (Traditional Route) reads visually muted, cooler tone. Right column (Stepful) warmer with pink highlight blocks on "5-month" and "$49 to start." Green pill on "$44,000/year."
+- Left column (Traditional Route) reads visually muted, cooler tone. Right column (Stepful) warmer with pink highlight blocks on "5-month" and "secure your spot for $49." Green pill on "median $44.2K/year."
 - Both columns sit inside a single card with a clear vertical dividing line, not two separate boxes.
 
 ### Headline Variations
 
-**A.** While new grads send resumes, I'm already working in healthcare. Here's how I broke in.
+**A.** While new grads send resumes, I'm already building healthcare experience. Here's how I broke in.
 
-**B.** I didn't wait 2 years to break into healthcare. I started for $49.
+**B.** I didn't wait 2 years to break into healthcare. I secured my spot for $49.
 
-**C.** While nursing students are still in class, Stepful grads are already working and earning.
+**C.** While nursing students are still in class, Stepful grads can already be building healthcare experience.
 
 ### Design Elements
 - **Subheading:** Stepful. The faster path into healthcare.
 - **Comparison table headers:** Traditional Route | Stepful
 - **Traditional Route column:** 2+ year degree program. $20,000+ in tuition. Still waiting to start working.
-- **Stepful column:** 5-month online program. $49 to start. Already earning $44,000/year.
+- **Stepful column:** 5-month online program. Secure your spot for $49. Median MA wage: $44.2K/year.*
 - **Below comparison:** Most students qualify for need-based tuition grants.
 - **Career ladder note:** MA is just the beginning. Move up while already employed.
-- **In-image CTA:** Start for $49
+- **In-image CTA:** Secure Your Spot for $49
 - **Scarcity line:** Next class in a few days.
 
 ### Diagram Example
@@ -233,27 +235,27 @@ Reach Digital_Stepful_Side by Side_CCMA Stepping Stone Already Earning_03_T001
 │   Traditional Route    │   Stepful                           │
 ├────────────────────────┼─────────────────────────────────────┤
 │   2+ year degree       │   5-month online program            │
-│   $20,000+ in tuition  │   $49 to start                      │
-│   Still waiting        │   Already earning [$44K/year]       │
+│   $20,000+ in tuition  │   Secure your spot for $49           │
+│   Still waiting        │   Median MA wage: [$44.2K/year]*     │
 ├────────────────────────┴─────────────────────────────────────┤
 │   Most students qualify for need-based tuition grants.       │
 │   MA is just the beginning. Move up while already employed.  │
 ├──────────────────────────────────────────────────────────────┤
 │                  [Stepful wordmark]                          │
 │              Stepful. The faster path into healthcare.       │
-│         [Start for $49]    Next class in a few days.        │
+│         [Secure Your Spot for $49]    Next class in a few days.        │
 └──────────────────────────────────────────────────────────────┘
 ```
 
 ### Mandatory Disclaimer
 
-> Stepful's Medical Assistant program prepares you for the NHA CCMA certification exam. $44,000 median annual salary based on BLS data. Results vary. $49 registration fee. Additional tuition applies. Traditional program costs are approximate and vary by institution. Most students paying out of pocket qualify for need-based grants; eligibility varies.
+> Stepful's Medical Assistant program prepares you for the NHA CCMA certification exam. Medical Assistants make a median annual wage of $44.2k. Source: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Median Annual Wage, May 2024. Outcomes and wages vary. $49 registration fee reserves your seat; additional tuition payments as low as $163 every two weeks begin after the first week of class. Traditional program costs are approximate and vary by institution. Most students paying out of pocket qualify for need-based grants; eligibility varies.
 
 ### Primary Text
 
 I was able to get out of fast food and into the medical industry. What I didn't expect was how fast it would happen.
 
-While people I knew were spending two years and $20,000 or more on degrees, I completed the 5-month online program, started my externship, and accepted a full-time job offer. The program prepares you for the NHA CCMA exam. It is not a 2-year commitment. It started for $49.
+While people I knew were spending two years and $20,000 or more on degrees, I completed the 5-month online program, prepared for the NHA CCMA exam, and got support pursuing clinical hours and job opportunities. The program prepares you for the NHA CCMA exam. It is not a 2-year commitment. I secured my spot for $49; additional tuition applies.
 
 Most students qualify for need-based tuition grants. Next class in a few days.
 
@@ -284,19 +286,19 @@ Reach Digital_Stepful_Side by Side_CPHT Stepping Stone Earn While You Climb_04_T
 
 ### Headline Variations
 - A: I started as a pharmacy tech. Now I'm moving up, while getting paid.
-- B: $49 to start a pharmacy tech career. Then climb as high as you want.
+- B: Secure your pharmacy tech seat for $49. Then build from there.
 - C: You don't have to wait years to work in healthcare. Start in 4 months, move up from there.
 
 ### Design Elements
 - **Column A label:** "❌ Traditional Route"
 - **Column B label:** "✅ Stepful CPHT"
 - **Column A stats:** "2-year program. $15K or more. Still waiting to start."
-- **Column B stats:** "4-month program. $49 to start. Earning $44K/year. Move up while employed."
+- **Column B stats:** "4-month program. Secure your spot for $49. Median pharmacy tech wage: $43,460/year.*"
 - **Career ladder labels:** Pharmacy Tech → Senior Pharmacy Tech → Hospital/Clinic Roles
 - **Grant line:** "Most students qualify for need-based tuition grants."
-- **CTA button:** "Start for $49. Next class in a few days."
-- **Green pill:** "$44K/year median salary" (per BLS data)
-- **Pink highlight blocks:** on "$49 to start" and "4 months"
+- **CTA button:** "Secure Your Spot for $49. Next class in a few days."
+- **Green pill:** "Median $43,460/year wage*"
+- **Pink highlight blocks:** on "secure your spot for $49" and "4 months"
 
 ### Diagram Example
 
@@ -308,30 +310,30 @@ Reach Digital_Stepful_Side by Side_CPHT Stepping Stone Earn While You Climb_04_T
 │  ❌ Traditional Route  │  ✅ Stepful CPHT               │
 ├────────────────────────┼────────────────────────────────┤
 │  2-year program        │  4-month program               │
-│  $15K+                 │  $49 to start                  │
-│  Still waiting to start│  Earning $44K/year             │
+│  $15K+                 │  Secure your spot for $49      │
+│  Still waiting to start│  Median wage: $43,460/year*             │
 │                        │  Move up while employed        │
 ├────────────────────────┴────────────────────────────────┤
 │  Career Ladder: Pharmacy Tech → Senior Pharm Tech →     │
 │  Hospital/Clinic Roles                                  │
 ├─────────────────────────────────────────────────────────┤
 │  Most students qualify for need-based tuition grants.   │
-│               [Start for $49. Next class in a few days.]│
+│               [Secure Your Spot for $49. Next class in a few days.]│
 │                              Stepful                    │
 └─────────────────────────────────────────────────────────┘
 ```
 
 ### Mandatory Disclaimer
 
-> Stepful's Pharmacy Technician program prepares you for the NHA ExCPT or PTCB CPhT certification exam. $44,000 median annual salary based on BLS data. Results vary. $49 registration fee. Additional tuition applies. Need-based grants subject to eligibility.
+> Stepful's Pharmacy Technician program prepares you for the NHA ExCPT or PTCB CPhT certification exam. Pharmacy Technicians make a median annual wage of $43,460. Source: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Median Annual Wage, May 2024. Outcomes and wages vary. $49 registration fee reserves your seat; additional tuition payments of $131 every two weeks begin after the first week of class. Need-based grants subject to eligibility.
 
 ### Primary Text
 
 You don't have to choose between starting your healthcare career and waiting to afford it.
 
-Stepful's 4-month online pharmacy tech program starts at $49. 90-minute live classes twice a week, externship support through our 8,000+ clinical partner network, and prep for the NHA ExCPT or PTCB CPhT exam. Most students qualify for need-based tuition grants.
+You can secure your spot in Stepful's 4-month online pharmacy tech program for $49. 90-minute live classes twice a week, externship support through our 8,000+ clinical partner network, and prep for the NHA ExCPT or PTCB CPhT exam. Most students qualify for need-based tuition grants.
 
-Pharmacy tech is the entry point. From there, you move up on your own terms, while you're already earning. Next class starts in a few days. Spots are filling fast.
+Pharmacy tech is the entry point. From there, you move up on your own terms, while you're already building experience. Next class starts in a few days. Spots are filling fast.
 
 ---
 
@@ -369,13 +371,13 @@ Reach Digital_Stepful_Education_2-Month Cert Carousel_12_T001
 - **Slide 4 heading:** "90 minutes, twice a week."
 - **Slide 4 body:** Fits around your job and your life. Live classes. Real instructors. Real progress.
 - **Slide 5 heading:** "Month 5. NHA CCMA exam ready."
-- **Slide 5 green pill:** "$44K/year median salary"
+- **Slide 5 green pill:** "Median $44.2K/year wage*"
 - **Final slide CTA:** "Comment CAREER to get the full guide." "CAREER" highlighted pink.
-- **Final slide supporting text:** "$49 to start. Most qualify for grants. Next class in a few days."
+- **Final slide supporting text:** "Secure your spot for $49. Additional tuition applies. Most qualify for grants. Next class in a few days."
 
 ### Mandatory Disclaimer
 
-> Stepful's Medical Assistant program prepares you for the NHA CCMA certification exam. $44,000 median annual salary based on BLS data. Results vary. $49 registration fee. Additional tuition applies. Need-based grants subject to eligibility.
+> Stepful's Medical Assistant program prepares you for the NHA CCMA certification exam. Medical Assistants make a median annual wage of $44.2k. Source: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Median Annual Wage, May 2024. Outcomes and wages vary. $49 registration fee reserves your seat; additional tuition payments as low as $163 every two weeks begin after the first week of class. Need-based grants subject to eligibility.
 
 ### Primary Text
 
@@ -383,17 +385,17 @@ By month 2 of the Stepful program, you already have your first healthcare creden
 
 Live 90-minute classes twice a week. An at-home clinical kit delivered to your door. Need-based tuition grants available. Most students who apply out-of-pocket qualify.
 
-$49 to start. Next class is in a few days and spots are filling fast. Comment CAREER for the full guide.
+Secure your spot for $49. Additional tuition applies. Next class is in a few days and spots are filling fast. Comment CAREER for the full guide.
 
 ---
 
-## Ad #13 — 6 Figures No Degree Carousel (Swipe-to-Learn Carousel)
+## Ad #13 — Healthcare Without a Degree Carousel (Swipe-to-Learn Carousel)
 
 **Persona:** Affordable Fast-Track Seeker
 **Structure:** Swipe-to-Learn Carousel
 **Platform:** Meta
 
-Reach Digital_Stepful_Education_6 Figures No Degree Carousel_13_T001
+Reach Digital_Stepful_Education_Healthcare Without Degree Carousel_13_T001
 
 ### References
 
@@ -404,13 +406,13 @@ Reach Digital_Stepful_Education_6 Figures No Degree Carousel_13_T001
 - [static-vibes_organic-boost_which-healthcare-rol](https://projects.motionapp.com/organization/6214fe5e1ccc60d23897d87b/69f4afe9485f29f125fb02ae/creative/69f5bcd08b7c524f1d4a3d71?startDate=2026-05-20&endDate=2026-06-03&datePreset=last_14d&filters=W10%3D) — "girly healthcare money" collage style: medical tools + aspirational lifestyle items on cream background, navy serif dominant, Stepful brand mark small
 
 ### Designer Note
-- Full carousel design system: cream/beige (#F5F0E8) background throughout. Cover: "girly healthcare money" collage — stethoscope, cash, designer bag or perfume, pink accessories scattered. Big navy serif headline with pink highlights on "$44K" and "no degree." Inner slides: same white card system. Final slide: fresh "girly healthcare money" collage, pink CTA highlight.
+- Full carousel design system: cream/beige (#F5F0E8) background throughout. Cover: "girly healthcare money" collage — stethoscope, cash, designer bag or perfume, pink accessories scattered. Big navy serif headline with pink highlights on "$44.2K" and "no degree." Inner slides: same white card system. Final slide: fresh "girly healthcare money" collage, pink CTA highlight.
 - This is a direct fresh iteration of #10 SIXFIGURES_CAROUSEL from the account (3.62 ROAS, 6.30% CTR). Do NOT replicate existing slides. Fresh creative in the same design system. Cover collage is the "income + no degree" visual — cash and medical tools. Brief #12 in this batch uses the same carousel system but its cover is "certification milestone" themed. Use the cash/luxury collage here to keep them visually distinct.
 
 ### Headline Variations
-- A: How to make 6 figures in healthcare without a degree
-- B: No one told me you could start a $44K/year healthcare career for $49. So I'm telling you.
-- C: Healthcare careers that pay 6 figures, with no degree required.
+- A: How to start a healthcare career without a degree
+- B: No one told me Medical Assistants make a median $44.2K/year. So I'm telling you.
+- C: Healthcare careers you can start without a degree.
 
 ### Design Elements
 - **Cover CTA text:** "Swipe to get the full guide."
@@ -418,24 +420,24 @@ Reach Digital_Stepful_Education_6 Figures No Degree Carousel_13_T001
 - **Slide 2 body:** 5-month online Medical Assistant program. Start learning on week one, no prior experience needed.
 - **Slide 3 heading:** "Your clinical kit comes to you."
 - **Slide 3 body:** Stethoscope, venipuncture trainer arm, thermometer. Practice real clinical skills at home, before your externship.
-- **Slide 4 heading:** "$44K/year to start."
-- **Slide 4 body:** "Median salary, per BLS."
-- **Slide 4 green pill:** "$44K/year median salary"
-- **Slide 5 heading:** "Start for $49."
+- **Slide 4 heading:** "Median MA wage: $44.2K/year.*"
+- **Slide 4 body:** "Source: BLS Occupational Outlook Handbook, Median Annual Wage, May 2024. Outcomes vary."
+- **Slide 4 green pill:** "Median $44.2K/year wage*"
+- **Slide 5 heading:** "Secure Your Spot for $49."
 - **Slide 5 body:** Most students qualify for need-based tuition grants. Biweekly payment plans available.
 - **Final slide CTA:** "Comment CAREER to get the full guide." "CAREER" highlighted pink.
 
 ### Mandatory Disclaimer
 
-> Stepful's Medical Assistant program prepares you for the NHA CCMA certification exam. $44,000 median annual salary based on BLS data. Results vary. $49 registration fee. Additional tuition applies. Need-based grants subject to eligibility.
+> Stepful's Medical Assistant program prepares you for the NHA CCMA certification exam. Medical Assistants make a median annual wage of $44.2k. Source: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Median Annual Wage, May 2024. Outcomes and wages vary. $49 registration fee reserves your seat; additional tuition payments as low as $163 every two weeks begin after the first week of class. Need-based grants subject to eligibility.
 
 ### Primary Text
 
 No one told me you could start a healthcare career for $49. No degree. No years of school. Just a 5-month online program and a clinical kit that arrives at your door.
 
-The median salary for Medical Assistants is $44,000 per year, according to the BLS. Most students who apply out-of-pocket qualify for need-based tuition grants. Biweekly payment plans are available so you're not paying everything upfront.
+Medical Assistants make a median annual wage of $44.2k. Source: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Median Annual Wage, May 2024. Outcomes vary. Most students who apply out-of-pocket qualify for need-based tuition grants. Biweekly payment plans are available so you're not paying everything upfront.
 
-$49 to start. Next class is in a few days. Comment CAREER for the full guide.
+Secure your spot for $49. Additional tuition applies. Next class is in a few days. Comment CAREER for the full guide.
 
 ---
 
@@ -462,7 +464,7 @@ Reach Digital_Stepful_Education_3 Steps to MA Career_14_T001
 
 ### Designer Note
 - Large circled step numbers (① ② ③) in navy or coral pink, prominent — these carry the Processing Fluency load
-- Pink highlight block behind "$49 to start" in Step 1 description; green pill on "$44K/year" in Step 3 description
+- Pink highlight block behind "secure your spot for $49" in Step 1 description; green pill on "median $44.2K/year" in Step 3 description
 - Each step: navy serif heading, sans-serif description line below, stat pill inline
 - Stepful wordmark small, bottom center only
 
@@ -474,13 +476,13 @@ Reach Digital_Stepful_Education_3 Steps to MA Career_14_T001
 ### Design Elements
 - **Step labels:**
   - ① 5-Month Online Program
-  - ② In-Person Externship
-  - ③ Start Your Career
-- **Step 1 description:** "Live classes twice a week. At-home clinical kit delivered to your door. $49 to start."
+  - ② NHA CCMA Exam Prep + Certification
+  - ③ Clinical Hours + Job Support
+- **Step 1 description:** "Live classes twice a week. At-home clinical kit delivered to your door. Secure your spot for $49."
 - **Step 2 description:** "Hands-on clinical hours through our 8,000+ partner network."
-- **Step 3 description:** "Job coaching included. $44K/year median salary (BLS)."
+- **Step 3 description:** "Job coaching included. Median MA wage: $44.2K/year.*"
 - **Footer line:** "Most students qualify for need-based tuition grants. Next class in a few days."
-- **CTA button:** Start for $49
+- **CTA button:** Secure Your Spot for $49
 
 ### Diagram Example
 
@@ -491,32 +493,32 @@ Reach Digital_Stepful_Education_3 Steps to MA Career_14_T001
 ├─────────────────────────────────────────────────────────────────┤
 │  ①  5-Month Online Program                                       │
 │     Live classes twice a week. At-home clinical kit to your door │
-│     [ $49 to start ]                                            │
+│     [ Secure your spot for $49 ]                                │
 ├─────────────────────────────────────────────────────────────────┤
-│  ②  In-Person Externship                                         │
-│     Hands-on clinical hours through our 8,000+ partner network   │
+│  ②  NHA CCMA Exam Prep + Certification                           │
+│     Prepare for the national certification exam                  │
 ├─────────────────────────────────────────────────────────────────┤
-│  ③  Start Your Career                                            │
-│     Job coaching included.  [ $44K/year median salary (BLS) ]   │
+│  ③  Clinical Hours + Job Support                                 │
+│     Clinical hours support + job coaching. [Median $44.2K/year*]    │
 ├─────────────────────────────────────────────────────────────────┤
 │  Most students qualify for need-based tuition grants.            │
 │  Next class in a few days.                                       │
 │                                                                  │
-│                    [ Start for $49 ]                            │
+│                    [ Secure Your Spot for $49 ]                            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### Mandatory Disclaimer
 
-> Stepful's Medical Assistant program prepares you for the NHA CCMA certification exam. $44,000 median annual salary based on BLS data. Results vary. $49 registration fee. Additional tuition applies. Job placement: 80% of graduates accept full-time job offers within 4 months of starting job-readiness coaching after completing clinical hours.
+> Stepful's Medical Assistant program prepares you for the NHA CCMA certification exam. Medical Assistants make a median annual wage of $44.2k. Source: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Median Annual Wage, May 2024. Outcomes and wages vary. $49 registration fee reserves your seat; additional tuition payments as low as $163 every two weeks begin after the first week of class. Job placement: 80% of graduates accept full-time job offers within 4 months of starting job-readiness coaching after completing clinical hours.
 
 ### Primary Text
 
-Everyone keeps saying healthcare takes years and costs a fortune. It doesn't have to. The path to becoming a Medical Assistant is 3 steps: finish the 5-month online program, complete your in-person externship, and start your career.
+Everyone keeps saying healthcare takes years and costs a fortune. It doesn't have to. The path to becoming a Medical Assistant is simple: finish the 5-month online program, prepare for the NHA CCMA exam, complete in-person clinical hours, and get job-search support.
 
-The program includes live classes twice a week, an at-home clinical kit delivered to your door, and access to an 8,000+ clinical partner network for your externship. You start for $49, and most students who pay out of pocket qualify for need-based tuition grants.
+The program includes live classes twice a week, an at-home clinical kit delivered to your door, and access to an 8,000+ clinical partner network for your externship. You secure your spot for $49; additional tuition payments as low as $163 every two weeks begin after the first week of class. Most students who pay out of pocket qualify for need-based tuition grants.
 
-The next class starts in a few days. $44K/year median salary per BLS data. Start for $49.
+The next class starts in a few days. Medical Assistants make a median annual wage of $44.2k. Source: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Median Annual Wage, May 2024. Outcomes vary. Secure your spot for $49.
 
 ---
 
@@ -546,7 +548,7 @@ Reach Digital_Stepful_Humor_Healthcare Role Quiz_15_T001
 - Cover slide: big serif hook headline with pink highlight on "healthcare role," collage below, "Swipe to find out" in sans-serif
 - Role slides (3 slides): each shows the role type in large navy serif, a 1-sentence personality description below it, and the role name (e.g., Medical Assistant) as a smaller label at the bottom
 - No salary, no program detail on role slides — share mechanic comes first
-- Final slide only: "$49 to start" in pink highlight, "Next class in a few days" body copy, CTA button
+- Final slide only: "secure your spot for $49" in pink highlight, "Next class in a few days" body copy, CTA button
 - Stepful wordmark small, bottom center on cover and final slide only
 
 ### Headline Variations
@@ -565,20 +567,20 @@ Reach Digital_Stepful_Humor_Healthcare Role Quiz_15_T001
 - **Role Slide 3 type label:** "The One Who Can Do It All"
 - **Role Slide 3 description:** "You like variety. Vitals, injections, patient prep. You want to be in the middle of everything."
 - **Role Slide 3 role name:** Medical Assistant
-- **Final slide headline:** Whatever your type, you can start for $49.
+- **Final slide headline:** Whatever your type, you can secure your spot for $49.
 - **Final slide sub-copy:** "Next class in a few days."
-- **Final slide green pill:** "$44K/year median salary"
+- **Final slide green pill:** "Median $44.2K/year wage*"
 - **CTA button:** Comment your result below
 
 ### Mandatory Disclaimer
 
-> Stepful's Medical Assistant program prepares you for the NHA CCMA certification exam. Pharmacy Tech program prepares you for the NHA ExCPT or PTCB CPhT exam. $49 registration fee. Additional tuition applies.
+> Stepful's Medical Assistant program prepares you for the NHA CCMA certification exam. Pharmacy Tech program prepares you for the NHA ExCPT or PTCB CPhT exam. $49 registration fee reserves your seat; additional tuition applies.
 
 ### Primary Text
 
 Ask your besties which healthcare role you are. Swipe through, pick your type, and tag the friend who's been talking about switching careers for months.
 
-The Medical Assistant and Pharmacy Tech programs both start for $49. Classes are online, twice a week, so you don't have to quit your job to start. Most students who pay out of pocket qualify for need-based tuition grants, and the next class begins in a few days.
+You can secure your spot in Stepful's Medical Assistant or Pharmacy Tech program for $49. Classes are online, twice a week, so you don't have to quit your job to start. Most students who pay out of pocket qualify for need-based tuition grants, and the next class begins in a few days.
 
 Comment your result below and share with someone who needs to see this.
 

@@ -3,23 +3,35 @@ cssclasses:
   - table-wide
   - wide
 ---
-# T005 — Batch Critique
+# T005 Batch Critique
 
-> **Status:** Base document created. Critique runs after launch data accumulates (typically 7-14 days post-launch).
-
----
-
-## Critique Sections (TBD)
-
-- Hook quality read
-- Hold rate / retention diagnosis
-- Conversion efficiency by concept
-- Heuristic distribution
-- Format and visual choice read
-- Cross-ad patterns
-- Iterate / kill / replicate calls
-- Carry-forward learnings
+> Methodology: [[Critique Methodology - Video]] and [[Critique Methodology - Static]]
 
 ---
 
-*This document is filled in once T005 has spent enough to evaluate. The T004 critique (in `T004 Batch Critique.md`) is the structural model.*
+## Tier 0 — Plan Critique
+
+<!-- Filled BEFORE writer dispatch. Verdict must be ✅ Pass (or ⚠️ Flag with mitigation noted) before Tier 1 starts. If ❌ Blocked, fix the Batch Plan and re-run Tier 0 before proceeding. -->
+
+---
+
+## Critique — Issue Tables
+
+<!-- Group findings by category (Caption-VO, Pacing, Mechanism, Bridges, References, Compliance, etc.), NOT by script/brief number. -->
+
+| Severity | Finding | Affected | Linked Rule | Status |
+|---|---|---|---|---|
+
+<!-- Severity: ❌ Blocking · ⚠️ Flag · ✅ Pass · 🟦 Intentional exception -->
+
+---
+
+## Cross-Batch Patterns
+
+<!-- What recurred across this batch? Candidates for promotion to global criteria. -->
+
+---
+
+## Promote to Global Criteria
+
+<!-- Patterns that hit the 3+ items / 2+ batches threshold. Each entry cites the CONCRETE EDIT already made — target file + line + exact rule added. -->

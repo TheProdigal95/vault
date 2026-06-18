@@ -20,6 +20,8 @@
 - 8,000+ clinical partners nationwide
 - 1,000+ Trustpilot reviews, rated 4.8★
 - Named #1 Ranked EdTech company in the US by TIME (World's Top EdTech Companies of 2025)
+- Mount Sinai Health System strategic collaboration announced May 20, 2026: Stepful and Mount Sinai are creating a specialized Patient Care Associate training program for the NYC metro area. Source: https://www.mountsinai.org/about/newsroom/2026/stepful-and-mount-sinai-health-system-announce-strategic-collaboration-to-strengthen-clinical-support-workforce-in-new-york-city
+- Approved employer proof line from client feedback: Graduates Were Hired At: CVS, Walgreens, New York Presbyterian, Northwell Health
 
 **Phone:** 332-334-8285. **Email:** hello@stepful.com.
 
@@ -32,8 +34,14 @@ Stepful's language consistently targets people who are:
 2. **People who can't do traditional school** — financial constraints, full-time employment, family obligations, no time for in-person programs
 3. **Communities typically excluded** — the About page explicitly frames the mission as "access, opportunity, and impact" for communities "struggling" under the existing system
 4. **People with real life circumstances** — the brand's testimonials highlight people dealing with hospital stays, housing instability, single-parent households, and financial hardship who still completed the program
+5. **Pre-med students (18–25)** — value online/part-time training they can complete alongside pre-med coursework; clinical externship helps their med school application stand out beyond passive job shadowing
+6. **Caregivers** — people who have cared for a family member and want to enter healthcare without years of med school
+7. **Military spouses** — strong audience because government tuition coverage can apply
+8. **Amazon Flex / Amazon employees** — strong audience because Amazon can cover tuition
 
 Also explicitly targets **employers** (separate /for-employers page), positioning Stepful as a talent pipeline partner for healthcare organizations.
+
+**Creative mix note from client feedback:** Moms/single moms are one valid audience, but not the only audience. Do not let the batch over-index on moms; rotate in the personas above plus broader career switchers.
 
 **Geographic constraint:** Not available in all states. Programs are only offered in areas where Stepful has clinical placement partnerships. This is a hard enrollment gate — students learn about availability when they apply.
 
@@ -42,6 +50,8 @@ Also explicitly targets **employers** (separate /for-employers page), positionin
 ## Positioning + Moats
 
 **Core positioning (verbatim from homepage):** "Get certified and job-ready with flexible, affordable online training."
+
+**Client-prioritized selling point (June 2026):** Stepful is loved because it combines **online, part-time training with in-person clinical hours for hands-on experience**, helping students feel more prepared to pursue jobs in the program they studied in. Salary should support the argument only as a sourced statistic, never lead the positioning.
 
 **Three-pillar product promise:**
 1. Live instructor-led classes (not pre-recorded)

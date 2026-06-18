@@ -1,0 +1,1768 @@
+{
+  "meta": {
+    "source": "live"
+  },
+  "results": {
+    "data": {
+      "messagingAngleAnalysis": {
+        "__typename": "MessagingAngleAnalysis",
+        "hasData": true,
+        "recentlyLaunched": [
+          {
+            "__typename": "MessagingAngleInsight",
+            "adCount": 10,
+            "adIds": [
+              "120247169101450517",
+              "120247169103980517",
+              "120247169115080517",
+              "120247169099400517",
+              "120247169119270517",
+              "120247169117370517",
+              "120247169113790517",
+              "120247169097960517",
+              "120247169103150517",
+              "120247169120710517"
+            ],
+            "allTimeWinnerCreativeIds": [],
+            "angleName": "No Injections",
+            "color": "#CCF3EA",
+            "creativesLaunchedLast6Months": 19,
+            "description": "Simple oral dosing instead of injections.",
+            "exampleAdId": "6a29a5373014acb6cc357ac5",
+            "exampleCreativeAssetIds": [
+              "6a29a5373014acb6cc357ac5",
+              "6a29a5373014acb6cc357ab8",
+              "6a29a5373014acb6cc357a95"
+            ],
+            "exampleThumbnailUrl": "https://motionaccountassets.blob.core.windows.net/696935bf769728b7e3f4e93f/creativeassetfacebook/6a29a5373014acb6cc357ac5/cover.jpg",
+            "fontColor": "#0D3D38",
+            "highPerformerCount": 0,
+            "monthlyChartData": [
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-06",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-07",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-08",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-09",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-10",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-11",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-12",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-01",
+                "totalCreatives": 3,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-02",
+                "totalCreatives": 0,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-03",
+                "totalCreatives": 0,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 1,
+                "month": "2026-04",
+                "totalCreatives": 2,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 2,
+                "month": "2026-05",
+                "totalCreatives": 4,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 10,
+                "month": "2026-06",
+                "totalCreatives": 10,
+                "year": 2026
+              }
+            ],
+            "oldestCreativeDate": "2026-01-16T19:13:15.000Z",
+            "spend": 86.83,
+            "spendState": null,
+            "totalCreativesAllTime": 19,
+            "weekOverWeekSpendRatio": "+100"
+          },
+          {
+            "__typename": "MessagingAngleInsight",
+            "adCount": 2,
+            "adIds": [
+              "120247169116280517",
+              "120247169096380517"
+            ],
+            "allTimeWinnerCreativeIds": [],
+            "angleName": "Energy And Focus",
+            "color": "#E1E9FF",
+            "creativesLaunchedLast6Months": 38,
+            "description": "Restores energy and mental focus.",
+            "exampleAdId": "6a29a5373014acb6cc357a8d",
+            "exampleCreativeAssetIds": [
+              "6a29a5373014acb6cc357a8d",
+              "6a29a5373014acb6cc357a44"
+            ],
+            "exampleThumbnailUrl": "https://motionaccountassets.blob.core.windows.net/696935bf769728b7e3f4e93f/creativeassetfacebook/6a29a5373014acb6cc357a8d/cover.jpg",
+            "fontColor": "#3A5BC7",
+            "highPerformerCount": 0,
+            "monthlyChartData": [
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-06",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-07",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-08",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-09",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-10",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-11",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-12",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-01",
+                "totalCreatives": 6,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-02",
+                "totalCreatives": 8,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-03",
+                "totalCreatives": 1,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 4,
+                "month": "2026-04",
+                "totalCreatives": 11,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 3,
+                "month": "2026-05",
+                "totalCreatives": 10,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 2,
+                "month": "2026-06",
+                "totalCreatives": 2,
+                "year": 2026
+              }
+            ],
+            "oldestCreativeDate": "2026-01-16T19:13:42.000Z",
+            "spend": 22.800000000000004,
+            "spendState": null,
+            "totalCreativesAllTime": 38,
+            "weekOverWeekSpendRatio": "+100"
+          }
+        ],
+        "spendThreshold90thPercentile": 3183.2400000000002,
+        "topAngles": [
+          {
+            "__typename": "MessagingAngleInsight",
+            "adCount": 13,
+            "adIds": [
+              "120243287403650517",
+              "120243654793620517",
+              "120244789362220517",
+              "120244696853190517",
+              "120245593241560517",
+              "120247169101450517",
+              "120247169103980517",
+              "120247169115080517",
+              "120247169099400517",
+              "120247169119270517",
+              "120247169117370517",
+              "120247169113790517",
+              "120247169097960517",
+              "120247169103150517",
+              "120247169120710517"
+            ],
+            "allTimeWinnerCreativeIds": [],
+            "angleName": "No Injections",
+            "color": "#CCF3EA",
+            "creativesLaunchedLast6Months": 19,
+            "description": "Simple oral dosing instead of injections.",
+            "exampleAdId": "69e8eeccab5d13a5b5588a08",
+            "exampleCreativeAssetIds": [
+              "69e8eeccab5d13a5b5588a08",
+              "6a032324f749c9d4785d738c",
+              "6a10a6b0f923b444eb3eee63"
+            ],
+            "exampleThumbnailUrl": "https://motionaccountassets.blob.core.windows.net/696935bf769728b7e3f4e93f/creativeassetfacebook/69e8eeccab5d13a5b5588a08/cover.jpg",
+            "fontColor": "#0D3D38",
+            "highPerformerCount": 0,
+            "monthlyChartData": [
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-06",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-07",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-08",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-09",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-10",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-11",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-12",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-01",
+                "totalCreatives": 3,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-02",
+                "totalCreatives": 0,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-03",
+                "totalCreatives": 0,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 1,
+                "month": "2026-04",
+                "totalCreatives": 2,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 2,
+                "month": "2026-05",
+                "totalCreatives": 4,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 10,
+                "month": "2026-06",
+                "totalCreatives": 10,
+                "year": 2026
+              }
+            ],
+            "oldestCreativeDate": "2026-01-16T19:13:15.000Z",
+            "spend": 207.73000000000002,
+            "spendState": null,
+            "totalCreativesAllTime": 19,
+            "weekOverWeekSpendRatio": "-48.93"
+          },
+          {
+            "__typename": "MessagingAngleInsight",
+            "adCount": 11,
+            "adIds": [
+              "120243654793570517",
+              "120243156033680517",
+              "120244789362260517",
+              "120243287448970517",
+              "120243654793510517",
+              "120244789362160517",
+              "120243728544330517",
+              "120243644125650517",
+              "120245372701890517",
+              "120243728543870517",
+              "120243644131550517",
+              "120243644129290517",
+              "120243728543590517",
+              "120243645102080517",
+              "120243728544840517",
+              "120245916917580517",
+              "120243644125670517",
+              "120243728543500517",
+              "120243644126820517",
+              "120243728544340517",
+              "120244149376920517",
+              "120245916903310517",
+              "120244149376940517",
+              "120245916903290517",
+              "120244696850060517"
+            ],
+            "allTimeWinnerCreativeIds": [
+              "697cf30409c0e6d8af39fed1",
+              "69bc478b3ea1439320c2a007",
+              "69fa12b26f15c0ff40d0aee9"
+            ],
+            "angleName": "Comparison Positioning",
+            "color": "#CCF3EA",
+            "creativesLaunchedLast6Months": 46,
+            "description": "Contrasts old vs. new solution benefits.",
+            "exampleAdId": "69e69ab4ab5d13a5b55862da",
+            "exampleCreativeAssetIds": [
+              "69e69ab4ab5d13a5b55862da",
+              "69e8eeccab5d13a5b5588a06",
+              "69ef6a51ab5d13a5b5db76db"
+            ],
+            "exampleThumbnailUrl": "https://motionaccountassets.blob.core.windows.net/696935bf769728b7e3f4e93f/creativeassetfacebook/69e69ab4ab5d13a5b55862da/cover.jpg",
+            "fontColor": "#0D3D38",
+            "highPerformerCount": 3,
+            "monthlyChartData": [
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-06",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-07",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-08",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-09",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-10",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-11",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-12",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 1,
+                "currentlyLive": 0,
+                "month": "2026-01",
+                "totalCreatives": 4,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-02",
+                "totalCreatives": 5,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 1,
+                "currentlyLive": 0,
+                "month": "2026-03",
+                "totalCreatives": 10,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 8,
+                "month": "2026-04",
+                "totalCreatives": 16,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 1,
+                "currentlyLive": 3,
+                "month": "2026-05",
+                "totalCreatives": 11,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-06",
+                "totalCreatives": 0,
+                "year": 2026
+              }
+            ],
+            "oldestCreativeDate": "2026-01-07T01:10:14.000Z",
+            "spend": 2035.51,
+            "spendState": "scaling",
+            "totalCreativesAllTime": 46,
+            "weekOverWeekSpendRatio": "+220.97"
+          },
+          {
+            "__typename": "MessagingAngleInsight",
+            "adCount": 11,
+            "adIds": [
+              "120243728543860517",
+              "120243644126840517",
+              "120243728544810517",
+              "120243645089850517",
+              "120245916917650517",
+              "120243645084710517",
+              "120243728544790517",
+              "120245916917670517",
+              "120243645086260517",
+              "120243728544210517",
+              "120245916917610517",
+              "120243644126810517",
+              "120243728544870517",
+              "120244149856890517",
+              "120244149858910517",
+              "120244149380000517",
+              "120245916903270517",
+              "120244149866240517",
+              "120245573601600517",
+              "120245573597750517"
+            ],
+            "allTimeWinnerCreativeIds": [
+              "697781323bac25b1db148be6",
+              "69dcef7ee23fb809271c4ab1",
+              "6a05e24e26f052ae2d45b054"
+            ],
+            "angleName": "Same Results, Fewer Side Effects",
+            "color": "#F7DEF8",
+            "creativesLaunchedLast6Months": 54,
+            "description": "Compares solution benefits against standard treatments, minimizing nausea and GI distress for comfortable weight loss.",
+            "exampleAdId": "6a10524e664455e3b44a9686",
+            "exampleCreativeAssetIds": [
+              "69ef6a51ab5d13a5b5db76d7",
+              "69ef6a51ab5d13a5b5db76ac",
+              "69ef6a51ab5d13a5b5db76e0"
+            ],
+            "exampleThumbnailUrl": "https://motionaccountassets.blob.core.windows.net/696935bf769728b7e3f4e93f/creativeassetfacebook/6a10524e664455e3b44a9686/cover.jpg",
+            "fontColor": "#953EA3",
+            "highPerformerCount": 3,
+            "monthlyChartData": [
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-06",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-07",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-08",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-09",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-10",
+                "totalCreatives": 5,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-11",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-12",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 1,
+                "currentlyLive": 0,
+                "month": "2026-01",
+                "totalCreatives": 5,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-02",
+                "totalCreatives": 0,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-03",
+                "totalCreatives": 11,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 2,
+                "currentlyLive": 5,
+                "month": "2026-04",
+                "totalCreatives": 26,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 6,
+                "month": "2026-05",
+                "totalCreatives": 12,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-06",
+                "totalCreatives": 0,
+                "year": 2026
+              }
+            ],
+            "oldestCreativeDate": "2025-10-03T15:18:15.000Z",
+            "spend": 288.83000000000004,
+            "spendState": null,
+            "totalCreativesAllTime": 59,
+            "weekOverWeekSpendRatio": "-50.65"
+          },
+          {
+            "__typename": "MessagingAngleInsight",
+            "adCount": 11,
+            "adIds": [
+              "120243646377380517",
+              "120243728545120517",
+              "120243646381870517",
+              "120243728543400517",
+              "120243644134690517",
+              "120243728543730517",
+              "120243646377360517",
+              "120243728544110517",
+              "120244149376930517",
+              "120245916903300517",
+              "120244149376910517",
+              "120245916903330517",
+              "120244149376900517",
+              "120245916903320517",
+              "120244696850070517",
+              "120244696853170517",
+              "120245593244780517",
+              "120245593241270517"
+            ],
+            "allTimeWinnerCreativeIds": [],
+            "angleName": "Fix The Root Cause",
+            "color": "#FFF394",
+            "creativesLaunchedLast6Months": 33,
+            "description": "Reframing ED as a circulation issue",
+            "exampleAdId": "6a10a6b0f923b444eb3eee60",
+            "exampleCreativeAssetIds": [
+              "69ef7860ab5d13a5b5e0542e",
+              "69ef7860ab5d13a5b5e0542a",
+              "69ef6a51ab5d13a5b5db76c3"
+            ],
+            "exampleThumbnailUrl": "https://motionaccountassets.blob.core.windows.net/696935bf769728b7e3f4e93f/creativeassetfacebook/6a10a6b0f923b444eb3eee60/cover.jpg",
+            "fontColor": "#9E6C00",
+            "highPerformerCount": 0,
+            "monthlyChartData": [
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-06",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-07",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-08",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-09",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-10",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-11",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-12",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-01",
+                "totalCreatives": 0,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-02",
+                "totalCreatives": 0,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-03",
+                "totalCreatives": 5,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 4,
+                "month": "2026-04",
+                "totalCreatives": 20,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 7,
+                "month": "2026-05",
+                "totalCreatives": 8,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-06",
+                "totalCreatives": 0,
+                "year": 2026
+              }
+            ],
+            "oldestCreativeDate": "2026-03-05T21:22:28.000Z",
+            "spend": 43.8,
+            "spendState": null,
+            "totalCreativesAllTime": 33,
+            "weekOverWeekSpendRatio": "+78.27"
+          },
+          {
+            "__typename": "MessagingAngleInsight",
+            "adCount": 10,
+            "adIds": [
+              "120243728543810517",
+              "120243646377390517",
+              "120243645086450517",
+              "120243728543440517",
+              "120245916917590517",
+              "120243646377370517",
+              "120243728544130517",
+              "120243646381090517",
+              "120243728544760517",
+              "120243646379140517",
+              "120243728545090517",
+              "120243646380590517",
+              "120243728544170517",
+              "120243644126830517",
+              "120243728544320517",
+              "120244149379530517",
+              "120245916903260517",
+              "120244696850080517",
+              "120245573598340517"
+            ],
+            "allTimeWinnerCreativeIds": [],
+            "angleName": "Testosterone Optimization",
+            "color": "#CCF3EA",
+            "creativesLaunchedLast6Months": 23,
+            "description": "Headline promises to optimize hormones",
+            "exampleAdId": "69ef7860ab5d13a5b5e05442",
+            "exampleCreativeAssetIds": [
+              "69ef7860ab5d13a5b5e05442",
+              "69ef6a51ab5d13a5b5db76a9",
+              "69ef7860ab5d13a5b5e05431"
+            ],
+            "exampleThumbnailUrl": null,
+            "fontColor": "#0D3D38",
+            "highPerformerCount": 0,
+            "monthlyChartData": [
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-06",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-07",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-08",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-09",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-10",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-11",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-12",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-01",
+                "totalCreatives": 2,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-02",
+                "totalCreatives": 1,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-03",
+                "totalCreatives": 4,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 7,
+                "month": "2026-04",
+                "totalCreatives": 12,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 3,
+                "month": "2026-05",
+                "totalCreatives": 4,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-06",
+                "totalCreatives": 0,
+                "year": 2026
+              }
+            ],
+            "oldestCreativeDate": "2026-01-30T16:58:16.000Z",
+            "spend": 567.4700000000001,
+            "spendState": "holding",
+            "totalCreativesAllTime": 23,
+            "weekOverWeekSpendRatio": "-16.15"
+          },
+          {
+            "__typename": "MessagingAngleInsight",
+            "adCount": 9,
+            "adIds": [
+              "120243654793550517",
+              "120243156065480517",
+              "120244789362270517",
+              "120243654793540517",
+              "120243156076330517",
+              "120244789362300517",
+              "120243156049870517",
+              "120243654793560517",
+              "120244789362240517",
+              "120243646377350517",
+              "120243728545070517",
+              "120244296179230517",
+              "120244296063530517",
+              "120244789362290517",
+              "120244789362210517",
+              "120244960376030517",
+              "120245593242440517",
+              "120247169116280517",
+              "120247169096380517"
+            ],
+            "allTimeWinnerCreativeIds": [],
+            "angleName": "Energy And Focus",
+            "color": "#E1E9FF",
+            "creativesLaunchedLast6Months": 38,
+            "description": "Restores energy and mental focus.",
+            "exampleAdId": "69e69ab4ab5d13a5b55862dd",
+            "exampleCreativeAssetIds": [
+              "69e69ab4ab5d13a5b55862dd",
+              "69e69ab4ab5d13a5b55862dc",
+              "69e69ab4ab5d13a5b55862de"
+            ],
+            "exampleThumbnailUrl": "https://motionaccountassets.blob.core.windows.net/696935bf769728b7e3f4e93f/creativeassetfacebook/69e69ab4ab5d13a5b55862dd/cover.jpg",
+            "fontColor": "#3A5BC7",
+            "highPerformerCount": 0,
+            "monthlyChartData": [
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-06",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-07",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-08",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-09",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-10",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-11",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-12",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-01",
+                "totalCreatives": 6,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-02",
+                "totalCreatives": 8,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-03",
+                "totalCreatives": 1,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 4,
+                "month": "2026-04",
+                "totalCreatives": 11,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 3,
+                "month": "2026-05",
+                "totalCreatives": 10,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 2,
+                "month": "2026-06",
+                "totalCreatives": 2,
+                "year": 2026
+              }
+            ],
+            "oldestCreativeDate": "2026-01-16T19:13:42.000Z",
+            "spend": 792.1599999999999,
+            "spendState": "scaling",
+            "totalCreativesAllTime": 38,
+            "weekOverWeekSpendRatio": "+77.14"
+          },
+          {
+            "__typename": "MessagingAngleInsight",
+            "adCount": 5,
+            "adIds": [
+              "120244159159310517",
+              "120245916903280517",
+              "120245573598300517",
+              "120245573598330517",
+              "120245573598090517",
+              "120245756534240517"
+            ],
+            "allTimeWinnerCreativeIds": [],
+            "angleName": "Timeline Of Benefits",
+            "color": "#FBDCEF",
+            "creativesLaunchedLast6Months": 8,
+            "description": "Shows the weekly progression of benefits.",
+            "exampleAdId": "69fa3cf3ba81e7f0c21db7e0",
+            "exampleCreativeAssetIds": [
+              "69fa3cf3ba81e7f0c21db7e0",
+              "6a10524e664455e3b44a968a",
+              "6a10524e664455e3b44a9670"
+            ],
+            "exampleThumbnailUrl": null,
+            "fontColor": "#C2298A",
+            "highPerformerCount": 0,
+            "monthlyChartData": [
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-06",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-07",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-08",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-09",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-10",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-11",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-12",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-01",
+                "totalCreatives": 1,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-02",
+                "totalCreatives": 0,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-03",
+                "totalCreatives": 0,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-04",
+                "totalCreatives": 1,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 5,
+                "month": "2026-05",
+                "totalCreatives": 6,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-06",
+                "totalCreatives": 0,
+                "year": 2026
+              }
+            ],
+            "oldestCreativeDate": "2026-01-26T14:32:35.000Z",
+            "spend": 393.99999999999994,
+            "spendState": null,
+            "totalCreativesAllTime": 8,
+            "weekOverWeekSpendRatio": "-32.68"
+          },
+          {
+            "__typename": "MessagingAngleInsight",
+            "adCount": 4,
+            "adIds": [
+              "120243728544240517",
+              "120243645086460517",
+              "120245916917660517",
+              "120243645086480517",
+              "120243728544250517",
+              "120245916917620517",
+              "120243645084170517",
+              "120243728544100517",
+              "120245916917640517",
+              "120244149861630517"
+            ],
+            "allTimeWinnerCreativeIds": [
+              "6995ed07d7b54bd21a49688f",
+              "6995ed07d7b54bd21a496891",
+              "69cac2f81ae2df5b3c6107c1",
+              "69cac2f81ae2df5b3c6107a2",
+              "6a05e24e26f052ae2d45b04c"
+            ],
+            "angleName": "Natural Rhythm",
+            "color": "#FFDFB5",
+            "creativesLaunchedLast6Months": 45,
+            "description": "Aligns with the body's natural cycle.",
+            "exampleAdId": "69ef6a51ab5d13a5b5db76a6",
+            "exampleCreativeAssetIds": [
+              "69ef6a51ab5d13a5b5db76a6",
+              "69ef6a51ab5d13a5b5db76a1",
+              "69ef6a51ab5d13a5b5db76b3"
+            ],
+            "exampleThumbnailUrl": null,
+            "fontColor": "#CC4E00",
+            "highPerformerCount": 5,
+            "monthlyChartData": [
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-06",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-07",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-08",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-09",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-10",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-11",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-12",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-01",
+                "totalCreatives": 1,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 2,
+                "currentlyLive": 0,
+                "month": "2026-02",
+                "totalCreatives": 4,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 2,
+                "currentlyLive": 0,
+                "month": "2026-03",
+                "totalCreatives": 16,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 1,
+                "currentlyLive": 3,
+                "month": "2026-04",
+                "totalCreatives": 17,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 1,
+                "month": "2026-05",
+                "totalCreatives": 7,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-06",
+                "totalCreatives": 0,
+                "year": 2026
+              }
+            ],
+            "oldestCreativeDate": "2026-01-07T01:10:13.000Z",
+            "spend": 7.85,
+            "spendState": null,
+            "totalCreativesAllTime": 45,
+            "weekOverWeekSpendRatio": "-78.61"
+          },
+          {
+            "__typename": "MessagingAngleInsight",
+            "adCount": 4,
+            "adIds": [
+              "120245573600320517",
+              "120245573602140517",
+              "120245573600670517",
+              "120245756533760517"
+            ],
+            "allTimeWinnerCreativeIds": [
+              "696935c2a09686cb26a2ed44"
+            ],
+            "angleName": "Perpetual Effectiveness",
+            "color": "#F7DEF8",
+            "creativesLaunchedLast6Months": 18,
+            "description": "Benefits don't fade over time.",
+            "exampleAdId": "6a10524e664455e3b44a967c",
+            "exampleCreativeAssetIds": [
+              "6a10524e664455e3b44a967c",
+              "6a10524e664455e3b44a9676",
+              "6a10524e664455e3b44a9673"
+            ],
+            "exampleThumbnailUrl": null,
+            "fontColor": "#953EA3",
+            "highPerformerCount": 1,
+            "monthlyChartData": [
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-06",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-07",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-08",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-09",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-10",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-11",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-12",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 1,
+                "currentlyLive": 0,
+                "month": "2026-01",
+                "totalCreatives": 1,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-02",
+                "totalCreatives": 0,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-03",
+                "totalCreatives": 2,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-04",
+                "totalCreatives": 8,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 4,
+                "month": "2026-05",
+                "totalCreatives": 7,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-06",
+                "totalCreatives": 0,
+                "year": 2026
+              }
+            ],
+            "oldestCreativeDate": "2026-01-07T01:10:14.000Z",
+            "spend": 1415.69,
+            "spendState": "holding",
+            "totalCreativesAllTime": 18,
+            "weekOverWeekSpendRatio": "-2.09"
+          },
+          {
+            "__typename": "MessagingAngleInsight",
+            "adCount": 3,
+            "adIds": [
+              "120240169493170517",
+              "120240045856650517",
+              "120243222465290517",
+              "120238882239040517",
+              "120243728543230517",
+              "120244156654300517",
+              "120243646379610517",
+              "120243728544200517",
+              "120243644134130517",
+              "120243728543890517"
+            ],
+            "allTimeWinnerCreativeIds": [
+              "696935c2a09686cb26a2ed39",
+              "696a8f4ca09686cb264c48d6",
+              "69bc478c3ea1439320c2a058"
+            ],
+            "angleName": "Feeling Like Yourself Again",
+            "color": "#FBDCEF",
+            "creativesLaunchedLast6Months": 28,
+            "description": "Promises life improvement, renewed confidence and vitality.",
+            "exampleAdId": "696a8f4ca09686cb264c48da",
+            "exampleCreativeAssetIds": [
+              "696a8f4ca09686cb264c48da",
+              "69ef7860ab5d13a5b5e0543b",
+              "69ef6a51ab5d13a5b5db76ca"
+            ],
+            "exampleThumbnailUrl": null,
+            "fontColor": "#C2298A",
+            "highPerformerCount": 3,
+            "monthlyChartData": [
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-06",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-07",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-08",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-09",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-10",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-11",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2025-12",
+                "totalCreatives": 0,
+                "year": 2025
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 2,
+                "currentlyLive": 1,
+                "month": "2026-01",
+                "totalCreatives": 9,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-02",
+                "totalCreatives": 0,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 1,
+                "currentlyLive": 0,
+                "month": "2026-03",
+                "totalCreatives": 10,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 2,
+                "month": "2026-04",
+                "totalCreatives": 9,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-05",
+                "totalCreatives": 0,
+                "year": 2026
+              },
+              {
+                "__typename": "MonthlyCreativeData",
+                "allTimeWinners": 0,
+                "currentlyLive": 0,
+                "month": "2026-06",
+                "totalCreatives": 0,
+                "year": 2026
+              }
+            ],
+            "oldestCreativeDate": "2026-01-07T01:25:16.000Z",
+            "spend": 881.8199999999998,
+            "spendState": "declining",
+            "totalCreativesAllTime": 28,
+            "weekOverWeekSpendRatio": "-20.16"
+          }
+        ],
+        "totalCreativesLast6Months": 411
+      }
+    }
+  }
+}

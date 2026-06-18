@@ -15,7 +15,7 @@ cssclasses:
 - Black women testimonials dominate — casual language, real lingo, not scripted
 - Deliberate imperfections sell (intentional "your" vs "you're", abbreviated text like "UR"). Organic-looking > polished
 - The brand speaks to women who need to break into the workforce and change their lives
-- "How to make 6 figures in healthcare without a degree" has the highest CTR + ROAS combo in the account — replicate this hook
+- "How to start a healthcare career without a degree" has the highest CTR + ROAS combo in the account — replicate this hook
 - The fast timeline (4-5 months) and accessibility (no degree, 100% online) are the core selling points
 - Spending time with family because the program doesn't take long — the family benefit of speed
 - Comment replies are a good native format — untested in the top 20
@@ -24,11 +24,11 @@ cssclasses:
 - #12 "ask your besties which healthcare role you are" quiz format (3.66 ROAS) — the girly/pink aesthetic works
 
 **What we're testing:**
-- **Two new hooks:** "How to get a healthcare certification in just 2 months" (OSHA/HIPAA temporal discounting) and "6 figures without a degree" variants
+- **Two adjusted hooks:** "How to get a healthcare certification in just 2 months" (OSHA/HIPAA temporal discounting) and "healthcare without a degree" variants using salary only as a sourced statistic
 - **5 new-to-account formats:** Progression timeline, comparison infographic, TikTok comment reply, b-roll montage + captions, text wall + inspirational audio
 - **Scarcity:** evergreen language only — "Next class starts in a few days — spots are filling fast." Never use specific dates (ads outlive launch windows)
 - **Temporal discounting:** Early milestones — clinical kit arriving week 1-2, OSHA/HIPAA cert by month 2, phlebotomy practice by month 4
-- **Three steps simplification:** Finish program → Complete externship → Start career. Make the journey look dead simple
+- **Three steps simplification:** For CCMA, preserve simplicity but keep order accurate: online coursework → NHA CCMA certification → in-person clinical hours → job support. Make the journey look dead simple without implying certification comes after externship.
 - **Stepping stone framing:** Compare life outcomes, not schools — "While new grads are still job-hunting, you're already working in healthcare." MA/CPhT as entry into the field → then move up while employed
 
 **What we're NOT doing:**
@@ -39,10 +39,10 @@ cssclasses:
 - No DA (Dental Assistant) ads — 0.61 ROAS, $2,365 CPP, dead format
 
 **Pricing strategy:**
-- Lead with **$49 to start** (registration fee) — not the full $1,100 tuition. $49 is the Framing Effect number
-- **Biweekly installments** as a secondary proof point — makes the ongoing cost feel manageable
-- **Need-based tuition grants** as risk reduction — "most applicants paying out of pocket qualify." Use the grant as a hook or near the top in 3-4 concepts, not every ad
-- Never lead with the full tuition figure. $49 → biweekly payments → grants is the affordability stack
+- For this batch, keep the $49 affordability hook where already built, but clarify it as a **seat reservation / registration fee**, not the full tuition and not a fee to apply or "find out"
+- Approved CCMA line: "Secure your spot for $49. Additional tuition payments as low as $163 every two weeks begin after the first week of class."
+- Approved CPhT line: "Secure your spot for $49. Additional tuition payments of $131 every two weeks begin after the first week of class."
+- Need-based tuition grants remain risk reduction — "most applicants paying out of pocket qualify." Use the grant as a support point, not a replacement for tuition clarity
 
 **Inspirational audio:** Same IG-sourced inspirational audio style as Elevate's Shame to Pride Selfie Walk — trending audio with music drives completion + conversion for the life-change audience.
 
@@ -69,19 +69,19 @@ cssclasses:
 | # | Persona | Concept | Structure | Key Mechanism | Primary Hook | Talent | Proof Points |
 |---|---|---|---|---|---|---|---|
 | 1 | Affordable Fast-Track Seeker | CCMA 2-Month Cert Progression | Progression Timeline (static carousel) | Goal Gradient + Temporal Discounting — Week 1 (first class + at-home clinical kit) → Month 2 (OSHA/HIPAA cert) → Month 5 (CCMA exam) → Month 6+ (working) | How to get a healthcare certification in just 2 months | No person — milestone panels | At-home clinical kit, OSHA/HIPAA cert, 90 min 2x/week |
-| 2 | Affordable Fast-Track Seeker | CPHT 4-Month Cert Progression | Progression Timeline (static carousel) | Goal Gradient — 4-month timeline to CPhT + externship + career | I became a certified pharmacy tech in 4 months. Here's what each month looked like. | No person — milestone panels | Externship, certification exam, $44K/year |
-| 3 | Dead-End Job Escaper | CCMA Stepping Stone — Already Earning | Comparison Infographic (static) | Framing Effect — two paths side by side. Path A: 2-year degree, $20K. Path B: 5-month MA cert, $49 to start, already earning $44K. "Most students qualify for tuition grants" | While new grads are still sending resumes, I'm already working in healthcare. Here's how to break into it in just 4 months | No person — infographic | $49 vs $20K, grant, career ladder |
-| 4 | Dead-End Job Escaper | CPHT Stepping Stone — Earn While You Climb | Comparison Infographic (static) | Framing Effect — pharmacy tech as entry to hospital/pharmacy career while earning, then move up. $49 to start + grants | I started as a pharmacy tech. Now I'm moving up — while getting paid. | No person — infographic | $49, biweekly payments, career ladder |
+| 2 | Affordable Fast-Track Seeker | CPHT 4-Month Cert Progression | Progression Timeline (static carousel) | Goal Gradient — 4-month timeline to CPhT + externship + career | I became a certified pharmacy tech in 4 months. Here's what each month looked like. | No person — milestone panels | Externship, certification exam, $43,460/year median wage |
+| 3 | Dead-End Job Escaper | CCMA Stepping Stone — Already Earning | Comparison Infographic (static) | Framing Effect — two paths side by side. Path A: 2-year degree, $20K. Path B: 5-month MA program, secure your spot for $49, median MA wage $44.2K/year as a BLS stat. "Most students qualify for tuition grants" | While new grads are still sending resumes, I'm already building healthcare experience. Here's how to break into it without waiting years | No person — infographic | $49 vs $20K, grant, career ladder |
+| 4 | Dead-End Job Escaper | CPHT Stepping Stone — Earn While You Climb | Comparison Infographic (static) | Framing Effect — pharmacy tech as entry to hospital/pharmacy career. Secure your spot for $49 + grants | I started as a pharmacy tech. Now I'm moving up — while getting paid. | No person — infographic | $49, biweekly payments, career ladder |
 | 5 | Dead-End Job Escaper | Proving Doubters Wrong | Text Wall + Inspirational Audio | Affect Heuristic + Social Proof — shame-to-pride arc. Text wall over b-roll. Inspirational IG audio | 5 months ago I was Googling 'healthcare careers no degree.' Today I'm certified. | Black woman — studying, scrubs, clinical | Googling → enrolled → certified → working |
 | 6 | Life-Circumstances Career Launcher | Mom's 4-Month Bet | Text Wall + Inspirational Audio | Affect Heuristic + Temporal Discounting — time-with-family benefit. Mom perspective. Text wall over b-roll | I didn't have 2 years to break into healthcare. I had 5 months and a baby who needed me home. | Asian woman — kitchen table, kids, scrubs | Family time, studying at home, at-home kit |
-| 7 | Affordable Fast-Track Seeker | $49 to $44K | Text Wall + Inspirational Audio | Framing Effect + Affect Heuristic — income transformation. CPHT focus. Text wall over b-roll. "Most students qualify for tuition grants" | I paid $49 to start, now I make $44K/year in healthcare | Black woman — pharmacy counter, studying | $49, grant, $44K/year, biweekly payments |
-| 8 | Life-Circumstances Career Launcher | Working Mom Montage | B-Roll Montage + On-Screen Captions (no VO) | Affect Heuristic + Goal Gradient — music drives completion. Captions: studying at home → at-home clinical kit arrives → practicing skills → externship → first paycheck | I went from stay-at-home mom to certified medical assistant in 5 months. | Asian woman — kitchen table, kit, clinic | At-home kit, family, $44K/year |
-| 9 | Affordable Fast-Track Seeker | 6 Figures No Degree — Montage | B-Roll Montage + On-Screen Captions (no VO) | Processing Fluency + Framing Effect — caption-driven with clinical b-roll. Kit close-ups, studying, cert moment, scrubs | How to make 6 figures in healthcare without a degree | Black woman — clinical settings, scrubs | No degree, $44K/year, at-home kit |
-| 10 | Affordable Fast-Track Seeker | Comment Reply — How to Become an MA | TikTok Comment Reply | Social Proof + Processing Fluency — comment: "How do I become a medical assistant without going back to school?" → reply with 3 steps + at-home kit + $49 + scarcity | I became a certified Medical Assistant in 5 months for $49. No school. No degree. Here's exactly what I did. | Black woman — scrubs, clinical | $49, 3 steps, at-home kit, scarcity |
-| 11 | Affordable Fast-Track Seeker | Comment Reply — Is It Worth It (CPHT) | TikTok Comment Reply | Social Proof + Temporal Discounting — comment: "Is Stepful actually worth it? I keep seeing their ads" → reply with honest timeline + 2-month cert | I was so skeptical I almost didn't sign up. 4 months later I'm a certified pharmacy tech making $44K/year. Here's my honest timeline. | Latina woman — pharmacy, studying | Skeptic-to-believer, 2-month cert, $44K/year |
+| 7 | Affordable Fast-Track Seeker | $49 to CPhT Path | Text Wall + Inspirational Audio | Framing Effect + Affect Heuristic — affordability-to-certification path. CPHT focus. Text wall over b-roll. "Most students qualify for tuition grants" | I secured my spot for $49. Pharmacy Technicians make a median $43,460/year. | Black woman — pharmacy counter, studying | $49, grant, $43,460/year, biweekly payments |
+| 8 | Life-Circumstances Career Launcher | Working Mom Montage | B-Roll Montage + On-Screen Captions (no VO) | Affect Heuristic + Goal Gradient — music drives completion. Captions: studying at home → at-home clinical kit arrives → practicing skills → certification → clinical hours/job support | I went from stay-at-home mom to certified medical assistant in 5 months. | Asian woman — kitchen table, kit, clinic | At-home kit, family, $44.2K/year median MA wage |
+| 9 | Affordable Fast-Track Seeker | Healthcare Without a Degree — Montage | B-Roll Montage + On-Screen Captions (no VO) | Processing Fluency + Framing Effect — caption-driven with clinical b-roll. Kit close-ups, studying, cert moment, scrubs | How to start a healthcare career without a degree | Black woman — clinical settings, scrubs | No degree, $44.2K/year, at-home kit |
+| 10 | Affordable Fast-Track Seeker | Comment Reply — How to Become an MA | TikTok Comment Reply | Social Proof + Processing Fluency — comment: "How do I become a medical assistant without going back to school?" → reply with 3 steps + at-home kit + $49 + scarcity | I became a certified Medical Assistant in 5 months after securing my spot for $49. No school. No degree. Here's exactly what I did. | Black woman — scrubs, clinical | $49, 3 steps, at-home kit, scarcity |
+| 11 | Affordable Fast-Track Seeker | Comment Reply — Is It Worth It (CPHT) | TikTok Comment Reply | Social Proof + Temporal Discounting — comment: "Is Stepful actually worth it? I keep seeing their ads" → reply with honest timeline + 2-month cert | I was so skeptical I almost didn't sign up. 4 months later I'm a certified pharmacy tech. Pharmacy Techs make a median $43,460/year. Here's my honest timeline. | Latina woman — pharmacy, studying | Skeptic-to-believer, 2-month cert, $43,460/year median wage |
 | 12 | Affordable Fast-Track Seeker | 2-Month Cert Carousel | Swipe-to-Learn Carousel | Goal Gradient + Temporal Discounting — walks through the early milestones. Pink/beige aesthetic | How to get a healthcare certification in just 2 months | No person — carousel slides | OSHA/HIPAA cert, at-home kit, 90 min 2x/week |
-| 13 | Affordable Fast-Track Seeker | 6 Figures No Degree — Carousel | Swipe-to-Learn Carousel | Framing Effect + Processing Fluency — new variant of account's top performer. Fresh slides, girly aesthetic | No one told me you could start a $44K/year healthcare career for $49. So I'm telling you. | No person — carousel slides | $49, $44K/year, no degree, grant |
-| 14 | Affordable Fast-Track Seeker | 3 Steps to MA Career | Infographic Static | Processing Fluency — 3 steps: ① 5-month online program ② In-person externship ③ Start your career. "At-home clinical kit included. $49 to start. Most students qualify for tuition grants." | Everyone overcomplicates breaking into healthcare. It's 3 steps. | No person — infographic | $49, grant, at-home kit, scarcity |
+| 13 | Affordable Fast-Track Seeker | Healthcare Without a Degree — Carousel | Swipe-to-Learn Carousel | Framing Effect + Processing Fluency — new variant of account's top performer. Fresh slides, girly aesthetic | No one told me Medical Assistants make a median $44.2K/year. So I'm telling you. | No person — carousel slides | $49, $44.2K/year, no degree, grant |
+| 14 | Affordable Fast-Track Seeker | 3 Steps to MA Career | Infographic Static | Processing Fluency — 3 steps: ① 5-month online program ② NHA CCMA certification ③ Clinical hours + job support. "At-home clinical kit included. Secure your spot for $49. Most students qualify for tuition grants." | Everyone overcomplicates breaking into healthcare. It's 3 steps. | No person — infographic | $49, grant, at-home kit, scarcity |
 | 15 | Affordable Fast-Track Seeker | Healthcare Role Quiz | Quiz/Personality Carousel | Processing Fluency + Salience Bias — "Which healthcare role are you?" Pink/girly collage aesthetic matching #12 (3.66 ROAS) | Ask your besties which healthcare role you are | No person — quiz carousel | Engagement/share bait → program page |
 
 ---
@@ -110,7 +110,7 @@ cssclasses:
 
 | | Hook |
 |---|---|
-| A | While new grads are still sending resumes, I'm already working in healthcare. Here's how to break into it in just 4 months |
+| A | While new grads are still sending resumes, I'm already building healthcare experience. Here's how to break into it without waiting years |
 | B | I didn't wait 2 years to break into healthcare. I started for $49. |
 | C | While nursing students are still in class, Stepful grads are already working and earning. |
 
@@ -119,7 +119,7 @@ cssclasses:
 | | Hook |
 |---|---|
 | A | I started as a pharmacy tech. Now I'm moving up — while getting paid. |
-| B | $49 to start a pharmacy tech career. Then climb as high as you want. |
+| B | Secure your pharmacy tech seat for $49. Then build from there. |
 | C | You don't have to wait years to work in healthcare. Start in 4 months, move up from there. |
 
 ### #5 — Proving Doubters Wrong
@@ -128,7 +128,7 @@ cssclasses:
 |---|---|
 | A | 5 months ago I was Googling 'healthcare careers no degree.' Today I'm certified. |
 | B | I didn't go back to school. But after just 5 months, I'm a certified Medical Assistant. |
-| C | I spent a year telling myself I couldn't afford school. Then I found out it costs $49 to start a healthcare career. Here's what happened next. |
+| C | I spent a year telling myself I couldn't afford school. Then I found out I could secure my spot for $49. Here's what happened next. |
 
 ### #6 — Mom's 4-Month Bet
 
@@ -136,14 +136,14 @@ cssclasses:
 |---|---|
 | A | I didn't have 2 years to break into healthcare. I had 5 months and a baby who needed me home. |
 | B | My kids watched me study at the kitchen table every night. Now they watch me leave for work in scrubs. |
-| C | I enrolled after my daughter fell asleep. 5 months later I'm a certified Medical Assistant making $44K/year. Here's how I did it without missing a single bedtime. |
+| C | I enrolled after my daughter fell asleep. 5 months later I'm a certified Medical Assistant. Medical Assistants make a median $44.2K/year. Here's how I did it without missing a single bedtime. |
 
-### #7 — $49 to $44K
+### #7 — $49 to CPhT Path
 
 | | Hook |
 |---|---|
-| A | I paid $49 to start, now I make $44K/year in healthcare |
-| B | I was tired of checking my bank account before buying groceries. 4 months later I'm making $44K/year. |
+| A | I secured my spot for $49. Pharmacy Technicians make a median $43,460/year. |
+| B | I was tired of checking my bank account before buying groceries. Then I found a 4-month online path into pharmacy tech. |
 | C | Most people don't believe you can start a healthcare career for $49. I didn't either. |
 
 ### #8 — Working Mom Montage
@@ -151,33 +151,33 @@ cssclasses:
 | | Hook |
 |---|---|
 | A | I went from stay-at-home mom to certified medical assistant in 5 months. |
-| B | I used to Google 'jobs for moms with no degree' every night. 5 months later I'm certified and earning $44K/year. Here's what I did. |
+| B | I used to Google 'jobs for moms with no degree' every night. 5 months later I'm certified. Here's what I did. |
 | C | I started Stepful after my kids went to bed. 5 months later I walked into a clinic in scrubs. Here's every step. |
 
 ### #9 — 6 Figures No Degree Montage
 
 | | Hook |
 |---|---|
-| A | How to make 6 figures in healthcare without a degree |
-| B | No degree. No student debt. $44K/year to start and it only goes up. |
-| C | I didn't go to college. I make more than most of my friends who did. |
+| A | How to start a healthcare career without a degree |
+| B | No degree. No student debt. Medical Assistants make a median $44.2K/year. |
+| C | I didn't go to college. I found a faster path into healthcare than I thought. |
 
 ### #10 — Comment Reply: How to Become an MA
 Comment on screen: "How do I become a medical assistant without going back to school?"
 
 | | Hook (first line of the reply content) |
 |---|---|
-| A | I became a certified Medical Assistant in 5 months for $49. No school. No degree. Here's exactly what I did. |
-| B | I asked myself the same question a year ago. 5 months and $49 later, I'm certified and working in healthcare. Here's the breakdown. |
-| C | 5 months. $49 to start. At-home clinical kit delivered to your door. Here's how to go from zero to certified Medical Assistant. |
+| A | I became a certified Medical Assistant in 5 months after securing my spot for $49. No school. No degree. Here's exactly what I did. |
+| B | I asked myself the same question a year ago. 5 months after securing my spot, I'm certified and working in healthcare. Here's the breakdown. |
+| C | 5 months. Secure your spot for $49. At-home clinical kit delivered to your door. Here's how to go from zero to certified Medical Assistant. |
 
 ### #11 — Comment Reply: Is It Worth It (CPHT)
 Comment on screen: "Is Stepful actually worth it? I keep seeing their ads"
 
 | | Hook (first line of the reply content) |
 |---|---|
-| A | I was so skeptical I almost didn't sign up. 4 months later I'm a certified pharmacy tech making $44K/year. Here's my honest timeline. |
-| B | I paid $49 to find out. 4 months later I'm certified and working in a pharmacy. Here's what actually happened month by month. |
+| A | I was so skeptical I almost didn't sign up. 4 months later I'm a certified pharmacy tech. Pharmacy Techs make a median $43,460/year. Here's my honest timeline. |
+| B | I secured my spot for $49. 4 months later I'm certified and working in a pharmacy. Here's what actually happened month by month. |
 | C | I kept seeing the ads too. Finally enrolled. By month 2 I already had my first healthcare certification. Here's the full story. |
 
 ### #12 — 2-Month Cert Carousel
@@ -192,9 +192,9 @@ Comment on screen: "Is Stepful actually worth it? I keep seeing their ads"
 
 | | Hook |
 |---|---|
-| A | How to make 6 figures in healthcare without a degree |
-| B | No one told me you could start a $44K/year healthcare career for $49. So I'm telling you. |
-| C | Healthcare careers that don't require a degree — and still pay 6 figures. |
+| A | How to start a healthcare career without a degree |
+| B | No one told me Medical Assistants make a median $44.2K/year. So I'm telling you. |
+| C | Healthcare careers you can start without a degree. |
 
 ### #14 — 3 Steps to MA Career
 
@@ -228,7 +228,7 @@ Comment on screen: "Is Stepful actually worth it? I keep seeing their ads"
 | 4 | CPHT Stepping Stone | ✅ Same belief, CPHT | ✅ | ✅ CPHT career ladder | ✅ | ✅ | ✅ | ✅ | PASS |
 | 5 | Proving Doubters Wrong | ✅ "Everyone told me I needed a degree" | ✅ | ✅ The Googling-at-night detail | ✅ Text wall for emotional arc | ✅ Vivid, relatable | ✅ Elevate precedent ($301 CPP, 3.07 ROAS) | ✅ | PASS |
 | 6 | Mom's 4-Month Bet | ✅ "I don't have 2 years with a baby" | ✅ | ✅ Kitchen table + bedtime detail | ✅ | ✅ Powerful constraint framing | ✅ Working Moms = 8.28% CTR; text wall adds conversion bridge | ✅ | PASS |
-| 7 | $49 to $44K | ✅ "I can't afford school" + stuck income | ✅ | ✅ $49 → $44K gap is Stepful-specific | ✅ | ✅ Math is the tension | ✅ $49 is untested price anchor | ✅ | PASS |
+| 7 | $49 to CPhT Path | ✅ "I can't afford school" + stuck income | ✅ | ✅ $49 + CPhT wage stat is Stepful-specific | ✅ | ✅ Affordability is the tension | ✅ $49 is untested price anchor | ✅ | PASS |
 | 8 | Working Mom Montage | ✅ Same mom tension, visual expression | ✅ | ✅ Montage vs text wall = different format test | ✅ Montage for #16's format | ✅ | ✅ #16 format works (2.39 ROAS); test with mom narrative | ✅ | PASS |
 | 9 | 6 Figures No Degree Montage | ✅ "Can't make money without a degree" | ✅ | ✅ Tests proven hook in new format | ✅ Montage for hook × format test | ✅ Proven | ✅ If hook works in carousel, does it work in montage? | ✅ | PASS |
 | 10 | Comment Reply MA | ✅ "How do I break in?" — the exact question | ✅ | ✅ TikTok comment reply unique in batch + account | ✅ Untested format, strategist-flagged | ✅ | ✅ 38 Social Comments in account, none spending — execution gap | ✅ | PASS |
@@ -249,7 +249,7 @@ Each concept must shift at least 2 of 4 axes (persona, messaging angle, format, 
 | Pair | Persona | Angle | Format | Hook | Axes Shifted | Verdict |
 |---|---|---|---|---|---|---|
 | #1 vs #12 | Same | Same (2-month cert) | Different (timeline vs carousel) | Same hook A | 1 | ⚠️ Intentional hook × format test |
-| #9 vs #13 | Same | Same (6 figures no degree) | Different (montage vs carousel) | Different hook B/C; same hook A | 1-2 | ⚠️ Intentional hook × format test |
+| #9 vs #13 | Same | Same (healthcare without degree) | Different (montage vs carousel) | Different hook B/C; same hook A | 1-2 | ⚠️ Intentional hook × format test |
 | #1 vs #2 | Same | Same (cert progression) | Same (timeline carousel) | Different hook | 1 | ⚠️ CCMA vs CPHT program test |
 | #3 vs #4 | Same | Same (stepping stone) | Same (comparison infographic) | Different hook | 1 | ⚠️ CCMA vs CPHT program test |
 | #6 vs #8 | Same (Life-Circ.) | Similar (working mom) | Different (text wall vs montage) | Different hook | 2 | ✅ PASS |
@@ -400,7 +400,7 @@ All cross-video specs above apply. Format-specific:
 **Copy rules (Stepful-specific):**
 - **No profanity** — not even censored. Use clean emotional language: "I was so scared," "I was so skeptical," "I almost didn't do it." The audience responds to vulnerability and skepticism, not shock language
 - **Scarcity must be evergreen** — never reference specific class dates (June 11, Jul 9, etc.) because ads outlive their launch window. Use: "The next class starts in just a few days," "Spots are filling fast," "Classes are almost full." Never use any calendar date
-- **Price framing: lead with $49** — the registration fee is the price anchor. Never lead with the full tuition (~$1,100). The affordability stack is: "$49 to start" → "biweekly payment plans" → "most students qualify for need-based tuition grants." Use the grant as a risk-reduction element near the hook in 3-4 concepts, not every ad
+- **Price framing: clarify $49** — the $49 registration fee reserves the student's seat; it is not full tuition and not a fee to apply or "find out." Use "secure your spot for $49" language, then include the approved additional-tuition line where pricing is central. Grants remain a support/risk-reduction point, not a substitute for tuition clarity.
 - **3 hooks per concept** — every concept gets 3 hook variations. Hooks must: be first person, use specific numbers, carry emotional tension, paint a clear picture, and promise the payoff ("here's how I did it" / "here's what happened"). The viewer must want to stick around because she also wants to change her life
 - **First person always** — "I did X" not "You can X" or "She did X." Third person sounds like a brand made it
 
@@ -412,11 +412,11 @@ All cross-video specs above apply. Format-specific:
 - All stats must be backed by recent data with time periods
 - CCMA pass rate: use 78% (program page figure) not 86% (homepage figure) unless confirmed
 - Job placement: "80% of graduates accept full-time job offers within 4 months of starting job-readiness coaching after completing clinical hours" — include the full conditions
-- Salary: "$44,000 median annual salary" per BLS/Lightcast — always cite source
+- Salary: use as a statistic only, not a first-person outcome. Approved language for CCMA: "Medical Assistants make a median annual wage of $44.2k. Source: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Median Annual Wage, May 2024. Outcomes and wages vary." For CPhT, use equivalent BLS statistic language. Never say "I'm making/earning $X" unless that exact alumni salary is documented.
 
 **Program facts:**
-- CCMA: 5 months (20 weeks), 100% online → 80-160 hr externship → job coaching. NHA CCMA exam. $44K median salary
-- CPHT: 4 months (15 weeks), 100% online → 130 hr externship → job coaching. NHA ExCPT or PTCB CPhT exam. $44K median salary
+- CCMA: 5 months (20 weeks), 100% online → NHA CCMA certification exam/certification → 80-160 hr externship/clinical hours → job coaching. Medical Assistants make a median annual wage of $44.2k per BLS May 2024.
+- CPHT: 4 months (15 weeks), 100% online → NHA ExCPT or PTCB CPhT exam/certification → 130 hr externship support → job coaching. Pharmacy work/settings only appear in CPhT ads. Pharmacy Technicians make a median annual wage of $43,460 per BLS OOH May 2024.
 - Clinical kit included with tuition (CCMA): venipuncture trainer arm, stethoscope, digital thermometer, sphygmomanometer, etc.
 - Class format: live 90-minute classes twice a week with expert instructors
 - OSHA & HIPAA Certification completed within the program (Weeks 5-9)
