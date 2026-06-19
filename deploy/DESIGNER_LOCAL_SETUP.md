@@ -11,6 +11,8 @@ Use this when a designer already has the Hermes Desktop app and needs the Reach 
 - **Go CLIs**: `motion-pp-cli` and `clickup-pp-cli`, built from `TheProdigal95/printing-press`
 - **Working directory**: profile `terminal.cwd` set to the vault so Hermes Desktop can read/edit the same files
 
+Note: **Air CLI is not part of required onboarding.** If Hermes mentions `air-pp-cli` failing for `AIR_API_KEY` / `AIR_WORKSPACE_ID`, skip it for now and read [`AIR_CLI_STATUS.md`](AIR_CLI_STATUS.md).
+
 ## Before the call — Marce does this
 
 1. Ask the designer for their GitHub username.
