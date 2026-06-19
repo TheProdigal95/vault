@@ -35,11 +35,11 @@ Reach Digital_Oral Only_Native_PinningFatigue_01_T001
   - Visual takeaway: dark-mode social screenshot UI, blurred profile identity, realistic engagement row. Use the correct typeface shown at the bottom of the reference page.
 
 ### Copy Variations
-| Variation | Native post copy |
-|---|---|
-| A | The benefits are worth it, but I’m tired of pinning.<br><br>It’s less about the needle and more about the constant management.<br><br>Time to switch to daily Oral TRT. |
-| B | The pinning part of TRT is starting to get old.<br><br>It’s less about the needle and more about the constant management.<br><br>Try 2 months of Oral Only, get 1 free. |
-| C | Just feels like there should be an easier way to do this by now.<br><br>It’s less about the needle and more about the constant management.<br><br>That is the whole point of Oral TRT. |
+| Variation | Native post copy                                                                                                                                                                                                 |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A         | The benefits are worth it, but I’m tired of pinning.<br><br>It’s less about the needle and more about the constant management.<br><br>Looking into daily Oral TRT instead.                                       |
+| B         | The pinning part of TRT is starting to get old.<br><br>The routine of keeping up with everything becomes a second job.<br><br>Oral Only is offering a third month free for eligible guys right now.              |
+| C         | Just feels like there should be an easier way to do this by now.<br><br>You get tired of the weekly checklist and all the supplies required.<br><br>A physician-guided daily oral routine makes much more sense. |
 
 ### Design Elements
 - **Platform UI:** X/Twitter, dark mode
@@ -68,9 +68,9 @@ Reach Digital_Oral Only_Native_NeedleDrawer_02_T001
 ### Copy Variations
 | Variation | Native post copy |
 |---|---|
-| A | TRT shouldn’t require a needle drawer.<br><br>Syringes, vials, alcohol swabs, travel planning. It becomes a lot to manage.<br><br>Time to switch to Oral TRT. Third month is free on Oral Only. |
-| B | My bathroom counter is starting to look like a medical supply closet.<br><br>Syringes, vials, alcohol swabs, travel planning. It becomes a lot to manage.<br><br>This is the case for daily Oral TRT. |
-| C | All this, just for one part of my health routine.<br><br>Syringes, vials, alcohol swabs, travel planning. It becomes a lot to manage.<br><br>The daily Oral TRT pitch is simple. |
+| A | TRT shouldn’t require a needle drawer.<br><br>Syringes, vials, alcohol swabs, travel planning. It becomes a lot to manage.<br><br>Moving to daily Oral TRT. They are running a third month free offer. |
+| B | My bathroom counter is starting to look like a medical supply closet.<br><br>Managing the logistics for daily dosing takes up a lot of space and time.<br><br>I am glad I asked my doctor if a daily oral medication is right for me. |
+| C | All this, just for one part of my health routine.<br><br>The storage and travel logistics for daily dosing add a lot of extra steps.<br><br>Talking to a doctor about a daily oral medication option can be a good next step. |
 
 ### Design Elements
 - **Platform UI:** X/Twitter, dark mode
@@ -100,9 +100,9 @@ Reach Digital_Oral Only_Native_DeliveryCurve_03_T001
 ### Copy Variations
 | Variation | Native post copy |
 |---|---|
-| A | What if the problem isn’t testosterone, but how standard TRT delivers it?<br><br>Dr. Jaquish talks about timing and the delivery curve, not just chasing a higher number.<br><br>This is the case for fast-acting Oral TRT. |
-| B | Dr. Jaquish raises an interesting question about standard TRT delivery.<br><br>Dr. Jaquish talks about timing and the delivery curve, not just chasing a higher number.<br><br>Oral Only now includes free NAD+ with subscription. |
-| C | Most of the TRT conversation is about dose. What about delivery?<br><br>Dr. Jaquish talks about timing and the delivery curve, not just chasing a higher number.<br><br>This is why fast-acting Oral TRT exists. |
+| A | What if the problem isn’t testosterone, but how standard TRT delivers it?<br><br>Dr. Jaquish talks about timing and the delivery curve, not just chasing a higher number.<br><br>A big reason why guys are exploring daily Oral TRT. |
+| B | Dr. Jaquish raises an interesting question about standard TRT delivery.<br><br>He points out that the delivery curve might matter much more than we realize.<br><br>Oral Only currently includes free NAD+ with their plan. |
+| C | Most of the TRT conversation is about dose. What about delivery?<br><br>The argument from Dr. Jaquish is that timing is a crucial variable.<br><br>A compelling angle for compounded daily oral routines. |
 
 ### Design Elements
 - **Platform UI:** X/Twitter, dark mode
@@ -130,9 +130,9 @@ Reach Digital_Oral Only_Native_First60Days_04_T001
 ### Copy Variations
 | Variation | Native post copy |
 |---|---|
-| A | **Title:** The part of TRT nobody explains: what happens after the first 60 days.<br><br>**Body:** I keep seeing guys talk about the TRT honeymoon. The first stretch feels different, then the protocol gets more complicated. Dr. Jaquish has a whole explanation around timing, delivery, and why “more T” is not the only question.<br><br>Curious if anyone else has looked into this. |
-| B | **Title:** Question for the vets: what was your experience like after the TRT “honeymoon phase”?<br><br>**Body:** I keep seeing guys talk about the TRT honeymoon. The first stretch feels different, then the protocol gets more complicated. Dr. Jaquish has a whole explanation around timing, delivery, and why “more T” is not the only question.<br><br>Curious if anyone else has looked into this. |
-| C | **Title:** Curious what TRT feels like months in vs. the first couple of months.<br><br>**Body:** I keep seeing guys talk about the TRT honeymoon. The first stretch feels different, then the protocol gets more complicated. Dr. Jaquish has a whole explanation around timing, delivery, and why “more T” is not the only question.<br><br>Curious if anyone else has looked into this. |
+| A | **Title:** The part of TRT nobody explains: what happens after the first 60 days.<br><br>**Body:** I keep seeing guys talk about the TRT honeymoon. The first stretch feels different, then the protocol gets more complicated. Dr. Jaquish has a whole explanation around timing, delivery, and why "more T" is not the only question.<br><br>Curious if anyone else has looked into this. |
+| B | **Title:** Question for the vets: what was your experience like after the TRT "honeymoon phase"?<br><br>**Body:** It keeps coming up in threads that the start of the protocol is great, but eventually the routine gets tedious. Has anyone dug into Dr. Jaquish's breakdown of timing and the delivery curve?<br><br>Would love to hear some thoughts. |
+| C | **Title:** Curious what TRT feels like months in vs. the first couple of months.<br><br>**Body:** I constantly see posts about how good the initial phase is before the maintenance gets overwhelming. Thinking about the delivery curve arguments Dr. Jaquish makes regarding this.<br><br>Any input from guys who have been on it for a while? |
 
 ### Design Elements
 - **Platform UI:** Reddit, dark mode
@@ -194,9 +194,9 @@ Reach Digital_Oral Only_Native_TimingNotMore_06_T001
 ### Copy Variations
 | Variation | Native post copy |
 |---|---|
-| A | The point isn’t just more testosterone. It’s timing.<br><br>Dr. Jaquish’s argument is that delivery curve matters.<br><br>Time to give Oral Only TRT a try. NAD+ is free right now with their sub. |
-| B | Dr. Jaquish talks about TRT timing, not just T levels.<br><br>Dr. Jaquish’s argument is that delivery curve matters.<br><br>This is the case for fast-acting Oral TRT. |
-| C | What if the timing of your TRT matters as much as the dose?<br><br>Dr. Jaquish’s argument is that delivery curve matters.<br><br>That is the whole point of Oral TRT. |
+| A | The point isn’t just more testosterone. It’s timing.<br><br>Dr. Jaquish’s argument is that delivery curve matters.<br><br>Looking into Oral Only TRT. They include free NAD+ with the subscription right now. |
+| B | Dr. Jaquish talks about TRT timing, not just T levels.<br><br>The idea is to look closer at how the medication is actually delivered.<br><br>It makes a strong case for exploring fast-acting Oral TRT. |
+| C | What if the timing of your TRT matters as much as the dose?<br><br>His breakdown focuses on why the delivery mechanism might dictate the experience.<br><br>It completely shifts the perspective on daily oral routines. |
 
 ### Design Elements
 - **Platform UI:** X/Twitter, dark mode

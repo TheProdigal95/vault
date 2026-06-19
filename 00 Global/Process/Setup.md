@@ -1,13 +1,15 @@
-# First-Time Setup (New Strategist)
+# First-Time Setup (New Coworker / Designer)
 
-**Easiest way (Hermes-native):** Open Hermes Agent in the vault (`hermes` from the reach-digital profile) and say **"set me up"** or **"install dependencies"**. Hermes uses the `setup` skill to walk you through provisioning conversationally — handles missing brew/npm/go, prompts for API keys, runs OAuth, verifies with the smoke test.
+**Current recommended path:** follow `deploy/DESIGNER_LOCAL_SETUP.md`. It installs the Hermes profile, clones this vault, clones `printing-press`, builds the Go CLIs, installs Node dependencies, and configures Hermes Desktop to use the vault.
+
+**Hermes-native recovery path:** Open Hermes Agent in the vault (`hermes -p reach-digital chat`) and say **"set me up"** or **"install dependencies"**. Hermes uses the `setup` skill to walk you through provisioning conversationally — handles missing brew/npm/go, prompts for API keys, runs OAuth, verifies with the smoke test.
 
 **One-command provisioning** (run after cloning the vault, on a new machine, or after a wipe):
 ```bash
 bash 00\ Global/Hermes/Scripts/setup.sh
 ```
 
-The script is **idempotent** (safe to re-run), **cross-platform** (macOS via Homebrew, Linux via apt/dnf), and covers 8 phases: system deps, Node tool `npm install`s, Go CLI builds, API key validation, strategist identity, MCP server check, browser profile dirs, and the smoke test at the end.
+The script is **idempotent** (safe to re-run), **cross-platform** (macOS via Homebrew, Linux via apt/dnf), and covers 9 phases: system deps, Node tool `npm install`s, Go CLI source clone/builds, API key validation, strategist identity, MCP server check, browser profile dirs, smoke test, and profile working-directory sync.
 
 **Verify without changing anything:**
 ```bash
@@ -37,16 +39,16 @@ The reach-digital profile at `~/.hermes/profiles/reach-digital/` ships pre-confi
 | **ClickUp** (personal API token) | `~/.config/clickup-pp-cli/config.toml` → `auth_header` (real user home, NOT profile-scoped `$HOME`) | Go CLI for routine loading; MCP for ad-hoc reads |
 | **ClickUp MCP** (OAuth 2.1 PKCE) | `auth.json` token, set 2026-06-09 | 51 tools enabled, browser-OAuth on first use |
 
-### 13 reach-digital skills (auto-loaded / available)
+### 14 reach-digital skills (auto-loaded / available)
 
-In `~/.hermes/profiles/reach-digital/skills/reach-digital/`: `batch-planner`, `brand-researcher`, `brief-writer`, `clickup-load`, `critique-orchestrator`, `grab-media`, `motion-top-spenders`, `reach-digital-ops`, `scoring-evaluator`, `script-writer`, `setup`, `sheets-tracker-sync`, `transcribe`. Copywriting must route through the right primary skill — `script-writer` for video scripts, `brief-writer` for statics, `critique-orchestrator` for QA — not ad hoc delegate prompts.
+In `~/.hermes/profiles/reach-digital/skills/reach-digital/`: `batch-planner`, `brand-researcher`, `brief-writer`, `clickup-load`, `creative-feedback-handoff`, `critique-orchestrator`, `grab-media`, `motion-top-spenders`, `reach-digital-ops`, `scoring-evaluator`, `script-writer`, `setup`, `sheets-tracker-sync`, `transcribe`. Copywriting must route through the right primary skill — `script-writer` for video scripts, `brief-writer` for statics, `critique-orchestrator` for QA — not ad hoc delegate prompts.
 
 ### Tools (`00 Global/Hermes/tools/`)
 
 | Tool | Purpose | Install state |
 |---|---|---|
-| `motion-pp-cli` | Go CLI — pull top creatives, angles/formats/highlights | Pre-built; `$HOME/go/bin/motion-pp-cli` |
-| `clickup-pp-cli` | Go CLI — load briefs/scripts, footage requests | Pre-built; `$HOME/go/bin/clickup-pp-cli` |
+| `motion-pp-cli` | Go CLI — pull top creatives, angles/formats/highlights | Built by setup; source `~/printing-press/library/motion`, binary `$HOME/go/bin/motion-pp-cli` |
+| `clickup-pp-cli` | Go CLI — load briefs/scripts, footage requests | Built by setup; source `~/printing-press/library/clickup`, binary `$HOME/go/bin/clickup-pp-cli` |
 | `gemini-api` | Node — video analysis, strategic breakdowns | Pre-installed, needs `npm install` per dir + `.env` |
 | `site-scraper` | Node — whole-site crawl for Brand/Product Context | Pre-installed + Playwright Chromium |
 | `fal-ai` | Node — NanoBanana 2 image gen, Kling video animation | Pre-installed, needs `FAL_KEY` in `.env` |
@@ -54,7 +56,7 @@ In `~/.hermes/profiles/reach-digital/skills/reach-digital/`: `batch-planner`, `b
 | `endcard-generator` | Node — end card composition + visual comparison | Pre-installed |
 | `persona-counter` / `review-sampler` | Node — persona discovery | Pre-installed |
 
-For each Node tool: `cd 00\ Global/Hermes/tools/<name> && npm install`. For Go CLIs: source lives at `~/printing-press/library/<name>/`; rebuild with `make -C ~/printing-press/library/<name> install`.
+For each Node tool: `cd 00\ Global/Hermes/tools/<name> && npm install`. For Go CLIs: setup clones `https://github.com/TheProdigal95/printing-press.git` to `~/printing-press` if missing, then builds `~/printing-press/library/motion/cmd/motion-pp-cli` and `~/printing-press/library/clickup/cmd/clickup-pp-cli` into `$HOME/go/bin/`.
 
 ### Strategist identity
 
@@ -117,6 +119,6 @@ Free, offline speech-to-text via MLX Whisper. Without it, `/transcribe` uses the
 
 **Agent Client shows "authentication required":** Re-link via `hermes auth refresh` in the terminal, then restart Obsidian.
 
-**Go CLI missing and no printing-press directory:** Ask your team lead for the source directory or a pre-built binary. Copy to `$HOME/go/bin/`.
+**Go CLI missing and no printing-press directory:** Re-run `bash 00\ Global/Hermes/Scripts/setup.sh`. It clones `TheProdigal95/printing-press` and builds both CLIs into `$HOME/go/bin/`. If the binary exists but Hermes cannot find it, add `export PATH="$HOME/go/bin:$HOME/.local/bin:$PATH"` to `~/.zshrc` and restart Hermes Desktop.
 
 **Google Drive MCP OAuth fails:** Make sure `~/.config/google-drive-mcp/gcp-oauth.keys.json` exists with valid credentials. Run `npx @piotr-agier/google-drive-mcp auth` to re-authenticate.

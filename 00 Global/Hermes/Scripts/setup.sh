@@ -33,6 +33,11 @@ TOOLS_DIR="$HERMES_DIR/tools"
 COMMANDS_DIR="$HERMES_DIR/Commands"
 PROFILE_DIR="$HOME/.hermes/profiles/reach-digital"
 SMOKE_TEST="$PROFILE_DIR/skills/reach-digital/reach-digital-ops/scripts/smoke-test.sh"
+PRINTING_PRESS_REPO="${PRINTING_PRESS_REPO:-https://github.com/TheProdigal95/printing-press.git}"
+PRINTING_PRESS_DIR="${PRINTING_PRESS_DIR:-$HOME/printing-press}"
+# Desktop-launched shells and fresh Hermes installs often do not inherit zsh PATH.
+# Include the standard user binary locations before checking/building tools.
+export PATH="$HOME/.local/bin:$HOME/go/bin:/opt/homebrew/bin:/usr/local/bin:$PATH"
 
 # --- Output helpers -----------------------------------------------------------
 RED='\033[0;31m'; GREEN='\033[0;32m'; YELLOW='\033[1;33m'; BLUE='\033[0;34m'; BOLD='\033[1m'; NC='\033[0m'
@@ -261,10 +266,40 @@ else
 fi
 
 # --- Phase 3: Go CLIs ---------------------------------------------------------
+cli_source_dir() {
+  case "$1" in
+    motion-pp-cli)  echo "$PRINTING_PRESS_DIR/library/motion" ;;
+    clickup-pp-cli) echo "$PRINTING_PRESS_DIR/library/clickup" ;;
+    *)              echo "$PRINTING_PRESS_DIR/library/$1" ;;
+  esac
+}
+
+ensure_printing_press_repo() {
+  if [ -d "$PRINTING_PRESS_DIR/.git" ]; then
+    ok "printing-press source present: $PRINTING_PRESS_DIR"
+    return 0
+  fi
+  if [ "$CHECK_ONLY" = true ]; then
+    err "printing-press source missing at $PRINTING_PRESS_DIR (will clone $PRINTING_PRESS_REPO)"
+    return 1
+  fi
+  if ! command -v git >/dev/null 2>&1; then
+    err "git not found — cannot clone printing-press source"
+    return 1
+  fi
+  note "Cloning printing-press source: $PRINTING_PRESS_REPO → $PRINTING_PRESS_DIR"
+  git clone "$PRINTING_PRESS_REPO" "$PRINTING_PRESS_DIR" \
+    && ok "printing-press source cloned" \
+    || { err "printing-press clone failed"; return 1; }
+}
+
 hdr "Phase 3: Go CLIs (printing-press source)"
+mkdir -p "$HOME/go/bin"
 for cli in motion-pp-cli clickup-pp-cli; do
   if command -v "$cli" >/dev/null 2>&1; then
     ok "$cli — installed at $(command -v "$cli")"
+  elif [ -x "$HOME/go/bin/$cli" ]; then
+    ok "$cli — installed at $HOME/go/bin/$cli (add $HOME/go/bin to PATH if Hermes cannot find it)"
   elif ! command -v go >/dev/null 2>&1; then
     if [ "$CHECK_ONLY" = true ]; then
       err "$cli — missing AND Go not installed (can't build)"
@@ -273,15 +308,18 @@ for cli in motion-pp-cli clickup-pp-cli; do
     fi
   else
     if [ "$CHECK_ONLY" = true ]; then
-      err "$cli — missing (clone printing-press or copy binary to $HOME/go/bin/)"
-    elif [ -d "$HOME/printing-press/library/$cli" ]; then
-      note "Building $cli from $HOME/printing-press/library/$cli"
-      (cd "$HOME/printing-press/library/$cli" && go build -o "$HOME/go/bin/$cli" ./cmd/"$cli") \
-        && ok "$cli — built and installed to $HOME/go/bin/$cli" \
-        || err "$cli — build FAILED. Check Go env and printing-press source."
+      err "$cli — missing (will build from $PRINTING_PRESS_DIR)"
     else
-      err "$cli — source not found at ~/printing-press/library/$cli."
-      err "Either clone printing-press (if you have access) or copy a pre-built binary to $HOME/go/bin/."
+      ensure_printing_press_repo || continue
+      src="$(cli_source_dir "$cli")"
+      if [ -d "$src" ]; then
+        note "Building $cli from $src"
+        (cd "$src" && go build -o "$HOME/go/bin/$cli" ./cmd/"$cli") \
+          && ok "$cli — built and installed to $HOME/go/bin/$cli" \
+          || err "$cli — build FAILED. Check Go env and printing-press source."
+      else
+        err "$cli — source not found at $src"
+      fi
     fi
   fi
 done
@@ -307,7 +345,7 @@ else
   # Verify the config file is present and the CLI can do a live API call.
   CLICKUP_CFG="$HOME/.config/clickup-pp-cli/config.toml"
   if [ -f "$CLICKUP_CFG" ] && grep -qE "^auth_header\s*=\s*['\"]pk_" "$CLICKUP_CFG"; then
-    if [ -x "/Users/marce/go/bin/clickup-pp-cli" ] || command -v clickup-pp-cli >/dev/null 2>&1; then
+    if command -v clickup-pp-cli >/dev/null 2>&1 || [ -x "$HOME/go/bin/clickup-pp-cli" ]; then
       if clickup-pp-cli team --json --compact >/dev/null 2>&1; then
         ok "ClickUp CLI auth: config.toml has valid pk_ token, live API reachable"
       else
@@ -384,6 +422,22 @@ if [ -f "$SMOKE_TEST" ]; then
   fi
 else
   warn "Smoke test script not found at $SMOKE_TEST"
+fi
+
+# --- Phase 9: Profile cwd sync -------------------------------------------------
+hdr "Phase 9: Hermes profile working directory"
+if command -v hermes >/dev/null 2>&1; then
+  if [ "$CHECK_ONLY" = true ]; then
+    note "Run after provisioning: hermes -p reach-digital config set terminal.cwd '$VAULT_DIR'"
+  else
+    if hermes -p reach-digital config set terminal.cwd "$VAULT_DIR" >/dev/null 2>&1; then
+      ok "reach-digital terminal.cwd set to $VAULT_DIR"
+    else
+      warn "Could not set terminal.cwd automatically. Run manually: hermes -p reach-digital config set terminal.cwd '$VAULT_DIR'"
+    fi
+  fi
+else
+  warn "hermes CLI not on PATH — set the Desktop profile working directory manually to $VAULT_DIR"
 fi
 
 # --- Done ----------------------------------------------------------------------

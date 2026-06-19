@@ -6,21 +6,29 @@ Obsidian vault + Hermes Agent (Nous Portal + Gemini API + FAL) for creative stra
 
 ---
 
-## Quick Start (New Strategist)
+## Quick Start (New Coworker / Designer)
 
-### Prerequisites
+For the current team rollout, start here:
 
-1. **Obsidian** — [Download](https://obsidian.md/) (free)
-2. **Hermes Agent** — install from [hermes-agent.nousresearch.com](https://hermes-agent.nousresearch.com). The reach-digital profile lives at `~/.hermes/profiles/reach-digital/` and is preloaded with provider auth (Nous OAuth, Gemini API key) and 8 vault skills.
+1. **Hermes Desktop** — install from [hermes-agent.nousresearch.com/desktop](https://hermes-agent.nousresearch.com/desktop)
+2. **Local setup guide** — follow [`deploy/DESIGNER_LOCAL_SETUP.md`](deploy/DESIGNER_LOCAL_SETUP.md)
+
+That guide installs the `reach-digital` Hermes profile, clones this vault, clones `printing-press`, builds the Go CLIs (`motion-pp-cli`, `clickup-pp-cli`), installs Node dependencies, and points Hermes Desktop at this vault.
+
+**Verify anytime:**
+```bash
+bash ~/.hermes/profiles/reach-digital/skills/reach-digital/reach-digital-ops/scripts/smoke-test.sh
+```
+
+All green means everything works.
 
 ### Open the Vault
 
 ```bash
-hermes   # CLI — auto-loads the reach-digital profile from ~/.hermes/profiles/reach-digital/
-hermes --tui   # TUI
+hermes -p reach-digital chat   # CLI — uses the reach-digital profile
 ```
 
-Or use the **Obsidian Agent Client sidebar** (right panel — installed by setup) — runs through Hermes via the ACP adapter.
+Or use **Hermes Desktop** and select the `reach-digital` profile. The setup guide sets `terminal.cwd` to this vault so Desktop can read/edit the same files.
 
 Then say: **"This is my first time. Set me up."** Hermes walks you through API keys, browser logins, and Obsidian configuration.
 
@@ -93,7 +101,7 @@ reach-digital-hermes/
 │   ├── Process/                   ← workflows, setup, system docs
 │   ├── Hermes/                    ← Hermes-specific config (canonical)
 │   │   ├── Commands/              ← 8 .md files, the canonical skill references
-│   │   ├── Tools/                 ← Node tools + Go CLI source
+│   │   ├── tools/                 ← Node tools source (lowercase, tracked)
 │   │   └── strategist.json        ← your identity for ClickUp task assignment
 │   ├── Statics Generator/         ← AI image generation system
 │   ├── Script Structure Examples/
@@ -119,8 +127,8 @@ The reach-digital profile at `~/.hermes/profiles/reach-digital/` ships pre-confi
 | Category | Components |
 |---|---|
 | **Provider auth** | Nous Portal (OAuth) + Google AI Studio + FAL + ClickUp (API token + MCP OAuth) |
-| **Reach-digital skills (8)** | batch-planner, brand-researcher, clickup-load, grab-media, motion-top-spenders, reach-digital-ops, script-writer, transcribe |
-| **Go CLIs** | `motion-pp-cli` + `clickup-pp-cli` — pre-built, installed at `$HOME/go/bin/`, source at `~/printing-press/library/<name>/` |
+| **Reach-digital skills (14)** | batch-planner, brand-researcher, brief-writer, clickup-load, creative-feedback-handoff, critique-orchestrator, grab-media, motion-top-spenders, reach-digital-ops, scoring-evaluator, script-writer, setup, sheets-tracker-sync, transcribe |
+| **Go CLIs** | `motion-pp-cli` + `clickup-pp-cli` — built by setup into `$HOME/go/bin/`, source at `~/printing-press/library/{motion,clickup}/` |
 | **Node tools** | gemini-api, site-scraper, review-sampler, persona-counter, ad-classifier, fal-ai, endcard-generator — pre-installed under `00 Global/Hermes/tools/` |
 | **MCP servers** | ClickUp (configured, 51 tools) + Notion (add manually) + Google Drive (add manually) |
 | **Obsidian** | Minimal theme, 4 plugins, 2 CSS snippets, dark mode, appearance config |

@@ -1,11 +1,16 @@
 # Reach Digital — Team Deployment
 
-This directory has the scripts and docs for deploying the Reach Digital Hermes stack to the team. The model: **one VPS hosts everything, each team member installs the Hermes app on their Mac and SSHes into the VPS for the heavy lifting**.
+This directory has the scripts and docs for sharing the Reach Digital Hermes stack with the team.
+
+**Current coworker/designer rollout:** use [`DESIGNER_LOCAL_SETUP.md`](DESIGNER_LOCAL_SETUP.md). This installs the Hermes profile, vault, Node tools, and Go CLIs locally so the designer can use Hermes Desktop and push centralized vault edits.
+
+**Future always-on deployment:** the VPS model below hosts everything centrally; each team member installs the Hermes app on their Mac and SSHes into the VPS for the heavy lifting.
 
 ## What's in this directory
 
 | File | What it does |
 |---|---|
+| `DESIGNER_LOCAL_SETUP.md` | Local designer/coworker setup: Hermes Desktop + profile + vault + Node tools + Go CLIs + GitHub push workflow. |
 | `vps-provision.sh` | Hardens a fresh Ubuntu VPS, installs Docker, Node, Go, fail2ban, UFW, unattended-upgrades. Run once. |
 | `deploy-stack.sh` | Clones the 3 repos, builds the Go CLIs, installs Node deps, installs the Hermes profile. Run once after `vps-provision.sh`. |
 | `onboard-user.sh` | Adds a new team member (creates their Hermes profile, registers their SSH key, generates their local-app config snippet). Run once per person. |
@@ -53,7 +58,7 @@ Compare to per-user local installs: 6 × 20 min of setup time + 6 × $5-20/mo in
 | Repo | What's in it | When it changes |
 |---|---|---|
 | `TheProdigal95/vault` (this repo) | Brand docs, T-batch files, Node tools source, deploy/ scripts, AGENTS.md | Daily (new T-batch, new context doc) |
-| `TheProdigal95/hermes-profile` | The 9 skills, MCP wiring, Hermes config, SOUL.md | Monthly (new skill, new model) |
+| `TheProdigal95/hermes-profile` | The 14 skills, MCP wiring, Hermes config, SOUL.md | Monthly (new skill, new model) |
 | `TheProdigal95/printing-press` | The Go CLI source (motion-pp-cli, clickup-pp-cli) + local patches | Rarely (when an upstream API changes) |
 
 ## Deployment flow (you, the deployer)
