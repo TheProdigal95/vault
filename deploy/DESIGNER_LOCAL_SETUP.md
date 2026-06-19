@@ -7,6 +7,7 @@ Use this when a designer already has the Hermes Desktop app and needs the Reach 
 - **Hermes profile**: `reach-digital` profile distribution from `TheProdigal95/hermes-profile`
 - **Vault**: Obsidian vault at `~/Documents/reach-digital-hermes`
 - **Node tools**: tools under `00 Global/Hermes/tools/`
+- **Browser stack**: `agent-browser` plus local Camofox/Camoufox backend at `~/.hermes/profiles/reach-digital/camofox-browser` with `CAMOFOX_URL=http://localhost:9377`
 - **Go CLIs**: `motion-pp-cli` and `clickup-pp-cli`, built from `TheProdigal95/printing-press`
 - **Working directory**: profile `terminal.cwd` set to the vault so Hermes Desktop can read/edit the same files
 
@@ -116,14 +117,16 @@ hermes -p reach-digital config set terminal.cwd "$HOME/Documents/reach-digital-h
 
 This is the key Desktop step: the agent's file/terminal tools should start in the shared vault, not in a random home folder.
 
-### 7) Provision Node tools + Go CLIs
+### 7) Provision browser stack + Node tools + Go CLIs
 
 ```bash
 cd "$HOME/Documents/reach-digital-hermes"
 bash "00 Global/Hermes/Scripts/setup.sh"
 ```
 
-The script installs Node dependencies, builds `motion-pp-cli` and `clickup-pp-cli` into `~/go/bin`, and runs a smoke test.
+The script installs Camofox/Camoufox for Hermes browser tools, installs Node dependencies, builds `motion-pp-cli` and `clickup-pp-cli` into `~/go/bin`, sets `CAMOFOX_URL=http://localhost:9377` in the profile `.env`, and runs a smoke test.
+
+After this step, fully quit/reopen Hermes Desktop so it picks up `CAMOFOX_URL`.
 
 If Hermes cannot find the CLIs after this, add Go bin to shell PATH:
 
@@ -226,4 +229,5 @@ For ClickUp-oriented design organization:
 | `fatal: Authentication failed` on push | Re-run `gh auth login`, choose HTTPS + authenticate Git. |
 | `Permission denied` on push | Marce needs to add them as a collaborator on `TheProdigal95/vault`. |
 | Hermes edits the wrong folder | Re-run `hermes -p reach-digital config set terminal.cwd "$HOME/Documents/reach-digital-hermes"` and restart Desktop. |
+| Browser/Camofox not working | Re-run `bash "00 Global/Hermes/Scripts/setup.sh"`, then fully quit/reopen Hermes Desktop. Check `curl http://localhost:9377/health`. |
 | Motion auth fails | Re-run the `agent-browser --session motion ...` login and then `motion-pp-cli doctor`. |

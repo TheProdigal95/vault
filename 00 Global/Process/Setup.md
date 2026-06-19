@@ -9,7 +9,7 @@
 bash 00\ Global/Hermes/Scripts/setup.sh
 ```
 
-The script is **idempotent** (safe to re-run), **cross-platform** (macOS via Homebrew, Linux via apt/dnf), and covers 9 phases: system deps, Node tool `npm install`s, Go CLI source clone/builds, API key validation, strategist identity, MCP server check, browser profile dirs, smoke test, and profile working-directory sync.
+The script is **idempotent** (safe to re-run), **cross-platform** (macOS via Homebrew, Linux via apt/dnf), and covers 10 phases: system deps, Camofox/Camoufox local browser backend, Node tool `npm install`s, Go CLI source clone/builds, API key validation, strategist identity, MCP server check, browser profile dirs, smoke test, and profile working-directory sync.
 
 **Verify without changing anything:**
 ```bash
@@ -50,13 +50,14 @@ In `~/.hermes/profiles/reach-digital/skills/reach-digital/`: `batch-planner`, `b
 | `motion-pp-cli` | Go CLI — pull top creatives, angles/formats/highlights | Built by setup; source `~/printing-press/library/motion`, binary `$HOME/go/bin/motion-pp-cli` |
 | `clickup-pp-cli` | Go CLI — load briefs/scripts, footage requests | Built by setup; source `~/printing-press/library/clickup`, binary `$HOME/go/bin/clickup-pp-cli` |
 | `gemini-api` | Node — video analysis, strategic breakdowns | Pre-installed, needs `npm install` per dir + `.env` |
+| `Camofox/Camoufox` | Local anti-bot browser backend for Hermes browser tools | Setup clones `jo-inc/camofox-browser` into the profile, installs dependencies, writes `CAMOFOX_URL=http://localhost:9377`, and creates a macOS LaunchAgent |
 | `site-scraper` | Node — whole-site crawl for Brand/Product Context | Pre-installed + Playwright Chromium |
 | `fal-ai` | Node — NanoBanana 2 image gen, Kling video animation | Pre-installed, needs `FAL_KEY` in `.env` |
 | `ad-classifier` | Node — text-only Meta ad classification + angle dedup | Pre-installed |
 | `endcard-generator` | Node — end card composition + visual comparison | Pre-installed |
 | `persona-counter` / `review-sampler` | Node — persona discovery | Pre-installed |
 
-For each Node tool: `cd 00\ Global/Hermes/tools/<name> && npm install`. For Go CLIs: setup clones `https://github.com/TheProdigal95/printing-press.git` to `~/printing-press` if missing, then builds `~/printing-press/library/motion/cmd/motion-pp-cli` and `~/printing-press/library/clickup/cmd/clickup-pp-cli` into `$HOME/go/bin/`.
+For each Node tool: `cd 00\ Global/Hermes/tools/<name> && npm install`. Setup also installs the Camofox browser backend from `https://github.com/jo-inc/camofox-browser.git` into `~/.hermes/profiles/reach-digital/camofox-browser` and sets `CAMOFOX_URL=http://localhost:9377` in the profile `.env`; restart Hermes Desktop after that env change. For Go CLIs: setup clones `https://github.com/TheProdigal95/printing-press.git` to `~/printing-press` if missing, then builds `~/printing-press/library/motion/cmd/motion-pp-cli` and `~/printing-press/library/clickup/cmd/clickup-pp-cli` into `$HOME/go/bin/`.
 
 ### Strategist identity
 

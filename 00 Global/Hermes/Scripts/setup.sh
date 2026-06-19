@@ -13,14 +13,15 @@
 # Supports: macOS (Homebrew), Linux (apt or dnf). Windows requires WSL.
 #
 # Phases:
-#   1. System deps       — yt-dlp, ffmpeg, go, node, python3, agent-browser, claude-agent-acp
-#   2. Node tools        — npm install in each tool dir under 00 Global/Hermes/tools/
-#   3. Go CLIs           — build motion-pp-cli + clickup-pp-cli from printing-press source
-#   4. API keys          — verify .env has GOOGLE_API_KEY, FAL_KEY; verify ClickUp config.toml has a valid auth_header
-#   5. Strategist         — create 00 Global/Hermes/strategist.json template if missing
-#   6. MCP servers        — verify ClickUp is configured; print Google Drive manual steps (Notion deprecated)
-#   7. Browser profiles   — ensure review-sampler/profiles/{trustpilot,amazon} dirs exist
-#   8. Smoke test         — run reach-digital-ops/scripts/smoke-test.sh at the end
+#   1. System deps       — git, yt-dlp, ffmpeg, go, node, python3, agent-browser, claude-agent-acp
+#   2. Camofox browser   — clone/install local anti-bot browser backend, set CAMOFOX_URL, install macOS LaunchAgent
+#   3. Node tools        — npm install in each tool dir under 00 Global/Hermes/tools/
+#   4. Go CLIs           — build motion-pp-cli + clickup-pp-cli from printing-press source
+#   5. API keys          — verify .env has GOOGLE_API_KEY, FAL_KEY; verify ClickUp config.toml has a valid auth_header
+#   6. Strategist        — create 00 Global/Hermes/strategist.json template if missing
+#   7. MCP servers       — verify ClickUp is configured; print Google Drive manual steps (Notion deprecated)
+#   8. Browser profiles  — ensure review-sampler/profiles/{trustpilot,amazon} dirs exist
+#   9. Smoke test        — run reach-digital-ops/scripts/smoke-test.sh at the end
 # ============================================================================
 
 set -euo pipefail
@@ -35,6 +36,11 @@ PROFILE_DIR="$HOME/.hermes/profiles/reach-digital"
 SMOKE_TEST="$PROFILE_DIR/skills/reach-digital/reach-digital-ops/scripts/smoke-test.sh"
 PRINTING_PRESS_REPO="${PRINTING_PRESS_REPO:-https://github.com/TheProdigal95/printing-press.git}"
 PRINTING_PRESS_DIR="${PRINTING_PRESS_DIR:-$HOME/printing-press}"
+CAMOFOX_REPO="${CAMOFOX_REPO:-https://github.com/jo-inc/camofox-browser.git}"
+CAMOFOX_DIR="${CAMOFOX_DIR:-$PROFILE_DIR/camofox-browser}"
+CAMOFOX_URL_VALUE="${CAMOFOX_URL_VALUE:-http://localhost:9377}"
+CAMOFOX_LABEL="com.reachdigital.hermes-camofox"
+CAMOFOX_PLIST="$HOME/Library/LaunchAgents/$CAMOFOX_LABEL.plist"
 # Desktop-launched shells and fresh Hermes installs often do not inherit zsh PATH.
 # Include the standard user binary locations before checking/building tools.
 export PATH="$HOME/.local/bin:$HOME/go/bin:/opt/homebrew/bin:/usr/local/bin:$PATH"
@@ -98,21 +104,25 @@ detect_pkg_mgr() {
 pkg_name() {
   local generic="$1"
   case "$PKG_MGR:$generic" in
+    brew:git) echo "git" ;;
     brew:yt-dlp) echo "yt-dlp" ;;
     brew:ffmpeg) echo "ffmpeg" ;;
     brew:go) echo "go" ;;
     brew:node) echo "node" ;;
     brew:python3) echo "python3" ;;
+    apt:git) echo "git" ;;
     apt:yt-dlp) echo "yt-dlp" ;;
     apt:ffmpeg) echo "ffmpeg" ;;
     apt:go) echo "golang-go" ;;
     apt:node) echo "nodejs npm" ;;
     apt:python3) echo "python3 python3-pip python3-venv" ;;
+    dnf:git) echo "git" ;;
     dnf:yt-dlp) echo "yt-dlp" ;;
     dnf:ffmpeg) echo "ffmpeg" ;;
     dnf:go) echo "golang" ;;
     dnf:node) echo "nodejs npm" ;;
     dnf:python3) echo "python3 python3-pip python3-virtualenv" ;;
+    pacman:git) echo "git" ;;
     pacman:yt-dlp) echo "yt-dlp" ;;
     pacman:ffmpeg) echo "ffmpeg" ;;
     pacman:go) echo "go" ;;
@@ -142,6 +152,50 @@ pkg_install() {
       return 1
       ;;
   esac
+}
+
+ensure_env_var() {
+  local file="$1" key="$2" value="$3"
+  mkdir -p "$(dirname "$file")"
+  touch "$file"
+  local tmp
+  tmp="$(mktemp)"
+  awk -v k="$key" -v v="$value" '
+    BEGIN { done=0 }
+    $0 ~ "^" k "=" { print k "=" v; done=1; next }
+    { print }
+    END { if (!done) print k "=" v }
+  ' "$file" > "$tmp"
+  mv "$tmp" "$file"
+}
+
+install_camofox_launch_agent() {
+  [ "$OS_TYPE" = "Darwin" ] || return 0
+  mkdir -p "$HOME/Library/LaunchAgents" "$PROFILE_DIR/camofox/profile" "$PROFILE_DIR/camofox/cookies" "$PROFILE_DIR/camofox/traces"
+  local cmd
+  cmd="cd '$CAMOFOX_DIR' && export PATH='$HOME/.local/bin:$HOME/go/bin:/opt/homebrew/bin:/usr/local/bin:$PATH' && CAMOFOX_PORT=9377 CAMOFOX_PROFILE_DIR='$PROFILE_DIR/camofox/profile' CAMOFOX_COOKIES_DIR='$PROFILE_DIR/camofox/cookies' CAMOFOX_TRACES_DIR='$PROFILE_DIR/camofox/traces' npm start"
+  python3 - "$CAMOFOX_PLIST" "$CAMOFOX_LABEL" "$cmd" <<'PY'
+import plistlib, sys
+path, label, cmd = sys.argv[1:4]
+plist = {
+    "Label": label,
+    "ProgramArguments": ["/bin/bash", "-lc", cmd],
+    "RunAtLoad": True,
+    "KeepAlive": True,
+    "StandardOutPath": f"/tmp/{label}.out.log",
+    "StandardErrorPath": f"/tmp/{label}.err.log",
+    "EnvironmentVariables": {"CAMOFOX_PORT": "9377"},
+}
+with open(path, "wb") as f:
+    plistlib.dump(plist, f)
+PY
+  launchctl bootout "gui/$(id -u)" "$CAMOFOX_PLIST" >/dev/null 2>&1 || true
+  if launchctl bootstrap "gui/$(id -u)" "$CAMOFOX_PLIST" >/dev/null 2>&1; then
+    launchctl kickstart -k "gui/$(id -u)/$CAMOFOX_LABEL" >/dev/null 2>&1 || true
+    ok "Camofox LaunchAgent installed: $CAMOFOX_PLIST"
+  else
+    warn "Camofox LaunchAgent could not be loaded automatically. Start manually: cd '$CAMOFOX_DIR' && CAMOFOX_PORT=9377 npm start"
+  fi
 }
 
 # --- Pre-flight ---------------------------------------------------------------
@@ -179,7 +233,7 @@ elif [ "$PKG_MGR" = "none" ]; then
 fi
 
 # What we need and what we can install via package manager
-SYS_PACKAGES=(yt-dlp ffmpeg go node python3)
+SYS_PACKAGES=(git yt-dlp ffmpeg go node python3)
 NEED_INSTALL=()
 for pkg in "${SYS_PACKAGES[@]}"; do
   if command -v "$pkg" >/dev/null 2>&1; then
@@ -223,8 +277,45 @@ if ! command -v go >/dev/null 2>&1; then
   warn "Go not found — Go CLIs cannot be built in this run. Install Go and re-run."
 fi
 
-# --- Phase 2: Node tools -------------------------------------------------------
-hdr "Phase 2: Node tools (00 Global/Hermes/tools/)"
+# --- Phase 2: Camofox local browser backend -----------------------------------
+hdr "Phase 2: Camofox local browser backend"
+ENV_FILE="$PROFILE_DIR/.env"
+if [ "$CHECK_ONLY" = true ]; then
+  [ -d "$CAMOFOX_DIR" ] && ok "Camofox source present: $CAMOFOX_DIR" || warn "Camofox source missing (will clone $CAMOFOX_REPO)"
+  [ -d "$CAMOFOX_DIR/node_modules" ] && ok "Camofox node_modules installed" || warn "Camofox node_modules missing (will npm install)"
+  if [ -f "$ENV_FILE" ] && grep -q "^CAMOFOX_URL=$CAMOFOX_URL_VALUE" "$ENV_FILE"; then
+    ok "CAMOFOX_URL set in profile .env"
+  else
+    warn "CAMOFOX_URL not set in $ENV_FILE (will add $CAMOFOX_URL_VALUE)"
+  fi
+  if command -v curl >/dev/null 2>&1 && curl -fsS "$CAMOFOX_URL_VALUE/health" >/dev/null 2>&1; then
+    ok "Camofox health endpoint reachable: $CAMOFOX_URL_VALUE/health"
+  else
+    warn "Camofox not currently reachable on $CAMOFOX_URL_VALUE (LaunchAgent/manual start needed)"
+  fi
+else
+  mkdir -p "$PROFILE_DIR"
+  if [ -d "$CAMOFOX_DIR/.git" ]; then
+    ok "Camofox source present: $CAMOFOX_DIR"
+  elif command -v git >/dev/null 2>&1; then
+    note "Cloning Camofox browser backend: $CAMOFOX_REPO → $CAMOFOX_DIR"
+    git clone "$CAMOFOX_REPO" "$CAMOFOX_DIR" && ok "Camofox source cloned" || warn "Camofox clone failed"
+  else
+    warn "git not found — cannot clone Camofox browser backend"
+  fi
+  if [ -f "$CAMOFOX_DIR/package.json" ] && command -v npm >/dev/null 2>&1; then
+    note "Installing Camofox dependencies (downloads browser binaries on first install)"
+    (cd "$CAMOFOX_DIR" && npm install) && ok "Camofox npm install complete" || warn "Camofox npm install failed"
+    install_camofox_launch_agent
+  else
+    warn "Camofox package.json or npm missing — skipping Camofox npm install"
+  fi
+  ensure_env_var "$ENV_FILE" "CAMOFOX_URL" "$CAMOFOX_URL_VALUE"
+  ok "CAMOFOX_URL set in $ENV_FILE"
+fi
+
+# --- Phase 3: Node tools -------------------------------------------------------
+hdr "Phase 3: Node tools (00 Global/Hermes/tools/)"
 if ! command -v npm >/dev/null 2>&1; then
   err "npm not found — cannot install Node tools. Re-run Phase 1 first."
 else
@@ -265,7 +356,7 @@ else
   done
 fi
 
-# --- Phase 3: Go CLIs ---------------------------------------------------------
+# --- Phase 4: Go CLIs ---------------------------------------------------------
 cli_source_dir() {
   case "$1" in
     motion-pp-cli)  echo "$PRINTING_PRESS_DIR/library/motion" ;;
@@ -293,7 +384,7 @@ ensure_printing_press_repo() {
     || { err "printing-press clone failed"; return 1; }
 }
 
-hdr "Phase 3: Go CLIs (printing-press source)"
+hdr "Phase 4: Go CLIs (printing-press source)"
 mkdir -p "$HOME/go/bin"
 for cli in motion-pp-cli clickup-pp-cli; do
   if command -v "$cli" >/dev/null 2>&1; then
@@ -324,8 +415,8 @@ for cli in motion-pp-cli clickup-pp-cli; do
   fi
 done
 
-# --- Phase 4: API keys ---------------------------------------------------------
-hdr "Phase 4: API keys (profile .env)"
+# --- Phase 5: API keys ---------------------------------------------------------
+hdr "Phase 5: API keys (profile .env)"
 ENV_FILE="$PROFILE_DIR/.env"
 if [ ! -f "$ENV_FILE" ]; then
   err ".env not found at $ENV_FILE."
@@ -361,8 +452,8 @@ else
   fi
 fi
 
-# --- Phase 5: Strategist identity ----------------------------------------------
-hdr "Phase 5: Strategist identity (00 Global/Hermes/strategist.json)"
+# --- Phase 6: Strategist identity ----------------------------------------------
+hdr "Phase 6: Strategist identity (00 Global/Hermes/strategist.json)"
 STRATEGIST="$HERMES_DIR/strategist.json"
 if [ -f "$STRATEGIST" ]; then
   ok "strategist.json present: $(cat "$STRATEGIST")"
@@ -375,8 +466,8 @@ else
   err "If you don't know your ClickUp user ID, ask the system: it can look you up in team_to_clickup.json"
 fi
 
-# --- Phase 6: MCP servers ------------------------------------------------------
-hdr "Phase 6: MCP servers"
+# --- Phase 7: MCP servers ------------------------------------------------------
+hdr "Phase 7: MCP servers"
 if command -v hermes >/dev/null 2>&1; then
   if [ "$CHECK_ONLY" = true ]; then
     note "Run: hermes mcp list — ClickUp should show ✓ enabled, 51 tools"
@@ -393,8 +484,8 @@ else
   warn "hermes CLI not on PATH. Install Hermes Agent first from https://hermes-agent.nousresearch.com"
 fi
 
-# --- Phase 7: Browser profile dirs ---------------------------------------------
-hdr "Phase 7: Browser profiles (agent-browser)"
+# --- Phase 8: Browser profile dirs ---------------------------------------------
+hdr "Phase 8: Browser profiles (agent-browser)"
 for service in trustpilot amazon; do
   prof="$TOOLS_DIR/review-sampler/profiles/$service"
   if [ -d "$prof" ]; then
@@ -407,8 +498,8 @@ for service in trustpilot amazon; do
   fi
 done
 
-# --- Phase 8: Smoke test -------------------------------------------------------
-hdr "Phase 8: Smoke test"
+# --- Phase 9: Smoke test -------------------------------------------------------
+hdr "Phase 9: Smoke test"
 if [ -f "$SMOKE_TEST" ]; then
   if [ "$CHECK_ONLY" = true ]; then
     note "Run: bash $SMOKE_TEST"
@@ -424,8 +515,8 @@ else
   warn "Smoke test script not found at $SMOKE_TEST"
 fi
 
-# --- Phase 9: Profile cwd sync -------------------------------------------------
-hdr "Phase 9: Hermes profile working directory"
+# --- Phase 10: Profile cwd sync -------------------------------------------------
+hdr "Phase 10: Hermes profile working directory"
 if command -v hermes >/dev/null 2>&1; then
   if [ "$CHECK_ONLY" = true ]; then
     note "Run after provisioning: hermes -p reach-digital config set terminal.cwd '$VAULT_DIR'"
@@ -453,4 +544,5 @@ else
   echo "    - Edit strategist.json with your name + ClickUp user ID if it was templated"
   echo "    - OAuth-login to ClickUp MCP in your browser (if just added)"
   echo "    - Run agent-browser logins for Motion / Trustpilot / Amazon as needed"
+  echo "    - Restart Hermes Desktop after CAMOFOX_URL is added so browser tools use Camofox"
 fi

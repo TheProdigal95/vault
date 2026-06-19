@@ -129,6 +129,7 @@ The reach-digital profile at `~/.hermes/profiles/reach-digital/` ships pre-confi
 | **Provider auth** | Nous Portal (OAuth) + Google AI Studio + FAL + ClickUp (API token + MCP OAuth) |
 | **Reach-digital skills (14)** | batch-planner, brand-researcher, brief-writer, clickup-load, creative-feedback-handoff, critique-orchestrator, grab-media, motion-top-spenders, reach-digital-ops, scoring-evaluator, script-writer, setup, sheets-tracker-sync, transcribe |
 | **Go CLIs** | `motion-pp-cli` + `clickup-pp-cli` — built by setup into `$HOME/go/bin/`, source at `~/printing-press/library/{motion,clickup}/` |
+| **Browser stack** | `agent-browser` + local Camofox/Camoufox backend (`CAMOFOX_URL=http://localhost:9377`) for Hermes browser tools and anti-bot pages |
 | **Node tools** | gemini-api, site-scraper, review-sampler, persona-counter, ad-classifier, fal-ai, endcard-generator — pre-installed under `00 Global/Hermes/tools/` |
 | **MCP servers** | ClickUp (configured, 51 tools) + Notion (add manually) + Google Drive (add manually) |
 | **Obsidian** | Minimal theme, 4 plugins, 2 CSS snippets, dark mode, appearance config |
